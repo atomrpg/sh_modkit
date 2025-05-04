@@ -2,7 +2,7 @@
 [1.1x](https://store.steampowered.com/app/2108180)
 
 ### Required Unity version:
-[2019.4.40](https://unity.com/download)
+[2022.3.61](https://unity.com/download)
 
 ### Example:
 [Example - TestMod](https://github.com/atomrpg/sh_modkit/tree/test_mod)
