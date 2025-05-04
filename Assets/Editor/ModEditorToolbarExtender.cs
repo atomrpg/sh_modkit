@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Net;
 using System.Collections.Specialized;
 using System.Net.Http;
-using Newtonsoft.Json;
 using System.Text;
 
 [InitializeOnLoad]
