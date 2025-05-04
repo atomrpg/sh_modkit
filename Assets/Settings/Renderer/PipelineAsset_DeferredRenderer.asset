@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a04a940616de11459090e976e644269, type: 3}
+  m_Script: {fileID: 167801419, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
   m_Name: DecalsRendererFeature
   m_EditorClassIdentifier: 
   m_Active: 1
@@ -64,7 +64,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d9e23e7053007e47ad24cb73b407d93, type: 3}
+  m_Script: {fileID: 1284567050, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
   m_Name: OutlineRendererFeature
   m_EditorClassIdentifier: 
   m_Active: 1
@@ -85,11 +85,11 @@ MonoBehaviour:
       type: 3}
     hdrDebugViewPS: {fileID: 4800000, guid: 573620ae32aec764abd4d728906d2587, type: 3}
   m_RendererFeatures:
-  - {fileID: -162855391731897254}
-  - {fileID: -9004140001459161203}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 5533049233372197920}
   - {fileID: -7998300047735880633}
-  - {fileID: 679427669698060323}
+  - {fileID: 0}
   m_RendererFeatureMap: 5a2c1052e26bbdfd8d3724e95fde0a8320b4e55ff656c94c4784b6bf7b54009123a0eca6ddcf6d09
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
@@ -111,6 +111,12 @@ MonoBehaviour:
     objectMotionVector: {fileID: 4800000, guid: 7b3ede40266cd49a395def176e1bc486,
       type: 3}
     dataDrivenLensFlare: {fileID: 4800000, guid: 6cda457ac28612740adb23da5d39ea92,
+      type: 3}
+    terrainDetailLitPS: {fileID: 4800000, guid: f6783ab646d374f94b199774402a5144,
+      type: 3}
+    terrainDetailGrassPS: {fileID: 4800000, guid: e507fdfead5ca47e8b9a768b51c291a1,
+      type: 3}
+    terrainDetailGrassBillboardPS: {fileID: 4800000, guid: 29868e73b638e48ca99a19ea58c48d90,
       type: 3}
   m_AssetVersion: 2
   m_OpaqueLayerMask:
@@ -141,7 +147,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4c83fc52efc460fabc8856653cd988c, type: 3}
+  m_Script: {fileID: 337534290, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
   m_Name: GrabPassRendererFeature
   m_EditorClassIdentifier: 
   m_Active: 1
