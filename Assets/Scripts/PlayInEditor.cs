@@ -175,46 +175,7 @@ public class PlayInEditor : MonoBehaviour
                 SpawnScene();
             }
 
-            //fallback replace detect
-            for (int i = 0; i < SceneManager.sceneCount; i++)
-            {
-                Scene activeScene = SceneManager.GetSceneAt(i);
-
-                foreach (var obj in activeScene.GetRootGameObjects())
-                {
-                    foreach (EntityComponent r in obj.GetComponentsInChildren<EntityComponent>())
-                    {
-                        if (!IsValidEntityObject(r.gameObject))
-                        {
-                            if (r.Entity == null)
-                            {
-                                Debug.LogError("PIE Error [Entity is null]" + r.name);
-                                continue;
-                            }
-                            else if (r.Entity.Prototype == null)
-                            {
-                                Debug.LogError("PIE Error [Prototype is null]" + r.name);
-                                continue;
-                            }
-                            else if (r.Entity.Prototype.Prefab == null)
-                            {
-                                Debug.LogError("PIE Error [Prefab is null]" + r.name);
-                                continue;
-                            }
-
-                            var prefab = r.Entity.Prototype.Prefab;
-
-                            var copy = Instantiate(prefab, r.gameObject.transform.position, r.gameObject.transform.rotation);
-                            copy.transform.localScale = r.transform.lossyScale;
-                            copy.name = r.name;
-
-                            copy.GetComponent<EntityComponent>().SetEntity(r.Entity);
-                            r.gameObject.SetActive(false);
-                            r.gameObject.name += "_temp";
-                        }
-                    }
-                }
-            }
+            //SpawnObjects();
 
             if (_sunTestLight != null)
             {
@@ -226,14 +187,61 @@ public class PlayInEditor : MonoBehaviour
         }
     }
 
+    void SpawnObjects()
+    {
+        //fallback replace detect
+        for (int i = 0; i < SceneManager.sceneCount; i++)
+        {
+            Scene activeScene = SceneManager.GetSceneAt(i);
+
+            foreach (var obj in activeScene.GetRootGameObjects())
+            {
+                foreach (EntityComponent r in obj.GetComponentsInChildren<EntityComponent>())
+                {
+                    if (!IsValidEntityObject(r.gameObject))
+                    {
+                        if (r.Entity == null)
+                        {
+                            Debug.LogError("PIE Error [Entity is null]" + r.name);
+                            continue;
+                        }
+                        else if (r.Entity.Prototype == null)
+                        {
+                            Debug.LogError("PIE Error [Prototype is null]" + r.name);
+                            continue;
+                        }
+                        else if (r.Entity.Prototype.Prefab == null)
+                        {
+                            Debug.LogError("PIE Error [Prefab is null]" + r.name);
+                            continue;
+                        }
+
+                        var prefab = r.Entity.Prototype.Prefab;
+
+                        var copy = Instantiate(prefab, r.gameObject.transform.position, r.gameObject.transform.rotation);
+                        copy.transform.localScale = r.transform.lossyScale;
+                        copy.name = r.name;
+
+                        copy.GetComponent<EntityComponent>().SetEntity(r.Entity);
+                        r.gameObject.SetActive(false);
+                        r.gameObject.name += "_temp";
+                    }
+                }
+            }
+        }
+    }
 
     bool _requestShowScene = false;
 
     void Start()
     {
-        if (!EditorApplication.isPlaying)
+        if (EditorApplication.isPlaying)
         {
-                _requestShowScene = true;
+            SpawnObjects();
+        }
+        else
+        {
+            _requestShowScene = true;
         }
     }
 
