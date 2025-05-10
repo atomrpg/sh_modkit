@@ -274,6 +274,84 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
+--- !u!1001 &1826636514
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3913453801698681023, guid: 2e5a79bba2c4862458bbc014788d6329,
+        type: 3}
+      propertyPath: m_Name
+      value: OutZone_WorldMap
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396834656378862085, guid: 2e5a79bba2c4862458bbc014788d6329,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.038725
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396834656378862085, guid: 2e5a79bba2c4862458bbc014788d6329,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396834656378862085, guid: 2e5a79bba2c4862458bbc014788d6329,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 32.872307
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396834656378862085, guid: 2e5a79bba2c4862458bbc014788d6329,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396834656378862085, guid: 2e5a79bba2c4862458bbc014788d6329,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396834656378862085, guid: 2e5a79bba2c4862458bbc014788d6329,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396834656378862085, guid: 2e5a79bba2c4862458bbc014788d6329,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396834656378862085, guid: 2e5a79bba2c4862458bbc014788d6329,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396834656378862085, guid: 2e5a79bba2c4862458bbc014788d6329,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396834656378862085, guid: 2e5a79bba2c4862458bbc014788d6329,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9002723004567019019, guid: 2e5a79bba2c4862458bbc014788d6329,
+        type: 3}
+      propertyPath: EnterPoint
+      value: Test_Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 9002723004567019019, guid: 2e5a79bba2c4862458bbc014788d6329,
+        type: 3}
+      propertyPath: _pinProto.path
+      value: Entities/Minimap/Test_Scene/OutZone_WorldMap
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2e5a79bba2c4862458bbc014788d6329, type: 3}
 --- !u!1001 &1875617316879701089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -363,3 +441,4 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 113398914}
+  - {fileID: 1826636514}
