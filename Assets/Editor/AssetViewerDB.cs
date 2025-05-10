@@ -102,6 +102,7 @@ internal class AssetViewerDB
 
         IsLoaded = true;
         OnUpdated?.Invoke();
+        GameEditor.Feature.DontEntityInspectorGUI = false;
     }
 
     private static void LoadBundles(string path, HashSet<string> categoriesSet)

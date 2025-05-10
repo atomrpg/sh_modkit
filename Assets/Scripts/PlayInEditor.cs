@@ -349,6 +349,7 @@ public class PlayInEditor : MonoBehaviour
 
         if (EditorApplication.isPlaying)
         {
+            GameEditor.Feature.DontEntityInspectorGUI = true;
             ResourceManager.Reset();
             ResourceManager.SetAssetGetPathCallback(null);
         }
