@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Steamworks;
 
-class SteamService
+class StoreSteamService
 {
     bool _init = false;
     public void Init()
@@ -63,7 +63,7 @@ public class ModBuilder : EditorWindow
     private List<SteamUGCDetails_t> _modList = new List<SteamUGCDetails_t>();
     private int _modIndex = -1;
 
-    SteamService steam = new SteamService();
+    StoreSteamService steam = new StoreSteamService();
    // string _modName = typeof(ModEntryPoint).Assembly.GetName().Name;
     [MenuItem("Game/Build Mod")]
     static void BuildMod()
@@ -230,6 +230,9 @@ public class ModBuilder : EditorWindow
         return levelBundleList.ToArray();
     }
 
+    string _rgchTitle = "";
+    string _rgchDescription = "";
+
     private void OnGUI()
     {
 
@@ -315,7 +318,7 @@ public class ModBuilder : EditorWindow
                 }
 
                 //copy dll
-                string modsFolder = Application.persistentDataPath + "/../../AtomTeam/Atom/Mods";
+                string modsFolder = Application.persistentDataPath + "/Mods";//; + "/../../AtomTeam/Swordhaven/Mods";
 
                 if (!Directory.Exists(modsFolder))
                 {
@@ -381,18 +384,29 @@ public class ModBuilder : EditorWindow
         {
             EditorGUILayout.LabelField("App Id", steam.GetAppId().ToString());
 
-            if (_modIndex < 0)
+            if(_modIndex >= _modList.Count)
+            {
+                if (GUILayout.Button("Refresh"))
+                {
+                    RequestInfo();
+                }
+            }
+            else if (_modIndex < 0)
             {
                 for (int i = 0; i != _modList.Count; ++i)
                 {
                     if (GUILayout.Button("Open Mod Item(" + _modList[i].m_rgchTitle + ")"))
                     {
                         _modIndex = i;
+                        _rgchTitle = _modList[i].m_rgchTitle;
+                        _rgchDescription = _modList[i].m_rgchDescription;
                     }
                 }
 
                 if (GUILayout.Button("Create New Mod Item"))
                 {
+                    _rgchTitle = "";
+                    _rgchDescription = "";
                     SteamAPICall_t handle = SteamUGC.CreateItem(SteamUtils.GetAppID(), EWorkshopFileType.k_EWorkshopFileTypeCommunity);
                     OnCreateItemResultCallResult.Set(handle);
                 }
@@ -401,16 +415,16 @@ public class ModBuilder : EditorWindow
             {
                 SteamUGCDetails_t details = _modList[_modIndex]; //copy temp
                 EditorGUILayout.LabelField("Mod Id", details.m_nPublishedFileId.ToString());
-                details.m_rgchTitle = EditorGUILayout.TextField("Title", details.m_rgchTitle);
-                details.m_rgchDescription = EditorGUILayout.TextField("Description", details.m_rgchDescription);
+                _rgchTitle = EditorGUILayout.TextField("Title", _rgchTitle);
+                _rgchDescription = EditorGUILayout.TextField("Description", _rgchDescription);
                 details.m_eVisibility = (ERemoteStoragePublishedFileVisibility)EditorGUILayout.EnumPopup(details.m_eVisibility);
                 _modList[_modIndex] = details; //assign
 
                 if (GUILayout.Button("Upload details"))
                 {
                     var handle = SteamUGC.StartItemUpdate(SteamUtils.GetAppID(), details.m_nPublishedFileId);
-                    SteamUGC.SetItemTitle(handle, details.m_rgchTitle);
-                    SteamUGC.SetItemDescription(handle, details.m_rgchDescription);
+                    SteamUGC.SetItemTitle(handle, _rgchTitle);
+                    SteamUGC.SetItemDescription(handle, _rgchDescription);
                     SteamUGC.SetItemVisibility(handle, details.m_eVisibility);
                     SteamAPICall_t callHandle = SteamUGC.SubmitItemUpdate(handle, "");
                     OnSubmitItemUpdateResultCallResult.Set(callHandle);
@@ -443,6 +457,22 @@ public class ModBuilder : EditorWindow
                     string modsFolder = dataAsset + "/" + PATH_BUILD_BUNDLE;
 
                     SteamUGC.SetItemContent(handle, modsFolder);
+                    SteamAPICall_t callHandle = SteamUGC.SubmitItemUpdate(handle, "");
+                    OnSubmitItemUpdateResultCallResult.Set(callHandle);
+                }
+
+                if (GUILayout.Button("Edit on Steam"))
+                {
+                    string url = $"https://steamcommunity.com/workshop/filedetails/?id={details.m_nPublishedFileId}";
+                    Application.OpenURL(url);
+                }
+
+                if (GUILayout.Button("Set Visibility to Public"))
+                {
+                    var handle = SteamUGC.StartItemUpdate(SteamUtils.GetAppID(), details.m_nPublishedFileId);
+                    SteamUGC.SetItemTitle(handle, _rgchTitle);
+                    SteamUGC.SetItemDescription(handle, _rgchDescription);
+                    SteamUGC.SetItemVisibility(handle, details.m_eVisibility);
                     SteamAPICall_t callHandle = SteamUGC.SubmitItemUpdate(handle, "");
                     OnSubmitItemUpdateResultCallResult.Set(callHandle);
                 }

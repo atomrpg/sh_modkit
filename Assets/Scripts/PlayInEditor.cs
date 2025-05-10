@@ -176,37 +176,42 @@ public class PlayInEditor : MonoBehaviour
             }
 
             //fallback replace detect
-            foreach (var obj in UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects())
+            for (int i = 0; i < SceneManager.sceneCount; i++)
             {
-                foreach (EntityComponent r in obj.GetComponentsInChildren<EntityComponent>())
+                Scene activeScene = SceneManager.GetSceneAt(i);
+
+                foreach (var obj in activeScene.GetRootGameObjects())
                 {
-                    if (!IsValidEntityObject(r.gameObject))
+                    foreach (EntityComponent r in obj.GetComponentsInChildren<EntityComponent>())
                     {
-                        if(r.Entity == null)
+                        if (!IsValidEntityObject(r.gameObject))
                         {
-                            Debug.LogError("PIE Error [Entity is null]" + r.name);
-                            continue;
-                        }
-                        else if (r.Entity.Prototype == null)
-                        {
-                            Debug.LogError("PIE Error [Prototype is null]" + r.name);
-                            continue;
-                        }
-                        else if (r.Entity.Prototype.Prefab == null)
-                        {
-                            Debug.LogError("PIE Error [Prefab is null]" + r.name);
-                            continue;
-                        }
+                            if (r.Entity == null)
+                            {
+                                Debug.LogError("PIE Error [Entity is null]" + r.name);
+                                continue;
+                            }
+                            else if (r.Entity.Prototype == null)
+                            {
+                                Debug.LogError("PIE Error [Prototype is null]" + r.name);
+                                continue;
+                            }
+                            else if (r.Entity.Prototype.Prefab == null)
+                            {
+                                Debug.LogError("PIE Error [Prefab is null]" + r.name);
+                                continue;
+                            }
 
-                        var prefab = r.Entity.Prototype.Prefab;
+                            var prefab = r.Entity.Prototype.Prefab;
 
-                        var copy = Instantiate(prefab, r.gameObject.transform.position, r.gameObject.transform.rotation);
-                        copy.transform.localScale = r.transform.lossyScale;
-                        copy.name = r.name;
+                            var copy = Instantiate(prefab, r.gameObject.transform.position, r.gameObject.transform.rotation);
+                            copy.transform.localScale = r.transform.lossyScale;
+                            copy.name = r.name;
 
-                        copy.GetComponent<EntityComponent>().SetEntity(r.Entity);
-                        r.gameObject.SetActive(false);
-                        r.gameObject.name += "_temp";
+                            copy.GetComponent<EntityComponent>().SetEntity(r.Entity);
+                            r.gameObject.SetActive(false);
+                            r.gameObject.name += "_temp";
+                        }
                     }
                 }
             }
