@@ -26,6 +26,11 @@ public class SceneList : EditorWindow
     {
         sceneList.Clear();
 
+        foreach (EditorBuildSettingsScene buildScene in EditorBuildSettings.scenes)
+        {
+            sceneList.Add(buildScene.path, false);
+        }
+
         foreach (var bundle in ResourceManager.bundles)
         {
             foreach (var prefab in bundle.GetAllSceneNames())
@@ -41,6 +46,17 @@ public class SceneList : EditorWindow
 
     string filter = "";
 
+    private static bool IsSceneInBuildSettings(string scenePath)
+    {
+        foreach (var scene in EditorBuildSettings.scenes)
+        {
+            if (scene.path == scenePath && scene.enabled)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 
     public void OnGUI()
     {
@@ -67,41 +83,67 @@ public class SceneList : EditorWindow
             {
                 if (GUILayout.Button(scene.Key))
                 {
-                    var playInEditor = GameObject.FindObjectOfType<PlayInEditor>();
-
-                    if(playInEditor == null)
+                    if (EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
                     {
-                        var goPIE = new GameObject("PlayInEditor");
-                        playInEditor = goPIE.AddComponent<PlayInEditor>();
-                        EditorUtility.SetDirty(goPIE);
-                    }
-
-                    playInEditor.spawnScene = scene.Key;
-                    playInEditor.SpawnScene();
-
-                    var goPlayer = GameObject.Find("Player");
-                    if (goPlayer == null) // auto create player
-                    {
-                        goPlayer = new GameObject("Player");
-
-                        var cc = goPlayer.AddComponent<CharacterComponent>();
-                        
+                        if (IsSceneInBuildSettings(scene.Key))
                         {
-                            var c = new Character();
-                            c.CharProto = ResourceManager.Load<CharacterProto>("Entities/Character/Player", ResourceManager.EXT_ASSET);
-                            c.creatureProto = ResourceManager.Load<CreatureProto>("Entities/Creature/BaseMale", ResourceManager.EXT_ASSET);
-                            c.SetCapsValue(Character.CharacterCaps.Player);
-                            c.SetFraction("player");
-                            cc.SetEntity(c);
-                        }
+                            string logicPath = scene.Key.Replace(".unity", "_Logic.unity");
+                            string editorPath = scene.Key.Replace(".unity", "_Editor.unity");
 
-                        cc.InvalidateData();
-                        var enterPoint = GameObject.Find("EnterPoint");
-                        if (enterPoint != null) // auto place to EnterPoint
-                        {
-                            cc.transform.position = enterPoint.transform.position;
+                            if (!string.IsNullOrEmpty(AssetDatabase.AssetPathToGUID(scene.Key)))
+                            {
+                                EditorSceneManager.OpenScene(scene.Key);
+                                EditorSceneManager.OpenScene(logicPath, OpenSceneMode.Additive);
+                            }
+                            else
+                            {
+                                EditorSceneManager.OpenScene(logicPath);
+                            }
+
+                            if (!string.IsNullOrEmpty(AssetDatabase.AssetPathToGUID(editorPath)))
+                            {
+                                EditorSceneManager.OpenScene(editorPath, OpenSceneMode.Additive);
+                            }
                         }
-                        EditorUtility.SetDirty(goPlayer);
+                        else // PIE mode
+                        {
+                            var playInEditor = GameObject.FindObjectOfType<PlayInEditor>();
+
+                            if (playInEditor == null)
+                            {
+                                var goPIE = new GameObject("PlayInEditor");
+                                playInEditor = goPIE.AddComponent<PlayInEditor>();
+                                EditorUtility.SetDirty(goPIE);
+                            }
+
+                            playInEditor.spawnScene = scene.Key;
+                            playInEditor.SpawnScene();
+
+                            var goPlayer = GameObject.Find("Player");
+                            if (goPlayer == null) // auto create player
+                            {
+                                goPlayer = new GameObject("Player");
+
+                                var cc = goPlayer.AddComponent<CharacterComponent>();
+
+                                {
+                                    var c = new Character();
+                                    c.CharProto = ResourceManager.Load<CharacterProto>("Entities/Character/Player", ResourceManager.EXT_ASSET);
+                                    c.creatureProto = ResourceManager.Load<CreatureProto>("Entities/Creature/BaseMale", ResourceManager.EXT_ASSET);
+                                    c.SetCapsValue(Character.CharacterCaps.Player);
+                                    c.SetFraction("player");
+                                    cc.SetEntity(c);
+                                }
+
+                                cc.InvalidateData();
+                                var enterPoint = GameObject.Find("EnterPoint");
+                                if (enterPoint != null) // auto place to EnterPoint
+                                {
+                                    cc.transform.position = enterPoint.transform.position;
+                                }
+                                EditorUtility.SetDirty(goPlayer);
+                            }
+                        }
                     }
                 }
             }
