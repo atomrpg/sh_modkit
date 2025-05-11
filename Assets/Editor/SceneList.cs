@@ -89,7 +89,7 @@ public class SceneList : EditorWindow
                         {
                             var c = new Character();
                             c.CharProto = ResourceManager.Load<CharacterProto>("Entities/Character/Player", ResourceManager.EXT_ASSET);
-                            c.creatureProto = ResourceManager.Load<CreatureProto>("Entities/Creature/BaseMale11", ResourceManager.EXT_ASSET);
+                            c.creatureProto = ResourceManager.Load<CreatureProto>("Entities/Creature/BaseMale", ResourceManager.EXT_ASSET);
                             c.SetCapsValue(Character.CharacterCaps.Player);
                             c.SetFraction("player");
                             cc.SetEntity(c);
