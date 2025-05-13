@@ -30,7 +30,8 @@ MonoBehaviour:
     - Death_Pose04
     DeathAnimFlame:
     - FATALITY_FlameDeath
-  HeadPreset: {fileID: 11400000, guid: e864931412ea42e4998d76b75f91d221, type: 2}
+  HeadPreset:
+    path: entities/appearance/heads/head_female
   SkeletonScaleSnapshots:
     path: Entities/SkeletonScaleSnapshots/Male
   BodyParts:
