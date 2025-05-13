@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: -1412109682, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
   m_Name: Test_Scene
   m_EditorClassIdentifier: 
-  Position: {x: 1870, y: 1000}
+  Position: {x: 1824, y: 1440}
   Sprite:
     path: 
   Location: Test_Scene
-  Radius: 12
+  Radius: 24
   EnterPoint: EnterPoint
