@@ -471,15 +471,16 @@ public class AssetViewer : EditorWindow
 
     private void DownloadAsset(Object asset, string assetName)
     {
-        CreateDirByAssetPath(assetName);
+        string assetPath = "assets/resources/" + assetName;
+        CreateDirByAssetPath(assetPath);
 
         if (asset is TextAsset)
         {
-            Selection.activeObject = SaveTextAsset(asset as TextAsset, assetName);
+            Selection.activeObject = SaveTextAsset(asset as TextAsset, assetPath);
         }
         else if (asset is ScriptableObject)
         {
-            Selection.activeObject = SaveScriptableAsset(asset as ScriptableObject, assetName);
+            Selection.activeObject = SaveScriptableAsset(asset as ScriptableObject, assetPath);
         }
         else
         {
