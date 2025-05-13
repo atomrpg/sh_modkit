@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 395181009, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: Liris
+  m_EditorClassIdentifier: 
+  Icon:
+    path: Entities/Character/Liris
+  m_Localization: character.liris
+  Takeable: 1
+  MultifaceProto:
+    path: 
+  aiBehavior: 0
+  aiBehaviorTree:
+    path: Entities/AI/AI.Default
+  nationality: 0
+  Dialog:
+    path: Entities/Dialog/Liris
+  HallucinationDialog:
+    path: Entities/Dialog/HallucinationDialogDefault
+  OnPocket:
+    path: Entities/Behavior/Human.Loot
+  OnRedhand:
+    path: Entities/Behavior/Redhanded.Default
+  ViewAngle: 60
+  TalkAddDist: 0
+  StoreStats: 1
+  Shiftable: 0
+  NativeLang: 
+  overrideAnimAvatarName: 
+  AcceptingRestrictions:
+    _flags: 5
+  specialtyMask: 32
+  SkillPerks:
+    path: 
+  Stats:
+    _modifiers:
+    - _type: 25
+      _value: -30
+    Level: 1
+    ExperiencePoints: 5
+    Strength: 4
+    Attention: 5
+    Endurance: 5
+    Personality: 7
+    Intellect: 7
+    Dexterity: 5
+    Luck: 5
+    _perks: []
+    skillsBonus:
+      MartialArts: 0
+      BladedWeapons: 0
+      AxesMaces: 0
+      SpearsHalberds: 5
+      RangedWeapons: 0
+      Intimidation: 0
+      Persuasion: 0
+      Bluff: 0
+      Haggling: 0
+      Outdoorsmanship: 0
+      Stealth: 5
+      Lockpicking: 0
+      Pickpocketing: 0
+      Crafting: 5
+      Medicine: 5
+    FreeSkillPoints: 0
+    FreeStatPoints: 0
+    FreeSpecPoints: 0

@@ -122,6 +122,89 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &433740420
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25.521673
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.947021
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729277435333425409, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
+        type: 3}
+      propertyPath: m_Name
+      value: Liris
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729277435333425409, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729277435339016023, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
+        type: 3}
+      propertyPath: mEntityData
+      value: '{"class":"Character", "proto":"Liris", "character":"Liris", "damage":"0",
+        "ap":"0", "relationship":"100", "civicsociety":"citizen", "inventory":[ 
+        ], "quickpanel":{}, "quickpanelmainindex":"0", "constitution_fat":"0.5",
+        "constitution_height":"0.5", "constitution_strength":"0.5", "status_effects":[
+        {"type":"44", "turns_left":"0", "cooldowns":[  ]}, {"type":"47", "turns_left":"0",
+        "configuration":{"lastRestTime":"0"}} ], "lastRoudTime":"0"}'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b7c0992c23f61e42993bd4e82c7a7ba, type: 3}
 --- !u!1 &752526359
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,3 +256,4 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 752526361}
+  - {fileID: 433740420}
