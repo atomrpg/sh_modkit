@@ -181,6 +181,8 @@ public class PlayInEditor : MonoBehaviour
             {
                 _sunTestLight.gameObject.SetActive(false);
             }
+
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -272,11 +274,6 @@ public class PlayInEditor : MonoBehaviour
             _requestShowScene = false;
 
             SpawnScene();
-        }
-
-        if(ResourceManager.bundles.Count == 0)
-        {
-            Debug.Log("ZERO");
         }
     }
 
