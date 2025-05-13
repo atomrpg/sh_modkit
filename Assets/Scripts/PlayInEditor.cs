@@ -184,6 +184,26 @@ public class PlayInEditor : MonoBehaviour
         }
         else
         {
+            EditorApplication.playModeStateChanged -= OnPlayModeChanged;
+            EditorApplication.playModeStateChanged += OnPlayModeChanged;
+        }
+    }
+
+
+    private static void OnPlayModeChanged(PlayModeStateChange state)
+    {
+        if (state == PlayModeStateChange.ExitingEditMode)
+        {
+            for (int i = 0; i < SceneManager.sceneCount; i++)
+            {
+                Scene scene = SceneManager.GetSceneAt(i);
+
+                if (scene.name.ToLower().Contains("_editor"))
+                {
+                    SceneManager.SetActiveScene(scene);
+                    break;
+                }
+            }
         }
     }
 
@@ -252,6 +272,11 @@ public class PlayInEditor : MonoBehaviour
             _requestShowScene = false;
 
             SpawnScene();
+        }
+
+        if(ResourceManager.bundles.Count == 0)
+        {
+            Debug.Log("ZERO");
         }
     }
 
