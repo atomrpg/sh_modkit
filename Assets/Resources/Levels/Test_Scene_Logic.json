@@ -1,8 +1,68 @@
 [ 
    { 
+      "projectileRemains" : { 
+         "list" : [ 
+         ]
+      }, 
+      "class" : "Character", 
+      "active" : "true", 
+      "character" : "mod_bandittest1", 
+      "damage" : "0", 
+      "ap" : "0", 
+      "relationship" : "0", 
+      "fraction" : "bandits", 
+      "civicsociety" : "enemy", 
+      "inventory" : [ 
+      ], 
+      "weapon" : { 
+         "class" : "Weapon", 
+         "count" : "1", 
+         "proto" : "MOD_Bow_1"
+      }, 
+      "quickpanel" : { 
+      }, 
+      "quickpanelmainindex" : "0", 
+      "constitution_fat" : "0.5", 
+      "constitution_height" : "0.5", 
+      "constitution_strength" : "0.5", 
+      "status_effects" : [ 
+         { 
+            "type" : "44", 
+            "turns_left" : "0", 
+            "cooldowns" : [ 
+            ]
+         }, 
+         { 
+            "type" : "47", 
+            "turns_left" : "0", 
+            "configuration" : { 
+               "lastRestTime" : "0"
+            }
+         }
+      ], 
+      "lastRoudTime" : "0", 
+      "name" : "Bandit", 
+      "transform" : { 
+         "pos" : [ 
+            "25.25958", 
+            "0", 
+            "19.29"
+         ], 
+         "rot" : [ 
+            "0", 
+            "90", 
+            "0"
+         ], 
+         "scale" : [ 
+            "1", 
+            "1", 
+            "1"
+         ]
+      }
+   }, 
+   { 
       "class" : "Chest", 
       "active" : "true", 
-      "proto" : "CrateWood_4", 
       "inventory" : [ 
       ], 
       "open" : "false", 
@@ -47,12 +107,11 @@
       "weapon" : { 
          "class" : "Weapon", 
          "count" : "1", 
-         "proto" : "RN_Bow_ArmyLongbow"
+         "proto" : "MOD_Bow_1"
       }, 
       "quiver" : { 
          "class" : "Ammo", 
-         "count" : "20", 
-         "proto" : "Ammo_0_Copper_Arrow"
+         "count" : "20"
       }, 
       "quickpanel" : { 
       }, 

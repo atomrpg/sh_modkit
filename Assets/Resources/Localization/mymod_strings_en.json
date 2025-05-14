@@ -3,6 +3,16 @@
       "liris" : { 
          "short" : "Young Woman", 
          "full" : "Liris Fenbrook"
+      },
+      "mod_bandittest1" : { 
+         "short" : "Evil Bandit", 
+         "full" : "Evil Bandit"
+      }	 
+	},   
+	"weapon" : { 
+      "mod_bow_1" : { 
+         "short" : "Liris' Longbow", 
+         "full" : "Liris' Longbow"
       }
 	},
     "location" : { 

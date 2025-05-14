@@ -4,6 +4,7 @@
    ], 
    "Test_Scene_Logic" : { 
       "initialList" : [ 
+         "Bandit", 
          "TestChest", 
          "Liris"
       ], 
