@@ -302,6 +302,27 @@ public class ModBuilder : EditorWindow
                     AssetDatabase.Refresh();
                 }
 
+                {
+                    EditorBuildSettingsScene[] scenes = EditorBuildSettings.scenes;
+
+                    foreach (var scene in scenes)
+                    {
+                        if (!scene.enabled)
+                            continue;
+
+                        string path = scene.path;
+
+                        if (string.IsNullOrEmpty(path))
+                            continue;
+
+                        AssetImporter importer = AssetImporter.GetAtPath(path);
+                        if (importer != null)
+                        {
+                            importer.SetAssetBundleNameAndVariant(modName + "_scenes", "");
+                        }
+                    }
+                }
+
                 //HACK for unique id
                 AssetImporter.GetAtPath("Assets/Resources").SetAssetBundleNameAndVariant(modName + "_resources", "");
 
@@ -357,6 +378,7 @@ public class ModBuilder : EditorWindow
                 dataAsset = dataAsset.Remove(index, PATH_TO_ASSETS.Length);
 
                 CopyBundle(dataAsset, modResFolder, modName + "_resources");
+                CopyBundle(dataAsset, modResFolder, modName + "_scenes");
 
                 if (buildLevelBundle)
                 {
