@@ -44,9 +44,21 @@
       "civicsociety" : "citizen", 
       "inventory" : [ 
       ], 
+      "weapon" : { 
+         "class" : "Weapon", 
+         "count" : "1", 
+         "proto" : "RN_Bow_ArmyLongbow"
+      }, 
+      "quiver" : { 
+         "class" : "Ammo", 
+         "count" : "20", 
+         "proto" : "Ammo_0_Copper_Arrow"
+      }, 
       "quickpanel" : { 
       }, 
       "quickpanelmainindex" : "0", 
+      "hair" : "Girl_PonyTail", 
+      "hairColor" : "Brown", 
       "constitution_fat" : "0.5", 
       "constitution_height" : "0.5", 
       "constitution_strength" : "0.5", 
@@ -69,13 +81,13 @@
       "name" : "Liris", 
       "transform" : { 
          "pos" : [ 
-            "25.52167", 
+            "28.22", 
             "0", 
-            "17.94702"
+            "27.23"
          ], 
          "rot" : [ 
             "0", 
-            "90", 
+            "0", 
             "0"
          ], 
          "scale" : [ 

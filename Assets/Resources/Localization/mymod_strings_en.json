@@ -1,5 +1,11 @@
 {
-	"debug" : {
-		"ver" : "MyMod Example"
+   "character" : { 
+      "liris" : { 
+         "short" : "Young Woman", 
+         "full" : "Liris Fenbrook"
+      }
+	},
+    "location" : { 
+      "test_scene" : "Mod Ruins"
 	}
 }

@@ -130,10 +130,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2061206539460859590, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061206539460859590, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.521673
+      value: 28.22
       objectReference: {fileID: 0}
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
@@ -143,12 +153,12 @@ PrefabInstance:
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.947021
+      value: 27.23
       objectReference: {fileID: 0}
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
@@ -158,7 +168,7 @@ PrefabInstance:
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
@@ -173,7 +183,7 @@ PrefabInstance:
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
@@ -195,7 +205,9 @@ PrefabInstance:
       propertyPath: mEntityData
       value: '{"class":"Character", "proto":"Liris", "character":"Liris", "damage":"0",
         "ap":"0", "relationship":"100", "civicsociety":"citizen", "inventory":[ 
-        ], "quickpanel":{}, "quickpanelmainindex":"0", "constitution_fat":"0.5",
+        ], "weapon":{"class":"Weapon", "count":"1", "proto":"RN_Bow_ArmyLongbow"},
+        "quiver":{"class":"Ammo", "count":"20", "proto":"Ammo_0_Copper_Arrow"}, "quickpanel":{},
+        "quickpanelmainindex":"0", "hair":"Girl_PonyTail", "hairColor":"Brown", "constitution_fat":"0.5",
         "constitution_height":"0.5", "constitution_strength":"0.5", "status_effects":[
         {"type":"44", "turns_left":"0", "cooldowns":[  ]}, {"type":"47", "turns_left":"0",
         "configuration":{"lastRestTime":"0"}} ], "lastRoudTime":"0"}'
