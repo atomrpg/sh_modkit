@@ -1,0 +1,13 @@
+{ 
+   "files" : [ 
+      "Test_Scene_Logic"
+   ], 
+   "Test_Scene_Logic" : { 
+      "initialList" : [ 
+         "TestChest", 
+         "Liris"
+      ], 
+      "levelName" : "Test_Scene", 
+      "levelId" : "test_scene"
+   }
+}

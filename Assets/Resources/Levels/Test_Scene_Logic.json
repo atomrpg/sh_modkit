@@ -1,0 +1,88 @@
+[ 
+   { 
+      "class" : "Chest", 
+      "active" : "true", 
+      "proto" : "CrateWood_4", 
+      "inventory" : [ 
+      ], 
+      "open" : "false", 
+      "touch" : "false", 
+      "lockLevel" : "0", 
+      "minDiceThrow" : "0", 
+      "isAttempted" : "false", 
+      "name" : "TestChest", 
+      "transform" : { 
+         "pos" : [ 
+            "24.59", 
+            "0", 
+            "22.27"
+         ], 
+         "rot" : [ 
+            "0", 
+            "0", 
+            "0"
+         ], 
+         "scale" : [ 
+            "1", 
+            "1", 
+            "1"
+         ]
+      }
+   }, 
+   { 
+      "projectileRemains" : { 
+         "list" : [ 
+         ]
+      }, 
+      "class" : "Character", 
+      "active" : "true", 
+      "proto" : "Liris", 
+      "character" : "Liris", 
+      "damage" : "0", 
+      "ap" : "0", 
+      "relationship" : "100", 
+      "civicsociety" : "citizen", 
+      "inventory" : [ 
+      ], 
+      "quickpanel" : { 
+      }, 
+      "quickpanelmainindex" : "0", 
+      "constitution_fat" : "0.5", 
+      "constitution_height" : "0.5", 
+      "constitution_strength" : "0.5", 
+      "status_effects" : [ 
+         { 
+            "type" : "44", 
+            "turns_left" : "0", 
+            "cooldowns" : [ 
+            ]
+         }, 
+         { 
+            "type" : "47", 
+            "turns_left" : "0", 
+            "configuration" : { 
+               "lastRestTime" : "0"
+            }
+         }
+      ], 
+      "lastRoudTime" : "0", 
+      "name" : "Liris", 
+      "transform" : { 
+         "pos" : [ 
+            "25.52167", 
+            "0", 
+            "17.94702"
+         ], 
+         "rot" : [ 
+            "0", 
+            "90", 
+            "0"
+         ], 
+         "scale" : [ 
+            "1", 
+            "1", 
+            "1"
+         ]
+      }
+   }
+]
