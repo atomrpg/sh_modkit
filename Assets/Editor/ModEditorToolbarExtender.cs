@@ -41,17 +41,28 @@ public class ModEditorToolbarExtender
         GUILayout.EndHorizontal();
     }
 
+    static string GetModeName()
+    {
+        return typeof(ModEntryPoint).Assembly.GetName().Name;
+    }
+
     static void OnToolbarRightGUI()
     {
         GUILayout.BeginHorizontal();
 
         if (GUILayout.Button(saveEntitesContent, EditorStyles.toolbarButton))
         {
-            GameEditor.SaveLevel();
+            GameEditor.SaveLevel(GetModeName());
         }
 
         GUILayout.Space(20);
 
         GUILayout.EndHorizontal();
+    }
+
+    [MenuItem("Game/Save Logic (Entities)")]
+    public static void SaveLogicLevel()
+    {
+        GameEditor.SaveLevel("Info/" + GetModeName() + "_");
     }
 }
