@@ -32,7 +32,8 @@ public class ModEntryPoint : MonoBehaviour // ModEntryPoint - RESERVED LOOKUP NA
 #if UNITY_EDITOR
         // skip bundle loading in PIE mode
 #else
-        ResourceManager.AddBundle(modName, AssetBundle.LoadFromFile(dir + "/" + modName + "_resources"));
+        ResourceManager.AddBundle(modName + "_resources", AssetBundle.LoadFromFile(dir + "/" + modName + "_resources"));
+        ResourceManager.AddBundle(modName + "_scenes", AssetBundle.LoadFromFile(dir + "/" + modName + "_scenes"));
 #if SUPPORT_LEVEL_BUNDLE
         AssetBundle assetBundle = AssetBundle.LoadFromFile(dir + "/" + modName);
         if (assetBundle != null)

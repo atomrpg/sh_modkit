@@ -116,7 +116,7 @@ public class PlayInEditor : MonoBehaviour
 
         foreach (string f in Directory.GetFiles(path, "*.bundle", SearchOption.AllDirectories))
         {
-            if (Path.GetExtension(f) == ".bundle")
+            if (Path.GetExtension(f) == ".bundle" /*&& !Path.GetFileName(f).StartsWith("scene_", System.StringComparison.OrdinalIgnoreCase)*/)
             {
                 AssetBundle bundle = AssetBundle.LoadFromFile(f);
                 ResourceManager.AddBundle(bundle.name, bundle);
