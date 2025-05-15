@@ -6,7 +6,7 @@
       }, 
       "class" : "Character", 
       "active" : "true", 
-      "proto" : "basemale_1_a", 
+      "proto" : "BaseMale_1_A", 
       "character" : "mod_bandittest1", 
       "damage" : "0", 
       "ap" : "0", 
@@ -18,7 +18,7 @@
       "weapon" : { 
          "class" : "Weapon", 
          "count" : "1", 
-         "proto" : "am_axe_sluriamaxe"
+         "proto" : "AM_Axe_SluriamAxe"
       }, 
       "quickpanel" : { 
       }, 
@@ -68,7 +68,7 @@
       }, 
       "class" : "Character", 
       "active" : "true", 
-      "proto" : "basemale_1_b3", 
+      "proto" : "BaseMale_1_B3", 
       "character" : "mod_bandittest2", 
       "damage" : "0", 
       "ap" : "0", 
@@ -80,12 +80,12 @@
       "weapon" : { 
          "class" : "Weapon", 
          "count" : "1", 
-         "proto" : "am_mace_stick"
+         "proto" : "AM_Mace_Stick"
       }, 
       "quickpanel" : { 
          "1" : { 
             "class" : "WeaponTechnique", 
-            "proto" : "am_1_2_kneecap"
+            "proto" : "AM_1_2_Kneecap"
          }
       }, 
       "quickpanelmainindex" : "0", 
@@ -134,7 +134,7 @@
       }, 
       "class" : "Character", 
       "active" : "true", 
-      "proto" : "basemale_1_b4", 
+      "proto" : "BaseMale_1_B4", 
       "character" : "mod_bandittest3", 
       "damage" : "0", 
       "ap" : "0", 
@@ -145,13 +145,13 @@
          { 
             "class" : "Item", 
             "count" : "1", 
-            "proto" : "tr2_jadestatuette"
+            "proto" : "Tr2_JadeStatuette"
          }
       ], 
       "weapon" : { 
          "class" : "Weapon", 
          "count" : "1", 
-         "proto" : "sh_spear_dullspear"
+         "proto" : "SH_Spear_DullSpear"
       }, 
       "quickpanel" : { 
       }, 
@@ -201,7 +201,7 @@
       }, 
       "class" : "Character", 
       "active" : "true", 
-      "proto" : "basemale_1_b4", 
+      "proto" : "BaseMale_1_B4", 
       "character" : "mod_bandittest4", 
       "damage" : "0", 
       "ap" : "0", 
@@ -213,16 +213,16 @@
       "weapon" : { 
          "class" : "Weapon", 
          "count" : "1", 
-         "proto" : "bl_dagg_knife"
+         "proto" : "BL_Dagg_Knife"
       }, 
       "quickpanel" : { 
          "1" : { 
             "class" : "WeaponTechnique", 
-            "proto" : "bl1_2_puncture"
+            "proto" : "BL1_2_Puncture"
          }, 
          "2" : { 
             "class" : "WeaponTechnique", 
-            "proto" : "bl1_1_out_for_blood"
+            "proto" : "BL1_1_Out_For_Blood"
          }
       }, 
       "quickpanelmainindex" : "0", 
@@ -271,7 +271,7 @@
       }, 
       "class" : "Character", 
       "active" : "true", 
-      "proto" : "basemale_1_b", 
+      "proto" : "BaseMale_1_B", 
       "character" : "mod_banditboss", 
       "damage" : "0", 
       "ap" : "0", 
@@ -298,12 +298,12 @@
       "quickpanel" : { 
          "1" : { 
             "class" : "WeaponTechnique", 
-            "proto" : "bl2_3_double_trouble"
+            "proto" : "BL2_3_Double_Trouble"
          }, 
          "2" : { 
             "class" : "Consumable", 
             "count" : "4", 
-            "proto" : "nocraft_med_healing_salve"
+            "proto" : "NoCraft_Med_Healing_Salve"
          }
       }, 
       "quickpanelmainindex" : "0", 
@@ -352,7 +352,7 @@
       }, 
       "class" : "Character", 
       "active" : "true", 
-      "proto" : "basemale_1_a", 
+      "proto" : "BaseMale_1_A", 
       "character" : "mod_bandittest5", 
       "damage" : "0", 
       "ap" : "0", 
@@ -364,17 +364,17 @@
       "weapon" : { 
          "class" : "Weapon", 
          "count" : "1", 
-         "proto" : "k_fist_caestus"
+         "proto" : "K_Fist_Caestus"
       }, 
       "jacket" : { 
          "class" : "Jacket", 
          "count" : "1", 
-         "proto" : "leather_jacket"
+         "proto" : "Leather_Jacket"
       }, 
       "quickpanel" : { 
          "1" : { 
             "class" : "WeaponTechnique", 
-            "proto" : "k2_1noseburster"
+            "proto" : "K2_1NoseBurster"
          }
       }, 
       "quickpanelmainindex" : "0", 
