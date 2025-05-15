@@ -468,10 +468,14 @@
       }, 
       "quiver" : { 
          "class" : "Ammo", 
-         "count" : "20", 
+         "count" : "35", 
          "proto" : "Ammo_0_Copper_Arrow"
       }, 
       "quickpanel" : { 
+         "1" : { 
+            "class" : "WeaponTechnique", 
+            "proto" : "mod_liris_technique"
+         }
       }, 
       "quickpanelmainindex" : "0", 
       "hair" : "Girl_PonyTail", 

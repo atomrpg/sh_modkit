@@ -44,9 +44,9 @@ MonoBehaviour:
   Stats:
     _modifiers:
     - _type: 25
-      _value: -30
-    Level: 1
-    ExperiencePoints: 5
+      _value: 15
+    Level: 2
+    ExperiencePoints: 20
     Strength: 4
     Attention: 5
     Endurance: 5
@@ -56,21 +56,21 @@ MonoBehaviour:
     Luck: 5
     _perks: []
     skillsBonus:
-      MartialArts: 0
-      BladedWeapons: 0
-      AxesMaces: 0
-      SpearsHalberds: 5
-      RangedWeapons: 0
-      Intimidation: 0
-      Persuasion: 0
-      Bluff: 0
-      Haggling: 0
-      Outdoorsmanship: 0
-      Stealth: 5
-      Lockpicking: 0
-      Pickpocketing: 0
-      Crafting: 5
-      Medicine: 5
+      MartialArts: 42
+      BladedWeapons: 50
+      AxesMaces: 28
+      SpearsHalberds: 19
+      RangedWeapons: 91
+      Intimidation: 18
+      Persuasion: 40
+      Bluff: 23
+      Haggling: 98
+      Outdoorsmanship: 101
+      Stealth: 92
+      Lockpicking: 60
+      Pickpocketing: 50
+      Crafting: 40
+      Medicine: 60
     FreeSkillPoints: 0
     FreeStatPoints: 0
     FreeSpecPoints: 0

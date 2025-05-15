@@ -1,4 +1,9 @@
 {
+   "perks" : { 
+      "mod_liris_technique" : { 
+         "short" : "Lacerating Arrowfall", 
+         "full" : "Fire several arrows at once, while holding the bow in a way that will spin them in the air, adding a 30% chance to cause bleeding or even blind the target on a successful shot! A family technique taught to Liris Fenbrook by her missing father long ago..."
+      },
    "character" : { 
       "liris" : { 
          "short" : "Young Woman", 

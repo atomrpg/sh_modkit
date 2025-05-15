@@ -260,8 +260,9 @@ PrefabInstance:
       value: '{"class":"Character", "proto":"Liris", "character":"Liris", "damage":"0",
         "ap":"0", "relationship":"100", "civicsociety":"citizen", "inventory":[ 
         ], "weapon":{"class":"Weapon", "count":"1", "proto":"MOD_Bow_1"}, "quiver":{"class":"Ammo",
-        "count":"20", "proto":"Ammo_0_Copper_Arrow"}, "quickpanel":{}, "quickpanelmainindex":"0",
-        "hair":"Girl_PonyTail", "hairColor":"Brown", "constitution_fat":"0.5", "constitution_height":"0.5",
+        "count":"35", "proto":"Ammo_0_Copper_Arrow"}, "quickpanel":{"1":{"class":"WeaponTechnique",
+        "proto":"mod_liris_technique"}}, "quickpanelmainindex":"0", "hair":"Girl_PonyTail",
+        "hairColor":"Brown", "constitution_fat":"0.5", "constitution_height":"0.5",
         "constitution_strength":"0.5", "status_effects":[ {"type":"44", "turns_left":"0",
         "cooldowns":[  ]}, {"type":"47", "turns_left":"0", "configuration":{"lastRestTime":"0"}}
         ], "lastRoudTime":"0"}'
