@@ -92,10 +92,20 @@ public class ModBuilder : EditorWindow
 
     void OnSubmitItemUpdateResult(SubmitItemUpdateResult_t pCallback, bool bIOFailure)
     {
-        string msg = "[" + SubmitItemUpdateResult_t.k_iCallback + " - SubmitItemUpdateResult] - " + pCallback.m_eResult + " -- " + pCallback.m_bUserNeedsToAcceptWorkshopLegalAgreement + " -- " + pCallback.m_nPublishedFileId;
-        Debug.Log(msg);
-        EditorUtility.DisplayDialog("Info", msg, "OK");
+        string readableResult = pCallback.m_eResult.ToString();
+        string legalAgreementNeeded = pCallback.m_bUserNeedsToAcceptWorkshopLegalAgreement ? "Yes" : "No";
+        string fileId = pCallback.m_nPublishedFileId.ToString();
+
+        string msg =
+            "Workshop item update completed.\n\n" +
+            $"• Result: {readableResult}\n" +
+            $"• Requires Legal Agreement: {legalAgreementNeeded}\n" +
+            $"• File ID: {fileId}";
+
+        Debug.Log($"[SubmitItemUpdateResult] Result={readableResult}, LegalAgreement={legalAgreementNeeded}, FileID={fileId}");
+        EditorUtility.DisplayDialog("Workshop Update", msg, "OK");
     }
+
 
     void OnCreateItemResult(CreateItemResult_t pCallback, bool bIOFailure)
     {
@@ -108,7 +118,6 @@ public class ModBuilder : EditorWindow
         _modList.Add(details);
         _modIndex = _modList.Count - 1;
     }
-
 
     void OnSteamUGCQueryCompleted(SteamUGCQueryCompleted_t pCallback, bool bIOFailure)
     {
