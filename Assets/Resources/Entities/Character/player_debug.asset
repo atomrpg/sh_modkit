@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 395181009, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
-  m_Name: mod_banditboss
+  m_Name: player_debug
   m_EditorClassIdentifier: 
   Icon:
-    path: Entities/Character/Barbarian1
-  m_Localization: character.mod_banditboss
+    path: 
+  m_Localization: character.player_debug
   Takeable: 1
   MultifaceProto:
     path: 
   aiBehavior: 0
   aiBehaviorTree:
     path: Entities/AI/AI.Default
-  nationality: 1
+  nationality: 0
   Dialog:
     path: 
   HallucinationDialog:
-    path: Entities/Dialog/HallucinationDialogDefault
+    path: 
   OnPocket:
-    path: Entities/Behavior/Human.Loot
+    path: 
   OnRedhand:
-    path: Entities/Behavior/Redhanded.Default
+    path: 
   ViewAngle: 60
   TalkAddDist: 0
   StoreStats: 1
@@ -38,39 +38,40 @@ MonoBehaviour:
   overrideAnimAvatarName: 
   AcceptingRestrictions:
     _flags: 5
-  specialtyMask: 32
+  specialtyMask: 0
   SkillPerks:
-    path: 
+    path: Entities/Perks/SkillPerks/Trees/PlayerSkillPerkTree
   Stats:
     _modifiers:
-    - _type: 24
-      _value: -3
-    Level: 2
-    ExperiencePoints: 32
-    Strength: 5
-    Attention: 2
-    Endurance: 7
-    Personality: 1
-    Intellect: 7
-    Dexterity: 5
-    Luck: 4
-    _perks: []
+    - _type: 26
+      _value: 8000
+    Level: 4
+    ExperiencePoints: 1
+    Strength: 6
+    Attention: 6
+    Endurance: 6
+    Personality: 5
+    Intellect: 5
+    Dexterity: 6
+    Luck: 5
+    _perks:
+    - path: Entities/Perks/Backgrounds/Adventurer
     skillsBonus:
-      MartialArts: 85
-      BladedWeapons: 85
-      AxesMaces: 70
-      SpearsHalberds: 70
-      RangedWeapons: 70
+      MartialArts: 80
+      BladedWeapons: 80
+      AxesMaces: 80
+      SpearsHalberds: 80
+      RangedWeapons: 80
       Intimidation: 0
       Persuasion: 0
       Bluff: 0
       Haggling: 0
-      Outdoorsmanship: 0
-      Stealth: 0
+      Outdoorsmanship: 90
+      Stealth: 90
       Lockpicking: 0
       Pickpocketing: 0
-      Crafting: 0
-      Medicine: 0
-    FreeSkillPoints: 0
-    FreeStatPoints: 0
-    FreeSpecPoints: 0
+      Crafting: 90
+      Medicine: 90
+    FreeSkillPoints: 5
+    FreeStatPoints: 5
+    FreeSpecPoints: 5

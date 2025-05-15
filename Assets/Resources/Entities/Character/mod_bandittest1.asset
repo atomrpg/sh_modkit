@@ -54,11 +54,11 @@ MonoBehaviour:
     Luck: 5
     _perks: []
     skillsBonus:
-      MartialArts: 70
-      BladedWeapons: 70
-      AxesMaces: 70
-      SpearsHalberds: 70
-      RangedWeapons: 70
+      MartialArts: 50
+      BladedWeapons: 50
+      AxesMaces: 50
+      SpearsHalberds: 50
+      RangedWeapons: 50
       Intimidation: 0
       Persuasion: 0
       Bluff: 0

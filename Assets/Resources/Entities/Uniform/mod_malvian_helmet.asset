@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon:
     path: Entities/Uniform/HELM_Craft_2_Iron_Helmet
-  m_Localization: uniform.helm_craft_2_iron_helmet
+  m_Localization: uniform.mod_malvian_helmet
   Takeable: 1
   UISounds:
     path: Entities/Sound/Items/IronHelm
