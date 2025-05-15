@@ -545,6 +545,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8193915145911938230}
+    - targetCorrespondingSourceObject: {fileID: 635547659545568360, guid: a6f06c9fd9886054a8587d08cfe9682f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6039006783021576409}
     - targetCorrespondingSourceObject: {fileID: 1082271958561512970, guid: a6f06c9fd9886054a8587d08cfe9682f,
         type: 3}
       insertIndex: -1
@@ -709,6 +713,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 887409346362590606}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &324643056966345190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 635547659545568360, guid: a6f06c9fd9886054a8587d08cfe9682f,
+    type: 3}
+  m_PrefabInstance: {fileID: 887409346362590606}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6039006783021576409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324643056966345190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1225809204, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - path: Models/Skins/Female_1_Body
+  rendererProxy: {fileID: 1941343335620483292}
 --- !u!4 &667760320619582945 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 366175167995203695, guid: a6f06c9fd9886054a8587d08cfe9682f,
@@ -724,6 +749,12 @@ Transform:
 --- !u!4 &1577696738090039878 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1852576806548013000, guid: a6f06c9fd9886054a8587d08cfe9682f,
+    type: 3}
+  m_PrefabInstance: {fileID: 887409346362590606}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1941343335620483292 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1630794972795428178, guid: a6f06c9fd9886054a8587d08cfe9682f,
     type: 3}
   m_PrefabInstance: {fileID: 887409346362590606}
   m_PrefabAsset: {fileID: 0}
@@ -826,7 +857,7 @@ PrefabInstance:
     - target: {fileID: 6812113499975502616, guid: 621da6357420014408f754d6f5e8cef6,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.0999994
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 6812113499975502616, guid: 621da6357420014408f754d6f5e8cef6,
         type: 3}
@@ -836,7 +867,7 @@ PrefabInstance:
     - target: {fileID: 6812113499975502616, guid: 621da6357420014408f754d6f5e8cef6,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.0999994
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 6812113499975502616, guid: 621da6357420014408f754d6f5e8cef6,
         type: 3}
