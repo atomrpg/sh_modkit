@@ -4,6 +4,11 @@
          "short" : "Lacerating Arrowfall", 
          "full" : "Fire several arrows at once, while holding the bow in a way that will spin them in the air, adding a 30% chance to cause bleeding or even blind the target on a successful shot! A family technique taught to Liris Fenbrook by her missing father long ago..."
       },
+   "item" : { 
+      "mod_stone_of_arkham" : { 
+         "short" : "Stone of Arkham", 
+         "full" : "A warped gem of uncertain origin. It hums with a quiet sorrow, like something that remembers being part of a greater whole. The longer you look, the more you feel its loneliness creeping into your very soul.\n'One day the Hyades shall sing, their chorus welcoming the King...'"
+      },
    "character" : { 
       "liris" : { 
          "short" : "Young Woman", 
