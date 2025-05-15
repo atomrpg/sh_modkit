@@ -4,7 +4,12 @@
    ], 
    "Test_Scene_Logic" : { 
       "initialList" : [ 
-         "Bandit", 
+         "Bandit_Standby", 
+         "Bandit_Standby_2", 
+         "Bandit_PatrolWalker", 
+         "Bandit_PatrolWalker_2", 
+         "Bandit_Boss", 
+         "Bandit_Bossbodyguard", 
          "TestChest", 
          "Liris"
       ], 

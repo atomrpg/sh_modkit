@@ -5,17 +5,53 @@
          "full" : "Liris Fenbrook"
       },
       "mod_bandittest1" : { 
-         "short" : "Evil Bandit", 
-         "full" : "Evil Bandit"
-      }	 
+         "short" : "Ruffian", 
+         "full" : "Ruffian"
+      },
+      "mod_bandittest2" : { 
+         "short" : "Ruffian", 
+         "full" : "Ruffian"
+      },
+      "mod_bandittest3" : { 
+         "short" : "Ruffian", 
+         "full" : "Ruffian"
+      },
+      "mod_bandittest4" : { 
+         "short" : "Ruffian", 
+         "full" : "Ruffian"
+      },
+      "mod_bandittest5" : { 
+         "short" : "Ruffian", 
+         "full" : "Ruffian"
+      },
+      "mod_banditboss" : { 
+         "short" : "Velocraqsis of Maļvia", 
+         "full" : "Velocraqsis of Maļvia"
+      },	
 	},   
 	"weapon" : { 
       "mod_bow_1" : { 
          "short" : "Liris' Longbow", 
-         "full" : "Liris' Longbow"
-      }
+         "full" : "A cunning warbow crafted by skilled hands. The shape and the extraordinarily nimble wood of the piece allow it to be drawn fully even by the untrained. A short, but sweet dedication is etched into the redwood handle: 'To my sweet Liris, from papa. May you live a lifetime so care-free, you'll only end up using it to knock down apples at our orchard.'"
+      },
+      "mod_banditsword" : { 
+         "short" : "Disdain", 
+         "full" : "Some say every warrior brings a certain emotion into battle—cruel or righteous, twisted or noble. So it’s no surprise the arrogant bandit chief you slew had one too. But why did he burn its name into the hilt of this finely wrought, yet unmistakably wicked blade so proudly..? And what does it mean that you are now the one who carries it?"
+      },
+	  
 	},
     "location" : { 
-      "test_scene" : "Mod Ruins"
-	}
+      "test_scene" : "Burnt-down Cabin"
+	},
+	
+   "uniform" : { 
+      "mod_malvian_breastplate" : { 
+         "short" : "Maļvian Breastplate", 
+         "full" : "A breastplate shaped like a powerfully built male torso, that comes from the far-off land of Maļvia, which was an empire in its own right years ago, and is still respected as the birthplace of philosophy, medicine and engineering... Especially by its modern-day inhabitants.\nThe armour represents what was seen as classical male beauty by the ancient Maļvians, though only a rare soldier actually looked similar under his protective shell... Which is probably why the land of scholars could not fend off the conquesting hordes of the current ruling dynasty for long."
+      },
+      "mod_malvian_helmet" : { 
+         "short" : "Ancient Maļvian Helmet", 
+         "full": "Forged in a long-faded era, when Maļvia stood as a cradle of high civilization, these helmets were crafted from black bronze and crowned with dyed horsehair. Their silhouette is iconic—instantly recognizable—though few in the modern age have ever seen one in person, just through book illustrations. So how did a mere bandit chief come to possess one in such pristine condition..?"
+      },
+	  
 }

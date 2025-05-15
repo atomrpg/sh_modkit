@@ -10,42 +10,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1397509372, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
-  m_Name: MOD_Bow_1
+  m_Name: mod_banditsword
   m_EditorClassIdentifier: 
   Icon:
-    path: Entities/Weapon/RN_Bow_ArmyLongbow
-  m_Localization: weapon.mod_bow_1
+    path: Entities/Weapon/BL_Swd_Old_Sword
+  m_Localization: weapon.mod_banditsword
   Takeable: 1
   UISounds:
-    path: Entities/Sound/Items/Bow
-  Cost: 122
-  Weight: 1500
+    path: Entities/Sound/Items/Swords
+  Cost: 221
+  Weight: 3000
   ItemPerks: 0
   LegalTrade: 1
   Collectable: 1
   TradeMode: 0
   TradeModeNames: []
-  Modifiers: []
+  Modifiers:
+  - _type: 27
+    _value: 10
   HasModel: 1
-  weaponQuality: 3
-  weaponType: 11
-  Skill: 4
-  Ammo: 1
-  Attachments: 98
+  weaponQuality: 6
+  weaponType: 3
+  Skill: 1
+  Ammo: 0
+  Attachments: 37
   Stack: 0
-  DamageMin: 0
-  DamageMax: 10
+  DamageMin: 4
+  DamageMax: 12
   DamagePierce: 0
   DamageRadius: 1
   Fatality: 0
   AnimationOverrideList:
-    path: 
+    path: Animations/WeaponSlash
   HitSounds:
-    path: Entities/Sound/WeaponHit/Bow
+    path: Entities/Sound/WeaponHit/Sword
   DamageType: 0
   Single:
-    AP: 8
-    Range: 20
+    AP: 11
+    Range: 2
     Sounds: []
   NoAmmoSounds: []
   UnloadSounds: []

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 395181009, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
-  m_Name: mod_bandittest1
+  m_Name: mod_bandittest2
   m_EditorClassIdentifier: 
   Icon:
     path: Entities/Character/Barbarian1
-  m_Localization: character.mod_bandittest1
+  m_Localization: character.mod_bandittest2
   Takeable: 1
   MultifaceProto:
     path: 
@@ -45,20 +45,20 @@ MonoBehaviour:
     _modifiers: []
     Level: 1
     ExperiencePoints: 18
-    Strength: 4
-    Attention: 2
-    Endurance: 6
+    Strength: 5
+    Attention: 4
+    Endurance: 8
     Personality: 4
     Intellect: 3
-    Dexterity: 4
-    Luck: 5
+    Dexterity: 2
+    Luck: 11
     _perks: []
     skillsBonus:
-      MartialArts: 70
-      BladedWeapons: 70
-      AxesMaces: 70
-      SpearsHalberds: 70
-      RangedWeapons: 70
+      MartialArts: 60
+      BladedWeapons: 60
+      AxesMaces: 60
+      SpearsHalberds: 60
+      RangedWeapons: 60
       Intimidation: 0
       Persuasion: 0
       Bluff: 0

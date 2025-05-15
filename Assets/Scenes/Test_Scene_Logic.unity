@@ -122,6 +122,60 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &284278303
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 284278305}
+  - component: {fileID: 284278304}
+  m_Layer: 0
+  m_Name: Bandit_Bossbodyguard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &284278304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284278303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1423921309, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mEntityData: '{"class":"Character", "proto":"basemale_1_a", "character":"mod_bandittest5",
+    "damage":"0", "ap":"0", "relationship":"0", "fraction":"bandits_bodyguard", "civicsociety":"enemy",
+    "inventory":[  ], "weapon":{"class":"Weapon", "count":"1", "proto":"k_fist_caestus"},
+    "jacket":{"class":"Jacket", "count":"1", "proto":"leather_jacket"}, "quickpanel":{"1":{"class":"WeaponTechnique",
+    "proto":"k2_1noseburster"}}, "quickpanelmainindex":"0", "constitution_fat":"0.5",
+    "constitution_height":"0.5", "constitution_strength":"0.5", "status_effects":[
+    {"type":"44", "turns_left":"0", "cooldowns":[  ]}, {"type":"47", "turns_left":"0",
+    "configuration":{"lastRestTime":"0"}} ], "lastRoudTime":"0"}'
+  _agentRadius: 0.7
+  _agentHeight: 4.5
+--- !u!4 &284278305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284278303}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 58.195976, y: 0, z: 33.47441}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &433740420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -143,12 +197,12 @@ PrefabInstance:
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.22
+      value: 19.611057
       objectReference: {fileID: 0}
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
@@ -217,6 +271,60 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b7c0992c23f61e42993bd4e82c7a7ba, type: 3}
+--- !u!1 &652968038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 652968040}
+  - component: {fileID: 652968039}
+  m_Layer: 0
+  m_Name: Bandit_PatrolWalker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &652968039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652968038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1423921309, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mEntityData: '{"class":"Character", "proto":"basemale_1_b4", "character":"mod_bandittest3",
+    "damage":"0", "ap":"0", "relationship":"0", "fraction":"bandits_patrolwalker",
+    "civicsociety":"enemy", "inventory":[ {"class":"Item", "count":"1", "proto":"tr2_jadestatuette"}
+    ], "weapon":{"class":"Weapon", "count":"1", "proto":"sh_spear_dullspear"}, "quickpanel":{},
+    "quickpanelmainindex":"0", "constitution_fat":"0.5", "constitution_height":"0.5",
+    "constitution_strength":"0.5", "status_effects":[ {"type":"44", "turns_left":"0",
+    "cooldowns":[  ]}, {"type":"47", "turns_left":"0", "configuration":{"lastRestTime":"0"}}
+    ], "lastRoudTime":"0"}'
+  _agentRadius: 0.7
+  _agentHeight: 4.5
+--- !u!4 &652968040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652968038}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 29.226862, y: -0.000015258789, z: 52.704803}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &752526359
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,7 +382,7 @@ GameObject:
   - component: {fileID: 954611485}
   - component: {fileID: 954611484}
   m_Layer: 0
-  m_Name: Bandit
+  m_Name: Bandit_Standby
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -292,9 +400,9 @@ MonoBehaviour:
   m_Script: {fileID: 1423921309, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mEntityData: '{"class":"Character", "proto":"BaseMale_1_A", "character":"mod_bandittest1",
-    "damage":"0", "ap":"0", "relationship":"0", "fraction":"bandits", "civicsociety":"enemy",
-    "inventory":[  ], "weapon":{"class":"Weapon", "count":"1", "proto":"MOD_Bow_1"},
+  mEntityData: '{"class":"Character", "proto":"basemale_1_a", "character":"mod_bandittest1",
+    "damage":"0", "ap":"0", "relationship":"0", "fraction":"bandits_duo", "civicsociety":"enemy",
+    "inventory":[  ], "weapon":{"class":"Weapon", "count":"1", "proto":"am_axe_sluriamaxe"},
     "quickpanel":{}, "quickpanelmainindex":"0", "constitution_fat":"0.5", "constitution_height":"0.5",
     "constitution_strength":"0.5", "status_effects":[ {"type":"44", "turns_left":"0",
     "cooldowns":[  ]}, {"type":"47", "turns_left":"0", "configuration":{"lastRestTime":"0"}}
@@ -310,7 +418,170 @@ Transform:
   m_GameObject: {fileID: 954611483}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 25.259584, y: 0, z: 19.29}
+  m_LocalPosition: {x: 28.9, y: 0, z: 39.42235}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1078497981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1078497983}
+  - component: {fileID: 1078497982}
+  m_Layer: 0
+  m_Name: Bandit_Standby_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1078497982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078497981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1423921309, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mEntityData: '{"class":"Character", "proto":"basemale_1_b3", "character":"mod_bandittest2",
+    "damage":"0", "ap":"0", "relationship":"0", "fraction":"bandits_duo", "civicsociety":"enemy",
+    "inventory":[  ], "weapon":{"class":"Weapon", "count":"1", "proto":"am_mace_stick"},
+    "quickpanel":{"1":{"class":"WeaponTechnique", "proto":"am_1_2_kneecap"}}, "quickpanelmainindex":"0",
+    "constitution_fat":"0.5", "constitution_height":"0.5", "constitution_strength":"0.5",
+    "status_effects":[ {"type":"44", "turns_left":"0", "cooldowns":[  ]}, {"type":"47",
+    "turns_left":"0", "configuration":{"lastRestTime":"0"}} ], "lastRoudTime":"0"}'
+  _agentRadius: 0.7
+  _agentHeight: 4.5
+--- !u!4 &1078497983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078497981}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 29.037222, y: -0.000015258789, z: 30.341248}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1147442927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1147442929}
+  - component: {fileID: 1147442928}
+  m_Layer: 0
+  m_Name: Bandit_Boss
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1147442928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147442927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1423921309, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mEntityData: '{"class":"Character", "proto":"basemale_1_b", "character":"mod_banditboss",
+    "damage":"0", "ap":"0", "relationship":"0", "fraction":"bandits_bossgang", "civicsociety":"enemy",
+    "inventory":[  ], "weapon":{"class":"Weapon", "count":"1", "proto":"mod_banditsword"},
+    "cap":{"class":"Cap", "count":"1", "proto":"mod_malvian_helmet"}, "armor":{"class":"Armor",
+    "count":"1", "proto":"mod_malvian_breastplate"}, "quickpanel":{"1":{"class":"WeaponTechnique",
+    "proto":"bl2_3_double_trouble"}, "2":{"class":"Consumable", "count":"4", "proto":"nocraft_med_healing_salve"}},
+    "quickpanelmainindex":"0", "constitution_fat":"0.5", "constitution_height":"0.5",
+    "constitution_strength":"0.5", "status_effects":[ {"type":"44", "turns_left":"0",
+    "cooldowns":[  ]}, {"type":"47", "turns_left":"0", "configuration":{"lastRestTime":"0"}}
+    ], "lastRoudTime":"0"}'
+  _agentRadius: 0.7
+  _agentHeight: 4.5
+--- !u!4 &1147442929
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147442927}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 56.63674, y: -0.000015258789, z: 41.035385}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1709448480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1709448482}
+  - component: {fileID: 1709448481}
+  m_Layer: 0
+  m_Name: Bandit_PatrolWalker_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1709448481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709448480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1423921309, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mEntityData: '{"class":"Character", "proto":"basemale_1_b4", "character":"mod_bandittest4",
+    "damage":"0", "ap":"0", "relationship":"0", "fraction":"bandits_patrolwalker",
+    "civicsociety":"enemy", "inventory":[  ], "weapon":{"class":"Weapon", "count":"1",
+    "proto":"bl_dagg_knife"}, "quickpanel":{"1":{"class":"WeaponTechnique", "proto":"bl1_2_puncture"},
+    "2":{"class":"WeaponTechnique", "proto":"bl1_1_out_for_blood"}}, "quickpanelmainindex":"0",
+    "constitution_fat":"0.5", "constitution_height":"0.5", "constitution_strength":"0.5",
+    "status_effects":[ {"type":"44", "turns_left":"0", "cooldowns":[  ]}, {"type":"47",
+    "turns_left":"0", "configuration":{"lastRestTime":"0"}} ], "lastRoudTime":"0"}'
+  _agentRadius: 0.7
+  _agentHeight: 4.5
+--- !u!4 &1709448482
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709448480}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 22.604841, y: 0, z: 63.52617}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -321,5 +592,10 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 954611485}
+  - {fileID: 1078497983}
+  - {fileID: 652968040}
+  - {fileID: 1709448482}
+  - {fileID: 1147442929}
+  - {fileID: 284278305}
   - {fileID: 752526361}
   - {fileID: 433740420}
