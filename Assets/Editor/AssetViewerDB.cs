@@ -68,7 +68,7 @@ internal class AssetViewerDB
         {
             if(la.Asset == obj)
             {
-                return la.AssetPath;
+                return RefUtils.PATH_TO_RES + la.AssetPath;
             }
         }
 

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 997444867050352043}
   - component: {fileID: 8087097073118196484}
   - component: {fileID: 1946923841263490377}
+  - component: {fileID: 4299922358579688509}
   m_Layer: 12
   m_Name: CharacterCircle
   m_TagString: IgnoreOutline
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5112643137248981968}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.000000059604645, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.401, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &997444867050352043
 MeshFilter:
@@ -62,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9bb11c41941dcf54496781a9121847ca, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,3 +98,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _meshRenderer: {fileID: 8087097073118196484}
+--- !u!114 &4299922358579688509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5112643137248981968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1225809204, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - path: Models/Materials/CharacterCircle_3D.mat
+  rendererProxy: {fileID: 8087097073118196484}
