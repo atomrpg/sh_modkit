@@ -64,7 +64,7 @@ public class ModBuilder : EditorWindow
     private int _modIndex = -1;
 
     StoreSteamService steam = new StoreSteamService();
-   // string _modName = typeof(ModEntryPoint).Assembly.GetName().Name;
+    // string _modName = typeof(ModEntryPoint).Assembly.GetName().Name;
     [MenuItem("Game/Build Mod")]
     static void BuildMod()
     {
@@ -172,7 +172,7 @@ public class ModBuilder : EditorWindow
         GUILayout.Label("Build Settings", EditorStyles.boldLabel);
         EditorGUILayout.BeginHorizontal();
         EditorGUILayout.LabelField("Mod Name", modName);
-        if(GUILayout.Button("Change"))
+        if (GUILayout.Button("Change"))
         {
             var obj = AssetDatabase.LoadAssetAtPath<Object>("Assets/Scripts/MyMod.asmdef");
             Selection.activeObject = obj;
@@ -204,7 +204,7 @@ public class ModBuilder : EditorWindow
                     throw new System.Exception("Temp/ModBuild exist");
                 }
 
-                if(!UnityEditor.SceneManagement.EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
+                if (!UnityEditor.SceneManagement.EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
                 {
                     return;
                 }
@@ -278,7 +278,7 @@ public class ModBuilder : EditorWindow
                     //BuildPipeline.BuildAssetBundles(PATH_BUILD_BUNDLE, BuildAssetBundleOptions.ChunkBasedCompression/*BuildAssetBundleOptions.DisableWriteTypeTree*/, buildTarget);
                 }
 
-                if(clearLogs)
+                if (clearLogs)
                 {
                     ClearLogConsole();
                 }
@@ -327,7 +327,7 @@ public class ModBuilder : EditorWindow
         {
             EditorGUILayout.LabelField("App Id", steam.GetAppId().ToString());
 
-            if(_modIndex >= _modList.Count)
+            if (_modIndex >= _modList.Count)
             {
                 if (GUILayout.Button("Refresh"))
                 {
