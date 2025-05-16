@@ -1,0 +1,83 @@
+{ 
+   "states" : { 
+      "556b6745-922e-4429-90cc-1b26b72b8375" : { 
+         "class" : "MemoBeginNode", 
+         "desc" : { 
+            "x" : "-101487", 
+            "y" : "-100781"
+         }, 
+         "child" : [ 
+            "1097bb46-a78f-4a40-ba2b-8a357ec3e234", 
+            "d3e996f0-34d2-4b8e-a9b9-6caa102a4993"
+         ]
+      }, 
+      "1097bb46-a78f-4a40-ba2b-8a357ec3e234" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-101819", 
+            "y" : "-100715"
+         }, 
+         "child" : [ 
+            "224f698a-7052-4ebe-8839-583cdf3e7738", 
+            "5001267f-96d6-47e0-bf39-aca3af16c31f"
+         ], 
+         "key" : "VILLAGE_HIDDEN_NOTE1_GET_EXP"
+      }, 
+      "224f698a-7052-4ebe-8839-583cdf3e7738" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-101967", 
+            "y" : "-100610"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "5001267f-96d6-47e0-bf39-aca3af16c31f" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-101771", 
+            "y" : "-100545"
+         }, 
+         "child" : [ 
+            "82993727-3084-4371-a9cb-dbee9ab5ed88"
+         ], 
+         "key" : "VILLAGE_HIDDEN_NOTE1_GET_EXP"
+      }, 
+      "82993727-3084-4371-a9cb-dbee9ab5ed88" : { 
+         "class" : "AddExpNode", 
+         "desc" : { 
+            "x" : "-101855", 
+            "y" : "-100390"
+         }, 
+         "child" : [ 
+            "5a1609cf-cb88-4a0d-9d05-3857d7b2c16c"
+         ], 
+         "objectName" : "Player", 
+         "exp" : "17", 
+         "ignoreIntellect" : "true"
+      }, 
+      "5a1609cf-cb88-4a0d-9d05-3857d7b2c16c" : { 
+         "class" : "CharacterAddSkillNode", 
+         "desc" : { 
+            "x" : "-101855", 
+            "y" : "-100254"
+         }, 
+         "child" : [ 
+         ], 
+         "value" : "7", 
+         "skill" : "Crafting", 
+         "characterName" : "Player"
+      }, 
+      "d3e996f0-34d2-4b8e-a9b9-6caa102a4993" : { 
+         "class" : "MemoPageNode", 
+         "desc" : { 
+            "x" : "-101461", 
+            "y" : "-100651"
+         }, 
+         "child" : [ 
+         ], 
+         "text" : "Hark, Velocraqsis, you nincompoop! Why is it taking you so long to retrieve the Stone of Arkham from a hapless old man? How can you allow him to avoid you again and again and again? The Archont is most dissatisfied with your lack of prowess…\r\n\r\nDo you realize that this thing will make us… nay, the whole of Maļvian people, gods among men? As it is written in Le livre d'Eibon, the ever-warping angles of the stone hold secrets beyond mortal imaginings. You think Old Maļvia was great? What then can be said about the Maļvia which is to come, when the Goat descends from the starry sky on the night of the New Moon to retrieve her precious gem and honour its finders? \r\n\r\nSoon all enemies of the Archont shall know those brain-melting sounds, described in the Book of Lies… The braying of a shoggoth, the howl of the gug, the foetid meeping of the pygge-roach! Iah, iah, gl'wah m'hglui! \r\n\r\nIn other words, make haste, you slow-in-the-mind barf donkey! Use the following to aid your silly self with the task of divining the true hiding spot of the relic:\r\n\r\n<What follows is a detailed description of a kind of monocular, made out of the crystal shards sometimes found in Nova-Drakonia and banned throughout the Empire. While you are not sure you can actually create the object, you learn a lot about using fine tools as you read through the note, boosting your tinkering skill>\r\n\r\nRespectfully yours, \n\nSub-Archont Hippoplugis\r\n"
+      }
+   }, 
+   "entry" : "556b6745-922e-4429-90cc-1b26b72b8375"
+}

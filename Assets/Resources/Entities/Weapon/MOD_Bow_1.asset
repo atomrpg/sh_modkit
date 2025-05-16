@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MOD_Bow_1
   m_EditorClassIdentifier: 
   Icon:
-    path: Entities/Weapon/RN_Bow_ArmyLongbow
+    path: Entities/Weapon/MOD_Bow_1
   m_Localization: weapon.mod_bow_1
   Takeable: 1
   UISounds:

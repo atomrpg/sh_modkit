@@ -51,6 +51,12 @@
       "full": "Some say every warrior brings a certain emotion into battle—cruel or righteous, twisted or noble. So it’s no surprise the arrogant bandit chief you slew had one too. But why did he burn its name into the hilt of this finely wrought, yet unmistakably wicked blade so proudly..? And what does it mean that you are now the one who carries it?"
     }
   },
+  "memo": {
+    "mod_note": {
+      "short": "Velocraqsis's Note",
+      "full": "A note found on one of the bandits you've slaughtered. It is addressed to Velocraqsis, which is probably the brigand's name."
+    }
+  },
   "location": {
     "test_scene": "Burnt-down Cabin"
   },
