@@ -516,6 +516,7 @@
       "quickpanelmainindex" : "0", 
       "hair" : "Girl_PonyTail", 
       "hairColor" : "Brown", 
+      "voiceasset" : "Entities/Voice/Liris", 
       "constitution_fat" : "0.5", 
       "constitution_height" : "0.5", 
       "constitution_strength" : "0.5", 
