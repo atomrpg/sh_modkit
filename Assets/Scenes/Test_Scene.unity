@@ -181,6 +181,188 @@ Transform:
   - {fileID: 1875617316879701090}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &148334793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 148334794}
+  - component: {fileID: 148334795}
+  m_Layer: 0
+  m_Name: Bandit_Standby_2.way
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &148334794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148334793}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.8790083, z: -0, w: 0.4768064}
+  m_LocalPosition: {x: 72.92, y: 0.094, z: 79.11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1483886041}
+  m_LocalEulerAnglesHint: {x: 0, y: -123.046, z: 0}
+--- !u!114 &148334795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148334793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 904302287, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _keywords:
+    m_keys:
+    - _GROUP_ID
+    - _SUBSTATE_NAME
+    - _STATE_CYCLE_MIN_SS
+    - _STATE_CYCLE_MAX_SS
+    - _ANIMATION_TYPE
+    - _SKIP_IF_UNREACHABLE
+    m_values:
+    - STAY
+    - STAY
+    - 5
+    - 10
+    - Animations/Hands_on_Hips
+    - 1
+--- !u!1 &298643997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 298643998}
+  m_Layer: 0
+  m_Name: Logic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &298643998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298643997}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1826636515}
+  - {fileID: 1769672435}
+  - {fileID: 889530832}
+  - {fileID: 1483886041}
+  - {fileID: 1152465485}
+  - {fileID: 1923264883}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &346428315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 346428316}
+  - component: {fileID: 346428317}
+  m_Layer: 0
+  m_Name: Bandit_PatrolWalker_2.way
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &346428316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346428315}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.886812, z: -0, w: -0.46213037}
+  m_LocalPosition: {x: 100.9, y: 0.094, z: 73}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1923264883}
+  m_LocalEulerAnglesHint: {x: 0, y: -235.04901, z: 0}
+--- !u!114 &346428317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346428315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 904302287, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _keywords:
+    m_keys:
+    - _GROUP_ID
+    - _SUBSTATE_NAME
+    - _STATE_CYCLE_MIN_SS
+    - _STATE_CYCLE_MAX_SS
+    m_values:
+    - WALK
+    - WALK
+    - 1
+    - 2
+--- !u!1 &564853944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 564853945}
+  m_Layer: 0
+  m_Name: Bandit_PatrolWalker.spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &564853945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564853944}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.9902535, z: -0, w: 0.13927671}
+  m_LocalPosition: {x: 99.6, y: -0.000015258789, z: 65.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1152465485}
+  m_LocalEulerAnglesHint: {x: 0, y: 163.988, z: 0}
 --- !u!1 &695791627
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,6 +456,544 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
+--- !u!1 &750747443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 750747444}
+  - component: {fileID: 750747445}
+  m_Layer: 0
+  m_Name: Bandit_PatrolWalker_2.way
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &750747444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750747443}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7865062, z: -0, w: 0.6175824}
+  m_LocalPosition: {x: 86.2, y: 0.094, z: 73.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1923264883}
+  m_LocalEulerAnglesHint: {x: 0, y: -103.72, z: 0}
+--- !u!114 &750747445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750747443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 904302287, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _keywords:
+    m_keys:
+    - _GROUP_ID
+    - _SUBSTATE_NAME
+    - _STATE_CYCLE_MIN_SS
+    - _STATE_CYCLE_MAX_SS
+    m_values:
+    - WALK
+    - WALK
+    - 2
+    - 3
+--- !u!1 &889530831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 889530832}
+  m_Layer: 0
+  m_Name: Bandit_Standby.waypoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &889530832
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889530831}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1135568830}
+  - {fileID: 1319820886}
+  - {fileID: 1105834565}
+  m_Father: {fileID: 298643998}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1043497990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1043497991}
+  - component: {fileID: 1043497992}
+  m_Layer: 0
+  m_Name: Bandit_PatrolWalker.way
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1043497991
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043497990}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.39060876, z: -0, w: 0.9205568}
+  m_LocalPosition: {x: 72.84, y: 0.094, z: 101.74}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1152465485}
+  m_LocalEulerAnglesHint: {x: 0, y: -45.985, z: 0}
+--- !u!114 &1043497992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043497990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 904302287, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _keywords:
+    m_keys:
+    - _GROUP_ID
+    - _SUBSTATE_NAME
+    - _STATE_CYCLE_MIN_SS
+    - _STATE_CYCLE_MAX_SS
+    m_values:
+    - WALK
+    - WALK
+    - 10
+    - 15
+--- !u!1 &1105834564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1105834565}
+  - component: {fileID: 1105834566}
+  m_Layer: 0
+  m_Name: Bandit_Standby.way
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1105834565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105834564}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.79245335, z: -0, w: 0.6099326}
+  m_LocalPosition: {x: 74.77, y: 0.094, z: 71.51}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 889530832}
+  m_LocalEulerAnglesHint: {x: 0, y: -104.831, z: 0}
+--- !u!114 &1105834566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105834564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 904302287, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _keywords:
+    m_keys:
+    - _GROUP_ID
+    - _SUBSTATE_NAME
+    - _STATE_CYCLE_MIN_SS
+    - _STATE_CYCLE_MAX_SS
+    - _ANIMATION_TYPE
+    - _SKIP_IF_UNREACHABLE
+    m_values:
+    - STAY
+    - STAY
+    - 8.33
+    - 25
+    - Animations/Peers_Distance
+    - 1
+--- !u!1 &1135568829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1135568830}
+  m_Layer: 0
+  m_Name: Bandit_Standby.spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1135568830
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135568829}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.83203137, z: -0, w: 0.55472857}
+  m_LocalPosition: {x: 79.53, y: 0, z: 70.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 889530832}
+  m_LocalEulerAnglesHint: {x: 0, y: -112.616, z: 0}
+--- !u!1 &1152465484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1152465485}
+  m_Layer: 0
+  m_Name: Bandit_PatrolWalker.waypoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1152465485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152465484}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 564853945}
+  - {fileID: 1275750789}
+  - {fileID: 1043497991}
+  - {fileID: 1906043058}
+  m_Father: {fileID: 298643998}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1213299501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1213299502}
+  m_Layer: 0
+  m_Name: Bandit_Standby_2.spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1213299502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213299501}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.80744624, z: -0, w: 0.58994126}
+  m_LocalPosition: {x: 74.39, y: -0.000015258789, z: 84.32}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1483886041}
+  m_LocalEulerAnglesHint: {x: 0, y: -107.694, z: 0}
+--- !u!1 &1275750788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1275750789}
+  - component: {fileID: 1275750790}
+  m_Layer: 0
+  m_Name: Bandit_PatrolWalker.way
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1275750789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275750788}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.886812, z: -0, w: -0.46213037}
+  m_LocalPosition: {x: 100.6, y: 0.094, z: 60.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1152465485}
+  m_LocalEulerAnglesHint: {x: 0, y: -235.04901, z: 0}
+--- !u!114 &1275750790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275750788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 904302287, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _keywords:
+    m_keys:
+    - _GROUP_ID
+    - _SUBSTATE_NAME
+    - _STATE_CYCLE_MIN_SS
+    - _STATE_CYCLE_MAX_SS
+    m_values:
+    - WALK
+    - WALK
+    - 5
+    - 10
+--- !u!1 &1319820885
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1319820886}
+  - component: {fileID: 1319820887}
+  m_Layer: 0
+  m_Name: Bandit_Standby.way
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1319820886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319820885}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.8790083, z: -0, w: 0.4768064}
+  m_LocalPosition: {x: 78.86, y: 0.094, z: 65.11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 889530832}
+  m_LocalEulerAnglesHint: {x: 0, y: -123.046, z: 0}
+--- !u!114 &1319820887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319820885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 904302287, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _keywords:
+    m_keys:
+    - _GROUP_ID
+    - _SUBSTATE_NAME
+    - _STATE_CYCLE_MIN_SS
+    - _STATE_CYCLE_MAX_SS
+    - _ANIMATION_TYPE
+    - _SKIP_IF_UNREACHABLE
+    m_values:
+    - STAY
+    - STAY
+    - 8.33
+    - 8.33
+    - Animations/Peers_Inspects_Boots
+    - 1
+--- !u!1 &1428341676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1428341677}
+  m_Layer: 0
+  m_Name: Bandit_PatrolWalker_2.spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1428341677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428341676}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.9902535, z: -0, w: 0.13927671}
+  m_LocalPosition: {x: 99.6, y: -0.000015258789, z: 65.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1923264883}
+  m_LocalEulerAnglesHint: {x: 0, y: 163.988, z: 0}
+--- !u!1 &1483886040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1483886041}
+  m_Layer: 0
+  m_Name: Bandit_Standby_2.waypoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1483886041
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483886040}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1213299502}
+  - {fileID: 148334794}
+  - {fileID: 1747835838}
+  m_Father: {fileID: 298643998}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1747835837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1747835838}
+  - component: {fileID: 1747835839}
+  m_Layer: 0
+  m_Name: Bandit_Standby_2.way
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1747835838
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747835837}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.79245335, z: -0, w: 0.6099326}
+  m_LocalPosition: {x: 70.4, y: 0.094, z: 87.97}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1483886041}
+  m_LocalEulerAnglesHint: {x: 0, y: -104.831, z: 0}
+--- !u!114 &1747835839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747835837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 904302287, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _keywords:
+    m_keys:
+    - _GROUP_ID
+    - _SUBSTATE_NAME
+    - _STATE_CYCLE_MIN_SS
+    - _STATE_CYCLE_MAX_SS
+    - _ANIMATION_TYPE
+    - _SKIP_IF_UNREACHABLE
+    m_values:
+    - STAY
+    - STAY
+    - 10
+    - 15
+    - Animations/Hands_on_Hips
+    - 1
 --- !u!1 &1769672434
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,7 +1023,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 298643998}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1826636514
 PrefabInstance:
@@ -311,7 +1031,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 298643998}
     m_Modifications:
     - target: {fileID: 3913453801698681023, guid: 2e5a79bba2c4862458bbc014788d6329,
         type: 3}
@@ -341,7 +1061,7 @@ PrefabInstance:
     - target: {fileID: 4396834656378862085, guid: 2e5a79bba2c4862458bbc014788d6329,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4396834656378862085, guid: 2e5a79bba2c4862458bbc014788d6329,
         type: 3}
@@ -351,7 +1071,7 @@ PrefabInstance:
     - target: {fileID: 4396834656378862085, guid: 2e5a79bba2c4862458bbc014788d6329,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4396834656378862085, guid: 2e5a79bba2c4862458bbc014788d6329,
         type: 3}
@@ -383,6 +1103,101 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e5a79bba2c4862458bbc014788d6329, type: 3}
+--- !u!4 &1826636515 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4396834656378862085, guid: 2e5a79bba2c4862458bbc014788d6329,
+    type: 3}
+  m_PrefabInstance: {fileID: 1826636514}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1906043057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1906043058}
+  - component: {fileID: 1906043059}
+  m_Layer: 0
+  m_Name: Bandit_PatrolWalker.way
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1906043058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906043057}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.3359372, z: -0, w: 0.94188446}
+  m_LocalPosition: {x: 103.3, y: 0.094, z: 104}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1152465485}
+  m_LocalEulerAnglesHint: {x: 0, y: 39.259, z: 0}
+--- !u!114 &1906043059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906043057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 904302287, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _keywords:
+    m_keys:
+    - _GROUP_ID
+    - _SUBSTATE_NAME
+    - _STATE_CYCLE_MIN_SS
+    - _STATE_CYCLE_MAX_SS
+    m_values:
+    - WALK
+    - WALK
+    - 7
+    - 7
+--- !u!1 &1923264882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1923264883}
+  m_Layer: 0
+  m_Name: Bandit_PatrolWalker_2.waypoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1923264883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923264882}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1428341677}
+  - {fileID: 346428316}
+  - {fileID: 750747444}
+  m_Father: {fileID: 298643998}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2098990852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -529,6 +1344,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 113398914}
-  - {fileID: 1826636514}
-  - {fileID: 1769672435}
+  - {fileID: 298643998}
   - {fileID: 2098990852}

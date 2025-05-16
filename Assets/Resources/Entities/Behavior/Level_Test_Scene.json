@@ -1,0 +1,173 @@
+{ 
+   "states" : { 
+      "426b8097-16d1-4132-be85-387e758581bd" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-99826", 
+            "y" : "-97452"
+         }, 
+         "child" : [ 
+            "4795ceab-861a-4ef4-a934-9b5cd96316d8"
+         ]
+      }, 
+      "4795ceab-861a-4ef4-a934-9b5cd96316d8" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-99825", 
+            "y" : "-97397", 
+            "comment" : "day/night object scripts must run first"
+         }, 
+         "child" : [ 
+            "24b148b4-2b0f-4964-afbe-410de63d5635", 
+            "693bfe65-7e7e-40a8-a0d4-5d60a6d7505b", 
+            "2ab60bcb-4c86-4024-a155-7e57057edc5e", 
+            "c9f54381-8e89-4555-994e-0e27f5e93d46"
+         ]
+      }, 
+      "24b148b4-2b0f-4964-afbe-410de63d5635" : { 
+         "class" : "PlayScriptNode", 
+         "desc" : { 
+            "x" : "-100312", 
+            "y" : "-97255"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "script" : "entities/behavior/initialteammate_logiclevel"
+      }, 
+      "693bfe65-7e7e-40a8-a0d4-5d60a6d7505b" : { 
+         "class" : "CleanCorpsesNode", 
+         "desc" : { 
+            "x" : "-100047", 
+            "y" : "-97254"
+         }, 
+         "child" : [ 
+         ], 
+         "filterFractionName" : "", 
+         "filterCivicSociety" : "citizen", 
+         "cleanIfEmptyInventoty" : "false", 
+         "time" : "2", 
+         "mode" : "Day"
+      }, 
+      "2ab60bcb-4c86-4024-a155-7e57057edc5e" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-99672", 
+            "y" : "-97244", 
+            "comment" : "entry point"
+         }, 
+         "child" : [ 
+            "359c4b12-1949-433b-a050-1579f5ab90a1"
+         ]
+      }, 
+      "359c4b12-1949-433b-a050-1579f5ab90a1" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-99674", 
+            "y" : "-97106"
+         }, 
+         "child" : [ 
+            "c222996f-5a1d-4e79-9ca3-d054bd038699", 
+            "8f61661e-248c-4d74-b3c3-e23b7cd37279", 
+            "661c98c2-23a1-4f43-bddf-d4f2df6c18f1"
+         ]
+      }, 
+      "c222996f-5a1d-4e79-9ca3-d054bd038699" : { 
+         "class" : "PlayScriptNode", 
+         "desc" : { 
+            "x" : "-99870", 
+            "y" : "-97032", 
+            "comment" : "OnBattleGlobal"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "script" : "Entities/Behavior/OnBattleGlobal"
+      }, 
+      "8f61661e-248c-4d74-b3c3-e23b7cd37279" : { 
+         "class" : "PlayScriptNode", 
+         "desc" : { 
+            "x" : "-99728", 
+            "y" : "-96898", 
+            "comment" : "QuestsFail"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "script" : "Entities/Behavior/AllQuestsFailCheck"
+      }, 
+      "661c98c2-23a1-4f43-bddf-d4f2df6c18f1" : { 
+         "class" : "OnBattleEndEventNode", 
+         "desc" : { 
+            "x" : "-99540", 
+            "y" : "-97020"
+         }, 
+         "child" : [ 
+            "8f61661e-248c-4d74-b3c3-e23b7cd37279"
+         ]
+      }, 
+      "c9f54381-8e89-4555-994e-0e27f5e93d46" : { 
+         "class" : "OnBattleEndEventNode", 
+         "desc" : { 
+            "x" : "-99183", 
+            "y" : "-97248"
+         }, 
+         "child" : [ 
+            "515241af-8654-454d-83c3-85313efe2874"
+         ]
+      }, 
+      "515241af-8654-454d-83c3-85313efe2874" : { 
+         "class" : "AreAllAroundDeadNode", 
+         "desc" : { 
+            "x" : "-99216", 
+            "y" : "-97197"
+         }, 
+         "child" : [ 
+            "61c39d86-873e-40f9-b2d6-2b02efb24f61", 
+            "b8bafb50-7302-44ad-9366-b58d27906099"
+         ], 
+         "filterFractionName" : "test_mod_bandits"
+      }, 
+      "61c39d86-873e-40f9-b2d6-2b02efb24f61" : { 
+         "class" : "HasGlobalKeyNode", 
+         "desc" : { 
+            "x" : "-99250", 
+            "y" : "-97059"
+         }, 
+         "child" : [ 
+            "6a506f33-f09c-480b-9ee8-9f77327c8fdb", 
+            "286297d8-949b-4c19-93bd-9661b004f2b2"
+         ], 
+         "note_key" : "GLOBAL_MOD_BANDITS_KILLED"
+      }, 
+      "6a506f33-f09c-480b-9ee8-9f77327c8fdb" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-99231", 
+            "y" : "-96930"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "286297d8-949b-4c19-93bd-9661b004f2b2" : { 
+         "class" : "AddGlobalKeyNode", 
+         "desc" : { 
+            "x" : "-99214", 
+            "y" : "-96885"
+         }, 
+         "child" : [ 
+         ], 
+         "note_key" : "GLOBAL_MOD_BANDITS_KILLED"
+      }, 
+      "b8bafb50-7302-44ad-9366-b58d27906099" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-99127", 
+            "y" : "-97094"
+         }, 
+         "child" : [ 
+         ]
+      }
+   }, 
+   "entry" : "426b8097-16d1-4132-be85-387e758581bd"
+}
