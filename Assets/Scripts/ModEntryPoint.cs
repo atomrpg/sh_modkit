@@ -28,7 +28,7 @@ public class ModEntryPoint : MonoBehaviour // ModEntryPoint - RESERVED LOOKUP NA
 
     void LoadModBundle()
     {
-        ResourceManager.DEBUG_MODE = true;
+        //ResourceManager.DEBUG_MODE = true;
 #if UNITY_EDITOR
         // skip bundle loading in PIE mode
 #else
