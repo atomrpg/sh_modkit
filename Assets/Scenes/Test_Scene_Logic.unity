@@ -197,12 +197,12 @@ PrefabInstance:
     - target: {fileID: 2061206539460859590, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.1
+      value: 2.0999997
       objectReference: {fileID: 0}
     - target: {fileID: 2061206539460859590, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.1
+      value: 2.0999997
       objectReference: {fileID: 0}
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
@@ -272,10 +272,10 @@ PrefabInstance:
         "inventory":[  ], "weapon":{"class":"Weapon", "count":"1", "proto":"MOD_Bow_1"},
         "quiver":{"class":"Ammo", "count":"35", "proto":"Ammo_0_Copper_Arrow"}, "quickpanel":{"1":{"class":"WeaponTechnique",
         "proto":"mod_liris_technique"}}, "quickpanelmainindex":"0", "hair":"Girl_PonyTail",
-        "hairColor":"Brown", "constitution_fat":"0.5", "constitution_height":"0.5",
-        "constitution_strength":"0.5", "status_effects":[ {"type":"44", "turns_left":"0",
-        "cooldowns":[  ]}, {"type":"47", "turns_left":"0", "configuration":{"lastRestTime":"0"}}
-        ], "lastRoudTime":"0"}'
+        "hairColor":"Brown", "voiceasset":"Entities/Voice/Liris", "constitution_fat":"0.5",
+        "constitution_height":"0.5", "constitution_strength":"0.5", "status_effects":[
+        {"type":"44", "turns_left":"0", "cooldowns":[  ]}, {"type":"47", "turns_left":"0",
+        "configuration":{"lastRestTime":"0"}} ], "lastRoudTime":"0"}'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
