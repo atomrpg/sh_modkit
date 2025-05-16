@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: mod_malvian_helmet
   m_EditorClassIdentifier: 
   Icon:
-    path: Entities/Uniform/HELM_Craft_2_Iron_Helmet
+    path: Entities/Uniform/mod_malvian_helmet
   m_Localization: uniform.mod_malvian_helmet
   Takeable: 1
   UISounds:
