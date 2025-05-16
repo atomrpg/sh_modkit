@@ -250,12 +250,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEntityData: '{"class":"Character", "proto":"BaseFemale_11_A", "character":"Player_debug",
     "caps":"Player", "damage":"0", "ap":"0", "relationship":"100", "fraction":"player",
-    "civicsociety":"citizen", "inventory":[ {"class":"Item", "count":"1", "proto":"mod_stone_of_arkham"}
-    ], "weapon":{"class":"Weapon", "count":"1", "proto":"K_Fist_Caestus"}, "quickpanel":{},
-    "quickpanelmainindex":"0", "constitution_fat":"0.5", "constitution_height":"0.5",
-    "constitution_strength":"0.5", "status_effects":[ {"type":"44", "turns_left":"0",
-    "cooldowns":[  ]}, {"type":"47", "turns_left":"0", "configuration":{"lastRestTime":"0"}}
-    ], "lastRoudTime":"0"}'
+    "civicsociety":"citizen", "inventory":[  ], "weapon":{"class":"Weapon", "count":"1",
+    "proto":"K_Fist_Caestus"}, "quickpanel":{}, "quickpanelmainindex":"0", "constitution_fat":"0.5",
+    "constitution_height":"0.5", "constitution_strength":"0.5", "status_effects":[
+    {"type":"44", "turns_left":"0", "cooldowns":[  ]}, {"type":"47", "turns_left":"0",
+    "configuration":{"lastRestTime":"0"}} ], "lastRoudTime":"0"}'
   _agentRadius: 0.7
   _agentHeight: 4.5
 --- !u!4 &1073707625
