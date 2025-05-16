@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: mod_liris_technique
   m_EditorClassIdentifier: 
   icon:
-    path: Entities/Perks/Abilities/RN_2_2EarShot
+    path: Entities/perks/abilities/mod_liris_technique
   weaponTechnique:
     path: Entities/WeaponTechniques/RN_3_2_DoubleTap
   isAvailableInBuild: 1

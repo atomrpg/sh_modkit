@@ -14,19 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon:
     path: Entities/Uniform/mod_shield
-  m_Localization: 
+  m_Localization: uniform.mod_shield
   Takeable: 1
   UISounds:
     path: 
-  Cost: 0
-  Weight: 0
+  Cost: 117
+  Weight: 2590
   ItemPerks: 0
   LegalTrade: 1
   Collectable: 1
   TradeMode: 0
   TradeModeNames: []
-  Modifiers: []
-  uniformQuality: 1
+  Modifiers:
+  - _type: 24
+    _value: 2
+  uniformQuality: 4
   UniformMaterialProto:
     path: 
   PartsPathes: []

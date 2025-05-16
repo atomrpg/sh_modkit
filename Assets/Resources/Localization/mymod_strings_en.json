@@ -57,7 +57,11 @@
   "uniform": {
     "mod_malvian_breastplate": {
       "short": "Maļvian Breastplate",
-      "full": "A breastplate shaped like a powerfully built male torso, that comes from the far-off land of Maļvia, which was an empire in its own right years ago, and is still respected as the birthplace of philosophy, medicine and engineering... Especially by its modern-day inhabitants.\nThe armour represents what was seen as classical male beauty by the ancient Maļvians, though only a rare soldier actually looked similar under his protective shell... Which is probably why the land of scholars could not fend off the conquesting hordes of the current ruling dynasty for long."
+      "full": "A breastplate shaped like a powerfully built male torso, that comes from the far-off land of Maļvia, which was an empire in its own right years ago, and is still respected as the birthplace of philosophy, medicine and engineering... Especially by its modern-day inhabitants.\nThe armour represents what was seen as classical male beauty by the ancient Maļvians, though only a rare soldier actually looked as muscular under his protective shell... Which is probably why the land of scholars could not fend off the conquesting hordes of the current ruling dynasty for long."
+    },
+    "mod_shield": {
+      "short": "Maļvian Round Shield",
+      "full": "A round shield born of the classic Maļvian culture. Made to resemble the sun, this design, sporting a highly reflective polished surface, served to blind and distract the enemy before the Maļvian warriors even reached them on the battlefield..."
     },
     "mod_malvian_helmet": {
       "short": "Ancient Maļvian Helmet",
