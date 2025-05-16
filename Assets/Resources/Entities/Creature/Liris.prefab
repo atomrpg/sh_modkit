@@ -844,6 +844,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 854012002365907557}
     m_Modifications:
+    - target: {fileID: 4299922358579688509, guid: 621da6357420014408f754d6f5e8cef6,
+        type: 3}
+      propertyPath: materials.Array.data[0].path
+      value: Models/Materials/CharacterCircle_3D
+      objectReference: {fileID: 0}
     - target: {fileID: 5112643137248981968, guid: 621da6357420014408f754d6f5e8cef6,
         type: 3}
       propertyPath: m_Name
