@@ -3,8 +3,8 @@
       "b245d076-b02a-4749-be17-85c54727b6cd" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-99678", 
-            "y" : "-102166"
+            "x" : "-99749", 
+            "y" : "-102071"
          }, 
          "child" : [ 
             "4aaa7a7c-a8de-4c11-bb31-7ca5ee0d8832"
@@ -13,8 +13,8 @@
       "4aaa7a7c-a8de-4c11-bb31-7ca5ee0d8832" : { 
          "class" : "HasKeywordNode", 
          "desc" : { 
-            "x" : "-99732", 
-            "y" : "-102093"
+            "x" : "-99803", 
+            "y" : "-102006"
          }, 
          "child" : [ 
             "27eb1895-2bf0-4317-9b85-01f1695b23c3", 
@@ -25,8 +25,8 @@
       "27eb1895-2bf0-4317-9b85-01f1695b23c3" : { 
          "class" : "PlayScriptNode", 
          "desc" : { 
-            "x" : "-99935", 
-            "y" : "-101995"
+            "x" : "-99944", 
+            "y" : "-101882"
          }, 
          "child" : [ 
          ], 
@@ -42,7 +42,8 @@
          "child" : [ 
             "04ae38ce-6d91-481d-863d-c5de188bd4ac"
          ], 
-         "cameraPoint" : "Player"
+         "cameraPoint" : "Liris", 
+         "stopMovement" : "false"
       }, 
       "04ae38ce-6d91-481d-863d-c5de188bd4ac" : { 
          "class" : "HasKeywordNode", 
@@ -66,7 +67,7 @@
             "eeff5444-81e7-4617-a134-3d471b50ee7c", 
             "7379fac9-bb5d-4e20-9859-d1d84db94589"
          ], 
-         "note_key" : "GLOBAL_MOD_BANDITS_KILLED"
+         "note_key" : "GLOBAL_MOD_GOT_STONE"
       }, 
       "eeff5444-81e7-4617-a134-3d471b50ee7c" : { 
          "class" : "HasKeywordNode", 
@@ -94,8 +95,8 @@
       "66441bd0-70d0-46c5-aaa3-e33353fa59b1" : { 
          "class" : "AddExpNode", 
          "desc" : { 
-            "x" : "-100764", 
-            "y" : "-100987"
+            "x" : "-100793", 
+            "y" : "-100957"
          }, 
          "child" : [ 
             "466f751d-02db-449b-a92a-7503ac0c0141"
@@ -107,8 +108,8 @@
       "466f751d-02db-449b-a92a-7503ac0c0141" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100765", 
-            "y" : "-100831", 
+            "x" : "-100793", 
+            "y" : "-100801", 
             "comment" : "(A12)", 
             "historytag" : "A12"
          }, 
@@ -122,8 +123,8 @@
       "0350d821-6489-41e4-a14a-5242cc054dc0" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-100994", 
-            "y" : "-100619", 
+            "x" : "-101023", 
+            "y" : "-100589", 
             "comment" : "GOTO A13"
          }, 
          "child" : [ 
@@ -134,8 +135,8 @@
       "6878bea8-9688-4170-85eb-76afc266d619" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100776", 
-            "y" : "-100268", 
+            "x" : "-100806", 
+            "y" : "-100249", 
             "comment" : "(A13) ", 
             "historytag" : "A13"
          }, 
@@ -147,8 +148,8 @@
       "a9219aaa-093b-4edd-8e40-4dab795f4bcc" : { 
          "class" : "DialogContinueNode", 
          "desc" : { 
-            "x" : "-100744", 
-            "y" : "-100064", 
+            "x" : "-100762", 
+            "y" : "-100073", 
             "comment" : "(A13) "
          }, 
          "child" : [ 
@@ -158,8 +159,8 @@
       "d5f935fc-a839-49b4-a570-91525e7eac12" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100786", 
-            "y" : "-99900", 
+            "x" : "-100809", 
+            "y" : "-100009", 
             "comment" : "(A13) ", 
             "historytag" : "A13"
          }, 
@@ -172,8 +173,8 @@
       "43b4fd53-1cb1-4fd9-bdfe-6de8ce167bba" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-100968", 
-            "y" : "-99688", 
+            "x" : "-100967", 
+            "y" : "-99798", 
             "comment" : "GOTO A14"
          }, 
          "child" : [ 
@@ -184,21 +185,21 @@
       "22be096c-33e9-43bf-a08a-2a297c7e14bc" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100970", 
-            "y" : "-99560", 
+            "x" : "-100967", 
+            "y" : "-99719", 
             "comment" : "(A14) ", 
             "historytag" : "A14"
          }, 
          "child" : [ 
-            "eef7148c-5413-4a37-9c4d-0621176eccb8"
+            "10e5c1f7-20c6-4943-82c7-7f1a796505ef"
          ], 
          "text" : "You know... <Looks around> Folks with a questionable thief-related legacy. Ahem."
       }, 
-      "eef7148c-5413-4a37-9c4d-0621176eccb8" : { 
+      "10e5c1f7-20c6-4943-82c7-7f1a796505ef" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-100970", 
-            "y" : "-99356", 
+            "x" : "-100775", 
+            "y" : "-99537", 
             "comment" : "GOTO A15"
          }, 
          "child" : [ 
@@ -209,8 +210,8 @@
       "09cf0ad9-a098-462d-8d96-410ca1c6ea81" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100794", 
-            "y" : "-99168", 
+            "x" : "-100774", 
+            "y" : "-99444", 
             "comment" : "(A15) ", 
             "historytag" : "A15"
          }, 
@@ -222,8 +223,8 @@
       "97d84827-1431-4d65-bcf1-5605b9543338" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-100794", 
-            "y" : "-98970", 
+            "x" : "-100774", 
+            "y" : "-99246", 
             "comment" : "GOTO A16"
          }, 
          "child" : [ 
@@ -234,8 +235,8 @@
       "03a88883-6391-4701-a2eb-be4a7bdf5cf1" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100795", 
-            "y" : "-98884", 
+            "x" : "-100775", 
+            "y" : "-99160", 
             "comment" : "(A16) ", 
             "historytag" : "A16"
          }, 
@@ -247,8 +248,8 @@
       "10778171-ee67-4cc3-bc8f-b92b1035d466" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-100796", 
-            "y" : "-98746"
+            "x" : "-100776", 
+            "y" : "-99022"
          }, 
          "child" : [ 
             "cd4b54fb-7cd8-4f47-a3ca-baee2fd199ea"
@@ -258,8 +259,8 @@
       "cd4b54fb-7cd8-4f47-a3ca-baee2fd199ea" : { 
          "class" : "CharacterSetCapsNode", 
          "desc" : { 
-            "x" : "-100797", 
-            "y" : "-98667"
+            "x" : "-100777", 
+            "y" : "-98943"
          }, 
          "child" : [ 
             "12454123-f47d-4ad8-9f11-1d2f7c11be70"
@@ -270,8 +271,8 @@
       "12454123-f47d-4ad8-9f11-1d2f7c11be70" : { 
          "class" : "SetRelationShipBetweenFractionsNode", 
          "desc" : { 
-            "x" : "-100802", 
-            "y" : "-98566"
+            "x" : "-100784", 
+            "y" : "-98848"
          }, 
          "child" : [ 
             "33cc673e-0b4e-4fdb-bb9f-bea972085d60"
@@ -283,8 +284,8 @@
       "33cc673e-0b4e-4fdb-bb9f-bea972085d60" : { 
          "class" : "RestartBehaviorRequestNode", 
          "desc" : { 
-            "x" : "-100798", 
-            "y" : "-98452"
+            "x" : "-100778", 
+            "y" : "-98728"
          }, 
          "child" : [ 
             "184b8a0a-5bfe-4f9b-8e67-43b7a9d65751"
@@ -294,8 +295,8 @@
       "184b8a0a-5bfe-4f9b-8e67-43b7a9d65751" : { 
          "class" : "RestartBehaviorRequestNode", 
          "desc" : { 
-            "x" : "-100799", 
-            "y" : "-98377"
+            "x" : "-100779", 
+            "y" : "-98653"
          }, 
          "child" : [ 
             "648e56c2-aa55-45a0-aa50-eb0535a3351f"
@@ -305,8 +306,8 @@
       "648e56c2-aa55-45a0-aa50-eb0535a3351f" : { 
          "class" : "RestartBehaviorRequestNode", 
          "desc" : { 
-            "x" : "-100798", 
-            "y" : "-98303"
+            "x" : "-100778", 
+            "y" : "-98579"
          }, 
          "child" : [ 
             "aeb4997f-f682-4843-b474-330fe3ff944b"
@@ -316,31 +317,19 @@
       "aeb4997f-f682-4843-b474-330fe3ff944b" : { 
          "class" : "DialogEndNode", 
          "desc" : { 
-            "x" : "-100799", 
-            "y" : "-98226"
+            "x" : "-100779", 
+            "y" : "-98502"
          }, 
          "child" : [ 
          ], 
          "skipButtonEnd" : "false", 
          "dontMarkInHistory" : "false"
       }, 
-      "10e5c1f7-20c6-4943-82c7-7f1a796505ef" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-100650", 
-            "y" : "-99690", 
-            "comment" : "GOTO A15"
-         }, 
-         "child" : [ 
-            "09cf0ad9-a098-462d-8d96-410ca1c6ea81"
-         ], 
-         "text" : "{Ok} All right, let's go."
-      }, 
       "3a13a314-8976-48d5-9f50-0faa100588b6" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-100766", 
-            "y" : "-100617", 
+            "x" : "-100795", 
+            "y" : "-100587", 
             "comment" : "GOTO A13"
          }, 
          "child" : [ 
@@ -351,8 +340,8 @@
       "224f1f98-873e-4814-a8e9-e840cc534d8e" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-100531", 
-            "y" : "-100613", 
+            "x" : "-100559", 
+            "y" : "-100583", 
             "comment" : "GOTO A13"
          }, 
          "child" : [ 
@@ -490,8 +479,8 @@
       "6673e84f-d446-4150-aa5f-ba057eddf6f2" : { 
          "class" : "DialogContinueNode", 
          "desc" : { 
-            "x" : "-98784", 
-            "y" : "-100228", 
+            "x" : "-98780", 
+            "y" : "-100232", 
             "comment" : "(A5) "
          }, 
          "child" : [ 
@@ -626,8 +615,8 @@
       "925ab4cf-5951-4405-8716-4763508f7ac0" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-98888", 
-            "y" : "-99197"
+            "x" : "-98880", 
+            "y" : "-99205"
          }, 
          "child" : [ 
          ]
@@ -635,8 +624,8 @@
       "fbd207f9-932a-4295-a943-67e2887a6bdc" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-98869", 
-            "y" : "-99154"
+            "x" : "-98863", 
+            "y" : "-99160"
          }, 
          "child" : [ 
             "12530eda-cbcd-49be-9fa4-1e03365bf382"
@@ -658,8 +647,8 @@
       "d55cd0eb-2634-4a1d-9af9-0d9d2d54bd13" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99248", 
-            "y" : "-97654", 
+            "x" : "-99319", 
+            "y" : "-97647", 
             "comment" : "(A8) ", 
             "historytag" : "A8"
          }, 

@@ -536,6 +536,7 @@
          }
       ], 
       "lastRoudTime" : "0", 
+      "behavior" : "LirisLogic", 
       "name" : "Liris", 
       "transform" : { 
          "pos" : [ 

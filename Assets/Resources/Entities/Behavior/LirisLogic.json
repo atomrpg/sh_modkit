@@ -3,17 +3,28 @@
       "a40b57d8-3d25-4ea1-9267-ee3e1faf278f" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-100092", 
-            "y" : "-97440"
+            "x" : "-99866", 
+            "y" : "-97574"
          }, 
          "child" : [ 
-            "5b60ce66-f191-45f0-93e0-c7d677ce7680"
+            "f8e8c8d0-a381-4c15-ad19-5febb65e6698"
+         ]
+      }, 
+      "f8e8c8d0-a381-4c15-ad19-5febb65e6698" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-99866", 
+            "y" : "-97509"
+         }, 
+         "child" : [ 
+            "5b60ce66-f191-45f0-93e0-c7d677ce7680", 
+            "7585beb7-69bb-4952-b8f9-6b86aaa67fad"
          ]
       }, 
       "5b60ce66-f191-45f0-93e0-c7d677ce7680" : { 
          "class" : "HasKeywordNode", 
          "desc" : { 
-            "x" : "-100146", 
+            "x" : "-100189", 
             "y" : "-97381"
          }, 
          "child" : [ 
@@ -138,13 +149,56 @@
       "24b148b4-2b0f-4964-afbe-410de63d5635" : { 
          "class" : "PlayScriptNode", 
          "desc" : { 
-            "x" : "-99959", 
-            "y" : "-97232"
+            "x" : "-100034", 
+            "y" : "-97239"
          }, 
          "child" : [ 
          ], 
          "objectName" : "$SELF$", 
          "script" : "entities/behavior/asim.crowd_v3"
+      }, 
+      "7585beb7-69bb-4952-b8f9-6b86aaa67fad" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-99647", 
+            "y" : "-97385"
+         }, 
+         "child" : [ 
+            "97b5c5fc-c4a9-4ecf-ba08-dc377082e5cc", 
+            "68b2de27-cd29-41ed-91e1-3d89a8ecfb1a"
+         ], 
+         "key" : "AUTODIALOG"
+      }, 
+      "97b5c5fc-c4a9-4ecf-ba08-dc377082e5cc" : { 
+         "class" : "RemoveKeywordNode", 
+         "desc" : { 
+            "x" : "-99681", 
+            "y" : "-97261"
+         }, 
+         "child" : [ 
+            "7a7e405b-7a50-4537-8f5f-27bd7885c644"
+         ], 
+         "key" : "AUTODIALOG"
+      }, 
+      "7a7e405b-7a50-4537-8f5f-27bd7885c644" : { 
+         "class" : "PlayScriptNode", 
+         "desc" : { 
+            "x" : "-99681", 
+            "y" : "-97180"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "script" : "Entities/Dialog/Liris"
+      }, 
+      "68b2de27-cd29-41ed-91e1-3d89a8ecfb1a" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-99558", 
+            "y" : "-97298"
+         }, 
+         "child" : [ 
+         ]
       }
    }, 
    "entry" : "a40b57d8-3d25-4ea1-9267-ee3e1faf278f"

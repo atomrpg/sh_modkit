@@ -24,8 +24,8 @@
       "7379fac9-bb5d-4e20-9859-d1d84db94589" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99665", 
-            "y" : "-101759"
+            "x" : "-99674", 
+            "y" : "-101761"
          }, 
          "child" : [ 
             "7fc67ce9-7395-46bf-bd8c-a8625b240010", 
@@ -36,8 +36,8 @@
       "7fc67ce9-7395-46bf-bd8c-a8625b240010" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-99871", 
-            "y" : "-101552"
+            "x" : "-99874", 
+            "y" : "-101570"
          }, 
          "child" : [ 
             "ac2050aa-b480-40b1-ad3f-4dd53634c343"
@@ -47,8 +47,8 @@
       "ac2050aa-b480-40b1-ad3f-4dd53634c343" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99872", 
-            "y" : "-101433"
+            "x" : "-99874", 
+            "y" : "-101477"
          }, 
          "child" : [ 
             "fe21d22e-976e-4b00-8264-9bad96def5f6", 
@@ -59,8 +59,8 @@
       "fe21d22e-976e-4b00-8264-9bad96def5f6" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-100005", 
-            "y" : "-101256"
+            "x" : "-100006", 
+            "y" : "-101301"
          }, 
          "child" : [ 
             "61d216cd-68e0-4ad2-af81-e8c3faf4fba6"
@@ -70,8 +70,8 @@
       "61d216cd-68e0-4ad2-af81-e8c3faf4fba6" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100008", 
-            "y" : "-101158"
+            "x" : "-100007", 
+            "y" : "-101225"
          }, 
          "child" : [ 
             "87218aaa-ed58-4963-aad9-9afa58073e44"
@@ -82,17 +82,40 @@
          "class" : "AddKeywordNode", 
          "desc" : { 
             "x" : "-100007", 
-            "y" : "-100998"
+            "y" : "-101076"
+         }, 
+         "child" : [ 
+            "4f490d02-ac88-4104-9f04-ecabd42ad67c"
+         ], 
+         "key" : "EXIT_TEAM"
+      }, 
+      "4f490d02-ac88-4104-9f04-ecabd42ad67c" : { 
+         "class" : "RestartBehaviorRequestNode", 
+         "desc" : { 
+            "x" : "-100008", 
+            "y" : "-100994"
+         }, 
+         "child" : [ 
+            "26d37a6e-4dac-421a-8012-c2eabbdc46a9"
+         ], 
+         "objectName" : "$SELF$"
+      }, 
+      "26d37a6e-4dac-421a-8012-c2eabbdc46a9" : { 
+         "class" : "DialogEndNode", 
+         "desc" : { 
+            "x" : "-99745", 
+            "y" : "-100842"
          }, 
          "child" : [ 
          ], 
-         "key" : "EXIT_TEAM"
+         "skipButtonEnd" : "false", 
+         "dontMarkInHistory" : "false"
       }, 
       "1d6f6e87-b479-4466-a592-b9361b937d0f" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-99743", 
-            "y" : "-101257"
+            "x" : "-99744", 
+            "y" : "-101301"
          }, 
          "child" : [ 
             "698b1002-c86d-4236-9d6b-cfad87a8d885"
@@ -102,18 +125,19 @@
       "698b1002-c86d-4236-9d6b-cfad87a8d885" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99743", 
-            "y" : "-101149"
+            "x" : "-99744", 
+            "y" : "-101222"
          }, 
          "child" : [ 
+            "26d37a6e-4dac-421a-8012-c2eabbdc46a9"
          ], 
          "text" : "<She nods in response>"
       }, 
       "97d84827-1431-4d65-bcf1-5605b9543338" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-99480", 
-            "y" : "-101553"
+            "x" : "-99479", 
+            "y" : "-101561"
          }, 
          "child" : [ 
             "03a88883-6391-4701-a2eb-be4a7bdf5cf1"
@@ -130,17 +154,6 @@
             "26d37a6e-4dac-421a-8012-c2eabbdc46a9"
          ], 
          "text" : "Lead the way!"
-      }, 
-      "26d37a6e-4dac-421a-8012-c2eabbdc46a9" : { 
-         "class" : "DialogEndNode", 
-         "desc" : { 
-            "x" : "-99480", 
-            "y" : "-101319"
-         }, 
-         "child" : [ 
-         ], 
-         "skipButtonEnd" : "false", 
-         "dontMarkInHistory" : "false"
       }
    }, 
    "entry" : "b245d076-b02a-4749-be17-85c54727b6cd"

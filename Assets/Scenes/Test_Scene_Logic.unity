@@ -275,7 +275,7 @@ PrefabInstance:
         "hairColor":"Brown", "voiceasset":"Entities/Voice/Liris", "constitution_fat":"0.5",
         "constitution_height":"0.5", "constitution_strength":"0.5", "status_effects":[
         {"type":"44", "turns_left":"0", "cooldowns":[  ]}, {"type":"47", "turns_left":"0",
-        "configuration":{"lastRestTime":"0"}} ], "lastRoudTime":"0"}'
+        "configuration":{"lastRestTime":"0"}} ], "lastRoudTime":"0", "behavior":"LirisLogic"}'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
