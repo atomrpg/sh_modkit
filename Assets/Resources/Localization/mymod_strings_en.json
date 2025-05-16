@@ -63,5 +63,11 @@
       "short": "Ancient Maļvian Helmet",
       "full": "Forged in a long-faded era, when Maļvia stood as a cradle of high civilization, these helmets were crafted from black bronze and crowned with dyed horsehair. Their silhouette is iconic—instantly recognizable—though few in the modern age have ever seen one in person, just through book illustrations. So how did a mere bandit chief come to possess one in such pristine condition..?"
     }
+  }, 
+  "quests.lines" : { 
+      "mod_to_remember" : "A Mod to Remember, A Mod to Forget"
+  }, 
+  "quests" : { 
+      "quest_mod_bandits_killed" : "<Burnt-down Cabin> I agreed to get rid of a gang and return a family heirloom to a young woman I met."
   }
 }
