@@ -92,6 +92,7 @@ public class ModBuilder : EditorWindow
 
     void OnSubmitItemUpdateResult(SubmitItemUpdateResult_t pCallback, bool bIOFailure)
     {
+        EditorUtility.ClearProgressBar();
         string readableResult = pCallback.m_eResult.ToString();
         string legalAgreementNeeded = pCallback.m_bUserNeedsToAcceptWorkshopLegalAgreement ? "Yes" : "No";
         string fileId = pCallback.m_nPublishedFileId.ToString();
@@ -140,7 +141,6 @@ public class ModBuilder : EditorWindow
     const string PATH_BUILD_DLL = "Temp/ModBuild_dll";
 
     bool buildAssetBundle = true;
-    bool buildLevelBundle = false;
     bool stripShaders = false;
     bool clearLogs = true;
 
@@ -163,88 +163,11 @@ public class ModBuilder : EditorWindow
         }
     }
 
-    string[] CreateSharedLevelBundle(string modName)
-    {
-        foreach (var assetBundleName in AssetDatabase.GetAllAssetBundleNames())
-        {
-            AssetDatabase.RemoveAssetBundleName(assetBundleName, true);
-        }
-
-        AssetDatabase.Refresh();
-
-        var levelBundleList = new List<string>();
-
-        foreach (var level in AssetDatabase.GetSubFolders("Assets/Resources/Levels"))
-        {
-            var v = modName + "_" + Path.GetFileName(level);
-            AssetImporter.GetAtPath(level).SetAssetBundleNameAndVariant(v, "");
-            levelBundleList.Add(v);
-        }
-
-        AssetDatabase.Refresh();
-
-        List<string> sharedAssets = new List<string>();
-        Dictionary<string, List<string>> sharedBundle = new Dictionary<string, List<string>>();
-        foreach (var assetBundleName in AssetDatabase.GetAllAssetBundleNames())
-        {
-            foreach (var assetPathAndNameAssign in AssetDatabase.GetAssetPathsFromAssetBundle(assetBundleName))
-            {
-                foreach (var assetPathAndName in AssetDatabase.GetDependencies(assetPathAndNameAssign, true))
-                {
-                    if (!sharedAssets.Contains(assetPathAndName))
-                    {
-                        sharedAssets.Add(assetPathAndName);
-                    }
-                    else
-                    {
-                        //var name = Path.GetFileNameWithoutExtension(assetPathAndName);
-                        //Debug.Log(name);
-                        if (!sharedBundle.ContainsKey(assetPathAndName))
-                        {
-                            sharedBundle.Add(assetPathAndName, new List<string>() { assetBundleName });
-                        }
-                        else
-                        {
-                            sharedBundle[assetPathAndName].Add(assetBundleName);
-                        }
-                    }
-                }
-            }
-        }
-
-        foreach (var it in sharedBundle)
-        {
-            it.Value.Sort();
-
-            string boundleSharedPath = "";
-
-            foreach (var b in it.Value)
-            {
-                boundleSharedPath = "_" + b;
-            }
-
-            var v = AssetImporter.GetAtPath(it.Key);
-            if (v != null)
-            {
-                string shareName = modName + boundleSharedPath + "_shared";
-                v.SetAssetBundleNameAndVariant(shareName, "");
-
-                if (!levelBundleList.Contains(shareName))
-                {
-                    levelBundleList.Add(shareName);
-                }
-            }
-        }
-
-        return levelBundleList.ToArray();
-    }
-
     string _rgchTitle = "";
     string _rgchDescription = "";
 
     private void OnGUI()
     {
-
         string modName = typeof(ModEntryPoint).Assembly.GetName().Name;
         GUILayout.Label("Build Settings", EditorStyles.boldLabel);
         EditorGUILayout.BeginHorizontal();
@@ -260,11 +183,6 @@ public class ModBuilder : EditorWindow
         clearLogs = GUILayout.Toggle(clearLogs, "Clear Logs");
         buildAssetBundle = GUILayout.Toggle(buildAssetBundle, "Build Asset Bundle");
         stripShaders = GUILayout.Toggle(stripShaders, "Strip Shaders");
-
-        if (buildAssetBundle)
-        {
-            buildLevelBundle = GUILayout.Toggle(buildLevelBundle, "Create Split Bundle Each Level");
-        }
 
         if (GUILayout.Button("BUILD"))
         {
@@ -298,11 +216,6 @@ public class ModBuilder : EditorWindow
 
                 string[] levelBundleList = null;
 
-                if (buildLevelBundle)
-                {
-                    levelBundleList = CreateSharedLevelBundle(modName);
-                }
-                else
                 {
                     foreach (var assetBundleName in AssetDatabase.GetAllAssetBundleNames())
                     {
@@ -339,7 +252,30 @@ public class ModBuilder : EditorWindow
 
                 if (buildAssetBundle)
                 {
-                    BuildPipeline.BuildAssetBundles(PATH_BUILD_BUNDLE, BuildAssetBundleOptions.ChunkBasedCompression/*BuildAssetBundleOptions.DisableWriteTypeTree*/, buildTarget);
+                    AssetBundleBuild[] builds = UnityEditor.Build.Content.ContentBuildInterface.GenerateAssetBundleBuilds();
+
+                    string stripPrefix = "Assets/Resources/";
+
+                    for (int j = 0; j < builds.Length; j++)
+                    {
+                        builds[j].addressableNames = new string[builds[j].assetNames.Length];
+                        for (int i = 0; i < builds[j].assetNames.Length; i++)
+                        {
+                            string originalPath = builds[j].assetNames[i];
+                            if (originalPath.StartsWith(stripPrefix, System.StringComparison.OrdinalIgnoreCase))
+                            {
+                                builds[j].addressableNames[i] = originalPath.Substring(stripPrefix.Length).ToLower();
+                            }
+                            else
+                            {
+                                builds[j].addressableNames[i] = originalPath.ToLower(); // fallback
+                            }
+                            //Debug.Log(builds[j].addressableNames[i]);
+                        }
+                    }
+
+                    BuildPipeline.BuildAssetBundles(PATH_BUILD_BUNDLE, builds, BuildAssetBundleOptions.ChunkBasedCompression, BuildTarget.StandaloneWindows);
+                    //BuildPipeline.BuildAssetBundles(PATH_BUILD_BUNDLE, BuildAssetBundleOptions.ChunkBasedCompression/*BuildAssetBundleOptions.DisableWriteTypeTree*/, buildTarget);
                 }
 
                 if(clearLogs)
@@ -355,26 +291,11 @@ public class ModBuilder : EditorWindow
                     Directory.CreateDirectory(modsFolder);
                 }
 
-                //  SUPPORT_LEVEL_BUNDLE
-                BuildTargetGroup buildTargetGroup = BuildTargetGroup.Standalone;
-                string baseDefines = PlayerSettings.GetScriptingDefineSymbolsForGroup(buildTargetGroup);
-
-                if (buildLevelBundle)
-                {
-                    string newDefines = AddCompilerDefines(baseDefines, new string[] { "SUPPORT_LEVEL_BUNDLE" });
-                    PlayerSettings.SetScriptingDefineSymbolsForGroup(buildTargetGroup, newDefines);
-                }
-
                 var scs = new UnityEditor.Build.Player.ScriptCompilationSettings();
                 scs.group = BuildTargetGroup.Standalone;
                 scs.options = UnityEditor.Build.Player.ScriptCompilationOptions.None;
                 scs.target = buildTarget;
                 UnityEditor.Build.Player.PlayerBuildInterface.CompilePlayerScripts(scs, "Temp/ModBuild_dll");
-
-                if (buildLevelBundle)
-                {
-                    PlayerSettings.SetScriptingDefineSymbolsForGroup(buildTargetGroup, baseDefines);
-                }
 
                 Copy("Temp/ModBuild_dll/" + modName + ".dll", modsFolder + "/" + modName + ".dll");
                 Copy("Temp/ModBuild_dll/" + modName + ".pdb", modsFolder + "/" + modName + ".pdb");
@@ -388,15 +309,6 @@ public class ModBuilder : EditorWindow
 
                 CopyBundle(dataAsset, modResFolder, modName + "_resources");
                 CopyBundle(dataAsset, modResFolder, modName + "_scenes");
-
-                if (buildLevelBundle)
-                {
-                    Copy("Temp/ModBuild/ModBuild", modsFolder + "/" + modName);
-                    foreach (var level in levelBundleList)
-                    {
-                        CopyBundle(dataAsset, modResFolder, Path.GetFileName(level));
-                    }
-                }
 
                 Copy("Temp/ModBuild_dll/" + modName + ".dll", "Temp/ModBuild/" + modName + ".dll");
                 Copy("Temp/ModBuild_dll/" + modName + ".pdb", "Temp/ModBuild/" + modName + ".pdb");
@@ -453,6 +365,8 @@ public class ModBuilder : EditorWindow
 
                 if (GUILayout.Button("Upload details"))
                 {
+                    EditorUtility.DisplayCancelableProgressBar("Uploading to Steam Workshop", "Please wait...", 0);
+
                     var handle = SteamUGC.StartItemUpdate(SteamUtils.GetAppID(), details.m_nPublishedFileId);
                     SteamUGC.SetItemTitle(handle, _rgchTitle);
                     SteamUGC.SetItemDescription(handle, _rgchDescription);
@@ -467,6 +381,8 @@ public class ModBuilder : EditorWindow
 
                 if (GUILayout.Button("Upload preview image"))
                 {
+                    EditorUtility.DisplayCancelableProgressBar("Uploading to Steam Workshop", "Please wait...", 0);
+
                     var handle = SteamUGC.StartItemUpdate(SteamUtils.GetAppID(), details.m_nPublishedFileId);
                     SteamUGC.SetItemPreview(handle, EditorUtility.OpenFilePanel("Preview mod image", "", "png"));
                     SteamAPICall_t callHandle = SteamUGC.SubmitItemUpdate(handle, "");
@@ -479,6 +395,8 @@ public class ModBuilder : EditorWindow
 
                 if (GUILayout.Button("Upload content"))
                 {
+                    EditorUtility.DisplayCancelableProgressBar("Uploading to Steam Workshop", "Please wait...", 0);
+
                     var handle = SteamUGC.StartItemUpdate(SteamUtils.GetAppID(), details.m_nPublishedFileId);
 
                     string dataAsset = Application.dataPath;
@@ -500,6 +418,8 @@ public class ModBuilder : EditorWindow
 
                 if (GUILayout.Button("Set Visibility to Public"))
                 {
+                    EditorUtility.DisplayCancelableProgressBar("Uploading to Steam Workshop", "Please wait...", 0);
+
                     var handle = SteamUGC.StartItemUpdate(SteamUtils.GetAppID(), details.m_nPublishedFileId);
                     SteamUGC.SetItemTitle(handle, _rgchTitle);
                     SteamUGC.SetItemDescription(handle, _rgchDescription);
