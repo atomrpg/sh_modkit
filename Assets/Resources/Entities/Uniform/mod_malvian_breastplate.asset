@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: mod_malvian_breastplate
   m_EditorClassIdentifier: 
   Icon:
-    path: Entities/Uniform/Shody_Iron_Breastplate
+    path: Entities/Uniform/mod_malvian_breastplate
   m_Localization: uniform.mod_malvian_breastplate
   Takeable: 1
   UISounds:

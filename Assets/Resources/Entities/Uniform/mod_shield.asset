@@ -9,40 +9,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 800294487, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
-  m_Name: mod_malvian_helmet
+  m_Script: {fileID: 1276683589, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: mod_shield
   m_EditorClassIdentifier: 
   Icon:
-    path: Entities/Uniform/mod_malvian_helmet
-  m_Localization: uniform.mod_malvian_helmet
+    path: Entities/Uniform/mod_shield
+  m_Localization: 
   Takeable: 1
   UISounds:
-    path: Entities/Sound/Items/IronHelm
-  Cost: 140
-  Weight: 1997
-  ItemPerks: 128
+    path: 
+  Cost: 0
+  Weight: 0
+  ItemPerks: 0
   LegalTrade: 1
   Collectable: 1
   TradeMode: 0
   TradeModeNames: []
-  Modifiers:
-  - _type: 24
-    _value: 1
-  - _type: 28
-    _value: 22
-  - _type: 86
-    _value: 99
-  uniformQuality: 6
+  Modifiers: []
+  uniformQuality: 1
   UniformMaterialProto:
-    path: Entities/Sound/Uniform/Metal
+    path: 
   PartsPathes: []
   AnimationOverrideList:
     path: 
-  HideMask: 1
+  HideMask: 0
   rules: []
   rulesEx: 0
   Perks: 0
   EquipIcon:
     path: 
   soundFit:
+    path: 
+  BlockSounds:
     path: 
