@@ -151,14 +151,14 @@ MonoBehaviour:
   m_Script: {fileID: 1423921309, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mEntityData: '{"class":"Character", "proto":"basemale_1_a", "character":"mod_bandittest5",
-    "damage":"0", "ap":"0", "relationship":"0", "fraction":"bandits_bodyguard", "civicsociety":"enemy",
-    "inventory":[  ], "weapon":{"class":"Weapon", "count":"1", "proto":"k_fist_caestus"},
-    "jacket":{"class":"Jacket", "count":"1", "proto":"leather_jacket"}, "quickpanel":{"1":{"class":"WeaponTechnique",
-    "proto":"k2_1noseburster"}}, "quickpanelmainindex":"0", "constitution_fat":"0.5",
+  mEntityData: '{"class":"Character", "proto":"BaseMale_1_A", "character":"mod_bandittest5",
+    "damage":"0", "ap":"0", "relationship":"0", "fraction":"test_mod_bandits", "civicsociety":"enemy",
+    "inventory":[  ], "weapon":{"class":"Weapon", "count":"1", "proto":"K_Fist_Caestus"},
+    "jacket":{"class":"Jacket", "count":"1", "proto":"Leather_Jacket"}, "quickpanel":{"1":{"class":"WeaponTechnique",
+    "proto":"K2_1NoseBurster"}}, "quickpanelmainindex":"0", "constitution_fat":"0.5",
     "constitution_height":"0.5", "constitution_strength":"0.5", "status_effects":[
     {"type":"44", "turns_left":"0", "cooldowns":[  ]}, {"type":"47", "turns_left":"0",
-    "configuration":{"lastRestTime":"0"}} ], "lastRoudTime":"0"}'
+    "configuration":{"lastRestTime":"0"}} ], "lastRoudTime":"0", "behavior":"ASim.Crowd_v3"}'
   _agentRadius: 0.7
   _agentHeight: 4.5
 --- !u!4 &284278305
@@ -169,13 +169,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284278303}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 58.195976, y: 0, z: 33.47441}
+  m_LocalRotation: {x: -0, y: -0.82566565, z: -0, w: 0.56415987}
+  m_LocalPosition: {x: 80.76, y: 0, z: 88.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -111.312, z: 0}
 --- !u!1001 &433740420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -301,14 +301,14 @@ MonoBehaviour:
   m_Script: {fileID: 1423921309, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mEntityData: '{"class":"Character", "proto":"basemale_1_b4", "character":"mod_bandittest3",
-    "damage":"0", "ap":"0", "relationship":"0", "fraction":"bandits_patrolwalker",
-    "civicsociety":"enemy", "inventory":[ {"class":"Item", "count":"1", "proto":"tr2_jadestatuette"}
-    ], "weapon":{"class":"Weapon", "count":"1", "proto":"sh_spear_dullspear"}, "quickpanel":{},
-    "quickpanelmainindex":"0", "constitution_fat":"0.5", "constitution_height":"0.5",
-    "constitution_strength":"0.5", "status_effects":[ {"type":"44", "turns_left":"0",
-    "cooldowns":[  ]}, {"type":"47", "turns_left":"0", "configuration":{"lastRestTime":"0"}}
-    ], "lastRoudTime":"0"}'
+  mEntityData: '{"class":"Character", "proto":"BaseMale_1_B4", "character":"mod_bandittest3",
+    "damage":"0", "ap":"0", "relationship":"0", "fraction":"test_mod_bandits", "civicsociety":"enemy",
+    "inventory":[ {"class":"Item", "count":"1", "proto":"Tr2_JadeStatuette"} ], "weapon":{"class":"Weapon",
+    "count":"1", "proto":"SH_Spear_DullSpear"}, "quickpanel":{}, "quickpanelmainindex":"0",
+    "constitution_fat":"0.5", "constitution_height":"0.5", "constitution_strength":"0.5",
+    "status_effects":[ {"type":"44", "turns_left":"0", "cooldowns":[  ]}, {"type":"47",
+    "turns_left":"0", "configuration":{"lastRestTime":"0"}} ], "lastRoudTime":"0",
+    "behavior":"ASim.Crowd_v3"}'
   _agentRadius: 0.7
   _agentHeight: 4.5
 --- !u!4 &652968040
@@ -319,13 +319,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652968038}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 29.226862, y: -0.000015258789, z: 52.704803}
+  m_LocalRotation: {x: -0, y: 0.9902535, z: -0, w: 0.13927671}
+  m_LocalPosition: {x: 99.6, y: -0.000015258789, z: 65.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 163.988, z: 0}
 --- !u!1 &752526359
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,8 +355,9 @@ MonoBehaviour:
   m_Script: {fileID: 498862261, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mEntityData: '{"class":"Chest", "proto":"CrateWood_4", "inventory":[  ], "open":"false",
-    "touch":"false", "lockLevel":"0", "minDiceThrow":"0", "isAttempted":"false"}'
+  mEntityData: '{"class":"Chest", "proto":"CrateWood_4", "inventory":[ {"class":"Item",
+    "count":"1", "proto":"mod_stone_of_arkham"} ], "open":"false", "touch":"false",
+    "lockLevel":"0", "minDiceThrow":"0", "isAttempted":"false"}'
 --- !u!4 &752526361
 Transform:
   m_ObjectHideFlags: 0
@@ -365,13 +366,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752526359}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.59, y: 0, z: 22.27}
+  m_LocalRotation: {x: -0, y: -0.7073325, z: -0, w: 0.706881}
+  m_LocalPosition: {x: 83.28, y: 0, z: 85.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90.037, z: 0}
 --- !u!1 &954611483
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,13 +402,13 @@ MonoBehaviour:
   m_Script: {fileID: 1423921309, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mEntityData: '{"class":"Character", "proto":"basemale_1_a", "character":"mod_bandittest1",
-    "damage":"0", "ap":"0", "relationship":"0", "fraction":"bandits_duo", "civicsociety":"enemy",
-    "inventory":[  ], "weapon":{"class":"Weapon", "count":"1", "proto":"am_axe_sluriamaxe"},
+  mEntityData: '{"class":"Character", "proto":"BaseMale_1_A", "character":"mod_bandittest1",
+    "damage":"0", "ap":"0", "relationship":"0", "fraction":"test_mod_bandits", "civicsociety":"enemy",
+    "inventory":[  ], "weapon":{"class":"Weapon", "count":"1", "proto":"AM_Axe_SluriamAxe"},
     "quickpanel":{}, "quickpanelmainindex":"0", "constitution_fat":"0.5", "constitution_height":"0.5",
     "constitution_strength":"0.5", "status_effects":[ {"type":"44", "turns_left":"0",
     "cooldowns":[  ]}, {"type":"47", "turns_left":"0", "configuration":{"lastRestTime":"0"}}
-    ], "lastRoudTime":"0"}'
+    ], "lastRoudTime":"0", "behavior":"ASim.Crowd_v3"}'
   _agentRadius: 0.7
   _agentHeight: 4.5
 --- !u!4 &954611485
@@ -418,13 +419,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954611483}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 28.9, y: 0, z: 39.42235}
+  m_LocalRotation: {x: -0, y: -0.83203137, z: -0, w: 0.55472857}
+  m_LocalPosition: {x: 79.53, y: 0, z: 70.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -112.616, z: 0}
 --- !u!1 &1078497981
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,13 +455,14 @@ MonoBehaviour:
   m_Script: {fileID: 1423921309, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mEntityData: '{"class":"Character", "proto":"basemale_1_b3", "character":"mod_bandittest2",
-    "damage":"0", "ap":"0", "relationship":"0", "fraction":"bandits_duo", "civicsociety":"enemy",
-    "inventory":[  ], "weapon":{"class":"Weapon", "count":"1", "proto":"am_mace_stick"},
-    "quickpanel":{"1":{"class":"WeaponTechnique", "proto":"am_1_2_kneecap"}}, "quickpanelmainindex":"0",
+  mEntityData: '{"class":"Character", "proto":"BaseMale_1_B3", "character":"mod_bandittest2",
+    "damage":"0", "ap":"0", "relationship":"0", "fraction":"test_mod_bandits", "civicsociety":"enemy",
+    "inventory":[  ], "weapon":{"class":"Weapon", "count":"1", "proto":"AM_Mace_Stick"},
+    "quickpanel":{"1":{"class":"WeaponTechnique", "proto":"AM_1_2_Kneecap"}}, "quickpanelmainindex":"0",
     "constitution_fat":"0.5", "constitution_height":"0.5", "constitution_strength":"0.5",
     "status_effects":[ {"type":"44", "turns_left":"0", "cooldowns":[  ]}, {"type":"47",
-    "turns_left":"0", "configuration":{"lastRestTime":"0"}} ], "lastRoudTime":"0"}'
+    "turns_left":"0", "configuration":{"lastRestTime":"0"}} ], "lastRoudTime":"0",
+    "behavior":"ASim.Crowd_v3"}'
   _agentRadius: 0.7
   _agentHeight: 4.5
 --- !u!4 &1078497983
@@ -471,13 +473,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1078497981}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 29.037222, y: -0.000015258789, z: 30.341248}
+  m_LocalRotation: {x: -0, y: -0.80744624, z: -0, w: 0.58994126}
+  m_LocalPosition: {x: 74.39, y: -0.000015258789, z: 84.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -107.694, z: 0}
 --- !u!1 &1147442927
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,16 +509,16 @@ MonoBehaviour:
   m_Script: {fileID: 1423921309, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mEntityData: '{"class":"Character", "proto":"basemale_1_b", "character":"mod_banditboss",
-    "damage":"0", "ap":"0", "relationship":"0", "fraction":"bandits_bossgang", "civicsociety":"enemy",
+  mEntityData: '{"class":"Character", "proto":"BaseMale_1_B", "character":"mod_banditboss",
+    "damage":"0", "ap":"0", "relationship":"0", "fraction":"test_mod_bandits", "civicsociety":"enemy",
     "inventory":[  ], "weapon":{"class":"Weapon", "count":"1", "proto":"mod_banditsword"},
     "cap":{"class":"Cap", "count":"1", "proto":"mod_malvian_helmet"}, "armor":{"class":"Armor",
     "count":"1", "proto":"mod_malvian_breastplate"}, "quickpanel":{"1":{"class":"WeaponTechnique",
-    "proto":"bl2_3_double_trouble"}, "2":{"class":"Consumable", "count":"4", "proto":"nocraft_med_healing_salve"}},
+    "proto":"BL2_3_Double_Trouble"}, "2":{"class":"Consumable", "count":"4", "proto":"NoCraft_Med_Healing_Salve"}},
     "quickpanelmainindex":"0", "constitution_fat":"0.5", "constitution_height":"0.5",
     "constitution_strength":"0.5", "status_effects":[ {"type":"44", "turns_left":"0",
     "cooldowns":[  ]}, {"type":"47", "turns_left":"0", "configuration":{"lastRestTime":"0"}}
-    ], "lastRoudTime":"0"}'
+    ], "lastRoudTime":"0", "behavior":"ASim.Crowd_v3"}'
   _agentRadius: 0.7
   _agentHeight: 4.5
 --- !u!4 &1147442929
@@ -527,13 +529,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147442927}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 56.63674, y: -0.000015258789, z: 41.035385}
+  m_LocalRotation: {x: -0, y: -0.8245549, z: -0, w: 0.56578207}
+  m_LocalPosition: {x: 80.39, y: -0.000015258789, z: 85.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -111.087, z: 0}
 --- !u!1 &1709448480
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,14 +565,14 @@ MonoBehaviour:
   m_Script: {fileID: 1423921309, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mEntityData: '{"class":"Character", "proto":"basemale_1_b4", "character":"mod_bandittest4",
-    "damage":"0", "ap":"0", "relationship":"0", "fraction":"bandits_patrolwalker",
-    "civicsociety":"enemy", "inventory":[  ], "weapon":{"class":"Weapon", "count":"1",
-    "proto":"bl_dagg_knife"}, "quickpanel":{"1":{"class":"WeaponTechnique", "proto":"bl1_2_puncture"},
-    "2":{"class":"WeaponTechnique", "proto":"bl1_1_out_for_blood"}}, "quickpanelmainindex":"0",
-    "constitution_fat":"0.5", "constitution_height":"0.5", "constitution_strength":"0.5",
-    "status_effects":[ {"type":"44", "turns_left":"0", "cooldowns":[  ]}, {"type":"47",
-    "turns_left":"0", "configuration":{"lastRestTime":"0"}} ], "lastRoudTime":"0"}'
+  mEntityData: '{"class":"Character", "proto":"BaseMale_1_B4", "character":"mod_bandittest4",
+    "damage":"0", "ap":"0", "relationship":"0", "fraction":"test_mod_bandits", "civicsociety":"enemy",
+    "inventory":[  ], "weapon":{"class":"Weapon", "count":"1", "proto":"BL_Dagg_Knife"},
+    "quickpanel":{"1":{"class":"WeaponTechnique", "proto":"BL1_2_Puncture"}, "2":{"class":"WeaponTechnique",
+    "proto":"BL1_1_Out_For_Blood"}}, "quickpanelmainindex":"0", "constitution_fat":"0.5",
+    "constitution_height":"0.5", "constitution_strength":"0.5", "status_effects":[
+    {"type":"44", "turns_left":"0", "cooldowns":[  ]}, {"type":"47", "turns_left":"0",
+    "configuration":{"lastRestTime":"0"}} ], "lastRoudTime":"0", "behavior":"ASim.Crowd_v3"}'
   _agentRadius: 0.7
   _agentHeight: 4.5
 --- !u!4 &1709448482
@@ -588,10 +590,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1916327989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1916327991}
+  - component: {fileID: 1916327990}
+  m_Layer: 0
+  m_Name: LogicLevel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1916327990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916327989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -174002391, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mEntityData: '{"class":"Interactive", "proto":"LogicLevel", "behavior":"Level_Test_Scene"}'
+--- !u!4 &1916327991
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916327989}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1916327991}
   - {fileID: 954611485}
   - {fileID: 1078497983}
   - {fileID: 652968040}

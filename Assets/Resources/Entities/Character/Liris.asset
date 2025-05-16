@@ -40,7 +40,7 @@ MonoBehaviour:
     _flags: 5
   specialtyMask: 32
   SkillPerks:
-    path: 
+    path: entities/perks/skillperks/trees/teammateskillperktree
   Stats:
     _modifiers:
     - _type: 25
