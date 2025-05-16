@@ -1,0 +1,147 @@
+{ 
+   "states" : { 
+      "b245d076-b02a-4749-be17-85c54727b6cd" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-99611", 
+            "y" : "-101951"
+         }, 
+         "child" : [ 
+            "8968d53f-d668-4614-89e4-2207b6618689"
+         ]
+      }, 
+      "8968d53f-d668-4614-89e4-2207b6618689" : { 
+         "class" : "DialogBeginNode", 
+         "desc" : { 
+            "x" : "-99666", 
+            "y" : "-101885"
+         }, 
+         "child" : [ 
+            "7379fac9-bb5d-4e20-9859-d1d84db94589"
+         ], 
+         "cameraPoint" : "Player"
+      }, 
+      "7379fac9-bb5d-4e20-9859-d1d84db94589" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99665", 
+            "y" : "-101759"
+         }, 
+         "child" : [ 
+            "7fc67ce9-7395-46bf-bd8c-a8625b240010", 
+            "97d84827-1431-4d65-bcf1-5605b9543338"
+         ], 
+         "text" : "<A young woman looks at you with a small, almost guilty smile> What is it?"
+      }, 
+      "7fc67ce9-7395-46bf-bd8c-a8625b240010" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99871", 
+            "y" : "-101552"
+         }, 
+         "child" : [ 
+            "ac2050aa-b480-40b1-ad3f-4dd53634c343"
+         ], 
+         "text" : "{!} We need to part ways for now."
+      }, 
+      "ac2050aa-b480-40b1-ad3f-4dd53634c343" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99872", 
+            "y" : "-101433"
+         }, 
+         "child" : [ 
+            "fe21d22e-976e-4b00-8264-9bad96def5f6", 
+            "1d6f6e87-b479-4466-a592-b9361b937d0f"
+         ], 
+         "text" : "Yeah?"
+      }, 
+      "fe21d22e-976e-4b00-8264-9bad96def5f6" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-100005", 
+            "y" : "-101256"
+         }, 
+         "child" : [ 
+            "61d216cd-68e0-4ad2-af81-e8c3faf4fba6"
+         ], 
+         "text" : "{Ok} Yeah."
+      }, 
+      "61d216cd-68e0-4ad2-af81-e8c3faf4fba6" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100008", 
+            "y" : "-101158"
+         }, 
+         "child" : [ 
+            "87218aaa-ed58-4963-aad9-9afa58073e44"
+         ], 
+         "text" : "Well, you know where to find me."
+      }, 
+      "87218aaa-ed58-4963-aad9-9afa58073e44" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-100007", 
+            "y" : "-100998"
+         }, 
+         "child" : [ 
+         ], 
+         "key" : "EXIT_TEAM"
+      }, 
+      "1d6f6e87-b479-4466-a592-b9361b937d0f" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99743", 
+            "y" : "-101257"
+         }, 
+         "child" : [ 
+            "698b1002-c86d-4236-9d6b-cfad87a8d885"
+         ], 
+         "text" : "{No} Nay."
+      }, 
+      "698b1002-c86d-4236-9d6b-cfad87a8d885" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99743", 
+            "y" : "-101149"
+         }, 
+         "child" : [ 
+         ], 
+         "text" : "<She nods in response>"
+      }, 
+      "97d84827-1431-4d65-bcf1-5605b9543338" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99480", 
+            "y" : "-101553"
+         }, 
+         "child" : [ 
+            "03a88883-6391-4701-a2eb-be4a7bdf5cf1"
+         ], 
+         "text" : "{End} Let's go."
+      }, 
+      "03a88883-6391-4701-a2eb-be4a7bdf5cf1" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99479", 
+            "y" : "-101468"
+         }, 
+         "child" : [ 
+            "26d37a6e-4dac-421a-8012-c2eabbdc46a9"
+         ], 
+         "text" : "Lead the way!"
+      }, 
+      "26d37a6e-4dac-421a-8012-c2eabbdc46a9" : { 
+         "class" : "DialogEndNode", 
+         "desc" : { 
+            "x" : "-99480", 
+            "y" : "-101319"
+         }, 
+         "child" : [ 
+         ], 
+         "skipButtonEnd" : "false", 
+         "dontMarkInHistory" : "false"
+      }
+   }, 
+   "entry" : "b245d076-b02a-4749-be17-85c54727b6cd"
+}

@@ -1,5 +1,29 @@
 [ 
    { 
+      "class" : "Interactive", 
+      "active" : "true", 
+      "proto" : "LogicLevel", 
+      "behavior" : "Level_Test_Scene", 
+      "name" : "LogicLevel", 
+      "transform" : { 
+         "pos" : [ 
+            "0", 
+            "0", 
+            "0"
+         ], 
+         "rot" : [ 
+            "0", 
+            "0", 
+            "0"
+         ], 
+         "scale" : [ 
+            "1", 
+            "1", 
+            "1"
+         ]
+      }
+   }, 
+   { 
       "projectileRemains" : { 
          "list" : [ 
          ]
@@ -11,7 +35,7 @@
       "damage" : "0", 
       "ap" : "0", 
       "relationship" : "0", 
-      "fraction" : "bandits_duo", 
+      "fraction" : "test_mod_bandits", 
       "civicsociety" : "enemy", 
       "inventory" : [ 
       ], 
@@ -42,16 +66,17 @@
          }
       ], 
       "lastRoudTime" : "0", 
+      "behavior" : "ASim.Crowd_v3", 
       "name" : "Bandit_Standby", 
       "transform" : { 
          "pos" : [ 
-            "28.9", 
+            "79.53", 
             "0", 
-            "39.42235"
+            "70.25"
          ], 
          "rot" : [ 
             "0", 
-            "90", 
+            "247.384", 
             "0"
          ], 
          "scale" : [ 
@@ -73,7 +98,7 @@
       "damage" : "0", 
       "ap" : "0", 
       "relationship" : "0", 
-      "fraction" : "bandits_duo", 
+      "fraction" : "test_mod_bandits", 
       "civicsociety" : "enemy", 
       "inventory" : [ 
       ], 
@@ -108,16 +133,17 @@
          }
       ], 
       "lastRoudTime" : "0", 
+      "behavior" : "ASim.Crowd_v3", 
       "name" : "Bandit_Standby_2", 
       "transform" : { 
          "pos" : [ 
-            "29.03722", 
+            "74.39", 
             "-1.525879E-05", 
-            "30.34125"
+            "84.32"
          ], 
          "rot" : [ 
             "0", 
-            "90", 
+            "252.3057", 
             "0"
          ], 
          "scale" : [ 
@@ -139,7 +165,7 @@
       "damage" : "0", 
       "ap" : "0", 
       "relationship" : "0", 
-      "fraction" : "bandits_patrolwalker", 
+      "fraction" : "test_mod_bandits", 
       "civicsociety" : "enemy", 
       "inventory" : [ 
          { 
@@ -175,16 +201,17 @@
          }
       ], 
       "lastRoudTime" : "0", 
+      "behavior" : "ASim.Crowd_v3", 
       "name" : "Bandit_PatrolWalker", 
       "transform" : { 
          "pos" : [ 
-            "29.22686", 
+            "99.6", 
             "-1.525879E-05", 
-            "52.7048"
+            "65.6"
          ], 
          "rot" : [ 
             "0", 
-            "90", 
+            "163.988", 
             "0"
          ], 
          "scale" : [ 
@@ -206,7 +233,7 @@
       "damage" : "0", 
       "ap" : "0", 
       "relationship" : "0", 
-      "fraction" : "bandits_patrolwalker", 
+      "fraction" : "test_mod_bandits", 
       "civicsociety" : "enemy", 
       "inventory" : [ 
       ], 
@@ -245,16 +272,17 @@
          }
       ], 
       "lastRoudTime" : "0", 
+      "behavior" : "ASim.Crowd_v3", 
       "name" : "Bandit_PatrolWalker_2", 
       "transform" : { 
          "pos" : [ 
-            "22.60484", 
-            "0", 
-            "63.52617"
+            "98.4", 
+            "-1.525879E-05", 
+            "73.3"
          ], 
          "rot" : [ 
             "0", 
-            "90", 
+            "163.988", 
             "0"
          ], 
          "scale" : [ 
@@ -276,7 +304,7 @@
       "damage" : "0", 
       "ap" : "0", 
       "relationship" : "0", 
-      "fraction" : "bandits_bossgang", 
+      "fraction" : "test_mod_bandits", 
       "civicsociety" : "enemy", 
       "inventory" : [ 
       ], 
@@ -326,16 +354,17 @@
          }
       ], 
       "lastRoudTime" : "0", 
+      "behavior" : "ASim.Crowd_v3", 
       "name" : "Bandit_Boss", 
       "transform" : { 
          "pos" : [ 
-            "56.63674", 
+            "80.39", 
             "-1.525879E-05", 
-            "41.03539"
+            "85.38"
          ], 
          "rot" : [ 
             "0", 
-            "90", 
+            "248.9132", 
             "0"
          ], 
          "scale" : [ 
@@ -357,7 +386,7 @@
       "damage" : "0", 
       "ap" : "0", 
       "relationship" : "0", 
-      "fraction" : "bandits_bodyguard", 
+      "fraction" : "test_mod_bandits", 
       "civicsociety" : "enemy", 
       "inventory" : [ 
       ], 
@@ -397,16 +426,17 @@
          }
       ], 
       "lastRoudTime" : "0", 
+      "behavior" : "ASim.Crowd_v3", 
       "name" : "Bandit_Bossbodyguard", 
       "transform" : { 
          "pos" : [ 
-            "58.19598", 
+            "80.76", 
             "0", 
-            "33.47441"
+            "88.58"
          ], 
          "rot" : [ 
             "0", 
-            "90", 
+            "248.6879", 
             "0"
          ], 
          "scale" : [ 
@@ -421,6 +451,11 @@
       "active" : "true", 
       "proto" : "CrateWood_4", 
       "inventory" : [ 
+         { 
+            "class" : "Item", 
+            "count" : "1", 
+            "proto" : "mod_stone_of_arkham"
+         }
       ], 
       "open" : "false", 
       "touch" : "false", 
@@ -430,13 +465,13 @@
       "name" : "TestChest", 
       "transform" : { 
          "pos" : [ 
-            "24.59", 
+            "83.28", 
             "0", 
-            "22.27"
+            "85.61"
          ], 
          "rot" : [ 
             "0", 
-            "0", 
+            "269.9634", 
             "0"
          ], 
          "scale" : [ 
@@ -458,6 +493,7 @@
       "damage" : "0", 
       "ap" : "0", 
       "relationship" : "100", 
+      "fraction" : "liris", 
       "civicsociety" : "citizen", 
       "inventory" : [ 
       ], 
@@ -502,13 +538,13 @@
       "name" : "Liris", 
       "transform" : { 
          "pos" : [ 
-            "19.61106", 
+            "37.77", 
             "0", 
-            "27.23"
+            "25.45"
          ], 
          "rot" : [ 
             "0", 
-            "0", 
+            "300.1938", 
             "0"
          ], 
          "scale" : [ 

@@ -3,309 +3,99 @@
       "b245d076-b02a-4749-be17-85c54727b6cd" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-100068", 
-            "y" : "-102134"
+            "x" : "-99678", 
+            "y" : "-102166"
          }, 
          "child" : [ 
-            "994aaa2a-c30b-462e-81bb-607d0bc15d29"
+            "4aaa7a7c-a8de-4c11-bb31-7ca5ee0d8832"
          ]
       }, 
-      "994aaa2a-c30b-462e-81bb-607d0bc15d29" : { 
-         "class" : "DummyNode", 
+      "4aaa7a7c-a8de-4c11-bb31-7ca5ee0d8832" : { 
+         "class" : "HasKeywordNode", 
          "desc" : { 
-            "x" : "-100177", 
-            "y" : "-101999"
+            "x" : "-99732", 
+            "y" : "-102093"
          }, 
          "child" : [ 
+            "27eb1895-2bf0-4317-9b85-01f1695b23c3", 
             "8968d53f-d668-4614-89e4-2207b6618689"
-         ]
+         ], 
+         "key" : "TEAMMATE"
+      }, 
+      "27eb1895-2bf0-4317-9b85-01f1695b23c3" : { 
+         "class" : "PlayScriptNode", 
+         "desc" : { 
+            "x" : "-99935", 
+            "y" : "-101995"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "script" : "Entities/Dialog/Liris_Teammate"
       }, 
       "8968d53f-d668-4614-89e4-2207b6618689" : { 
          "class" : "DialogBeginNode", 
          "desc" : { 
-            "x" : "-100366", 
-            "y" : "-101806"
-         }, 
-         "child" : [ 
-            "5d8bd33d-f08b-4bcd-b74a-db6e69f1c0d9"
-         ], 
-         "cameraPoint" : "Player"
-      }, 
-      "5d8bd33d-f08b-4bcd-b74a-db6e69f1c0d9" : { 
-         "class" : "DummyNode", 
-         "desc" : { 
-            "x" : "-100588", 
-            "y" : "-101715"
+            "x" : "-99666", 
+            "y" : "-101885"
          }, 
          "child" : [ 
             "04ae38ce-6d91-481d-863d-c5de188bd4ac"
-         ]
+         ], 
+         "cameraPoint" : "Player"
       }, 
       "04ae38ce-6d91-481d-863d-c5de188bd4ac" : { 
          "class" : "HasKeywordNode", 
          "desc" : { 
-            "x" : "-100828", 
-            "y" : "-101668"
+            "x" : "-99666", 
+            "y" : "-101747"
          }, 
          "child" : [ 
             "c6a460ca-ae66-4e89-b746-c5578f334347", 
-            "8429ecf5-365e-4bfe-96e8-a2ba9265f225"
+            "16f181ae-6990-4485-be13-2722412e9b03"
          ], 
          "key" : "START_A12"
       }, 
       "c6a460ca-ae66-4e89-b746-c5578f334347" : { 
          "class" : "HasGlobalKeyNode", 
          "desc" : { 
-            "x" : "-100377", 
-            "y" : "-101385"
+            "x" : "-100440", 
+            "y" : "-101500"
          }, 
          "child" : [ 
             "eeff5444-81e7-4617-a134-3d471b50ee7c", 
             "7379fac9-bb5d-4e20-9859-d1d84db94589"
          ], 
-         "note_key" : "GLOBAL_PEREBIL_BANDU"
+         "note_key" : "GLOBAL_MOD_BANDITS_KILLED"
       }, 
       "eeff5444-81e7-4617-a134-3d471b50ee7c" : { 
          "class" : "HasKeywordNode", 
          "desc" : { 
-            "x" : "-100267", 
-            "y" : "-101029"
+            "x" : "-100801", 
+            "y" : "-101301"
          }, 
          "child" : [ 
             "75ef80a3-44a7-494f-8e9e-85936be77029", 
             "66441bd0-70d0-46c5-aaa3-e33353fa59b1"
          ], 
-         "key" : "KVEST"
+         "key" : "QUEST"
       }, 
       "75ef80a3-44a7-494f-8e9e-85936be77029" : { 
          "class" : "QuestDoneNode", 
          "desc" : { 
-            "x" : "-99850", 
-            "y" : "-100716", 
-            "comment" : "Убить Банду"
+            "x" : "-100901", 
+            "y" : "-101159"
          }, 
          "child" : [ 
-            "bb726dba-0645-4d24-80f1-8eacf3e39583"
+            "66441bd0-70d0-46c5-aaa3-e33353fa59b1"
          ], 
-         "quest_key" : "QUEST_UBIT__BANDU"
-      }, 
-      "bb726dba-0645-4d24-80f1-8eacf3e39583" : { 
-         "class" : "AddExpNode", 
-         "desc" : { 
-            "x" : "-99609", 
-            "y" : "-100488"
-         }, 
-         "child" : [ 
-            "b5f2e63c-c4dd-4b09-a337-290f92fa455b"
-         ], 
-         "objectName" : "Player", 
-         "exp" : "222", 
-         "ignoreIntellect" : "false"
-      }, 
-      "b5f2e63c-c4dd-4b09-a337-290f92fa455b" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-99609", 
-            "y" : "-100288", 
-            "comment" : "(A12) \nEXISTS IF HAS_GLOBAL_NOTE PEREBIL_BANDU (если есть глобальное условие ПЕРЕБИЛ_БАНДУ)\nEXISTS IF HAS_KEY KVEST (если есть условие КВЕСТ)\nDONE QUEST Убить Банду\n+222 EXP (+222 ЕХР)", 
-            "historytag" : "A12"
-         }, 
-         "child" : [ 
-            "d75393a4-9f67-45f2-8585-0fc3a59cf60a", 
-            "1620977c-e8d5-4f84-a1b8-e4ffad709bef", 
-            "5fe61529-0fad-4033-a4a8-3908347d3cd7"
-         ], 
-         "text" : "<The young woman almost hugs you> You did it! I thought... well, never mind what I thought. Thank you."
-      }, 
-      "d75393a4-9f67-45f2-8585-0fc3a59cf60a" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-99609", 
-            "y" : "-100088", 
-            "comment" : "GOTO A13"
-         }, 
-         "child" : [ 
-            "6878bea8-9688-4170-85eb-76afc266d619"
-         ], 
-         "text" : "{!} It was my pleasure."
-      }, 
-      "6878bea8-9688-4170-85eb-76afc266d619" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-99009", 
-            "y" : "-99888", 
-            "comment" : "(A13) ", 
-            "historytag" : "A13"
-         }, 
-         "child" : [ 
-            "a9219aaa-093b-4edd-8e40-4dab795f4bcc"
-         ], 
-         "text" : "One more thing—I need to get to Swordhaven. And, uh... the guards there aren't exactly handing out invitations to folks like me."
-      }, 
-      "a9219aaa-093b-4edd-8e40-4dab795f4bcc" : { 
-         "class" : "DialogContinueNode", 
-         "desc" : { 
-            "x" : "-99009", 
-            "y" : "-99688", 
-            "comment" : "(A13) "
-         }, 
-         "child" : [ 
-            "d5f935fc-a839-49b4-a570-91525e7eac12"
-         ]
-      }, 
-      "d5f935fc-a839-49b4-a570-91525e7eac12" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-99009", 
-            "y" : "-99488", 
-            "comment" : "(A13) ", 
-            "historytag" : "A13"
-         }, 
-         "child" : [ 
-            "43b4fd53-1cb1-4fd9-bdfe-6de8ce167bba", 
-            "10e5c1f7-20c6-4943-82c7-7f1a796505ef"
-         ], 
-         "text" : "But you look respectable enough to get us both through, don't you think?"
-      }, 
-      "43b4fd53-1cb1-4fd9-bdfe-6de8ce167bba" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-99191", 
-            "y" : "-99274", 
-            "comment" : "GOTO A14"
-         }, 
-         "child" : [ 
-            "22be096c-33e9-43bf-a08a-2a297c7e14bc"
-         ], 
-         "text" : "{?} Folks like you?"
-      }, 
-      "22be096c-33e9-43bf-a08a-2a297c7e14bc" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-96309", 
-            "y" : "-99088", 
-            "comment" : "(A14) ", 
-            "historytag" : "A14"
-         }, 
-         "child" : [ 
-            "eef7148c-5413-4a37-9c4d-0621176eccb8"
-         ], 
-         "text" : "You know... <Looks around> Folks with a questionable thief-related legacy. Ahem."
-      }, 
-      "eef7148c-5413-4a37-9c4d-0621176eccb8" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-96309", 
-            "y" : "-98888", 
-            "comment" : "GOTO A15"
-         }, 
-         "child" : [ 
-            "09cf0ad9-a098-462d-8d96-410ca1c6ea81"
-         ], 
-         "text" : "{Ok} All right, let's go."
-      }, 
-      "09cf0ad9-a098-462d-8d96-410ca1c6ea81" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-96009", 
-            "y" : "-99088", 
-            "comment" : "(A15) ", 
-            "historytag" : "A15"
-         }, 
-         "child" : [ 
-            "97d84827-1431-4d65-bcf1-5605b9543338"
-         ], 
-         "text" : "You won't regret this! I'm light on my feet, handy with a lock, and rarely talk in my sleep. Promise."
-      }, 
-      "97d84827-1431-4d65-bcf1-5605b9543338" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-96009", 
-            "y" : "-98888", 
-            "comment" : "GOTO A16"
-         }, 
-         "child" : [ 
-            "03a88883-6391-4701-a2eb-be4a7bdf5cf1"
-         ], 
-         "text" : "{End} Let's go."
-      }, 
-      "03a88883-6391-4701-a2eb-be4a7bdf5cf1" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-96609", 
-            "y" : "-98688", 
-            "comment" : "(A16) ", 
-            "historytag" : "A16"
-         }, 
-         "child" : [ 
-            "2deaa2ff-bb98-491c-82f1-a0ee58e14bab"
-         ], 
-         "text" : "Lead the way!"
-      }, 
-      "2deaa2ff-bb98-491c-82f1-a0ee58e14bab" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-96640", 
-            "y" : "-98266", 
-            "comment" : "\n(присоединяется)\n(END DIALOG)"
-         }, 
-         "child" : [ 
-            "aeb4997f-f682-4843-b474-330fe3ff944b"
-         ], 
-         "text" : ""
-      }, 
-      "aeb4997f-f682-4843-b474-330fe3ff944b" : { 
-         "class" : "DialogEndNode", 
-         "desc" : { 
-            "x" : "-96763", 
-            "y" : "-98125"
-         }, 
-         "child" : [ 
-         ], 
-         "skipButtonEnd" : "false", 
-         "dontMarkInHistory" : "false"
-      }, 
-      "10e5c1f7-20c6-4943-82c7-7f1a796505ef" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-98930", 
-            "y" : "-99284", 
-            "comment" : "GOTO A15"
-         }, 
-         "child" : [ 
-            "09cf0ad9-a098-462d-8d96-410ca1c6ea81"
-         ], 
-         "text" : "{Ok} All right, let's go."
-      }, 
-      "1620977c-e8d5-4f84-a1b8-e4ffad709bef" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-99309", 
-            "y" : "-100088", 
-            "comment" : "GOTO A13"
-         }, 
-         "child" : [ 
-            "6878bea8-9688-4170-85eb-76afc266d619"
-         ], 
-         "text" : "{!} Yeah, yeah..."
-      }, 
-      "5fe61529-0fad-4033-a4a8-3908347d3cd7" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-99009", 
-            "y" : "-100088", 
-            "comment" : "GOTO A13"
-         }, 
-         "child" : [ 
-            "6878bea8-9688-4170-85eb-76afc266d619"
-         ], 
-         "text" : "{..} <Keep quite>"
+         "quest_key" : "QUEST_MOD_BANDITS_KILLED"
       }, 
       "66441bd0-70d0-46c5-aaa3-e33353fa59b1" : { 
          "class" : "AddExpNode", 
          "desc" : { 
-            "x" : "-100509", 
-            "y" : "-100888"
+            "x" : "-100764", 
+            "y" : "-100987"
          }, 
          "child" : [ 
             "466f751d-02db-449b-a92a-7503ac0c0141"
@@ -317,9 +107,9 @@
       "466f751d-02db-449b-a92a-7503ac0c0141" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100440", 
-            "y" : "-100736", 
-            "comment" : "(A12) \nEXISTS IF HAS_GLOBAL_NOTE PEREBIL_BANDU (если есть глобальное условие ПЕРЕБИЛ_БАНДУ)\n+222 EXP (+222 ЕХР)", 
+            "x" : "-100765", 
+            "y" : "-100831", 
+            "comment" : "(A12)", 
             "historytag" : "A12"
          }, 
          "child" : [ 
@@ -332,8 +122,8 @@
       "0350d821-6489-41e4-a14a-5242cc054dc0" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-100598", 
-            "y" : "-100469", 
+            "x" : "-100994", 
+            "y" : "-100619", 
             "comment" : "GOTO A13"
          }, 
          "child" : [ 
@@ -341,11 +131,216 @@
          ], 
          "text" : "{!} It was my pleasure."
       }, 
+      "6878bea8-9688-4170-85eb-76afc266d619" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100776", 
+            "y" : "-100268", 
+            "comment" : "(A13) ", 
+            "historytag" : "A13"
+         }, 
+         "child" : [ 
+            "a9219aaa-093b-4edd-8e40-4dab795f4bcc"
+         ], 
+         "text" : "One more thing—I need to get to Swordhaven. And, uh... the guards there aren't exactly handing out invitations to folks like me."
+      }, 
+      "a9219aaa-093b-4edd-8e40-4dab795f4bcc" : { 
+         "class" : "DialogContinueNode", 
+         "desc" : { 
+            "x" : "-100744", 
+            "y" : "-100064", 
+            "comment" : "(A13) "
+         }, 
+         "child" : [ 
+            "d5f935fc-a839-49b4-a570-91525e7eac12"
+         ]
+      }, 
+      "d5f935fc-a839-49b4-a570-91525e7eac12" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100786", 
+            "y" : "-99900", 
+            "comment" : "(A13) ", 
+            "historytag" : "A13"
+         }, 
+         "child" : [ 
+            "43b4fd53-1cb1-4fd9-bdfe-6de8ce167bba", 
+            "10e5c1f7-20c6-4943-82c7-7f1a796505ef"
+         ], 
+         "text" : "But you look respectable enough to get us both through, don't you think?"
+      }, 
+      "43b4fd53-1cb1-4fd9-bdfe-6de8ce167bba" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-100968", 
+            "y" : "-99688", 
+            "comment" : "GOTO A14"
+         }, 
+         "child" : [ 
+            "22be096c-33e9-43bf-a08a-2a297c7e14bc"
+         ], 
+         "text" : "{?} Folks like you?"
+      }, 
+      "22be096c-33e9-43bf-a08a-2a297c7e14bc" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100970", 
+            "y" : "-99560", 
+            "comment" : "(A14) ", 
+            "historytag" : "A14"
+         }, 
+         "child" : [ 
+            "eef7148c-5413-4a37-9c4d-0621176eccb8"
+         ], 
+         "text" : "You know... <Looks around> Folks with a questionable thief-related legacy. Ahem."
+      }, 
+      "eef7148c-5413-4a37-9c4d-0621176eccb8" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-100970", 
+            "y" : "-99356", 
+            "comment" : "GOTO A15"
+         }, 
+         "child" : [ 
+            "09cf0ad9-a098-462d-8d96-410ca1c6ea81"
+         ], 
+         "text" : "{Ok} All right, let's go."
+      }, 
+      "09cf0ad9-a098-462d-8d96-410ca1c6ea81" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100794", 
+            "y" : "-99168", 
+            "comment" : "(A15) ", 
+            "historytag" : "A15"
+         }, 
+         "child" : [ 
+            "97d84827-1431-4d65-bcf1-5605b9543338"
+         ], 
+         "text" : "You won't regret this! I'm light on my feet, handy with a lock, and rarely talk in my sleep. Promise."
+      }, 
+      "97d84827-1431-4d65-bcf1-5605b9543338" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-100794", 
+            "y" : "-98970", 
+            "comment" : "GOTO A16"
+         }, 
+         "child" : [ 
+            "03a88883-6391-4701-a2eb-be4a7bdf5cf1"
+         ], 
+         "text" : "{End} Let's go."
+      }, 
+      "03a88883-6391-4701-a2eb-be4a7bdf5cf1" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100795", 
+            "y" : "-98884", 
+            "comment" : "(A16) ", 
+            "historytag" : "A16"
+         }, 
+         "child" : [ 
+            "10778171-ee67-4cc3-bc8f-b92b1035d466"
+         ], 
+         "text" : "Lead the way!"
+      }, 
+      "10778171-ee67-4cc3-bc8f-b92b1035d466" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-100796", 
+            "y" : "-98746"
+         }, 
+         "child" : [ 
+            "cd4b54fb-7cd8-4f47-a3ca-baee2fd199ea"
+         ], 
+         "key" : "TEAMMATE"
+      }, 
+      "cd4b54fb-7cd8-4f47-a3ca-baee2fd199ea" : { 
+         "class" : "CharacterSetCapsNode", 
+         "desc" : { 
+            "x" : "-100797", 
+            "y" : "-98667"
+         }, 
+         "child" : [ 
+            "12454123-f47d-4ad8-9f11-1d2f7c11be70"
+         ], 
+         "objectName" : "$SELF$", 
+         "caps" : "TeamMate"
+      }, 
+      "12454123-f47d-4ad8-9f11-1d2f7c11be70" : { 
+         "class" : "SetRelationShipBetweenFractionsNode", 
+         "desc" : { 
+            "x" : "-100802", 
+            "y" : "-98566"
+         }, 
+         "child" : [ 
+            "33cc673e-0b4e-4fdb-bb9f-bea972085d60"
+         ], 
+         "fraction1" : "player", 
+         "fraction2" : "liris", 
+         "value" : "100"
+      }, 
+      "33cc673e-0b4e-4fdb-bb9f-bea972085d60" : { 
+         "class" : "RestartBehaviorRequestNode", 
+         "desc" : { 
+            "x" : "-100798", 
+            "y" : "-98452"
+         }, 
+         "child" : [ 
+            "184b8a0a-5bfe-4f9b-8e67-43b7a9d65751"
+         ], 
+         "objectName" : "LogicLevel"
+      }, 
+      "184b8a0a-5bfe-4f9b-8e67-43b7a9d65751" : { 
+         "class" : "RestartBehaviorRequestNode", 
+         "desc" : { 
+            "x" : "-100799", 
+            "y" : "-98377"
+         }, 
+         "child" : [ 
+            "648e56c2-aa55-45a0-aa50-eb0535a3351f"
+         ], 
+         "objectName" : "Player"
+      }, 
+      "648e56c2-aa55-45a0-aa50-eb0535a3351f" : { 
+         "class" : "RestartBehaviorRequestNode", 
+         "desc" : { 
+            "x" : "-100798", 
+            "y" : "-98303"
+         }, 
+         "child" : [ 
+            "aeb4997f-f682-4843-b474-330fe3ff944b"
+         ], 
+         "objectName" : "$SELF$"
+      }, 
+      "aeb4997f-f682-4843-b474-330fe3ff944b" : { 
+         "class" : "DialogEndNode", 
+         "desc" : { 
+            "x" : "-100799", 
+            "y" : "-98226"
+         }, 
+         "child" : [ 
+         ], 
+         "skipButtonEnd" : "false", 
+         "dontMarkInHistory" : "false"
+      }, 
+      "10e5c1f7-20c6-4943-82c7-7f1a796505ef" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-100650", 
+            "y" : "-99690", 
+            "comment" : "GOTO A15"
+         }, 
+         "child" : [ 
+            "09cf0ad9-a098-462d-8d96-410ca1c6ea81"
+         ], 
+         "text" : "{Ok} All right, let's go."
+      }, 
       "3a13a314-8976-48d5-9f50-0faa100588b6" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-100328", 
-            "y" : "-100454", 
+            "x" : "-100766", 
+            "y" : "-100617", 
             "comment" : "GOTO A13"
          }, 
          "child" : [ 
@@ -356,8 +351,8 @@
       "224f1f98-873e-4814-a8e9-e840cc534d8e" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-100090", 
-            "y" : "-100532", 
+            "x" : "-100531", 
+            "y" : "-100613", 
             "comment" : "GOTO A13"
          }, 
          "child" : [ 
@@ -368,8 +363,8 @@
       "7379fac9-bb5d-4e20-9859-d1d84db94589" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-101908", 
-            "y" : "-101380", 
+            "x" : "-99983", 
+            "y" : "-101170", 
             "comment" : "(A12) ", 
             "historytag" : "A12"
          }, 
@@ -381,8 +376,8 @@
       "74b28968-0185-48be-8a31-f4a01725d8f0" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-101908", 
-            "y" : "-101180", 
+            "x" : "-99983", 
+            "y" : "-101000", 
             "comment" : "GOTO A11"
          }, 
          "child" : [ 
@@ -393,8 +388,8 @@
       "875ef68e-8a56-4e92-9a87-8cbb5f1c836d" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-96309", 
-            "y" : "-98288", 
+            "x" : "-99268", 
+            "y" : "-96594", 
             "comment" : "(A11) ", 
             "historytag" : "A11"
          }, 
@@ -406,8 +401,8 @@
       "3e3ae116-f0b8-4818-b5cd-a20b350d2277" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-96304", 
-            "y" : "-97987"
+            "x" : "-99268", 
+            "y" : "-96438"
          }, 
          "child" : [ 
             "26d37a6e-4dac-421a-8012-c2eabbdc46a9"
@@ -417,8 +412,8 @@
       "26d37a6e-4dac-421a-8012-c2eabbdc46a9" : { 
          "class" : "DialogEndNode", 
          "desc" : { 
-            "x" : "-96311", 
-            "y" : "-97890", 
+            "x" : "-99268", 
+            "y" : "-96322", 
             "comment" : "START_A12"
          }, 
          "child" : [ 
@@ -426,21 +421,11 @@
          "skipButtonEnd" : "false", 
          "dontMarkInHistory" : "false"
       }, 
-      "8429ecf5-365e-4bfe-96e8-a2ba9265f225" : { 
-         "class" : "DummyNode", 
-         "desc" : { 
-            "x" : "-101112", 
-            "y" : "-101372"
-         }, 
-         "child" : [ 
-            "16f181ae-6990-4485-be13-2722412e9b03"
-         ]
-      }, 
       "16f181ae-6990-4485-be13-2722412e9b03" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-101422", 
-            "y" : "-101237", 
+            "x" : "-98832", 
+            "y" : "-101309", 
             "comment" : "(A0) ", 
             "historytag" : "A0"
          }, 
@@ -450,13 +435,13 @@
             "5d28480b-bafe-44b3-b2b5-a3a2d0c12637", 
             "9efc1e4d-1f0b-4c1b-8a14-a50955130ed2"
          ], 
-         "text" : "<A young woman looks at you with a small, almost  guilty smile> Heya. Don't mind the mess—it used to be home. Mine, actually."
+         "text" : "<A young woman looks at you with a small, almost guilty smile> Heya. Don't mind the mess—it used to be home. Mine, actually."
       }, 
       "061c78a6-70f8-446c-ab91-71541eb0caa1" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-102009", 
-            "y" : "-100888", 
+            "x" : "-99272", 
+            "y" : "-100994", 
             "comment" : "GOTO A1"
          }, 
          "child" : [ 
@@ -467,21 +452,21 @@
       "e42d110f-8a1c-4ff3-bc73-af1cf0d0b3ce" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99309", 
-            "y" : "-100688", 
+            "x" : "-99274", 
+            "y" : "-100864", 
             "comment" : "(A1) ", 
             "historytag" : "A1"
          }, 
          "child" : [ 
-            "948ed5f0-c500-46ec-84b7-7827176c5756"
+            "ed2fc0d7-61e0-4ae7-adeb-858a49b129ca"
          ], 
          "text" : "Yeah... It burned down some time ago. <Scratches her head> Look, I wouldn't ask, but I kinda need someone's help."
       }, 
-      "948ed5f0-c500-46ec-84b7-7827176c5756" : { 
+      "ed2fc0d7-61e0-4ae7-adeb-858a49b129ca" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-99309", 
-            "y" : "-100488", 
+            "x" : "-98825", 
+            "y" : "-100584", 
             "comment" : "GOTO A5"
          }, 
          "child" : [ 
@@ -492,8 +477,8 @@
       "1167abe2-5f84-49c0-bc36-507b510868a3" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99309", 
-            "y" : "-100288", 
+            "x" : "-98822", 
+            "y" : "-100448", 
             "comment" : "(A5) ", 
             "historytag" : "A5"
          }, 
@@ -505,8 +490,8 @@
       "6673e84f-d446-4150-aa5f-ba057eddf6f2" : { 
          "class" : "DialogContinueNode", 
          "desc" : { 
-            "x" : "-99309", 
-            "y" : "-100088", 
+            "x" : "-98784", 
+            "y" : "-100228", 
             "comment" : "(A5) "
          }, 
          "child" : [ 
@@ -516,8 +501,8 @@
       "ee779926-37ef-4baf-9ab9-6a9dc1103453" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99309", 
-            "y" : "-99888", 
+            "x" : "-98822", 
+            "y" : "-100144", 
             "comment" : "(A5) ", 
             "historytag" : "A5"
          }, 
@@ -531,8 +516,8 @@
       "7c1927eb-e261-479f-97e1-a1e98e63035b" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-99309", 
-            "y" : "-99688", 
+            "x" : "-99096", 
+            "y" : "-99942", 
             "comment" : "GOTO A6"
          }, 
          "child" : [ 
@@ -543,8 +528,8 @@
       "12530eda-cbcd-49be-9fa4-1e03365bf382" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-98709", 
-            "y" : "-99488", 
+            "x" : "-99158", 
+            "y" : "-98954", 
             "comment" : "(A6)"
          }, 
          "child" : [ 
@@ -555,8 +540,8 @@
       "a6de44a3-9249-4f4c-8c8d-abae6f0ec863" : { 
          "class" : "CharacterStatNode", 
          "desc" : { 
-            "x" : "-98498", 
-            "y" : "-99281"
+            "x" : "-99508", 
+            "y" : "-98830"
          }, 
          "child" : [ 
             "1648cb97-4f75-4664-a8c1-da81e2f46fd0", 
@@ -569,8 +554,8 @@
       "1648cb97-4f75-4664-a8c1-da81e2f46fd0" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-98813", 
-            "y" : "-99145"
+            "x" : "-99490", 
+            "y" : "-98690"
          }, 
          "child" : [ 
          ]
@@ -578,9 +563,9 @@
       "7a289cdb-1ed0-4ddf-8319-23a3cd0a21f5" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-98709", 
-            "y" : "-99088", 
-            "comment" : "(A6) \nEXISTS IF HARIZMA LS 5 (Харизма < 5)", 
+            "x" : "-99478", 
+            "y" : "-98614", 
+            "comment" : "(A6)", 
             "historytag" : "A6"
          }, 
          "child" : [ 
@@ -592,8 +577,8 @@
       "085050ad-34f8-4dc9-8adf-37be17b38f15" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-98709", 
-            "y" : "-98888", 
+            "x" : "-99607", 
+            "y" : "-98444", 
             "comment" : "GOTO A7"
          }, 
          "child" : [ 
@@ -604,8 +589,8 @@
       "94de1e2f-8077-4613-a833-523ca7aae61e" : { 
          "class" : "DialogShowNameNode", 
          "desc" : { 
-            "x" : "-97509", 
-            "y" : "-99488", 
+            "x" : "-98788", 
+            "y" : "-99610", 
             "comment" : "Liris Fenbrook"
          }, 
          "child" : [ 
@@ -615,9 +600,9 @@
       "6da966e9-3962-42e8-b9b1-c14e27a61b3f" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-97509", 
-            "y" : "-99288", 
-            "comment" : "(A7) \nSHOWNAME Liris Fenbrook (имя под портретом становится Liris Fenbrook)", 
+            "x" : "-98824", 
+            "y" : "-99462", 
+            "comment" : "(A7)", 
             "historytag" : "A7"
          }, 
          "child" : [ 
@@ -629,8 +614,8 @@
       "f67655de-4901-4a50-b847-adf74573a3e5" : { 
          "class" : "HasKeywordNode", 
          "desc" : { 
-            "x" : "-97509", 
-            "y" : "-99088"
+            "x" : "-98898", 
+            "y" : "-99302"
          }, 
          "child" : [ 
             "925ab4cf-5951-4405-8716-4763508f7ac0", 
@@ -641,8 +626,8 @@
       "925ab4cf-5951-4405-8716-4763508f7ac0" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-97524", 
-            "y" : "-99023"
+            "x" : "-98888", 
+            "y" : "-99197"
          }, 
          "child" : [ 
          ]
@@ -650,9 +635,8 @@
       "fbd207f9-932a-4295-a943-67e2887a6bdc" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-97509", 
-            "y" : "-98888", 
-            "comment" : "GOTO A6\nNOT EXISTS IF HAS_KEY MOD (если есть условие МОД, то этого варианта НЕТ)"
+            "x" : "-98869", 
+            "y" : "-99154"
          }, 
          "child" : [ 
             "12530eda-cbcd-49be-9fa4-1e03365bf382"
@@ -662,8 +646,8 @@
       "64a68ef9-d771-4628-bbbd-866cf1462e32" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-97209", 
-            "y" : "-99088", 
+            "x" : "-98657", 
+            "y" : "-99261", 
             "comment" : "GOTO A8"
          }, 
          "child" : [ 
@@ -674,8 +658,8 @@
       "d55cd0eb-2634-4a1d-9af9-0d9d2d54bd13" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-96909", 
-            "y" : "-99488", 
+            "x" : "-99248", 
+            "y" : "-97654", 
             "comment" : "(A8) ", 
             "historytag" : "A8"
          }, 
@@ -688,8 +672,8 @@
       "99e08750-e6b3-4b5a-9250-366a98ba4040" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-96909", 
-            "y" : "-99288", 
+            "x" : "-99624", 
+            "y" : "-97398", 
             "comment" : "GOTO A9"
          }, 
          "child" : [ 
@@ -700,32 +684,31 @@
       "9a46dfcf-bbb1-4fae-aa22-e7fce7ff7f45" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-96909", 
-            "y" : "-99088"
+            "x" : "-99624", 
+            "y" : "-97296"
          }, 
          "child" : [ 
             "23f642c8-73db-42a6-96da-eba3d0e607ac"
          ], 
-         "key" : "KVEST"
+         "key" : "QUEST"
       }, 
       "23f642c8-73db-42a6-96da-eba3d0e607ac" : { 
          "class" : "QuestBeginNode", 
          "desc" : { 
-            "x" : "-96909", 
-            "y" : "-98888", 
-            "comment" : "Убить  Банду"
+            "x" : "-99624", 
+            "y" : "-97186"
          }, 
          "child" : [ 
             "01d80f00-47cb-404f-bebc-0cef06abf57a"
          ], 
-         "quest_key" : "QUEST_UBIT___BANDU"
+         "quest_key" : "QUEST_MOD_BANDITS_KILLED"
       }, 
       "01d80f00-47cb-404f-bebc-0cef06abf57a" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-96909", 
-            "y" : "-98688", 
-            "comment" : "(A9) \nSET KEY KVEST (включается условие КВЕСТ)\nADD QUEST Убить  Банду", 
+            "x" : "-99626", 
+            "y" : "-97058", 
+            "comment" : "(A9)", 
             "historytag" : "A9"
          }, 
          "child" : [ 
@@ -736,8 +719,8 @@
       "fb6d61a7-9ffa-44d2-bf54-155f21aaea5a" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-96909", 
-            "y" : "-98488", 
+            "x" : "-99626", 
+            "y" : "-96888", 
             "comment" : "GOTO A11"
          }, 
          "child" : [ 
@@ -748,8 +731,8 @@
       "8edbe870-dea4-476d-beef-7b96a263789b" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-96609", 
-            "y" : "-99288", 
+            "x" : "-98984", 
+            "y" : "-97408", 
             "comment" : "GOTO A10"
          }, 
          "child" : [ 
@@ -760,8 +743,8 @@
       "666ded99-9dae-41c9-8148-133ca881a34e" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-96609", 
-            "y" : "-99088", 
+            "x" : "-98984", 
+            "y" : "-97314", 
             "comment" : "(A10) ", 
             "historytag" : "A10"
          }, 
@@ -773,8 +756,8 @@
       "813c1d5f-bc7b-481d-82d7-63a344ab6ee9" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-96609", 
-            "y" : "-98888", 
+            "x" : "-98986", 
+            "y" : "-97164", 
             "comment" : "GOTO A11"
          }, 
          "child" : [ 
@@ -785,8 +768,8 @@
       "b3703ad2-571d-4f4d-8c23-d7cb2ed6607c" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-98409", 
-            "y" : "-98888", 
+            "x" : "-99336", 
+            "y" : "-98442", 
             "comment" : "GOTO A8"
          }, 
          "child" : [ 
@@ -797,8 +780,8 @@
       "0a47e076-3b44-49db-b756-9301fb97f207" : { 
          "class" : "CharacterStatNode", 
          "desc" : { 
-            "x" : "-98109", 
-            "y" : "-99288"
+            "x" : "-98946", 
+            "y" : "-98804"
          }, 
          "child" : [ 
             "1fdd0abe-d1d1-4600-990e-f7b8d138a2ef", 
@@ -811,8 +794,8 @@
       "1fdd0abe-d1d1-4600-990e-f7b8d138a2ef" : { 
          "class" : "AddExpNode", 
          "desc" : { 
-            "x" : "-98109", 
-            "y" : "-99088"
+            "x" : "-98982", 
+            "y" : "-98622"
          }, 
          "child" : [ 
             "c796ce05-a56a-4144-b24e-a4589efff8d1"
@@ -824,8 +807,8 @@
       "c796ce05-a56a-4144-b24e-a4589efff8d1" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-98109", 
-            "y" : "-98888"
+            "x" : "-98988", 
+            "y" : "-98474"
          }, 
          "child" : [ 
             "c299b763-1b29-4073-922e-b426ce5ab628"
@@ -835,9 +818,9 @@
       "c299b763-1b29-4073-922e-b426ce5ab628" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-98109", 
-            "y" : "-98688", 
-            "comment" : "(A6) \nEXISTS IF HARIZMA GR 5 (Харизма => 5)\n+100 EXP (+100 ЕХР)\nSET KEY MOD (включается условие МОД)", 
+            "x" : "-98990", 
+            "y" : "-98352", 
+            "comment" : "(A6)", 
             "historytag" : "A6"
          }, 
          "child" : [ 
@@ -849,8 +832,8 @@
       "2d14ed0f-14bc-4476-ab73-810795c0b4f3" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-98109", 
-            "y" : "-98488", 
+            "x" : "-99034", 
+            "y" : "-98108", 
             "comment" : "GOTO A7"
          }, 
          "child" : [ 
@@ -861,8 +844,8 @@
       "775381c6-3ba0-47c3-971e-353a0ea88a7c" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-97809", 
-            "y" : "-98488", 
+            "x" : "-98744", 
+            "y" : "-98094", 
             "comment" : "GOTO A8"
          }, 
          "child" : [ 
@@ -873,8 +856,8 @@
       "b7937690-a8d8-4c8c-8f8b-e58dad9fff95" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-97880", 
-            "y" : "-99144"
+            "x" : "-98844", 
+            "y" : "-98664"
          }, 
          "child" : [ 
          ]
@@ -882,8 +865,8 @@
       "eb4fd09a-dee6-4430-9bf2-808c198b25c6" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-99009", 
-            "y" : "-99688", 
+            "x" : "-98826", 
+            "y" : "-99948", 
             "comment" : "GOTO A7"
          }, 
          "child" : [ 
@@ -894,8 +877,8 @@
       "8e4f75fc-0fea-44eb-873c-5242f6048131" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-98709", 
-            "y" : "-99688", 
+            "x" : "-98546", 
+            "y" : "-99942", 
             "comment" : "GOTO A8"
          }, 
          "child" : [ 
@@ -906,8 +889,8 @@
       "68739158-8157-4280-bbb0-c798a4da4873" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-101709", 
-            "y" : "-100888", 
+            "x" : "-98972", 
+            "y" : "-100994", 
             "comment" : "GOTO A2"
          }, 
          "child" : [ 
@@ -918,8 +901,8 @@
       "a516c99a-db9b-40c8-9c35-dcceccfb69d7" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99009", 
-            "y" : "-100688", 
+            "x" : "-98974", 
+            "y" : "-100864", 
             "comment" : "(A2) ", 
             "historytag" : "A2"
          }, 
@@ -928,60 +911,36 @@
          ], 
          "text" : "<Scratches her head> Look, I wouldn't ask, but I kinda need someone's help."
       }, 
-      "ed2fc0d7-61e0-4ae7-adeb-858a49b129ca" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-99009", 
-            "y" : "-100488", 
-            "comment" : "GOTO A5"
-         }, 
-         "child" : [ 
-            "1167abe2-5f84-49c0-bc36-507b510868a3"
-         ], 
-         "text" : "{?} Really?"
-      }, 
       "5d28480b-bafe-44b3-b2b5-a3a2d0c12637" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-101409", 
-            "y" : "-100888", 
+            "x" : "-98672", 
+            "y" : "-100994", 
             "comment" : "GOTO A3"
          }, 
          "child" : [ 
             "42b165fb-19cf-4f59-81b4-635a9073dc34"
          ], 
-         "text" : "{!} Whatever youŗe selling—I'm not interested."
+         "text" : "{!} Whatever you're selling—I'm not interested."
       }, 
       "42b165fb-19cf-4f59-81b4-635a9073dc34" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-98709", 
-            "y" : "-100688", 
+            "x" : "-98674", 
+            "y" : "-100864", 
             "comment" : "(A3) ", 
             "historytag" : "A3"
          }, 
          "child" : [ 
-            "02f7fb7c-0060-4cdf-b23b-3ca2455a77cb"
+            "ed2fc0d7-61e0-4ae7-adeb-858a49b129ca"
          ], 
          "text" : "No, it's not that! I– <Scratches her head> Look, I wouldn't ask, but I kinda need someone's help."
-      }, 
-      "02f7fb7c-0060-4cdf-b23b-3ca2455a77cb" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-98709", 
-            "y" : "-100488", 
-            "comment" : "GOTO A5"
-         }, 
-         "child" : [ 
-            "1167abe2-5f84-49c0-bc36-507b510868a3"
-         ], 
-         "text" : "{?} Really?"
       }, 
       "9efc1e4d-1f0b-4c1b-8a14-a50955130ed2" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-101109", 
-            "y" : "-100888", 
+            "x" : "-98372", 
+            "y" : "-100994", 
             "comment" : "GOTO A4"
          }, 
          "child" : [ 
@@ -992,38 +951,15 @@
       "fe888623-bf3a-4eb6-bb75-ffcc0109b538" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-98409", 
-            "y" : "-100688", 
+            "x" : "-98374", 
+            "y" : "-100864", 
             "comment" : "(A4) ", 
             "historytag" : "A4"
          }, 
          "child" : [ 
-            "6b00d653-de0a-44dd-b449-490c3cd4c50f"
+            "ed2fc0d7-61e0-4ae7-adeb-858a49b129ca"
          ], 
          "text" : "I, uh... <Scratches her head> Look, I wouldn't ask, but I kinda need someone's help."
-      }, 
-      "6b00d653-de0a-44dd-b449-490c3cd4c50f" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-98409", 
-            "y" : "-100488", 
-            "comment" : "GOTO A5"
-         }, 
-         "child" : [ 
-            "1167abe2-5f84-49c0-bc36-507b510868a3"
-         ], 
-         "text" : "{?} Really?"
-      }, 
-      "92df0c32-6198-40be-a688-cf2a98b2aee3" : { 
-         "class" : "DummyNode", 
-         "desc" : { 
-            "x" : "-96754", 
-            "y" : "-98337", 
-            "comment" : "WARNING!\nприсоединяется"
-         }, 
-         "child" : [ 
-            "2deaa2ff-bb98-491c-82f1-a0ee58e14bab"
-         ]
       }
    }, 
    "entry" : "b245d076-b02a-4749-be17-85c54727b6cd"

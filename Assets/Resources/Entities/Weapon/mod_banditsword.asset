@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: mod_banditsword
   m_EditorClassIdentifier: 
   Icon:
-    path: Entities/Weapon/BL_Swd_Old_Sword
+    path: Entities/Weapon/mod_banditsword
   m_Localization: weapon.mod_banditsword
   Takeable: 1
   UISounds:
