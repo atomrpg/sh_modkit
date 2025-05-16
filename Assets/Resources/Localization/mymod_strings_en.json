@@ -73,5 +73,126 @@
   }, 
   "quests" : { 
       "quest_mod_bandits_killed" : "<Burnt-down Cabin> I agreed to get rid of a gang and return a family heirloom to a young woman I met."
-  }
+  },
+  "voice" : {
+	 "liris": {
+  "name": "Liris",
+  "click": [
+    "Heya!",
+    "Whatcha need?",
+    "Still here!",
+    "Mm-hmm?",
+    "Talkin’ to me?"
+  ],
+  "move": [
+    "Okey-dokey!",
+    "Let’s roll!",
+    "Right behind ya!",
+    "Adventure ho!",
+    "Sneaky-sneaky!"
+  ],
+  "cantdo": [
+    "No can do!",
+    "That’s a nope.",
+    "Not happenin’."
+  ],
+  "needshovel": [
+    "Diggin’? Without a shovel?",
+    "I got hands, not claws!",
+    "You bring the tools, I bring the charm!"
+  ],
+  "spottedsomething": [
+    "Ooh! What’s that?",
+    "Shiny!",
+    "Found somethin’!"
+  ],
+  "attackmale": [
+    "Time for a bruisin’!",
+    "Let’s dance!",
+    "Bet ya didn’t see *me* comin’!",
+    "Your face? Meet my plan."
+  ],
+  "attackfemale": [
+    "Careful, I bite!",
+    "Oh, it’s on now!",
+    "Come get me!"
+  ],
+  "attackcreature": [
+    "Here, beastie!",
+    "Let’s see what ya got!",
+    "You’re in my way!",
+    "Bad dog! Or… whatever you are."
+  ],
+  "sneak": [
+    "*Tiptoe, tiptoe...*",
+    "*Nothin’ to see here...*",
+    "*Like a whisper!*"
+  ],
+  "movesneak": [
+    "*Shh... movin’.*",
+    "*Quiet-like.*",
+    "*Steppin' soft.*"
+  ],
+  "wounded": [
+    "Ow! That stung!",
+    "Oof, rude!",
+    "Watch it, buster!"
+  ],
+  "badlywounded": [
+    "Yikes! That was mean!",
+    "Okay, now I’m mad!",
+    "Not lookin’ good..."
+  ],
+  "lockpickingsuccess": [
+    "Easy-peasy!",
+    "Told ya I could!",
+    "I’m good, huh?",
+    "Pop! All done!"
+  ],
+  "lockpickingfail": [
+    "Aw, almost!",
+    "Hmph, next time!",
+    "These things hate me...",
+    "Stubborn lil’ lock!"
+  ],
+  "lockpickingunable": [
+    "Nope. Too tricky.",
+    "Passin’ this one.",
+    "Not my day!"
+  ],
+  "overencumbered": [
+    "I’m not a pack mule!",
+    "Too much stuff!",
+    "Let’s ditch somethin’."
+  ],
+  "tired": [
+    "Yaaawn... nap time?",
+    "Let’s snooze a bit.",
+    "Sleepy now..."
+  ],
+  "locked": [
+    "Locked up tight!",
+    "Need a key or somethin’."
+  ],
+  "ambush": [
+    "Uh-oh! Company!",
+    "Surprise guests!"
+  ],
+  "death": [
+    "Whoopsie...",
+    "Nothin’ personal..."
+  ],
+  "notexistlockpick": [
+    "I need a pick, silly!",
+    "Can’t do it barehanded!"
+  ],
+  "newplace": [
+    "Ooh! What’s this place?",
+    "Let’s poke around!",
+    "Bet there’s trouble inside!",
+    "Creepy! I like it.",
+    "What could *possibly* go wrong?"
+  ]
+}
+}
 }

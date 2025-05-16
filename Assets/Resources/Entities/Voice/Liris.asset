@@ -16,13 +16,9 @@ MonoBehaviour:
   Click:
   - path: Sounds/Voice/Liris/Liris_click_0
   - path: Sounds/Voice/Liris/Liris_click_1
-  - path: Sounds/Voice/Liris/Liris_click_2
   - path: Sounds/Voice/Liris/Liris_click_2_2
-  - path: Sounds/Voice/Liris/Liris_click_3
   - path: Sounds/Voice/Liris/Liris_click_3_2
-  - path: Sounds/Voice/Liris/Liris_click_4
   - path: Sounds/Voice/Liris/Liris_click_4_2
-  - path: Sounds/Voice/Liris/Liris_click_MIX
   Move:
   - path: Sounds/Voice/Liris/Liris_move_0
   - path: Sounds/Voice/Liris/Liris_move_1
@@ -38,13 +34,10 @@ MonoBehaviour:
   - path: Sounds/Voice/Liris/Liris_needshovel_1
   - path: Sounds/Voice/Liris/Liris_needshovel_2
   SpottedSomething:
-  - path: Sounds/Voice/Liris/Liris_spottedsomething_0
   - path: Sounds/Voice/Liris/Liris_spottedsomething_0_2
   - path: Sounds/Voice/Liris/Liris_spottedsomething_1
   - path: Sounds/Voice/Liris/Liris_spottedsomething_2
   AttackMale:
-  - path: Sounds/Voice/Liris/Liris_attackmale_0
-  - path: Sounds/Voice/Liris/Liris_attackmale_0_2
   - path: Sounds/Voice/Liris/Liris_attackmale_0_3
   - path: Sounds/Voice/Liris/Liris_attackmale_1
   - path: Sounds/Voice/Liris/Liris_attackmale_2
@@ -62,15 +55,12 @@ MonoBehaviour:
   - path: Sounds/Voice/Liris/Liris_sneak_0
   - path: Sounds/Voice/Liris/Liris_sneak_1
   - path: Sounds/Voice/Liris/Liris_sneak_2
-  - path: Sounds/Voice/Liris/Liris_sneak_2_2
   MoveSneak:
   - path: Sounds/Voice/Liris/Liris_movesneak_0
   - path: Sounds/Voice/Liris/Liris_movesneak_1
   - path: Sounds/Voice/Liris/Liris_movesneak_2
   Wounded:
   - path: Sounds/Voice/Liris/Liris_wounded_0
-  - path: Sounds/Voice/Liris/Liris_wounded_1
-  - path: Sounds/Voice/Liris/Liris_wounded_1_2
   - path: Sounds/Voice/Liris/Liris_wounded_1_3
   - path: Sounds/Voice/Liris/Liris_wounded_2
   BadlyWounded:
@@ -78,7 +68,6 @@ MonoBehaviour:
   - path: Sounds/Voice/Liris/Liris_badlywounded_1
   - path: Sounds/Voice/Liris/Liris_badlywounded_2
   LockpickingSuccess:
-  - path: Sounds/Voice/Liris/Liris_lockpickingsuccess_0
   - path: Sounds/Voice/Liris/Liris_lockpickingsuccess_0_2
   - path: Sounds/Voice/Liris/Liris_lockpickingsuccess_1
   - path: Sounds/Voice/Liris/Liris_lockpickingsuccess_2
@@ -86,9 +75,7 @@ MonoBehaviour:
   LockpickingFail:
   - path: Sounds/Voice/Liris/Liris_lockpickingfail_0
   - path: Sounds/Voice/Liris/Liris_lockpickingfail_1
-  - path: Sounds/Voice/Liris/Liris_lockpickingfail_1_2
   - path: Sounds/Voice/Liris/Liris_lockpickingfail_2
-  - path: Sounds/Voice/Liris/Liris_lockpickingfail_3
   - path: Sounds/Voice/Liris/Liris_lockpickingfail_3_2
   LockpickingUnable:
   - path: Sounds/Voice/Liris/Liris_lockpickingunable_0
@@ -99,7 +86,6 @@ MonoBehaviour:
   - path: Sounds/Voice/Liris/Liris_overencumbered_1
   - path: Sounds/Voice/Liris/Liris_overencumbered_2
   Tired:
-  - path: Sounds/Voice/Liris/Liris_tired_0
   - path: Sounds/Voice/Liris/Liris_tired_0_2
   - path: Sounds/Voice/Liris/Liris_tired_1
   - path: Sounds/Voice/Liris/Liris_tired_2
@@ -110,19 +96,15 @@ MonoBehaviour:
   - path: Sounds/Voice/Liris/Liris_ambush_0
   - path: Sounds/Voice/Liris/Liris_ambush_1
   Death:
-  - path: Sounds/Voice/Liris/Liris_death_0
   - path: Sounds/Voice/Liris/Liris_death_0_2
   - path: Sounds/Voice/Liris/Liris_death_1
   NotExistLockpick:
-  - path: Sounds/Voice/Liris/Liris_notexistlockpick_0
   - path: Sounds/Voice/Liris/Liris_notexistlockpick_0_2
   - path: Sounds/Voice/Liris/Liris_notexistlockpick_1
   Newplace:
   - path: Sounds/Voice/Liris/Liris_newplace_0
   - path: Sounds/Voice/Liris/Liris_newplace_1
   - path: Sounds/Voice/Liris/Liris_newplace_2
-  - path: Sounds/Voice/Liris/Liris_newplace_3
-  - path: Sounds/Voice/Liris/Liris_newplace_3_2
   - path: Sounds/Voice/Liris/Liris_newplace_3_3
   - path: Sounds/Voice/Liris/Liris_newplace_4
   MoveCooldownSec: 45
