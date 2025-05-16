@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1418673121, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: Liris
+  m_EditorClassIdentifier: 
+  locID: voice.liris.name
+  Click:
+  - path: Sounds/Voice/Liris/Liris_click_0
+  - path: Sounds/Voice/Liris/Liris_click_1
+  - path: Sounds/Voice/Liris/Liris_click_2
+  - path: Sounds/Voice/Liris/Liris_click_2_2
+  - path: Sounds/Voice/Liris/Liris_click_3
+  - path: Sounds/Voice/Liris/Liris_click_3_2
+  - path: Sounds/Voice/Liris/Liris_click_4
+  - path: Sounds/Voice/Liris/Liris_click_4_2
+  - path: Sounds/Voice/Liris/Liris_click_MIX
+  Move:
+  - path: Sounds/Voice/Liris/Liris_move_0
+  - path: Sounds/Voice/Liris/Liris_move_1
+  - path: Sounds/Voice/Liris/Liris_move_2
+  - path: Sounds/Voice/Liris/Liris_move_3
+  - path: Sounds/Voice/Liris/Liris_move_4
+  CantDo:
+  - path: Sounds/Voice/Liris/Liris_cantdo_0
+  - path: Sounds/Voice/Liris/Liris_cantdo_1
+  - path: Sounds/Voice/Liris/Liris_cantdo_2
+  NeedShovel:
+  - path: Sounds/Voice/Liris/Liris_needshovel_0
+  - path: Sounds/Voice/Liris/Liris_needshovel_1
+  - path: Sounds/Voice/Liris/Liris_needshovel_2
+  SpottedSomething:
+  - path: Sounds/Voice/Liris/Liris_spottedsomething_0
+  - path: Sounds/Voice/Liris/Liris_spottedsomething_0_2
+  - path: Sounds/Voice/Liris/Liris_spottedsomething_1
+  - path: Sounds/Voice/Liris/Liris_spottedsomething_2
+  AttackMale:
+  - path: Sounds/Voice/Liris/Liris_attackmale_0
+  - path: Sounds/Voice/Liris/Liris_attackmale_0_2
+  - path: Sounds/Voice/Liris/Liris_attackmale_0_3
+  - path: Sounds/Voice/Liris/Liris_attackmale_1
+  - path: Sounds/Voice/Liris/Liris_attackmale_2
+  - path: Sounds/Voice/Liris/Liris_attackmale_3
+  AttackFemale:
+  - path: Sounds/Voice/Liris/Liris_attackfemale_0
+  - path: Sounds/Voice/Liris/Liris_attackfemale_1
+  - path: Sounds/Voice/Liris/Liris_attackfemale_2
+  AttackCreature:
+  - path: Sounds/Voice/Liris/Liris_attackcreature_0
+  - path: Sounds/Voice/Liris/Liris_attackcreature_1
+  - path: Sounds/Voice/Liris/Liris_attackcreature_2
+  - path: Sounds/Voice/Liris/Liris_attackcreature_3
+  Sneak:
+  - path: Sounds/Voice/Liris/Liris_sneak_0
+  - path: Sounds/Voice/Liris/Liris_sneak_1
+  - path: Sounds/Voice/Liris/Liris_sneak_2
+  - path: Sounds/Voice/Liris/Liris_sneak_2_2
+  MoveSneak:
+  - path: Sounds/Voice/Liris/Liris_movesneak_0
+  - path: Sounds/Voice/Liris/Liris_movesneak_1
+  - path: Sounds/Voice/Liris/Liris_movesneak_2
+  Wounded:
+  - path: Sounds/Voice/Liris/Liris_wounded_0
+  - path: Sounds/Voice/Liris/Liris_wounded_1
+  - path: Sounds/Voice/Liris/Liris_wounded_1_2
+  - path: Sounds/Voice/Liris/Liris_wounded_1_3
+  - path: Sounds/Voice/Liris/Liris_wounded_2
+  BadlyWounded:
+  - path: Sounds/Voice/Liris/Liris_badlywounded_0
+  - path: Sounds/Voice/Liris/Liris_badlywounded_1
+  - path: Sounds/Voice/Liris/Liris_badlywounded_2
+  LockpickingSuccess:
+  - path: Sounds/Voice/Liris/Liris_lockpickingsuccess_0
+  - path: Sounds/Voice/Liris/Liris_lockpickingsuccess_0_2
+  - path: Sounds/Voice/Liris/Liris_lockpickingsuccess_1
+  - path: Sounds/Voice/Liris/Liris_lockpickingsuccess_2
+  - path: Sounds/Voice/Liris/Liris_lockpickingsuccess_3
+  LockpickingFail:
+  - path: Sounds/Voice/Liris/Liris_lockpickingfail_0
+  - path: Sounds/Voice/Liris/Liris_lockpickingfail_1
+  - path: Sounds/Voice/Liris/Liris_lockpickingfail_1_2
+  - path: Sounds/Voice/Liris/Liris_lockpickingfail_2
+  - path: Sounds/Voice/Liris/Liris_lockpickingfail_3
+  - path: Sounds/Voice/Liris/Liris_lockpickingfail_3_2
+  LockpickingUnable:
+  - path: Sounds/Voice/Liris/Liris_lockpickingunable_0
+  - path: Sounds/Voice/Liris/Liris_lockpickingunable_1
+  - path: Sounds/Voice/Liris/Liris_lockpickingunable_2
+  Overencumbered:
+  - path: Sounds/Voice/Liris/Liris_overencumbered_0
+  - path: Sounds/Voice/Liris/Liris_overencumbered_1
+  - path: Sounds/Voice/Liris/Liris_overencumbered_2
+  Tired:
+  - path: Sounds/Voice/Liris/Liris_tired_0
+  - path: Sounds/Voice/Liris/Liris_tired_0_2
+  - path: Sounds/Voice/Liris/Liris_tired_1
+  - path: Sounds/Voice/Liris/Liris_tired_2
+  Locked:
+  - path: Sounds/Voice/Liris/Liris_locked_0
+  - path: Sounds/Voice/Liris/Liris_locked_1
+  Ambush:
+  - path: Sounds/Voice/Liris/Liris_ambush_0
+  - path: Sounds/Voice/Liris/Liris_ambush_1
+  Death:
+  - path: Sounds/Voice/Liris/Liris_death_0
+  - path: Sounds/Voice/Liris/Liris_death_0_2
+  - path: Sounds/Voice/Liris/Liris_death_1
+  NotExistLockpick:
+  - path: Sounds/Voice/Liris/Liris_notexistlockpick_0
+  - path: Sounds/Voice/Liris/Liris_notexistlockpick_0_2
+  - path: Sounds/Voice/Liris/Liris_notexistlockpick_1
+  Newplace:
+  - path: Sounds/Voice/Liris/Liris_newplace_0
+  - path: Sounds/Voice/Liris/Liris_newplace_1
+  - path: Sounds/Voice/Liris/Liris_newplace_2
+  - path: Sounds/Voice/Liris/Liris_newplace_3
+  - path: Sounds/Voice/Liris/Liris_newplace_3_2
+  - path: Sounds/Voice/Liris/Liris_newplace_3_3
+  - path: Sounds/Voice/Liris/Liris_newplace_4
+  MoveCooldownSec: 45
+  MoveSneakCooldownSec: 7
+  FatigueYawnCooldownSec: 60
