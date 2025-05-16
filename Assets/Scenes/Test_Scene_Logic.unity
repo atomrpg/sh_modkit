@@ -184,6 +184,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 991025746458678753, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 991025746458678753, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2061206539460859590, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -197,7 +207,7 @@ PrefabInstance:
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.611057
+      value: 37.77
       objectReference: {fileID: 0}
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
@@ -207,27 +217,27 @@ PrefabInstance:
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 27.23
+      value: 25.45
       objectReference: {fileID: 0}
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.86687
       objectReference: {fileID: 0}
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.4985344
       objectReference: {fileID: 0}
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
@@ -237,7 +247,7 @@ PrefabInstance:
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -59.806
       objectReference: {fileID: 0}
     - target: {fileID: 7729277435333228837, guid: 7b7c0992c23f61e42993bd4e82c7a7ba,
         type: 3}
@@ -258,9 +268,9 @@ PrefabInstance:
         type: 3}
       propertyPath: mEntityData
       value: '{"class":"Character", "proto":"Liris", "character":"Liris", "damage":"0",
-        "ap":"0", "relationship":"100", "civicsociety":"citizen", "inventory":[ 
-        ], "weapon":{"class":"Weapon", "count":"1", "proto":"MOD_Bow_1"}, "quiver":{"class":"Ammo",
-        "count":"35", "proto":"Ammo_0_Copper_Arrow"}, "quickpanel":{"1":{"class":"WeaponTechnique",
+        "ap":"0", "relationship":"100", "fraction":"liris", "civicsociety":"citizen",
+        "inventory":[  ], "weapon":{"class":"Weapon", "count":"1", "proto":"MOD_Bow_1"},
+        "quiver":{"class":"Ammo", "count":"35", "proto":"Ammo_0_Copper_Arrow"}, "quickpanel":{"1":{"class":"WeaponTechnique",
         "proto":"mod_liris_technique"}}, "quickpanelmainindex":"0", "hair":"Girl_PonyTail",
         "hairColor":"Brown", "constitution_fat":"0.5", "constitution_height":"0.5",
         "constitution_strength":"0.5", "status_effects":[ {"type":"44", "turns_left":"0",
@@ -583,13 +593,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709448480}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 22.604841, y: 0, z: 63.52617}
+  m_LocalRotation: {x: -0, y: 0.9902535, z: -0, w: 0.13927671}
+  m_LocalPosition: {x: 98.4, y: -0.000015258789, z: 73.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 163.988, z: 0}
 --- !u!1 &1916327989
 GameObject:
   m_ObjectHideFlags: 0

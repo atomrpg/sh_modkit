@@ -1,0 +1,151 @@
+{ 
+   "states" : { 
+      "a40b57d8-3d25-4ea1-9267-ee3e1faf278f" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-100092", 
+            "y" : "-97440"
+         }, 
+         "child" : [ 
+            "5b60ce66-f191-45f0-93e0-c7d677ce7680"
+         ]
+      }, 
+      "5b60ce66-f191-45f0-93e0-c7d677ce7680" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-100146", 
+            "y" : "-97381"
+         }, 
+         "child" : [ 
+            "086f21e1-19ba-4364-90de-ec17bee63f29", 
+            "24b148b4-2b0f-4964-afbe-410de63d5635"
+         ], 
+         "key" : "TEAMMATE"
+      }, 
+      "086f21e1-19ba-4364-90de-ec17bee63f29" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-100340", 
+            "y" : "-97237"
+         }, 
+         "child" : [ 
+            "84f14bab-1cac-4267-be20-3347ccbdad65", 
+            "ba8eb358-2d5b-46ce-886b-f5012420ab19"
+         ], 
+         "key" : "EXIT_TEAM"
+      }, 
+      "84f14bab-1cac-4267-be20-3347ccbdad65" : { 
+         "class" : "RemoveKeywordNode", 
+         "desc" : { 
+            "x" : "-100483", 
+            "y" : "-97115"
+         }, 
+         "child" : [ 
+            "828e4dd5-9f32-41dd-affd-8964b40425f6"
+         ], 
+         "key" : "TEAMMATE"
+      }, 
+      "828e4dd5-9f32-41dd-affd-8964b40425f6" : { 
+         "class" : "RemoveKeywordNode", 
+         "desc" : { 
+            "x" : "-100483", 
+            "y" : "-97033"
+         }, 
+         "child" : [ 
+            "01a301df-1e48-42b2-92c4-694c514b9f27"
+         ], 
+         "key" : "EXIT_TEAM"
+      }, 
+      "01a301df-1e48-42b2-92c4-694c514b9f27" : { 
+         "class" : "CharacterSetCapsNode", 
+         "desc" : { 
+            "x" : "-100483", 
+            "y" : "-96950"
+         }, 
+         "child" : [ 
+            "ef0b0fa8-268e-427a-905e-5bcf6fbe67d6"
+         ], 
+         "objectName" : "$SELF$", 
+         "caps" : "None"
+      }, 
+      "ef0b0fa8-268e-427a-905e-5bcf6fbe67d6" : { 
+         "class" : "RestartBehaviorRequestNode", 
+         "desc" : { 
+            "x" : "-100482", 
+            "y" : "-96844"
+         }, 
+         "child" : [ 
+            "564f8a38-6e08-4c74-a03e-357e34cd852d"
+         ], 
+         "objectName" : "LogicLevel"
+      }, 
+      "564f8a38-6e08-4c74-a03e-357e34cd852d" : { 
+         "class" : "RestartBehaviorRequestNode", 
+         "desc" : { 
+            "x" : "-100482", 
+            "y" : "-96761"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$"
+      }, 
+      "ba8eb358-2d5b-46ce-886b-f5012420ab19" : { 
+         "class" : "OnDialogEventNode", 
+         "desc" : { 
+            "x" : "-100188", 
+            "y" : "-97110"
+         }, 
+         "child" : [ 
+            "2cb5a075-ebe5-4830-862f-d718c10d2376"
+         ], 
+         "filterName" : "$SELF$", 
+         "dialogType" : "DialogBegin"
+      }, 
+      "2cb5a075-ebe5-4830-862f-d718c10d2376" : { 
+         "class" : "HasTeamMateNode", 
+         "desc" : { 
+            "x" : "-100188", 
+            "y" : "-97019"
+         }, 
+         "child" : [ 
+            "43d70888-6e59-49bd-903f-9fc66a0d7911", 
+            "6d0dcf33-7851-453c-9494-07b9d1a82ec9"
+         ], 
+         "teammate" : "Liris"
+      }, 
+      "43d70888-6e59-49bd-903f-9fc66a0d7911" : { 
+         "class" : "CharacterRotateToNode", 
+         "desc" : { 
+            "x" : "-100222", 
+            "y" : "-96887"
+         }, 
+         "child" : [ 
+            "ba8eb358-2d5b-46ce-886b-f5012420ab19"
+         ], 
+         "objectName" : "$SELF$", 
+         "pointName" : "Player", 
+         "waitEnd" : "false"
+      }, 
+      "6d0dcf33-7851-453c-9494-07b9d1a82ec9" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-100099", 
+            "y" : "-96926"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "24b148b4-2b0f-4964-afbe-410de63d5635" : { 
+         "class" : "PlayScriptNode", 
+         "desc" : { 
+            "x" : "-99959", 
+            "y" : "-97232"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "script" : "entities/behavior/asim.crowd_v3"
+      }
+   }, 
+   "entry" : "a40b57d8-3d25-4ea1-9267-ee3e1faf278f"
+}

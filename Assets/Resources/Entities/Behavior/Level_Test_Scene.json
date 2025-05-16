@@ -21,7 +21,8 @@
             "24b148b4-2b0f-4964-afbe-410de63d5635", 
             "693bfe65-7e7e-40a8-a0d4-5d60a6d7505b", 
             "2ab60bcb-4c86-4024-a155-7e57057edc5e", 
-            "c9f54381-8e89-4555-994e-0e27f5e93d46"
+            "c9f54381-8e89-4555-994e-0e27f5e93d46", 
+            "df371959-fb5d-4cd6-a66b-f6147bb1126e"
          ]
       }, 
       "24b148b4-2b0f-4964-afbe-410de63d5635" : { 
@@ -109,8 +110,8 @@
       "c9f54381-8e89-4555-994e-0e27f5e93d46" : { 
          "class" : "OnBattleEndEventNode", 
          "desc" : { 
-            "x" : "-99183", 
-            "y" : "-97248"
+            "x" : "-99193", 
+            "y" : "-97227"
          }, 
          "child" : [ 
             "515241af-8654-454d-83c3-85313efe2874"
@@ -119,8 +120,8 @@
       "515241af-8654-454d-83c3-85313efe2874" : { 
          "class" : "AreAllAroundDeadNode", 
          "desc" : { 
-            "x" : "-99216", 
-            "y" : "-97197"
+            "x" : "-99226", 
+            "y" : "-97176"
          }, 
          "child" : [ 
             "61c39d86-873e-40f9-b2d6-2b02efb24f61", 
@@ -131,8 +132,8 @@
       "61c39d86-873e-40f9-b2d6-2b02efb24f61" : { 
          "class" : "HasGlobalKeyNode", 
          "desc" : { 
-            "x" : "-99250", 
-            "y" : "-97059"
+            "x" : "-99260", 
+            "y" : "-97038"
          }, 
          "child" : [ 
             "6a506f33-f09c-480b-9ee8-9f77327c8fdb", 
@@ -143,8 +144,8 @@
       "6a506f33-f09c-480b-9ee8-9f77327c8fdb" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-99231", 
-            "y" : "-96930"
+            "x" : "-99242", 
+            "y" : "-96931"
          }, 
          "child" : [ 
          ]
@@ -152,8 +153,8 @@
       "286297d8-949b-4c19-93bd-9661b004f2b2" : { 
          "class" : "AddGlobalKeyNode", 
          "desc" : { 
-            "x" : "-99214", 
-            "y" : "-96885"
+            "x" : "-99225", 
+            "y" : "-96895"
          }, 
          "child" : [ 
          ], 
@@ -162,11 +163,69 @@
       "b8bafb50-7302-44ad-9366-b58d27906099" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-99127", 
-            "y" : "-97094"
+            "x" : "-99137", 
+            "y" : "-97073"
          }, 
          "child" : [ 
          ]
+      }, 
+      "df371959-fb5d-4cd6-a66b-f6147bb1126e" : { 
+         "class" : "OnZoneEventNode", 
+         "desc" : { 
+            "x" : "-98773", 
+            "y" : "-97226"
+         }, 
+         "child" : [ 
+            "846f2d4c-bd5c-4b87-8649-ad2ff8058536"
+         ], 
+         "fireOnce" : "true", 
+         "filterName" : "$TEAM$", 
+         "zoneType" : "Enter", 
+         "objectZoneName" : "AutodialogZone", 
+         "outHitObjectName" : ""
+      }, 
+      "846f2d4c-bd5c-4b87-8649-ad2ff8058536" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-98772", 
+            "y" : "-97054"
+         }, 
+         "child" : [ 
+            "ede96147-c3f0-4c3a-9dcb-a2cdffcc8f2a", 
+            "e9c8f186-da59-4d83-8e80-dfae3064ad73"
+         ], 
+         "key" : "AUTODIALOG"
+      }, 
+      "ede96147-c3f0-4c3a-9dcb-a2cdffcc8f2a" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-98753", 
+            "y" : "-96964"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "e9c8f186-da59-4d83-8e80-dfae3064ad73" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-98737", 
+            "y" : "-96927"
+         }, 
+         "child" : [ 
+            "a5256790-4946-45d1-ab0f-fa021b99991e"
+         ], 
+         "key" : "AUTODIALOG"
+      }, 
+      "a5256790-4946-45d1-ab0f-fa021b99991e" : { 
+         "class" : "PlayScriptNode", 
+         "desc" : { 
+            "x" : "-98737", 
+            "y" : "-96840"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "script" : "Entities/Dialog/Liris"
       }
    }, 
    "entry" : "426b8097-16d1-4132-be85-387e758581bd"

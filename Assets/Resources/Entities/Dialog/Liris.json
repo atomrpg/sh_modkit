@@ -3,12 +3,35 @@
       "b245d076-b02a-4749-be17-85c54727b6cd" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-99611", 
-            "y" : "-101951"
+            "x" : "-99678", 
+            "y" : "-102166"
          }, 
          "child" : [ 
-            "8968d53f-d668-4614-89e4-2207b6618689"
+            "4aaa7a7c-a8de-4c11-bb31-7ca5ee0d8832"
          ]
+      }, 
+      "4aaa7a7c-a8de-4c11-bb31-7ca5ee0d8832" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-99732", 
+            "y" : "-102093"
+         }, 
+         "child" : [ 
+            "27eb1895-2bf0-4317-9b85-01f1695b23c3", 
+            "8968d53f-d668-4614-89e4-2207b6618689"
+         ], 
+         "key" : "TEAMMATE"
+      }, 
+      "27eb1895-2bf0-4317-9b85-01f1695b23c3" : { 
+         "class" : "PlayScriptNode", 
+         "desc" : { 
+            "x" : "-99935", 
+            "y" : "-101995"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "script" : "Entities/Dialog/Liris_Teammate"
       }, 
       "8968d53f-d668-4614-89e4-2207b6618689" : { 
          "class" : "DialogBeginNode", 
@@ -211,32 +234,90 @@
       "03a88883-6391-4701-a2eb-be4a7bdf5cf1" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100792", 
-            "y" : "-98856", 
+            "x" : "-100795", 
+            "y" : "-98884", 
             "comment" : "(A16) ", 
             "historytag" : "A16"
          }, 
          "child" : [ 
-            "2deaa2ff-bb98-491c-82f1-a0ee58e14bab"
+            "10778171-ee67-4cc3-bc8f-b92b1035d466"
          ], 
          "text" : "Lead the way!"
       }, 
-      "2deaa2ff-bb98-491c-82f1-a0ee58e14bab" : { 
-         "class" : "DialogAnswerNode", 
+      "10778171-ee67-4cc3-bc8f-b92b1035d466" : { 
+         "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-100793", 
-            "y" : "-98601"
+            "x" : "-100796", 
+            "y" : "-98746"
+         }, 
+         "child" : [ 
+            "cd4b54fb-7cd8-4f47-a3ca-baee2fd199ea"
+         ], 
+         "key" : "TEAMMATE"
+      }, 
+      "cd4b54fb-7cd8-4f47-a3ca-baee2fd199ea" : { 
+         "class" : "CharacterSetCapsNode", 
+         "desc" : { 
+            "x" : "-100797", 
+            "y" : "-98667"
+         }, 
+         "child" : [ 
+            "12454123-f47d-4ad8-9f11-1d2f7c11be70"
+         ], 
+         "objectName" : "$SELF$", 
+         "caps" : "TeamMate"
+      }, 
+      "12454123-f47d-4ad8-9f11-1d2f7c11be70" : { 
+         "class" : "SetRelationShipBetweenFractionsNode", 
+         "desc" : { 
+            "x" : "-100802", 
+            "y" : "-98566"
+         }, 
+         "child" : [ 
+            "33cc673e-0b4e-4fdb-bb9f-bea972085d60"
+         ], 
+         "fraction1" : "player", 
+         "fraction2" : "liris", 
+         "value" : "100"
+      }, 
+      "33cc673e-0b4e-4fdb-bb9f-bea972085d60" : { 
+         "class" : "RestartBehaviorRequestNode", 
+         "desc" : { 
+            "x" : "-100798", 
+            "y" : "-98452"
+         }, 
+         "child" : [ 
+            "184b8a0a-5bfe-4f9b-8e67-43b7a9d65751"
+         ], 
+         "objectName" : "LogicLevel"
+      }, 
+      "184b8a0a-5bfe-4f9b-8e67-43b7a9d65751" : { 
+         "class" : "RestartBehaviorRequestNode", 
+         "desc" : { 
+            "x" : "-100799", 
+            "y" : "-98377"
+         }, 
+         "child" : [ 
+            "648e56c2-aa55-45a0-aa50-eb0535a3351f"
+         ], 
+         "objectName" : "Player"
+      }, 
+      "648e56c2-aa55-45a0-aa50-eb0535a3351f" : { 
+         "class" : "RestartBehaviorRequestNode", 
+         "desc" : { 
+            "x" : "-100798", 
+            "y" : "-98303"
          }, 
          "child" : [ 
             "aeb4997f-f682-4843-b474-330fe3ff944b"
          ], 
-         "text" : ""
+         "objectName" : "$SELF$"
       }, 
       "aeb4997f-f682-4843-b474-330fe3ff944b" : { 
          "class" : "DialogEndNode", 
          "desc" : { 
-            "x" : "-100795", 
-            "y" : "-98496"
+            "x" : "-100799", 
+            "y" : "-98226"
          }, 
          "child" : [ 
          ], 
@@ -344,7 +425,7 @@
          "class" : "DialogPhraseNode", 
          "desc" : { 
             "x" : "-98832", 
-            "y" : "-101308", 
+            "y" : "-101309", 
             "comment" : "(A0) ", 
             "historytag" : "A0"
          }, 
@@ -840,7 +921,7 @@
          "child" : [ 
             "42b165fb-19cf-4f59-81b4-635a9073dc34"
          ], 
-         "text" : "{!} Whatever youŗe selling—I'm not interested."
+         "text" : "{!} Whatever you're selling—I'm not interested."
       }, 
       "42b165fb-19cf-4f59-81b4-635a9073dc34" : { 
          "class" : "DialogPhraseNode", 
@@ -879,17 +960,6 @@
             "ed2fc0d7-61e0-4ae7-adeb-858a49b129ca"
          ], 
          "text" : "I, uh... <Scratches her head> Look, I wouldn't ask, but I kinda need someone's help."
-      }, 
-      "92df0c32-6198-40be-a688-cf2a98b2aee3" : { 
-         "class" : "DummyNode", 
-         "desc" : { 
-            "x" : "-100931", 
-            "y" : "-98708", 
-            "comment" : "Teammate"
-         }, 
-         "child" : [ 
-            "2deaa2ff-bb98-491c-82f1-a0ee58e14bab"
-         ]
       }
    }, 
    "entry" : "b245d076-b02a-4749-be17-85c54727b6cd"
