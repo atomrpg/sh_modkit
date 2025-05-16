@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: mod_stone_of_arkham
   m_EditorClassIdentifier: 
   Icon:
-    path: Entities/Item/SPECIAL_Rain_Drum
+    path: Entities/Item/mod_stone_of_arkham
   m_Localization: item.mod_stone_of_arkham
   Takeable: 1
   UISounds:
