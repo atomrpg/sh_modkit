@@ -141,7 +141,7 @@ public class ModBuilder : EditorWindow
     const string PATH_BUILD_DLL = "Temp/ModBuild_dll";
 
     bool buildAssetBundle = true;
-    bool stripShaders = false;
+    //bool stripShaders = false;
     bool clearLogs = true;
 
     BuildTarget buildTarget = BuildTarget.StandaloneWindows64;
@@ -182,7 +182,7 @@ public class ModBuilder : EditorWindow
 
         clearLogs = GUILayout.Toggle(clearLogs, "Clear Logs");
         buildAssetBundle = GUILayout.Toggle(buildAssetBundle, "Build Asset Bundle");
-        stripShaders = GUILayout.Toggle(stripShaders, "Strip Shaders");
+        //stripShaders = GUILayout.Toggle(stripShaders, "Strip Shaders");
 
         if (GUILayout.Button("BUILD"))
         {
@@ -377,7 +377,11 @@ public class ModBuilder : EditorWindow
 
                 GUILayout.Space(20);
 
-                EditorGUILayout.HelpBox("Select and upload preview image to Steam", MessageType.Info);
+                EditorGUILayout.HelpBox("Select and upload preview image to Steam.\n\n" +
+                    "Requirements:\n" +
+                    "• Format: PNG\n" +
+                    "• Size: 512x512 pixels\n" +
+                    "• Max file size: 1 MB", MessageType.Info);
 
                 if (GUILayout.Button("Upload preview image"))
                 {
@@ -391,7 +395,8 @@ public class ModBuilder : EditorWindow
 
                 GUILayout.Space(20);
 
-                EditorGUILayout.HelpBox("Upload pre built mod content to Steam", MessageType.Info);
+                EditorGUILayout.HelpBox(
+                    "Make sure to press the \"BUILD\" button before uploading.\nOnly pre-built mod content can be uploaded to Steam.", MessageType.Info);
 
                 if (GUILayout.Button("Upload content"))
                 {
