@@ -21,6 +21,10 @@
             "1", 
             "1"
          ]
+      }, 
+      "origin" : { 
+         "levelId" : "test_scene", 
+         "modName" : "Test_Mod"
       }
    }, 
    { 
@@ -84,6 +88,10 @@
             "1", 
             "1"
          ]
+      }, 
+      "origin" : { 
+         "levelId" : "test_scene", 
+         "modName" : "Test_Mod"
       }
    }, 
    { 
@@ -151,6 +159,10 @@
             "1", 
             "1"
          ]
+      }, 
+      "origin" : { 
+         "levelId" : "test_scene", 
+         "modName" : "Test_Mod"
       }
    }, 
    { 
@@ -219,6 +231,10 @@
             "1", 
             "1"
          ]
+      }, 
+      "origin" : { 
+         "levelId" : "test_scene", 
+         "modName" : "Test_Mod"
       }
    }, 
    { 
@@ -290,6 +306,10 @@
             "1", 
             "1"
          ]
+      }, 
+      "origin" : { 
+         "levelId" : "test_scene", 
+         "modName" : "Test_Mod"
       }
    }, 
    { 
@@ -372,6 +392,10 @@
             "1", 
             "1"
          ]
+      }, 
+      "origin" : { 
+         "levelId" : "test_scene", 
+         "modName" : "Test_Mod"
       }
    }, 
    { 
@@ -444,6 +468,10 @@
             "1", 
             "1"
          ]
+      }, 
+      "origin" : { 
+         "levelId" : "test_scene", 
+         "modName" : "Test_Mod"
       }
    }, 
    { 
@@ -479,6 +507,10 @@
             "1", 
             "1"
          ]
+      }, 
+      "origin" : { 
+         "levelId" : "test_scene", 
+         "modName" : "Test_Mod"
       }
    }, 
    { 
@@ -554,6 +586,10 @@
             "1", 
             "1"
          ]
+      }, 
+      "origin" : { 
+         "levelId" : "test_scene", 
+         "modName" : "Test_Mod"
       }
    }
 ]
