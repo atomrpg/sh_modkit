@@ -3,7 +3,13 @@
     "mod_liris_technique": {
       "short": "Lacerating Arrowfall",
       "full": "Fire several arrows at once, while holding the bow in a way that will spin them in the air, adding a 30% chance to cause bleeding or even blind the target on a successful shot! A family technique taught to Liris Fenbrook by her missing father long ago..."
-    }
+    },
+    "liris" : { 
+         "short" : "Liris Fenbrook", 
+         "bio" : ".bio", 
+         "description" : "---", 
+         "illustration" : "\n\n<align=\"center\"><sprite name=\"eres\">\n\n\n\n\n\n\n\n</align>"
+     }
   },
   "item": {
     "mod_stone_of_arkham": {
@@ -14,7 +20,7 @@
   "character": {
     "liris": {
       "short": "Young Woman",
-      "full": "Liris Fenbrook"
+      "full": "Liris Fenbrook",
     },
     "mod_bandittest1": {
       "short": "Ruffian",

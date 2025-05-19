@@ -54,7 +54,8 @@ MonoBehaviour:
     Intellect: 6
     Dexterity: 6
     Luck: 5
-    _perks: []
+    _perks:
+    - path: Entities/perks/backgrounds/Liris
     skillsBonus:
       MartialArts: 42
       BladedWeapons: 50
