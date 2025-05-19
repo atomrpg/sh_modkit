@@ -66,7 +66,7 @@ public class ModBuilder : EditorWindow
     StoreSteamService steam = new StoreSteamService();
     // string _modName = typeof(ModEntryPoint).Assembly.GetName().Name;
     [MenuItem("Game/Build Mod")]
-    static void BuildMod()
+    static public void BuildMod()
     {
         var window = EditorWindow.GetWindow<ModBuilder>();
         window.ShowWindow();

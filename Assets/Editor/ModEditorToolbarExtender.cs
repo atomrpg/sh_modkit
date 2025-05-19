@@ -19,6 +19,7 @@ public class ModEditorToolbarExtender
 
     static GUIContent sceneListContent = new GUIContent("Scene List", EditorGUIUtility.IconContent("SceneAsset Icon").image, "Game/Scene List %l");
     static GUIContent assetListContent = new GUIContent("Asset List", EditorGUIUtility.IconContent("ParticleSystemForceField Gizmo").image, "Game/Asset List %j");
+    static GUIContent buildContent = new GUIContent("BUILD", EditorGUIUtility.IconContent("Assembly Icon").image, "Game/Build Mod");
     static GUIContent saveEntitesContent = new GUIContent("Save Logic", EditorGUIUtility.IconContent("Update-Available").image, "Game/Save Logic");
 
     static void OnToolbarLeftGUI()
@@ -50,12 +51,19 @@ public class ModEditorToolbarExtender
     {
         GUILayout.BeginHorizontal();
 
-        if (GUILayout.Button(saveEntitesContent, EditorStyles.toolbarButton))
+        if (GUILayout.Button(saveEntitesContent, EditorStyles.toolbarButton, GUILayout.Width(100)))
         {
             GameEditor.SaveLevel(GetModeName());
         }
 
-        GUILayout.Space(20);
+        GUILayout.Space(10);
+
+        if (GUILayout.Button(buildContent, EditorStyles.toolbarButton, GUILayout.Width(100)))
+        {
+            ModBuilder.BuildMod();
+        }
+
+        GUILayout.Space(10);
 
         GUILayout.EndHorizontal();
     }
