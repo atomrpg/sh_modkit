@@ -1,9 +1,17 @@
 { 
+   "modName" : "Test_Mod", 
    "files" : [ 
       "Test_Scene_Logic"
    ], 
    "Test_Scene_Logic" : { 
       "initialList" : [ 
+         "LogicLevel", 
+         "Bandit_Standby", 
+         "Bandit_Standby_2", 
+         "Bandit_PatrolWalker", 
+         "Bandit_PatrolWalker_2", 
+         "Bandit_Boss", 
+         "Bandit_Bossbodyguard", 
          "TestChest", 
          "Liris"
       ], 

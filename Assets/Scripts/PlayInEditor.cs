@@ -183,6 +183,8 @@ public class PlayInEditor : MonoBehaviour
             }
 
             DontDestroyOnLoad(gameObject);
+
+            GlobalEvents.PerformEvent(new GlobalEvents.LanguageChanged() { langId = Localization.Language });
         }
         else
         {
@@ -211,6 +213,7 @@ public class PlayInEditor : MonoBehaviour
 
     void SpawnObjects()
     {
+        bool isPlaying = Application.isPlaying;
         //fallback replace detect
         for (int i = 0; i < SceneManager.sceneCount; i++)
         {
@@ -247,6 +250,10 @@ public class PlayInEditor : MonoBehaviour
                         copy.GetComponent<EntityComponent>().SetEntity(r.Entity);
                         r.gameObject.SetActive(false);
                         r.gameObject.name += "_temp";
+                        if(isPlaying)
+                        {
+                            DestroyImmediate(r.gameObject);
+                        }
                     }
                 }
             }
@@ -371,7 +378,7 @@ public class PlayInEditor : MonoBehaviour
 
         if (EditorApplication.isPlaying)
         {
-            GameEditor.Feature.DontEntityInspectorGUI = true;
+            EntityComponent.DontInspectorGUI = true;
             ResourceManager.Reset();
             ResourceManager.SetAssetGetPathCallback(null);
         }

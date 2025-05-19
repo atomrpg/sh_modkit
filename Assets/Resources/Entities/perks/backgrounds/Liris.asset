@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1601790923, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
-  m_Name: twoendsofthestick
+  m_Script: {fileID: -2085338548, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: Liris
   m_EditorClassIdentifier: 
-  animations:
-  - name: Attack
-    animation: {fileID: 3241395779173146629, guid: 00000000000000000000000000000000,
-      type: 0}
-  additionalOverrides: []
+  activator: {fileID: 0}
+  showIfInnactive: 0
+  modifiers: []
+  special: []
