@@ -183,6 +183,8 @@ public class PlayInEditor : MonoBehaviour
             }
 
             DontDestroyOnLoad(gameObject);
+
+            GlobalEvents.PerformEvent(new GlobalEvents.LanguageChanged() { langId = Localization.Language });
         }
         else
         {
