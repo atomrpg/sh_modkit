@@ -38,7 +38,7 @@ MonoBehaviour:
   overrideAnimAvatarName: 
   AcceptingRestrictions:
     _flags: 5
-  specialtyMask: 32
+  specialtyMask: 16
   SkillPerks:
     path: entities/perks/skillperks/trees/teammateskillperktree
   Stats:
@@ -46,7 +46,7 @@ MonoBehaviour:
     - _type: 25
       _value: 15
     Level: 2
-    ExperiencePoints: 20
+    ExperiencePoints: 1623
     Strength: 4
     Attention: 7
     Endurance: 4
@@ -57,21 +57,21 @@ MonoBehaviour:
     _perks:
     - path: Entities/perks/backgrounds/Liris
     skillsBonus:
-      MartialArts: 42
-      BladedWeapons: 50
-      AxesMaces: 28
-      SpearsHalberds: 19
-      RangedWeapons: 81
+      MartialArts: 32
+      BladedWeapons: 40
+      AxesMaces: 18
+      SpearsHalberds: 9
+      RangedWeapons: 61
       Intimidation: 18
       Persuasion: 40
       Bluff: 23
       Haggling: 98
-      Outdoorsmanship: 101
-      Stealth: 92
-      Lockpicking: 60
-      Pickpocketing: 50
-      Crafting: 40
-      Medicine: 60
+      Outdoorsmanship: 70
+      Stealth: 69
+      Lockpicking: 52
+      Pickpocketing: 19
+      Crafting: 23
+      Medicine: 50
     FreeSkillPoints: 0
     FreeStatPoints: 0
     FreeSpecPoints: 0
