@@ -1,29 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using JSon;
+﻿using UnityEngine;
 using System.Reflection;
-using System.Runtime.CompilerServices;
 
 //[assembly: AssemblyTitle("My Mod")] // ENTER MOD TITLE
-
-
 public class ModEntryPoint : MonoBehaviour // ModEntryPoint - RESERVED LOOKUP NAME
 {
-    string modName;
-    string dir;
+    string _modName;
+    string _dir;
 
     void Start()
     {
         var assembly = GetType().Assembly;
-        modName = assembly.GetName().Name;
-        dir = System.IO.Path.GetDirectoryName(assembly.Location);
-        Debug.Log("Mod Init: " + modName + "(" + dir + ")");
+        _modName = assembly.GetName().Name;
+        _dir = System.IO.Path.GetDirectoryName(assembly.Location);
+        Debug.Log("Mod Init: " + _modName + "(" + _dir + ")");
 
         GlobalEvents.AddListener<GlobalEvents.GameStart>(GameLoaded);
         GlobalEvents.AddListener<GlobalEvents.LevelLoaded>(LevelLoaded);
-		
-		LoadModBundle();
+        GlobalEvents.AddListener<GlobalEvents.LanguageChanged>(LanguageChanged);
+
+        LoadModBundle();
+
+        ApplyLocalization();
     }
 
     void LoadModBundle()
@@ -37,14 +34,26 @@ public class ModEntryPoint : MonoBehaviour // ModEntryPoint - RESERVED LOOKUP NA
 #endif
     }
 
+    void ApplyLocalization()
+    {
+        //One-lang supported
+        Localization.LoadStrings(_modName + "_strings_", "en");
+        //Multi-lang supported
+        //Localization.LoadStrings(GetModName() + "_strings_", Localization.Language);
+    }
+
+    void LanguageChanged(GlobalEvents.LanguageChanged evnt)
+    {
+        ApplyLocalization();
+    }
+
     void GameLoaded(GlobalEvents.GameStart evnt)
     {
-        Localization.LoadStrings("mymod_strings_", Localization.Language);
     }
 
     void LevelLoaded(GlobalEvents.LevelLoaded evnt)
     {
-        Debug.Log(evnt.levelName);
+        //Debug.Log(evnt.levelName);
     }
 
     void Update()
