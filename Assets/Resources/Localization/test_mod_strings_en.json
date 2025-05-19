@@ -6,7 +6,7 @@
     },
     "liris" : { 
          "short" : "Liris Fenbrook", 
-         "bio" : ".bio", 
+         "bio": "An unbreaking spirit in a dainty frame, Liris Fenbrook has lived a hard life, shaped by the shadow of her father's mysterious legacy. Since childhood, she has been surrounded by strange and forbidden artifacts from an age long dissolved into myth—thanks to her parents’ obsession with, as they often claimed, \"keeping all existence safe\" through the procurement and concealment of ancient relics and the performance of unsettling obfuscation rites.\n\nPerhaps knowing that such a life left little room for proper parenting, her father taught Liris to fend for herself and survive—whether through charm, cunning wit, or her deadly longbow. And then, one day, he vanished—taking with him all the answers to questions not yet asked.\n\nNow, Liris sets out to uncover the truth behind her enigmatic heritage—and, perhaps, find her missing patriarch. Will you help her achieve this? Or will she become just another stepping stone on your path to fame and fortune?\n\nOnly time will tell.",
          "description" : "---", 
          "illustration" : "\n\n<align=\"center\"><sprite name=\"eres\">\n\n\n\n\n\n\n\n</align>"
      }
