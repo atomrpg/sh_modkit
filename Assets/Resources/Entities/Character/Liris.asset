@@ -56,6 +56,7 @@ MonoBehaviour:
     Luck: 5
     _perks:
     - path: Entities/perks/backgrounds/Liris
+    - path: Entities/perks/abilities/mod_liris_technique
     skillsBonus:
       MartialArts: 32
       BladedWeapons: 40
