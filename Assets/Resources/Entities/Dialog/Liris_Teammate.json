@@ -1,160 +1,986 @@
 { 
    "states" : { 
-      "b245d076-b02a-4749-be17-85c54727b6cd" : { 
+      "a4ded33d-38cc-4476-9fb0-b8ad188a1c23" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-99611", 
-            "y" : "-101951"
+            "x" : "-99299", 
+            "y" : "-100927"
          }, 
          "child" : [ 
-            "8968d53f-d668-4614-89e4-2207b6618689"
+            "f4401a50-708c-43a7-a5a6-dac25d8754c7"
          ]
       }, 
-      "8968d53f-d668-4614-89e4-2207b6618689" : { 
+      "f4401a50-708c-43a7-a5a6-dac25d8754c7" : { 
          "class" : "DialogBeginNode", 
          "desc" : { 
-            "x" : "-99666", 
-            "y" : "-101885"
+            "x" : "-99354", 
+            "y" : "-100888"
          }, 
          "child" : [ 
-            "7379fac9-bb5d-4e20-9859-d1d84db94589"
+            "519dab10-e862-41f3-9e7c-be17704ccefc"
          ], 
          "cameraPoint" : "Player"
       }, 
-      "7379fac9-bb5d-4e20-9859-d1d84db94589" : { 
-         "class" : "DialogPhraseNode", 
+      "519dab10-e862-41f3-9e7c-be17704ccefc" : { 
+         "class" : "CharacterGetCurrentLocationName", 
          "desc" : { 
-            "x" : "-99674", 
-            "y" : "-101761"
+            "x" : "-99362", 
+            "y" : "-100790"
          }, 
          "child" : [ 
-            "7fc67ce9-7395-46bf-bd8c-a8625b240010", 
-            "97d84827-1431-4d65-bcf1-5605b9543338"
+            "2093fca5-f7ac-4760-a61a-d15b036eec89"
          ], 
-         "text" : "<A young woman looks at you with a small, almost guilty smile> What is it?"
+         "objectName" : "$SELF$", 
+         "resultVariable" : "_OBJECT_LOCATION_NAME"
       }, 
-      "7fc67ce9-7395-46bf-bd8c-a8625b240010" : { 
-         "class" : "DialogAnswerNode", 
+      "2093fca5-f7ac-4760-a61a-d15b036eec89" : { 
+         "class" : "ObjectCheckNode", 
          "desc" : { 
-            "x" : "-99874", 
-            "y" : "-101570"
+            "x" : "-99354", 
+            "y" : "-100695"
          }, 
          "child" : [ 
-            "ac2050aa-b480-40b1-ad3f-4dd53634c343"
+            "7b777d11-5390-4817-9c82-126ded26093b", 
+            "a2035d8a-7c9e-4924-beea-79de066b4934"
          ], 
-         "text" : "{!} We need to part ways for now."
+         "objectName" : "Encounter"
       }, 
-      "ac2050aa-b480-40b1-ad3f-4dd53634c343" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-99874", 
-            "y" : "-101477"
-         }, 
-         "child" : [ 
-            "fe21d22e-976e-4b00-8264-9bad96def5f6", 
-            "1d6f6e87-b479-4466-a592-b9361b937d0f"
-         ], 
-         "text" : "Yeah?"
-      }, 
-      "fe21d22e-976e-4b00-8264-9bad96def5f6" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-100006", 
-            "y" : "-101301"
-         }, 
-         "child" : [ 
-            "61d216cd-68e0-4ad2-af81-e8c3faf4fba6"
-         ], 
-         "text" : "{Ok} Yeah."
-      }, 
-      "61d216cd-68e0-4ad2-af81-e8c3faf4fba6" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-100007", 
-            "y" : "-101225"
-         }, 
-         "child" : [ 
-            "87218aaa-ed58-4963-aad9-9afa58073e44"
-         ], 
-         "text" : "Well, you know where to find me."
-      }, 
-      "87218aaa-ed58-4963-aad9-9afa58073e44" : { 
+      "7b777d11-5390-4817-9c82-126ded26093b" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-100007", 
-            "y" : "-101076"
+            "x" : "-99465", 
+            "y" : "-100605"
          }, 
          "child" : [ 
-            "4f490d02-ac88-4104-9f04-ecabd42ad67c"
+            "d7d0320c-b51b-4d92-987e-41d80a672930"
+         ], 
+         "key" : "IS_ENCOUNTER"
+      }, 
+      "d7d0320c-b51b-4d92-987e-41d80a672930" : { 
+         "class" : "RandomNode", 
+         "desc" : { 
+            "x" : "-99299", 
+            "y" : "-100524"
+         }, 
+         "child" : [ 
+            "6e3ecbaa-29a5-4ba3-9e32-5a560770ea80", 
+            "5ba5e67c-c1bb-4746-b7d2-eab55ec95ba8", 
+            "dacd7343-91d2-49f8-8644-117df0fd993d"
+         ]
+      }, 
+      "6e3ecbaa-29a5-4ba3-9e32-5a560770ea80" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99578", 
+            "y" : "-100415", 
+            "comment" : "(A0) \nRND"
+         }, 
+         "child" : [ 
+            "777c2b1d-50bc-496f-a127-49c3955f7cd3", 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.6e3ecbaa-29a5-4ba3-9e32-5a560770ea80"
+      }, 
+      "777c2b1d-50bc-496f-a127-49c3955f7cd3" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99968", 
+            "y" : "-99592", 
+            "comment" : "GOTO A1"
+         }, 
+         "child" : [ 
+            "5b22c85e-6ddb-48bb-bf03-aad39c222839"
+         ], 
+         "text" : "#Vavere_Teammate.777c2b1d-50bc-496f-a127-49c3955f7cd3"
+      }, 
+      "5b22c85e-6ddb-48bb-bf03-aad39c222839" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-100998", 
+            "y" : "-100222"
+         }, 
+         "child" : [ 
+            "57191a08-521e-4908-9511-652f2e828cad", 
+            "b671424c-b63a-484c-a2da-fef3fc9f6036"
+         ], 
+         "key" : "IS_ENCOUNTER"
+      }, 
+      "57191a08-521e-4908-9511-652f2e828cad" : { 
+         "class" : "StringsCompareNode", 
+         "desc" : { 
+            "x" : "-98382", 
+            "y" : "-100258", 
+            "comment" : " на Лесной Случайке. Включая обычные зедки и карту с лагерем"
+         }, 
+         "child" : [ 
+            "f0088013-476b-46fe-93f1-53e03a6af766", 
+            "9d1529bf-2704-4d7a-be61-a4e5e6c63d9c"
+         ], 
+         "value1" : "$_OBJECT_LOCATION_NAME$", 
+         "value2" : "Z_Forest_", 
+         "opp" : "StartsWith"
+      }, 
+      "f0088013-476b-46fe-93f1-53e03a6af766" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-98409", 
+            "y" : "-99936", 
+            "comment" : "(A1) \n(на Лесной Случайке. Включая обычные зедки и карту с лагерем)"
+         }, 
+         "child" : [ 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.f0088013-476b-46fe-93f1-53e03a6af766"
+      }, 
+      "326be21a-64a9-4e49-8a86-f3f5b0394e75" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99670", 
+            "y" : "-99592", 
+            "comment" : "GOTO A2"
+         }, 
+         "child" : [ 
+            "16da15a2-8ee5-4347-a0c4-c1d9eae23a8d"
+         ], 
+         "text" : "#Vavere_Teammate.326be21a-64a9-4e49-8a86-f3f5b0394e75"
+      }, 
+      "16da15a2-8ee5-4347-a0c4-c1d9eae23a8d" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99670", 
+            "y" : "-99506", 
+            "comment" : "(A2) "
+         }, 
+         "child" : [ 
+            "777c2b1d-50bc-496f-a127-49c3955f7cd3", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.16da15a2-8ee5-4347-a0c4-c1d9eae23a8d"
+      }, 
+      "b852d3ea-9721-4a64-8b81-cc3b7f9722aa" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99370", 
+            "y" : "-99592", 
+            "comment" : "GOTO A3"
+         }, 
+         "child" : [ 
+            "1cff2d6f-3dc6-4abf-b6a5-99b6ffabdd56"
+         ], 
+         "text" : "#Vavere_Teammate.b852d3ea-9721-4a64-8b81-cc3b7f9722aa"
+      }, 
+      "1cff2d6f-3dc6-4abf-b6a5-99b6ffabdd56" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99369", 
+            "y" : "-99508", 
+            "comment" : "(A3) "
+         }, 
+         "child" : [ 
+            "777c2b1d-50bc-496f-a127-49c3955f7cd3", 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.1cff2d6f-3dc6-4abf-b6a5-99b6ffabdd56"
+      }, 
+      "84cf3a75-6a06-4354-aaa9-921d050fad7f" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99070", 
+            "y" : "-99592", 
+            "comment" : "GOTO A4"
+         }, 
+         "child" : [ 
+            "5f6818a0-3c82-41a7-9b26-59812fc9eb1f"
+         ], 
+         "text" : "#Vavere_Teammate.84cf3a75-6a06-4354-aaa9-921d050fad7f"
+      }, 
+      "5f6818a0-3c82-41a7-9b26-59812fc9eb1f" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99072", 
+            "y" : "-99366", 
+            "comment" : "(A4) "
+         }, 
+         "child" : [ 
+            "f4e9d9f3-ca66-46c2-8e71-1f8ed329c75b", 
+            "89d2bfe4-029b-4933-85b8-96a1dae34f46"
+         ], 
+         "text" : "#Vavere_Teammate.5f6818a0-3c82-41a7-9b26-59812fc9eb1f"
+      }, 
+      "f4e9d9f3-ca66-46c2-8e71-1f8ed329c75b" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99182", 
+            "y" : "-99234", 
+            "comment" : "GOTO A6"
+         }, 
+         "child" : [ 
+            "f6567764-d71c-4e1d-8716-7543f514a9bd"
+         ], 
+         "text" : "#Vavere_Teammate.f4e9d9f3-ca66-46c2-8e71-1f8ed329c75b"
+      }, 
+      "f6567764-d71c-4e1d-8716-7543f514a9bd" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99181", 
+            "y" : "-99157", 
+            "comment" : "(A6) "
+         }, 
+         "child" : [ 
+            "d7ab5171-c742-42c9-b223-14854d07dc7d"
+         ], 
+         "text" : "#Vavere_Teammate.f6567764-d71c-4e1d-8716-7543f514a9bd"
+      }, 
+      "d7ab5171-c742-42c9-b223-14854d07dc7d" : { 
+         "class" : "DialogEndNode", 
+         "desc" : { 
+            "x" : "-99180", 
+            "y" : "-99023"
+         }, 
+         "child" : [ 
+            "a25c6bda-f1ae-4eb2-951e-b893602528a2"
+         ], 
+         "skipButtonEnd" : "false", 
+         "dontMarkInHistory" : "false"
+      }, 
+      "a25c6bda-f1ae-4eb2-951e-b893602528a2" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-99180", 
+            "y" : "-98946"
+         }, 
+         "child" : [ 
+            "d7a2b027-9511-45b1-b3af-491f8e3649b6"
          ], 
          "key" : "EXIT_TEAM"
       }, 
-      "4f490d02-ac88-4104-9f04-ecabd42ad67c" : { 
+      "d7a2b027-9511-45b1-b3af-491f8e3649b6" : { 
          "class" : "RestartBehaviorRequestNode", 
          "desc" : { 
-            "x" : "-100008", 
-            "y" : "-100994"
+            "x" : "-99179", 
+            "y" : "-98888"
          }, 
          "child" : [ 
-            "26d37a6e-4dac-421a-8012-c2eabbdc46a9"
          ], 
          "objectName" : "$SELF$"
       }, 
-      "26d37a6e-4dac-421a-8012-c2eabbdc46a9" : { 
+      "89d2bfe4-029b-4933-85b8-96a1dae34f46" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98957", 
+            "y" : "-99234", 
+            "comment" : "GOTO A7"
+         }, 
+         "child" : [ 
+            "11f4e98e-b083-470e-86d8-d27dfaa19112"
+         ], 
+         "text" : "#Vavere_Teammate.89d2bfe4-029b-4933-85b8-96a1dae34f46"
+      }, 
+      "11f4e98e-b083-470e-86d8-d27dfaa19112" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-98957", 
+            "y" : "-99160", 
+            "comment" : "(A7) "
+         }, 
+         "child" : [ 
+            "777c2b1d-50bc-496f-a127-49c3955f7cd3", 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "e467de31-5f5b-4c6e-8175-2b44e49a9493", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.11f4e98e-b083-470e-86d8-d27dfaa19112"
+      }, 
+      "e467de31-5f5b-4c6e-8175-2b44e49a9493" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98921", 
+            "y" : "-98998", 
+            "comment" : "GOTO A4"
+         }, 
+         "child" : [ 
+            "5f6818a0-3c82-41a7-9b26-59812fc9eb1f"
+         ], 
+         "text" : "#Vavere_Teammate.e467de31-5f5b-4c6e-8175-2b44e49a9493"
+      }, 
+      "dd4e0565-31ef-41ac-940d-674c30ff1958" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98770", 
+            "y" : "-99592", 
+            "comment" : "GOTO A5"
+         }, 
+         "child" : [ 
+            "7889ca6e-9cba-4618-b3b7-4b5af2d6d6bb"
+         ], 
+         "text" : "#Vavere_Teammate.dd4e0565-31ef-41ac-940d-674c30ff1958"
+      }, 
+      "7889ca6e-9cba-4618-b3b7-4b5af2d6d6bb" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-98770", 
+            "y" : "-99487", 
+            "comment" : "(A5) "
+         }, 
+         "child" : [ 
+            "195dcdbd-61c5-464c-9790-3be276ca4b53"
+         ], 
+         "text" : "#Vavere_Teammate.7889ca6e-9cba-4618-b3b7-4b5af2d6d6bb"
+      }, 
+      "195dcdbd-61c5-464c-9790-3be276ca4b53" : { 
          "class" : "DialogEndNode", 
          "desc" : { 
-            "x" : "-99745", 
-            "y" : "-100842"
+            "x" : "-98770", 
+            "y" : "-99373"
          }, 
          "child" : [ 
          ], 
          "skipButtonEnd" : "false", 
          "dontMarkInHistory" : "false"
       }, 
-      "1d6f6e87-b479-4466-a592-b9361b937d0f" : { 
-         "class" : "DialogAnswerNode", 
+      "9d1529bf-2704-4d7a-be61-a4e5e6c63d9c" : { 
+         "class" : "StringsCompareNode", 
          "desc" : { 
-            "x" : "-99744", 
-            "y" : "-101301"
+            "x" : "-98347", 
+            "y" : "-100144", 
+            "comment" : " на Лесной Случайке. Включая обычные зедки и карту с лагерем"
          }, 
          "child" : [ 
-            "698b1002-c86d-4236-9d6b-cfad87a8d885"
+            "f0088013-476b-46fe-93f1-53e03a6af766", 
+            "e66d8595-1020-4ac9-b31c-aebf03a77eb6"
          ], 
-         "text" : "{No} Nay."
+         "value1" : "$_OBJECT_LOCATION_NAME$", 
+         "value2" : "Rest_Forest", 
+         "opp" : "StartsWith"
       }, 
-      "698b1002-c86d-4236-9d6b-cfad87a8d885" : { 
+      "e66d8595-1020-4ac9-b31c-aebf03a77eb6" : { 
+         "class" : "StringsCompareNode", 
+         "desc" : { 
+            "x" : "-98145", 
+            "y" : "-100258", 
+            "comment" : " на Горно-лесной Случайке. Включая обычные зедки и карту с лагерем"
+         }, 
+         "child" : [ 
+            "c93591e6-8434-4bf9-ab92-9662db10e7b3", 
+            "09db4992-d478-4723-bbfe-32a7ac1d5df1"
+         ], 
+         "value1" : "$_OBJECT_LOCATION_NAME$", 
+         "value2" : "Z_MtForest_", 
+         "opp" : "StartsWith"
+      }, 
+      "c93591e6-8434-4bf9-ab92-9662db10e7b3" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99744", 
-            "y" : "-101222"
+            "x" : "-98180", 
+            "y" : "-99931", 
+            "comment" : "(A1) \n(на Горно-лесной Случайке. Включая обычные зедки и карту с лагерем)"
          }, 
          "child" : [ 
-            "26d37a6e-4dac-421a-8012-c2eabbdc46a9"
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
          ], 
-         "text" : "<She nods in response>"
+         "text" : "#Vavere_Teammate.c93591e6-8434-4bf9-ab92-9662db10e7b3"
       }, 
-      "97d84827-1431-4d65-bcf1-5605b9543338" : { 
-         "class" : "DialogAnswerNode", 
+      "09db4992-d478-4723-bbfe-32a7ac1d5df1" : { 
+         "class" : "StringsCompareNode", 
          "desc" : { 
-            "x" : "-99479", 
-            "y" : "-101561"
+            "x" : "-98111", 
+            "y" : "-100146", 
+            "comment" : " на Горно-лесной Случайке. Включая обычные зедки и карту с лагерем"
          }, 
          "child" : [ 
-            "03a88883-6391-4701-a2eb-be4a7bdf5cf1"
+            "c93591e6-8434-4bf9-ab92-9662db10e7b3", 
+            "d89533ad-3adb-49b8-b2fa-f8858b7f1ca8"
          ], 
-         "text" : "{End} Let's go."
+         "value1" : "$_OBJECT_LOCATION_NAME$", 
+         "value2" : "Rest_MtForest", 
+         "opp" : "StartsWith"
       }, 
-      "03a88883-6391-4701-a2eb-be4a7bdf5cf1" : { 
+      "d89533ad-3adb-49b8-b2fa-f8858b7f1ca8" : { 
+         "class" : "StringsCompareNode", 
+         "desc" : { 
+            "x" : "-97901", 
+            "y" : "-100262", 
+            "comment" : " на Равнинной Случайке. Включая обычные зедки и карту с лагерем"
+         }, 
+         "child" : [ 
+            "84f22cdf-b8e3-47ec-be23-b5e1422fd384", 
+            "d597214a-0ef6-4bec-9fcc-88b3568f641a"
+         ], 
+         "value1" : "$_OBJECT_LOCATION_NAME$", 
+         "value2" : "Z_Plains_", 
+         "opp" : "StartsWith"
+      }, 
+      "84f22cdf-b8e3-47ec-be23-b5e1422fd384" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99479", 
-            "y" : "-101468"
+            "x" : "-97951", 
+            "y" : "-99946", 
+            "comment" : "(A1) \n(на Равнинной Случайке. Включая обычные зедки и карту с лагерем)"
          }, 
          "child" : [ 
-            "26d37a6e-4dac-421a-8012-c2eabbdc46a9"
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
          ], 
-         "text" : "Lead the way!"
+         "text" : "#Vavere_Teammate.84f22cdf-b8e3-47ec-be23-b5e1422fd384"
+      }, 
+      "d597214a-0ef6-4bec-9fcc-88b3568f641a" : { 
+         "class" : "StringsCompareNode", 
+         "desc" : { 
+            "x" : "-97866", 
+            "y" : "-100148", 
+            "comment" : " на Равнинной Случайке. Включая обычные зедки и карту с лагерем"
+         }, 
+         "child" : [ 
+            "84f22cdf-b8e3-47ec-be23-b5e1422fd384", 
+            "451b8fa7-2d58-4b5a-8e60-50ca199deda8"
+         ], 
+         "value1" : "$_OBJECT_LOCATION_NAME$", 
+         "value2" : "Rest_Plains", 
+         "opp" : "StartsWith"
+      }, 
+      "451b8fa7-2d58-4b5a-8e60-50ca199deda8" : { 
+         "class" : "StringsCompareNode", 
+         "desc" : { 
+            "x" : "-97662", 
+            "y" : "-100269", 
+            "comment" : " на Равнинной Случайке. Включая обычные зедки и карту с лагерем"
+         }, 
+         "child" : [ 
+            "481c787d-953d-4c94-97ca-dce789fd39ac", 
+            "31f52d4e-5a16-4606-a8c7-7aaf38eaf6be"
+         ], 
+         "value1" : "$_OBJECT_LOCATION_NAME$", 
+         "value2" : "Z_Fields_", 
+         "opp" : "StartsWith"
+      }, 
+      "481c787d-953d-4c94-97ca-dce789fd39ac" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-97721", 
+            "y" : "-100011", 
+            "comment" : "(A1) \n(на Полевой (фермы)"
+         }, 
+         "child" : [ 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.481c787d-953d-4c94-97ca-dce789fd39ac"
+      }, 
+      "31f52d4e-5a16-4606-a8c7-7aaf38eaf6be" : { 
+         "class" : "StringsCompareNode", 
+         "desc" : { 
+            "x" : "-97628", 
+            "y" : "-100147", 
+            "comment" : " на Равнинной Случайке. Включая обычные зедки и карту с лагерем"
+         }, 
+         "child" : [ 
+            "481c787d-953d-4c94-97ca-dce789fd39ac", 
+            "9ebe45da-e0ab-4198-bed2-cff5f4c599f8"
+         ], 
+         "value1" : "$_OBJECT_LOCATION_NAME$", 
+         "value2" : "Rest_Fields", 
+         "opp" : "StartsWith"
+      }, 
+      "9ebe45da-e0ab-4198-bed2-cff5f4c599f8" : { 
+         "class" : "StringsCompareNode", 
+         "desc" : { 
+            "x" : "-97423", 
+            "y" : "-100267", 
+            "comment" : " на Болотной Случайке. Включая обычные зедки и карту с лагерем"
+         }, 
+         "child" : [ 
+            "992f81df-81f3-4fd6-8f0c-e3f2382e013d", 
+            "bd0b3523-bb68-4b07-be78-f12b60a63768"
+         ], 
+         "value1" : "$_OBJECT_LOCATION_NAME$", 
+         "value2" : "Z_Swamp_", 
+         "opp" : "StartsWith"
+      }, 
+      "992f81df-81f3-4fd6-8f0c-e3f2382e013d" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-97490", 
+            "y" : "-99905", 
+            "comment" : "(A1) \n(на Болотной Случайке. Включая обычные зедки и карту с лагерем)"
+         }, 
+         "child" : [ 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.992f81df-81f3-4fd6-8f0c-e3f2382e013d"
+      }, 
+      "bd0b3523-bb68-4b07-be78-f12b60a63768" : { 
+         "class" : "StringsCompareNode", 
+         "desc" : { 
+            "x" : "-97389", 
+            "y" : "-100153", 
+            "comment" : " на Болотной Случайке. Включая обычные зедки и карту с лагерем"
+         }, 
+         "child" : [ 
+            "992f81df-81f3-4fd6-8f0c-e3f2382e013d", 
+            "7161ed8f-5f8f-4511-bd85-9879b49160c8"
+         ], 
+         "value1" : "$_OBJECT_LOCATION_NAME$", 
+         "value2" : "Rest_Swamps", 
+         "opp" : "StartsWith"
+      }, 
+      "7161ed8f-5f8f-4511-bd85-9879b49160c8" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-97224", 
+            "y" : "-99835", 
+            "comment" : "(A1) \n(на любой локации, которая не указана выше)"
+         }, 
+         "child" : [ 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.7161ed8f-5f8f-4511-bd85-9879b49160c8"
+      }, 
+      "b671424c-b63a-484c-a2da-fef3fc9f6036" : { 
+         "class" : "StringsCompareNode", 
+         "desc" : { 
+            "x" : "-100966", 
+            "y" : "-100091", 
+            "comment" : "в Смелтер Роу"
+         }, 
+         "child" : [ 
+            "3f081497-304d-4163-8eb8-b46673a5a008", 
+            "500c4c48-cce9-48d3-852d-d199fdb62405"
+         ], 
+         "value1" : "$_OBJECT_LOCATION_NAME$", 
+         "value2" : "Swordhaven_Smelters_Row", 
+         "opp" : "StartsWith"
+      }, 
+      "3f081497-304d-4163-8eb8-b46673a5a008" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-101001", 
+            "y" : "-99888", 
+            "comment" : "(A1) \n(в Смелтер Роу)"
+         }, 
+         "child" : [ 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.3f081497-304d-4163-8eb8-b46673a5a008"
+      }, 
+      "500c4c48-cce9-48d3-852d-d199fdb62405" : { 
+         "class" : "StringsCompareNode", 
+         "desc" : { 
+            "x" : "-100727", 
+            "y" : "-100089", 
+            "comment" : "в пригороде СХ"
+         }, 
+         "child" : [ 
+            "bf2d930d-9068-498e-ae46-eb525b7a92ba", 
+            "00f12467-f6d2-4c02-86f9-31ba375120e1"
+         ], 
+         "value1" : "$_OBJECT_LOCATION_NAME$", 
+         "value2" : "Swordhaven_Prigorod", 
+         "opp" : "StartsWith"
+      }, 
+      "bf2d930d-9068-498e-ae46-eb525b7a92ba" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100762", 
+            "y" : "-99877", 
+            "comment" : "(A1) \n(в пригороде СХ)"
+         }, 
+         "child" : [ 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.bf2d930d-9068-498e-ae46-eb525b7a92ba"
+      }, 
+      "00f12467-f6d2-4c02-86f9-31ba375120e1" : { 
+         "class" : "HasKeywordValueNode", 
+         "desc" : { 
+            "x" : "-100489", 
+            "y" : "-100045", 
+            "comment" : " на Стартовом пляже"
+         }, 
+         "child" : [ 
+            "3e69f252-c8dd-410e-a5dd-8cd6dddac0e9", 
+            "f421d2de-e307-4c01-ae9e-18cc7fe4a21d"
+         ], 
+         "key" : "_OBJECT_LOCATION_NAME", 
+         "value" : "Coast"
+      }, 
+      "3e69f252-c8dd-410e-a5dd-8cd6dddac0e9" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100525", 
+            "y" : "-99891", 
+            "comment" : "(A1) \n(на Стартовом пляже)"
+         }, 
+         "child" : [ 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.3e69f252-c8dd-410e-a5dd-8cd6dddac0e9"
+      }, 
+      "f421d2de-e307-4c01-ae9e-18cc7fe4a21d" : { 
+         "class" : "HasKeywordValueNode", 
+         "desc" : { 
+            "x" : "-100252", 
+            "y" : "-100043", 
+            "comment" : " в Пещере с варанами"
+         }, 
+         "child" : [ 
+            "f1941f66-5695-4927-907e-e286623fed00", 
+            "e8f551df-5513-4d36-b17a-ba2f29bdc6aa"
+         ], 
+         "key" : "_OBJECT_LOCATION_NAME", 
+         "value" : "Coast_Cave"
+      }, 
+      "f1941f66-5695-4927-907e-e286623fed00" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100287", 
+            "y" : "-99895", 
+            "comment" : "(A1) \n(в Пещере с варанами)"
+         }, 
+         "child" : [ 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.f1941f66-5695-4927-907e-e286623fed00"
+      }, 
+      "e8f551df-5513-4d36-b17a-ba2f29bdc6aa" : { 
+         "class" : "StringsCompareNode", 
+         "desc" : { 
+            "x" : "-100022", 
+            "y" : "-100048", 
+            "comment" : " в Кламриче"
+         }, 
+         "child" : [ 
+            "6d80f808-1574-45a9-9309-f13369ab7469", 
+            "63486488-2357-4c33-b3aa-e8f756007926"
+         ], 
+         "value1" : "$_OBJECT_LOCATION_NAME$", 
+         "value2" : "Coast_Village_", 
+         "opp" : "StartsWith"
+      }, 
+      "6d80f808-1574-45a9-9309-f13369ab7469" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100056", 
+            "y" : "-99910", 
+            "comment" : "(A1) \n(в Кламриче)"
+         }, 
+         "child" : [ 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.6d80f808-1574-45a9-9309-f13369ab7469"
+      }, 
+      "63486488-2357-4c33-b3aa-e8f756007926" : { 
+         "class" : "HasKeywordValueNode", 
+         "desc" : { 
+            "x" : "-99825", 
+            "y" : "-100129", 
+            "comment" : " в Лагере работорговцев"
+         }, 
+         "child" : [ 
+            "06703b8d-e7fa-4a25-a7c8-92c2757347af", 
+            "31c9c579-27c7-4b73-8e5b-f6ab75664ce9"
+         ], 
+         "key" : "_OBJECT_LOCATION_NAME", 
+         "value" : "SlaveCamp"
+      }, 
+      "06703b8d-e7fa-4a25-a7c8-92c2757347af" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99827", 
+            "y" : "-99937", 
+            "comment" : "(A1) \n(в Лагере работорговцев)"
+         }, 
+         "child" : [ 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.06703b8d-e7fa-4a25-a7c8-92c2757347af"
+      }, 
+      "31c9c579-27c7-4b73-8e5b-f6ab75664ce9" : { 
+         "class" : "HasKeywordValueNode", 
+         "desc" : { 
+            "x" : "-99789", 
+            "y" : "-100049", 
+            "comment" : " в Лагере работорговцев"
+         }, 
+         "child" : [ 
+            "06703b8d-e7fa-4a25-a7c8-92c2757347af", 
+            "0b96ef0e-215a-449e-887b-0c40d33833c2"
+         ], 
+         "key" : "_OBJECT_LOCATION_NAME", 
+         "value" : "SlaveCamp_Ambar"
+      }, 
+      "0b96ef0e-215a-449e-887b-0c40d33833c2" : { 
+         "class" : "StringsCompareNode", 
+         "desc" : { 
+            "x" : "-99568", 
+            "y" : "-100072"
+         }, 
+         "child" : [ 
+            "7e8b11bc-65ce-4e85-9959-607566bf13fb", 
+            "d198801d-f1c3-40f2-b23b-40adf6e7e367"
+         ], 
+         "value1" : "$_OBJECT_LOCATION_NAME$", 
+         "value2" : "Grainhold_", 
+         "opp" : "StartsWith"
+      }, 
+      "7e8b11bc-65ce-4e85-9959-607566bf13fb" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99600", 
+            "y" : "-99926", 
+            "comment" : "(A1) \n(в Грейнхолде)"
+         }, 
+         "child" : [ 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.7e8b11bc-65ce-4e85-9959-607566bf13fb"
+      }, 
+      "d198801d-f1c3-40f2-b23b-40adf6e7e367" : { 
+         "class" : "StringsCompareNode", 
+         "desc" : { 
+            "x" : "-99344", 
+            "y" : "-100074", 
+            "comment" : "в Спайдер Кейве. Снаружи и в Подземке"
+         }, 
+         "child" : [ 
+            "58d3fd53-0b59-4b8f-90b9-48815a66dd81", 
+            "0903b77d-fbb8-4697-8ae8-ef65e2286ece"
+         ], 
+         "value1" : "$_OBJECT_LOCATION_NAME$", 
+         "value2" : "Spider_Cave_", 
+         "opp" : "StartsWith"
+      }, 
+      "58d3fd53-0b59-4b8f-90b9-48815a66dd81" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99344", 
+            "y" : "-99947", 
+            "comment" : "(A1) \n(в Спайдер Кейве. Снаружи и в Подземке)"
+         }, 
+         "child" : [ 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.58d3fd53-0b59-4b8f-90b9-48815a66dd81"
+      }, 
+      "0903b77d-fbb8-4697-8ae8-ef65e2286ece" : { 
+         "class" : "HasKeywordValueNode", 
+         "desc" : { 
+            "x" : "-99136", 
+            "y" : "-100204", 
+            "comment" : " в Вайпер Шоале. Снаружи и в Подземке"
+         }, 
+         "child" : [ 
+            "b8ecbc1c-ecb6-4366-ac7e-0abcd78a7f23", 
+            "f6fc5682-80a7-4672-a01e-6ff85cddfcc7"
+         ], 
+         "key" : "_OBJECT_LOCATION_NAME", 
+         "value" : "Viper_Shoal"
+      }, 
+      "b8ecbc1c-ecb6-4366-ac7e-0abcd78a7f23" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99112", 
+            "y" : "-99903", 
+            "comment" : "(A1) \n(в Вайпер Шоале. Снаружи и в Подземке)"
+         }, 
+         "child" : [ 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.b8ecbc1c-ecb6-4366-ac7e-0abcd78a7f23"
+      }, 
+      "f6fc5682-80a7-4672-a01e-6ff85cddfcc7" : { 
+         "class" : "HasKeywordValueNode", 
+         "desc" : { 
+            "x" : "-99102", 
+            "y" : "-100112", 
+            "comment" : " в Вайпер Шоале. Снаружи и в Подземке"
+         }, 
+         "child" : [ 
+            "b8ecbc1c-ecb6-4366-ac7e-0abcd78a7f23", 
+            "b25ee799-efb1-4d7e-b16b-f33b7cd4bd26"
+         ], 
+         "key" : "_OBJECT_LOCATION_NAME", 
+         "value" : "Viper_Shoal_Dungeon"
+      }, 
+      "b25ee799-efb1-4d7e-b16b-f33b7cd4bd26" : { 
+         "class" : "HasKeywordValueNode", 
+         "desc" : { 
+            "x" : "-98898", 
+            "y" : "-100196", 
+            "comment" : " в Логове Снатчера. Снаружи и в Подземке"
+         }, 
+         "child" : [ 
+            "433525d8-cbd6-42a9-95bd-56429887fb19", 
+            "6343d8a4-2e80-4c6f-b658-96f4b66cbc8a"
+         ], 
+         "key" : "_OBJECT_LOCATION_NAME", 
+         "value" : "Snatcher_Lair"
+      }, 
+      "433525d8-cbd6-42a9-95bd-56429887fb19" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-98875", 
+            "y" : "-99906", 
+            "comment" : "(A1) \n(в Логове Снатчера. Снаружи и в Подземке)"
+         }, 
+         "child" : [ 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.433525d8-cbd6-42a9-95bd-56429887fb19"
+      }, 
+      "6343d8a4-2e80-4c6f-b658-96f4b66cbc8a" : { 
+         "class" : "HasKeywordValueNode", 
+         "desc" : { 
+            "x" : "-98863", 
+            "y" : "-100115", 
+            "comment" : " в Логове Снатчера. Снаружи и в Подземке"
+         }, 
+         "child" : [ 
+            "433525d8-cbd6-42a9-95bd-56429887fb19", 
+            "0cb7b1c9-8c80-4c91-b610-e3a1bff0e8c6"
+         ], 
+         "key" : "_OBJECT_LOCATION_NAME", 
+         "value" : "Snatcher_Lair_Dungeon"
+      }, 
+      "0cb7b1c9-8c80-4c91-b610-e3a1bff0e8c6" : { 
+         "class" : "HasKeywordValueNode", 
+         "desc" : { 
+            "x" : "-98653", 
+            "y" : "-100223", 
+            "comment" : " в Руинах Крессетвола. Снаружи и в Подземке"
+         }, 
+         "child" : [ 
+            "eaf8b106-0938-4243-8188-b27d11fc901e", 
+            "e9a0b628-da42-44f8-b640-13ff7dc32a6e"
+         ], 
+         "key" : "_OBJECT_LOCATION_NAME", 
+         "value" : "Ruins_Of_Cressetwall"
+      }, 
+      "eaf8b106-0938-4243-8188-b27d11fc901e" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-98648", 
+            "y" : "-99934", 
+            "comment" : "(A1) \n(в Руинах Крессетвола. Снаружи и в Подземке)"
+         }, 
+         "child" : [ 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.eaf8b106-0938-4243-8188-b27d11fc901e"
+      }, 
+      "e9a0b628-da42-44f8-b640-13ff7dc32a6e" : { 
+         "class" : "HasKeywordValueNode", 
+         "desc" : { 
+            "x" : "-98617", 
+            "y" : "-100129", 
+            "comment" : " в Руинах Крессетвола. Снаружи и в Подземке"
+         }, 
+         "child" : [ 
+            "eaf8b106-0938-4243-8188-b27d11fc901e", 
+            "7161ed8f-5f8f-4511-bd85-9879b49160c8"
+         ], 
+         "key" : "_OBJECT_LOCATION_NAME", 
+         "value" : "Ruins_Of_Cressetwall_Dungeon"
+      }, 
+      "5ba5e67c-c1bb-4746-b7d2-eab55ec95ba8" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99353", 
+            "y" : "-100453", 
+            "comment" : "(A0) \nRND"
+         }, 
+         "child" : [ 
+            "777c2b1d-50bc-496f-a127-49c3955f7cd3", 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.5ba5e67c-c1bb-4746-b7d2-eab55ec95ba8"
+      }, 
+      "dacd7343-91d2-49f8-8644-117df0fd993d" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99126", 
+            "y" : "-100440", 
+            "comment" : "(A0) \nRND"
+         }, 
+         "child" : [ 
+            "777c2b1d-50bc-496f-a127-49c3955f7cd3", 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "#Vavere_Teammate.dacd7343-91d2-49f8-8644-117df0fd993d"
+      }, 
+      "a2035d8a-7c9e-4924-beea-79de066b4934" : { 
+         "class" : "RemoveKeywordNode", 
+         "desc" : { 
+            "x" : "-99242", 
+            "y" : "-100605"
+         }, 
+         "child" : [ 
+            "d7d0320c-b51b-4d92-987e-41d80a672930"
+         ], 
+         "key" : "IS_ENCOUNTER"
       }
    }, 
-   "entry" : "b245d076-b02a-4749-be17-85c54727b6cd"
+   "entry" : "a4ded33d-38cc-4476-9fb0-b8ad188a1c23"
 }
