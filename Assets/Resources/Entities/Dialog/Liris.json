@@ -682,8 +682,8 @@
       "a6de44a3-9249-4f4c-8c8d-abae6f0ec863" : { 
          "class" : "CharacterStatNode", 
          "desc" : { 
-            "x" : "-99508", 
-            "y" : "-98830"
+            "x" : "-99501", 
+            "y" : "-98858"
          }, 
          "child" : [ 
             "1648cb97-4f75-4664-a8c1-da81e2f46fd0", 
@@ -961,7 +961,7 @@
          "class" : "DialogPhraseNode", 
          "desc" : { 
             "x" : "-98990", 
-            "y" : "-98352", 
+            "y" : "-98350", 
             "comment" : "(A6)", 
             "historytag" : "A6"
          }, 
@@ -969,7 +969,7 @@
             "2d14ed0f-14bc-4476-ab73-810795c0b4f3", 
             "775381c6-3ba0-47c3-971e-353a0ea88a7c"
          ], 
-         "text" : "<Success> <Sighs> It is the Stone of Arkham. Yes, I know—wrong setting and all, but trust me, it will all make sense! If you help me..."
+         "text" : "<Success> <Sighs> It is the Stone of Arkham. Yes, I know—sounds spooky and all, but trust me, it will all make sense! If you help me..."
       }, 
       "2d14ed0f-14bc-4476-ab73-810795c0b4f3" : { 
          "class" : "DialogAnswerNode", 
