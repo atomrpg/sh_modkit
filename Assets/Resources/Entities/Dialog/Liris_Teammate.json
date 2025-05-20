@@ -188,8 +188,8 @@
       "326be21a-64a9-4e49-8a86-f3f5b0394e75" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-99747", 
-            "y" : "-99533", 
+            "x" : "-99756", 
+            "y" : "-99349", 
             "comment" : "GOTO A2"
          }, 
          "child" : [ 
@@ -200,8 +200,8 @@
       "16da15a2-8ee5-4347-a0c4-c1d9eae23a8d" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99994", 
-            "y" : "-99149", 
+            "x" : "-99956", 
+            "y" : "-98803", 
             "comment" : "(A2) "
          }, 
          "child" : [ 
@@ -286,37 +286,44 @@
          }, 
          "child" : [ 
             "98a7c62d-9101-4acd-9529-738b0338c16a", 
+            "ab0fa6df-691c-4018-bbec-90367c08c554", 
             "80357aba-f637-4cf5-bf12-e5212a31ead4"
          ]
       }, 
       "98a7c62d-9101-4acd-9529-738b0338c16a" : { 
          "class" : "InventoryHasItemNode", 
          "desc" : { 
-            "x" : "-101633", 
-            "y" : "-97926"
+            "x" : "-101631", 
+            "y" : "-97924"
          }, 
          "child" : [ 
             "ab5201bb-1067-43d7-980b-d1d641b9e4bb", 
             "b8115b0f-f5b8-442c-806e-86bc1fbcf4e0"
          ], 
-         "objectName" : "$TEAM$"
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Item", 
+            "count" : "1", 
+            "proto" : "Tr4_WoodenPig"
+         }
       }, 
       "ab5201bb-1067-43d7-980b-d1d641b9e4bb" : { 
          "class" : "HasKeywordNode", 
          "desc" : { 
-            "x" : "-101642", 
-            "y" : "-97747"
+            "x" : "-101640", 
+            "y" : "-97745"
          }, 
          "child" : [ 
             "b8115b0f-f5b8-442c-806e-86bc1fbcf4e0", 
             "d8592deb-ca3c-4658-9084-eed5634274b0"
-         ]
+         ], 
+         "key" : "PORK"
       }, 
       "b8115b0f-f5b8-442c-806e-86bc1fbcf4e0" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-101784", 
-            "y" : "-97654"
+            "x" : "-101782", 
+            "y" : "-97652"
          }, 
          "child" : [ 
          ]
@@ -324,61 +331,166 @@
       "d8592deb-ca3c-4658-9084-eed5634274b0" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-101617", 
-            "y" : "-97623"
-         }, 
-         "child" : [ 
-            "60bd74a7-8205-4294-8375-5b087302284e"
-         ], 
-         "text" : "{Pay} Here's a Pork Lad for you."
-      }, 
-      "60bd74a7-8205-4294-8375-5b087302284e" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-101621", 
-            "y" : "-97486", 
-            "comment" : "(A2) "
-         }, 
-         "child" : [ 
-            "df1defff-7058-4650-ab12-96d2721ece9d"
-         ], 
-         "text" : ""
-      }, 
-      "df1defff-7058-4650-ab12-96d2721ece9d" : { 
-         "class" : "AddKeywordNode", 
-         "desc" : { 
-            "x" : "-101628", 
-            "y" : "-97340"
+            "x" : "-101615", 
+            "y" : "-97621"
          }, 
          "child" : [ 
             "a9a5530c-6051-4c7d-ba6f-cfb0b0a608e4"
-         ]
+         ], 
+         "text" : "{Pay} Here's a Pork Lad for you."
       }, 
       "a9a5530c-6051-4c7d-ba6f-cfb0b0a608e4" : { 
          "class" : "InventoryRemoveItemNode", 
          "desc" : { 
-            "x" : "-101643", 
-            "y" : "-97242"
+            "x" : "-101639", 
+            "y" : "-97520"
          }, 
          "child" : [ 
-            "f0a6835d-b331-4bcd-89c6-76fc2b5764e2"
+            "60bd74a7-8205-4294-8375-5b087302284e"
          ], 
          "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Item", 
+            "count" : "1", 
+            "proto" : "Tr4_WoodenPig"
+         }, 
          "showLogMessage" : "true", 
          "overrideCount" : ""
       }, 
-      "f0a6835d-b331-4bcd-89c6-76fc2b5764e2" : { 
+      "60bd74a7-8205-4294-8375-5b087302284e" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-101647", 
+            "y" : "-97386"
+         }, 
+         "child" : [ 
+            "df1defff-7058-4650-ab12-96d2721ece9d"
+         ], 
+         "text" : "Oh, $PLAYER.NAME$, is that a Pork Lad statue? I had one just like this as a girl! Thank you so much, I love it!"
+      }, 
+      "df1defff-7058-4650-ab12-96d2721ece9d" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-101653", 
+            "y" : "-97176"
+         }, 
+         "child" : [ 
+            "a4f090d6-876b-4b63-89be-281053af4e55"
+         ], 
+         "key" : "PORK"
+      }, 
+      "a4f090d6-876b-4b63-89be-281053af4e55" : { 
          "class" : "MathKeyValueNode", 
          "desc" : { 
-            "x" : "-101624", 
-            "y" : "-97102"
+            "x" : "-101446", 
+            "y" : "-96971"
+         }, 
+         "child" : [ 
+            "6b1df620-e268-4d0b-baa3-37de1c5314c2"
+         ], 
+         "key" : "GIFT", 
+         "value" : "1", 
+         "opp" : "Add"
+      }, 
+      "6b1df620-e268-4d0b-baa3-37de1c5314c2" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-101369", 
+            "y" : "-96780"
          }, 
          "child" : [ 
             "d40882e4-3ce2-4c9e-9242-590abd2a2f9d"
+         ]
+      }, 
+      "ab0fa6df-691c-4018-bbec-90367c08c554" : { 
+         "class" : "InventoryHasItemNode", 
+         "desc" : { 
+            "x" : "-101273", 
+            "y" : "-97862"
+         }, 
+         "child" : [ 
+            "b231bffa-1a07-47af-b7ef-53f1cf54f148", 
+            "f27648e4-365f-4d1d-b09c-dcab20f93c50"
          ], 
-         "key" : "$GIFT$", 
-         "value" : "1", 
-         "opp" : "Add"
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Ingredient", 
+            "count" : "1", 
+            "proto" : "RedHerb"
+         }
+      }, 
+      "b231bffa-1a07-47af-b7ef-53f1cf54f148" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-101281", 
+            "y" : "-97730"
+         }, 
+         "child" : [ 
+            "f27648e4-365f-4d1d-b09c-dcab20f93c50", 
+            "7574a560-9c00-4e8b-af95-1dc068d3b7e2"
+         ], 
+         "key" : "PLANT"
+      }, 
+      "f27648e4-365f-4d1d-b09c-dcab20f93c50" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-101406", 
+            "y" : "-97534"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "7574a560-9c00-4e8b-af95-1dc068d3b7e2" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-101260", 
+            "y" : "-97623"
+         }, 
+         "child" : [ 
+            "39b02d75-9754-430e-81a6-bfa0a1473aff"
+         ], 
+         "text" : "{Pay} I plucked this red flower just for you. It's kinda neat, right?"
+      }, 
+      "39b02d75-9754-430e-81a6-bfa0a1473aff" : { 
+         "class" : "InventoryRemoveItemNode", 
+         "desc" : { 
+            "x" : "-101252", 
+            "y" : "-97517"
+         }, 
+         "child" : [ 
+            "e902abd1-9d65-4a9e-9ace-d0e571d74c91"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Ingredient", 
+            "count" : "1", 
+            "proto" : "RedHerb"
+         }, 
+         "showLogMessage" : "true", 
+         "overrideCount" : ""
+      }, 
+      "e902abd1-9d65-4a9e-9ace-d0e571d74c91" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-101255", 
+            "y" : "-97382", 
+            "comment" : "(A2) "
+         }, 
+         "child" : [ 
+            "d75f9d3f-efa9-4807-b6d8-1a1de176fb29"
+         ], 
+         "text" : "Wow! A red flower? My favourite! Thank you so much, $PLAYER.NAME$! I'm gonna cherish it forever."
+      }, 
+      "d75f9d3f-efa9-4807-b6d8-1a1de176fb29" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-101265", 
+            "y" : "-97169"
+         }, 
+         "child" : [ 
+            "a4f090d6-876b-4b63-89be-281053af4e55"
+         ], 
+         "key" : "PLANT"
       }, 
       "80357aba-f637-4cf5-bf12-e5212a31ead4" : { 
          "class" : "DialogAnswerNode", 
@@ -767,8 +879,8 @@
       "46e1f340-1448-4703-a812-a1a0f6b0af0a" : { 
          "class" : "MathCompareValuesNode", 
          "desc" : { 
-            "x" : "-100260", 
-            "y" : "-98709"
+            "x" : "-100259", 
+            "y" : "-98722"
          }, 
          "child" : [ 
             "c6b14ead-6771-4b54-ad8a-96b0ae984c4e", 
@@ -782,8 +894,8 @@
       "c6b14ead-6771-4b54-ad8a-96b0ae984c4e" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100468", 
-            "y" : "-98474", 
+            "x" : "-100472", 
+            "y" : "-98369", 
             "comment" : "(A2) "
          }, 
          "child" : [ 
@@ -795,13 +907,28 @@
       "b3514656-ec3b-4e18-9160-1b695084fc6d" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-100091", 
-            "y" : "-98184"
+            "x" : "-99893", 
+            "y" : "-98345"
          }, 
          "child" : [ 
-            "f0ae1258-3ed6-48a1-8728-ba7aa252ff82"
+            "deba763f-738c-4113-bce3-a36bfa9673dd"
          ], 
          "text" : "{?} Can we talk about *you*?"
+      }, 
+      "deba763f-738c-4113-bce3-a36bfa9673dd" : { 
+         "class" : "MathCompareValuesNode", 
+         "desc" : { 
+            "x" : "-99900", 
+            "y" : "-98252"
+         }, 
+         "child" : [ 
+            "f0ae1258-3ed6-48a1-8728-ba7aa252ff82", 
+            "59ede191-5bc1-46b8-9259-19bdb7da0c57"
+         ], 
+         "value1" : "$GIFT$", 
+         "value2" : "$LOVE$", 
+         "opp" : "Equal", 
+         "dataformat" : "Int"
       }, 
       "f0ae1258-3ed6-48a1-8728-ba7aa252ff82" : { 
          "class" : "MathCompareValuesNode", 
@@ -821,12 +948,104 @@
       "08965ee1-9952-4679-8508-59aa817e9abd" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100107", 
-            "y" : "-97915"
+            "x" : "-100394", 
+            "y" : "-97860"
          }, 
          "child" : [ 
+            "0aeb0080-dca1-45fe-b6a8-2dd0511a4dbd", 
+            "e2c9f8d6-4ac7-4ebf-8850-d573ea95fba7", 
+            "da240d4b-5ed1-41b3-aeb9-8adcd2fdc26d"
          ], 
-         "text" : ""
+         "text" : "Hmm? Well, I enjoy your company, that's one fact I suppose I'm open to share. I just hope my skills are useful to you as well. A-are they?"
+      }, 
+      "0aeb0080-dca1-45fe-b6a8-2dd0511a4dbd" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-100606", 
+            "y" : "-97648"
+         }, 
+         "child" : [ 
+            "753a7026-bad9-42e6-b036-8a627e49a269"
+         ], 
+         "text" : "{!} Eh, I suppose."
+      }, 
+      "753a7026-bad9-42e6-b036-8a627e49a269" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100752", 
+            "y" : "-97567"
+         }, 
+         "child" : [ 
+            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
+         ], 
+         "text" : "That's good. I don't wanna be dead weight, you know?"
+      }, 
+      "4eff4eb0-4c60-4f30-833d-40b6bdf32235" : { 
+         "class" : "MathKeyValueNode", 
+         "desc" : { 
+            "x" : "-99763", 
+            "y" : "-97184"
+         }, 
+         "child" : [ 
+            "cc8763fd-23fc-4de6-8d23-7c462544b21f"
+         ], 
+         "key" : "LOVE", 
+         "value" : "1", 
+         "opp" : "Add"
+      }, 
+      "cc8763fd-23fc-4de6-8d23-7c462544b21f" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-99709", 
+            "y" : "-97039"
+         }, 
+         "child" : [ 
+            "6b1df620-e268-4d0b-baa3-37de1c5314c2"
+         ]
+      }, 
+      "e2c9f8d6-4ac7-4ebf-8850-d573ea95fba7" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-100355", 
+            "y" : "-97659"
+         }, 
+         "child" : [ 
+            "b601c185-71b1-49bb-aa81-98f3ca060496"
+         ], 
+         "text" : "{!} Of course, Liris. You are invaluable."
+      }, 
+      "b601c185-71b1-49bb-aa81-98f3ca060496" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100491", 
+            "y" : "-97571"
+         }, 
+         "child" : [ 
+            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
+         ], 
+         "text" : "You're just saying that! <Liris giggles, but still appreciates your kind words>"
+      }, 
+      "da240d4b-5ed1-41b3-aeb9-8adcd2fdc26d" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-100120", 
+            "y" : "-97685"
+         }, 
+         "child" : [ 
+            "f05cafd6-3d9e-456a-9c10-d756c45f876e"
+         ], 
+         "text" : "{!} You need to do better, Liris. I don't have a place for those who don't give me their all. Are we clear?"
+      }, 
+      "f05cafd6-3d9e-456a-9c10-d756c45f876e" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100236", 
+            "y" : "-97576"
+         }, 
+         "child" : [ 
+            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
+         ], 
+         "text" : "Well maybe you should get to know my talents before yap... No, you're right. <Liris stops, mid-confrontation, and hangs her head in shame> I will try to do better, I promise. Thank you for tolerating me the way I am."
       }, 
       "9c80fd56-00bf-4263-bef3-1a73202d3564" : { 
          "class" : "MathCompareValuesNode", 
@@ -846,12 +1065,13 @@
       "fbd0613a-c99e-469a-afdc-f59c788f6186" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99869", 
-            "y" : "-97902"
+            "x" : "-99836", 
+            "y" : "-97854"
          }, 
          "child" : [ 
+            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
          ], 
-         "text" : ""
+         "text" : "Our love is 2."
       }, 
       "1ec1c25c-4639-4d38-9f09-6b4b1ff01904" : { 
          "class" : "MathCompareValuesNode", 
@@ -1051,6 +1271,17 @@
          "child" : [ 
          ], 
          "text" : ""
+      }, 
+      "59ede191-5bc1-46b8-9259-19bdb7da0c57" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99507", 
+            "y" : "-98223"
+         }, 
+         "child" : [ 
+            "cc8763fd-23fc-4de6-8d23-7c462544b21f"
+         ], 
+         "text" : "What's there to say, $PLAYER.NAME$? You already know everything I allowed myself to trust you with. $LOVE$ = love $GIFT$ = figft"
       }, 
       "24015e12-7edb-4465-aa76-a422b2e0592f" : { 
          "class" : "DialogPhraseNode", 
@@ -1837,6 +2068,83 @@
             "f4401a50-708c-43a7-a5a6-dac25d8754c7"
          ], 
          "key" : "ROMANCE_INIT"
+      }, 
+      "038d6230-89cd-4a40-bca5-847f6920d4d1" : { 
+         "class" : "InventoryHasItemNode", 
+         "desc" : { 
+            "x" : "-102120", 
+            "y" : "-97942"
+         }, 
+         "child" : [ 
+            "b5a7c04a-39ef-4fb9-8227-c85ebb3931d9", 
+            "a527b8f4-9aaf-46b9-8ae4-d82aa1af6f66"
+         ], 
+         "objectName" : "$TEAM$"
+      }, 
+      "b5a7c04a-39ef-4fb9-8227-c85ebb3931d9" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-102104", 
+            "y" : "-97732"
+         }, 
+         "child" : [ 
+            "a527b8f4-9aaf-46b9-8ae4-d82aa1af6f66", 
+            "3029d0ff-0c47-4b95-b8bd-a8a35886560c"
+         ]
+      }, 
+      "a527b8f4-9aaf-46b9-8ae4-d82aa1af6f66" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-102246", 
+            "y" : "-97640"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "3029d0ff-0c47-4b95-b8bd-a8a35886560c" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-102080", 
+            "y" : "-97608"
+         }, 
+         "child" : [ 
+            "b950ec66-5303-4623-8731-8ddf9316970a"
+         ], 
+         "text" : "{Pay} Here's a Pork Lad for you."
+      }, 
+      "b950ec66-5303-4623-8731-8ddf9316970a" : { 
+         "class" : "InventoryRemoveItemNode", 
+         "desc" : { 
+            "x" : "-102092", 
+            "y" : "-97505"
+         }, 
+         "child" : [ 
+            "9792bd7f-c7e8-488d-8e59-662ebd15d9b7"
+         ], 
+         "objectName" : "$TEAM$", 
+         "showLogMessage" : "true", 
+         "overrideCount" : ""
+      }, 
+      "9792bd7f-c7e8-488d-8e59-662ebd15d9b7" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-102092", 
+            "y" : "-97353", 
+            "comment" : "(A2) "
+         }, 
+         "child" : [ 
+            "75fe3ed9-74b1-4322-b1d9-07f4f5fa579b"
+         ], 
+         "text" : ""
+      }, 
+      "75fe3ed9-74b1-4322-b1d9-07f4f5fa579b" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-102101", 
+            "y" : "-97209"
+         }, 
+         "child" : [ 
+         ]
       }
    }, 
    "entry" : "a4ded33d-38cc-4476-9fb0-b8ad188a1c23"
