@@ -409,15 +409,26 @@
       "09cf0ad9-a098-462d-8d96-410ca1c6ea81" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100774", 
-            "y" : "-99444", 
+            "x" : "-100810", 
+            "y" : "-99488", 
             "comment" : "(A15) ", 
             "historytag" : "A15"
          }, 
          "child" : [ 
-            "97d84827-1431-4d65-bcf1-5605b9543338"
+            "6f8c322b-c902-4912-ae23-77c96826e8d5"
          ], 
-         "text" : "You won't regret this! I'm light on my feet, handy with a lock, and rarely talk in my sleep. Promise."
+         "text" : "You won't regret this! Near everyone knows Liris Fenbrook is light on her feet, handy with a lock, and rarely talks in her sleep. That's a promise."
+      }, 
+      "6f8c322b-c902-4912-ae23-77c96826e8d5" : { 
+         "class" : "DialogShowNameNode", 
+         "desc" : { 
+            "x" : "-100946", 
+            "y" : "-99330", 
+            "comment" : "Liris Fenbrook"
+         }, 
+         "child" : [ 
+            "97d84827-1431-4d65-bcf1-5605b9543338"
+         ]
       }, 
       "97d84827-1431-4d65-bcf1-5605b9543338" : { 
          "class" : "DialogAnswerNode", 
@@ -720,8 +731,8 @@
       "94de1e2f-8077-4613-a833-523ca7aae61e" : { 
          "class" : "DialogShowNameNode", 
          "desc" : { 
-            "x" : "-98788", 
-            "y" : "-99610", 
+            "x" : "-98812", 
+            "y" : "-99603", 
             "comment" : "Liris Fenbrook"
          }, 
          "child" : [ 
