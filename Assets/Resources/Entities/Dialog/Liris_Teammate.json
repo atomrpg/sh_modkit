@@ -235,7 +235,7 @@
          "child" : [ 
             "22723875-aaf0-4cf7-b0a8-3c114a70b502"
          ], 
-         "text" : "{!} I want you to have this... <Give Liris something you think she might enjoy>"
+         "text" : "{!} I want you to have this as a gift... <Give Liris something you think she might enjoy>"
       }, 
       "22723875-aaf0-4cf7-b0a8-3c114a70b502" : { 
          "class" : "MathCompareValuesNode", 
