@@ -60,177 +60,52 @@
       "c6a460ca-ae66-4e89-b746-c5578f334347" : { 
          "class" : "HasGlobalKeyNode", 
          "desc" : { 
-            "x" : "-100440", 
-            "y" : "-101500"
+            "x" : "-100195", 
+            "y" : "-101640"
          }, 
          "child" : [ 
-            "eeff5444-81e7-4617-a134-3d471b50ee7c", 
+            "90d894e6-acdd-4e7a-bf7b-86390901218c", 
             "7379fac9-bb5d-4e20-9859-d1d84db94589"
          ], 
          "note_key" : "GLOBAL_MOD_GOT_STONE"
       }, 
-      "eeff5444-81e7-4617-a134-3d471b50ee7c" : { 
+      "90d894e6-acdd-4e7a-bf7b-86390901218c" : { 
          "class" : "HasKeywordNode", 
          "desc" : { 
-            "x" : "-100801", 
-            "y" : "-101301"
+            "x" : "-100575", 
+            "y" : "-101489"
          }, 
          "child" : [ 
-            "75ef80a3-44a7-494f-8e9e-85936be77029", 
-            "66441bd0-70d0-46c5-aaa3-e33353fa59b1"
+            "8035b7cc-dd0c-48b8-974c-536c29dadc9a", 
+            "eeff5444-81e7-4617-a134-3d471b50ee7c"
          ], 
-         "key" : "QUEST"
+         "key" : "LIRIS_QUEST_DONE"
       }, 
-      "75ef80a3-44a7-494f-8e9e-85936be77029" : { 
-         "class" : "QuestDoneNode", 
-         "desc" : { 
-            "x" : "-100901", 
-            "y" : "-101159"
-         }, 
-         "child" : [ 
-            "66441bd0-70d0-46c5-aaa3-e33353fa59b1"
-         ], 
-         "quest_key" : "QUEST_MOD_BANDITS_KILLED"
-      }, 
-      "66441bd0-70d0-46c5-aaa3-e33353fa59b1" : { 
-         "class" : "AddExpNode", 
-         "desc" : { 
-            "x" : "-100793", 
-            "y" : "-100957"
-         }, 
-         "child" : [ 
-            "466f751d-02db-449b-a92a-7503ac0c0141"
-         ], 
-         "objectName" : "Player", 
-         "exp" : "222", 
-         "ignoreIntellect" : "false"
-      }, 
-      "466f751d-02db-449b-a92a-7503ac0c0141" : { 
+      "8035b7cc-dd0c-48b8-974c-536c29dadc9a" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100793", 
-            "y" : "-100801", 
+            "x" : "-101319", 
+            "y" : "-101345", 
             "comment" : "(A12)", 
             "historytag" : "A12"
          }, 
          "child" : [ 
-            "0350d821-6489-41e4-a14a-5242cc054dc0", 
-            "3a13a314-8976-48d5-9f50-0faa100588b6", 
-            "224f1f98-873e-4814-a8e9-e840cc534d8e"
+            "aa30d53b-1178-4c1d-ac46-2b16cf80eb63", 
+            "6a5e1f86-bb7d-4a3f-abe9-e7dc93e9080b"
          ], 
-         "text" : "<The young woman almost hugs you> You did it! I thought... well, never mind what I thought. Thank you."
+         "text" : "<Liris peers at you with disdain> I don't know if I wanna talk to you, if we're being honest..."
       }, 
-      "0350d821-6489-41e4-a14a-5242cc054dc0" : { 
+      "aa30d53b-1178-4c1d-ac46-2b16cf80eb63" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-101023", 
-            "y" : "-100589", 
-            "comment" : "GOTO A13"
-         }, 
-         "child" : [ 
-            "6878bea8-9688-4170-85eb-76afc266d619"
-         ], 
-         "text" : "{!} It was my pleasure."
-      }, 
-      "6878bea8-9688-4170-85eb-76afc266d619" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-100806", 
-            "y" : "-100249", 
-            "comment" : "(A13) ", 
-            "historytag" : "A13"
-         }, 
-         "child" : [ 
-            "a9219aaa-093b-4edd-8e40-4dab795f4bcc"
-         ], 
-         "text" : "One more thing—I need to get to Swordhaven. And, uh... the guards there aren't exactly handing out invitations to folks like me."
-      }, 
-      "a9219aaa-093b-4edd-8e40-4dab795f4bcc" : { 
-         "class" : "DialogContinueNode", 
-         "desc" : { 
-            "x" : "-100762", 
-            "y" : "-100073", 
-            "comment" : "(A13) "
-         }, 
-         "child" : [ 
-            "d5f935fc-a839-49b4-a570-91525e7eac12"
-         ]
-      }, 
-      "d5f935fc-a839-49b4-a570-91525e7eac12" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-100809", 
-            "y" : "-100009", 
-            "comment" : "(A13) ", 
-            "historytag" : "A13"
-         }, 
-         "child" : [ 
-            "43b4fd53-1cb1-4fd9-bdfe-6de8ce167bba", 
-            "10e5c1f7-20c6-4943-82c7-7f1a796505ef"
-         ], 
-         "text" : "But you look respectable enough to get us both through, don't you think?"
-      }, 
-      "43b4fd53-1cb1-4fd9-bdfe-6de8ce167bba" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-100967", 
-            "y" : "-99798", 
-            "comment" : "GOTO A14"
-         }, 
-         "child" : [ 
-            "22be096c-33e9-43bf-a08a-2a297c7e14bc"
-         ], 
-         "text" : "{?} Folks like you?"
-      }, 
-      "22be096c-33e9-43bf-a08a-2a297c7e14bc" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-100967", 
-            "y" : "-99719", 
-            "comment" : "(A14) ", 
-            "historytag" : "A14"
-         }, 
-         "child" : [ 
-            "10e5c1f7-20c6-4943-82c7-7f1a796505ef"
-         ], 
-         "text" : "You know... <Looks around> Folks with a questionable thief-related legacy. Ahem."
-      }, 
-      "10e5c1f7-20c6-4943-82c7-7f1a796505ef" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-100775", 
-            "y" : "-99537", 
-            "comment" : "GOTO A15"
-         }, 
-         "child" : [ 
-            "09cf0ad9-a098-462d-8d96-410ca1c6ea81"
-         ], 
-         "text" : "{Ok} All right, let's go."
-      }, 
-      "09cf0ad9-a098-462d-8d96-410ca1c6ea81" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-100774", 
-            "y" : "-99444", 
-            "comment" : "(A15) ", 
-            "historytag" : "A15"
-         }, 
-         "child" : [ 
-            "97d84827-1431-4d65-bcf1-5605b9543338"
-         ], 
-         "text" : "You won't regret this! I'm light on my feet, handy with a lock, and rarely talk in my sleep. Promise."
-      }, 
-      "97d84827-1431-4d65-bcf1-5605b9543338" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-100774", 
-            "y" : "-99246", 
+            "x" : "-101619", 
+            "y" : "-101113", 
             "comment" : "GOTO A16"
          }, 
          "child" : [ 
             "03a88883-6391-4701-a2eb-be4a7bdf5cf1"
          ], 
-         "text" : "{End} Let's go."
+         "text" : "{End} Relax... Let's go."
       }, 
       "03a88883-6391-4701-a2eb-be4a7bdf5cf1" : { 
          "class" : "DialogPhraseNode", 
@@ -317,13 +192,209 @@
       "aeb4997f-f682-4843-b474-330fe3ff944b" : { 
          "class" : "DialogEndNode", 
          "desc" : { 
-            "x" : "-100779", 
-            "y" : "-98502"
+            "x" : "-100783", 
+            "y" : "-98496"
          }, 
          "child" : [ 
          ], 
          "skipButtonEnd" : "false", 
          "dontMarkInHistory" : "false"
+      }, 
+      "6a5e1f86-bb7d-4a3f-abe9-e7dc93e9080b" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-101242", 
+            "y" : "-101108"
+         }, 
+         "child" : [ 
+            "324ce4ae-0a3f-4e8a-8b86-8167964dfc9e"
+         ], 
+         "text" : "{End} <Turn around and leave>"
+      }, 
+      "324ce4ae-0a3f-4e8a-8b86-8167964dfc9e" : { 
+         "class" : "DialogEndNode", 
+         "desc" : { 
+            "x" : "-101229", 
+            "y" : "-100957"
+         }, 
+         "child" : [ 
+         ], 
+         "skipButtonEnd" : "true", 
+         "dontMarkInHistory" : "false"
+      }, 
+      "eeff5444-81e7-4617-a134-3d471b50ee7c" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-100741", 
+            "y" : "-101311"
+         }, 
+         "child" : [ 
+            "75ef80a3-44a7-494f-8e9e-85936be77029", 
+            "66441bd0-70d0-46c5-aaa3-e33353fa59b1"
+         ], 
+         "key" : "QUEST"
+      }, 
+      "75ef80a3-44a7-494f-8e9e-85936be77029" : { 
+         "class" : "QuestDoneNode", 
+         "desc" : { 
+            "x" : "-100900", 
+            "y" : "-101162"
+         }, 
+         "child" : [ 
+            "66441bd0-70d0-46c5-aaa3-e33353fa59b1"
+         ], 
+         "quest_key" : "QUEST_MOD_BANDITS_KILLED"
+      }, 
+      "66441bd0-70d0-46c5-aaa3-e33353fa59b1" : { 
+         "class" : "AddExpNode", 
+         "desc" : { 
+            "x" : "-100876", 
+            "y" : "-101049"
+         }, 
+         "child" : [ 
+            "cc5d8e7a-5c55-43c4-a44d-649b24793c19"
+         ], 
+         "objectName" : "Player", 
+         "exp" : "222", 
+         "ignoreIntellect" : "false"
+      }, 
+      "cc5d8e7a-5c55-43c4-a44d-649b24793c19" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-100883", 
+            "y" : "-100912"
+         }, 
+         "child" : [ 
+            "466f751d-02db-449b-a92a-7503ac0c0141"
+         ], 
+         "key" : "LIRIS_QUEST_DONE"
+      }, 
+      "466f751d-02db-449b-a92a-7503ac0c0141" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100793", 
+            "y" : "-100801", 
+            "comment" : "(A12)", 
+            "historytag" : "A12"
+         }, 
+         "child" : [ 
+            "0350d821-6489-41e4-a14a-5242cc054dc0", 
+            "3a13a314-8976-48d5-9f50-0faa100588b6", 
+            "224f1f98-873e-4814-a8e9-e840cc534d8e"
+         ], 
+         "text" : "<The young woman almost hugs you> You did it! I thought... well, never mind what I thought. Thank you."
+      }, 
+      "0350d821-6489-41e4-a14a-5242cc054dc0" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-101023", 
+            "y" : "-100589", 
+            "comment" : "GOTO A13"
+         }, 
+         "child" : [ 
+            "6878bea8-9688-4170-85eb-76afc266d619"
+         ], 
+         "text" : "{!} It was my pleasure."
+      }, 
+      "6878bea8-9688-4170-85eb-76afc266d619" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100806", 
+            "y" : "-100249", 
+            "comment" : "(A13) ", 
+            "historytag" : "A13"
+         }, 
+         "child" : [ 
+            "a9219aaa-093b-4edd-8e40-4dab795f4bcc"
+         ], 
+         "text" : "One more thing—I need to get to Swordhaven. And, uh... the guards there aren't exactly handing out invitations to folks like me."
+      }, 
+      "a9219aaa-093b-4edd-8e40-4dab795f4bcc" : { 
+         "class" : "DialogContinueNode", 
+         "desc" : { 
+            "x" : "-100762", 
+            "y" : "-100073", 
+            "comment" : "(A13) "
+         }, 
+         "child" : [ 
+            "d5f935fc-a839-49b4-a570-91525e7eac12"
+         ]
+      }, 
+      "d5f935fc-a839-49b4-a570-91525e7eac12" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100754", 
+            "y" : "-99974", 
+            "comment" : "(A13) ", 
+            "historytag" : "A13"
+         }, 
+         "child" : [ 
+            "43b4fd53-1cb1-4fd9-bdfe-6de8ce167bba", 
+            "10e5c1f7-20c6-4943-82c7-7f1a796505ef"
+         ], 
+         "text" : "But you look respectable enough to get us both through, don't you think?"
+      }, 
+      "43b4fd53-1cb1-4fd9-bdfe-6de8ce167bba" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-100967", 
+            "y" : "-99798", 
+            "comment" : "GOTO A14"
+         }, 
+         "child" : [ 
+            "22be096c-33e9-43bf-a08a-2a297c7e14bc"
+         ], 
+         "text" : "{?} Folks like you?"
+      }, 
+      "22be096c-33e9-43bf-a08a-2a297c7e14bc" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100967", 
+            "y" : "-99719", 
+            "comment" : "(A14) ", 
+            "historytag" : "A14"
+         }, 
+         "child" : [ 
+            "10e5c1f7-20c6-4943-82c7-7f1a796505ef"
+         ], 
+         "text" : "You know... <Looks around> Folks with a questionable thief-related legacy. Ahem."
+      }, 
+      "10e5c1f7-20c6-4943-82c7-7f1a796505ef" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-100725", 
+            "y" : "-99557", 
+            "comment" : "GOTO A15"
+         }, 
+         "child" : [ 
+            "09cf0ad9-a098-462d-8d96-410ca1c6ea81"
+         ], 
+         "text" : "{Ok} All right, let's go."
+      }, 
+      "09cf0ad9-a098-462d-8d96-410ca1c6ea81" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100774", 
+            "y" : "-99444", 
+            "comment" : "(A15) ", 
+            "historytag" : "A15"
+         }, 
+         "child" : [ 
+            "97d84827-1431-4d65-bcf1-5605b9543338"
+         ], 
+         "text" : "You won't regret this! I'm light on my feet, handy with a lock, and rarely talk in my sleep. Promise."
+      }, 
+      "97d84827-1431-4d65-bcf1-5605b9543338" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-100810", 
+            "y" : "-99251", 
+            "comment" : "GOTO A16"
+         }, 
+         "child" : [ 
+            "03a88883-6391-4701-a2eb-be4a7bdf5cf1"
+         ], 
+         "text" : "{End} Let's go."
       }, 
       "3a13a314-8976-48d5-9f50-0faa100588b6" : { 
          "class" : "DialogAnswerNode", 
