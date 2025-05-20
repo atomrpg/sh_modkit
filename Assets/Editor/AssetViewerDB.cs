@@ -34,6 +34,8 @@ internal class AssetViewerDB
 
     static AssetViewerDB()
     {
+        EntityComponent.DontInspectorGUI = true;
+
         EditorApplication.update += Init;
         if (!Application.isPlaying)
         {
