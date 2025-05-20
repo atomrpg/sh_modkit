@@ -120,8 +120,8 @@
       "d40882e4-3ce2-4c9e-9242-590abd2a2f9d" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-99389", 
-            "y" : "-100297.8"
+            "x" : "-99306", 
+            "y" : "-100221"
          }, 
          "child" : [ 
             "777c2b1d-50bc-496f-a127-49c3955f7cd3", 
@@ -245,7 +245,7 @@
          }, 
          "child" : [ 
             "f31259dd-c829-4dcd-97c3-883539324d19", 
-            "24015e12-7edb-4465-aa76-a422b2e0592f"
+            "46e1f340-1448-4703-a812-a1a0f6b0af0a"
          ], 
          "value1" : "$GIFT$", 
          "value2" : "$LOVE$", 
@@ -281,11 +281,441 @@
       "fc70fac0-47ac-45d3-82a4-d98090a3e2ec" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-101266.5", 
-            "y" : "-97959.5"
+            "x" : "-101266", 
+            "y" : "-97958"
+         }, 
+         "child" : [ 
+            "98a7c62d-9101-4acd-9529-738b0338c16a", 
+            "80357aba-f637-4cf5-bf12-e5212a31ead4"
+         ]
+      }, 
+      "98a7c62d-9101-4acd-9529-738b0338c16a" : { 
+         "class" : "InventoryHasItemNode", 
+         "desc" : { 
+            "x" : "-101633", 
+            "y" : "-97926"
+         }, 
+         "child" : [ 
+            "ab5201bb-1067-43d7-980b-d1d641b9e4bb", 
+            "b8115b0f-f5b8-442c-806e-86bc1fbcf4e0"
+         ], 
+         "objectName" : "$TEAM$"
+      }, 
+      "ab5201bb-1067-43d7-980b-d1d641b9e4bb" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-101642", 
+            "y" : "-97747"
+         }, 
+         "child" : [ 
+            "b8115b0f-f5b8-442c-806e-86bc1fbcf4e0", 
+            "d8592deb-ca3c-4658-9084-eed5634274b0"
+         ]
+      }, 
+      "b8115b0f-f5b8-442c-806e-86bc1fbcf4e0" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-101784", 
+            "y" : "-97654"
          }, 
          "child" : [ 
          ]
+      }, 
+      "d8592deb-ca3c-4658-9084-eed5634274b0" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-101617", 
+            "y" : "-97623"
+         }, 
+         "child" : [ 
+            "60bd74a7-8205-4294-8375-5b087302284e"
+         ], 
+         "text" : "{Pay} Here's a Pork Lad for you."
+      }, 
+      "60bd74a7-8205-4294-8375-5b087302284e" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-101621", 
+            "y" : "-97486", 
+            "comment" : "(A2) "
+         }, 
+         "child" : [ 
+            "df1defff-7058-4650-ab12-96d2721ece9d"
+         ], 
+         "text" : ""
+      }, 
+      "df1defff-7058-4650-ab12-96d2721ece9d" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-101628", 
+            "y" : "-97340"
+         }, 
+         "child" : [ 
+            "a9a5530c-6051-4c7d-ba6f-cfb0b0a608e4"
+         ]
+      }, 
+      "a9a5530c-6051-4c7d-ba6f-cfb0b0a608e4" : { 
+         "class" : "InventoryRemoveItemNode", 
+         "desc" : { 
+            "x" : "-101643", 
+            "y" : "-97242"
+         }, 
+         "child" : [ 
+            "f0a6835d-b331-4bcd-89c6-76fc2b5764e2"
+         ], 
+         "objectName" : "$TEAM$", 
+         "showLogMessage" : "true", 
+         "overrideCount" : ""
+      }, 
+      "f0a6835d-b331-4bcd-89c6-76fc2b5764e2" : { 
+         "class" : "MathKeyValueNode", 
+         "desc" : { 
+            "x" : "-101624", 
+            "y" : "-97102"
+         }, 
+         "child" : [ 
+            "d40882e4-3ce2-4c9e-9242-590abd2a2f9d"
+         ], 
+         "key" : "$GIFT$", 
+         "value" : "1", 
+         "opp" : "Add"
+      }, 
+      "80357aba-f637-4cf5-bf12-e5212a31ead4" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99744", 
+            "y" : "-98925"
+         }, 
+         "child" : [ 
+            "1178e7d9-bdba-4855-b817-ff4b10b13747"
+         ], 
+         "text" : "{Back} On the other hand, let's talk about something else."
+      }, 
+      "1178e7d9-bdba-4855-b817-ff4b10b13747" : { 
+         "class" : "MathCompareValuesNode", 
+         "desc" : { 
+            "x" : "-99672", 
+            "y" : "-98775"
+         }, 
+         "child" : [ 
+            "2d782daa-1f38-4a3d-adb7-e1a608264fc1", 
+            "bc89c5d8-0cb5-42a2-8817-73e34b5293a9"
+         ], 
+         "value1" : "$LOVE$", 
+         "value2" : "10", 
+         "opp" : "GreaterEqual", 
+         "dataformat" : "Int"
+      }, 
+      "2d782daa-1f38-4a3d-adb7-e1a608264fc1" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99552", 
+            "y" : "-98534", 
+            "comment" : "(A2) "
+         }, 
+         "child" : [ 
+            "777c2b1d-50bc-496f-a127-49c3955f7cd3", 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "Anything, my love."
+      }, 
+      "b852d3ea-9721-4a64-8b81-cc3b7f9722aa" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99370", 
+            "y" : "-99592", 
+            "comment" : "GOTO A3"
+         }, 
+         "child" : [ 
+            "1cff2d6f-3dc6-4abf-b6a5-99b6ffabdd56"
+         ], 
+         "text" : "#Vavere_Teammate.b852d3ea-9721-4a64-8b81-cc3b7f9722aa"
+      }, 
+      "1cff2d6f-3dc6-4abf-b6a5-99b6ffabdd56" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99369", 
+            "y" : "-99508", 
+            "comment" : "(A3) "
+         }, 
+         "child" : [ 
+            "777c2b1d-50bc-496f-a127-49c3955f7cd3", 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "You seem to know where you're going, and I'm happy to follow. Why stop and ask me for directions all of a sudden?"
+      }, 
+      "84cf3a75-6a06-4354-aaa9-921d050fad7f" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99076", 
+            "y" : "-99484", 
+            "comment" : "GOTO A4"
+         }, 
+         "child" : [ 
+            "5f6818a0-3c82-41a7-9b26-59812fc9eb1f"
+         ], 
+         "text" : "#Vavere_Teammate.84cf3a75-6a06-4354-aaa9-921d050fad7f"
+      }, 
+      "5f6818a0-3c82-41a7-9b26-59812fc9eb1f" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99082", 
+            "y" : "-99406", 
+            "comment" : "(A4) "
+         }, 
+         "child" : [ 
+            "f4e9d9f3-ca66-46c2-8e71-1f8ed329c75b", 
+            "89d2bfe4-029b-4933-85b8-96a1dae34f46"
+         ], 
+         "text" : "After... after everything? <Liris backs away, dumbstruck, but quickly recovers> S-sure thing. I get it. If that's what you want..."
+      }, 
+      "f4e9d9f3-ca66-46c2-8e71-1f8ed329c75b" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99182", 
+            "y" : "-99234", 
+            "comment" : "GOTO A6"
+         }, 
+         "child" : [ 
+            "f6567764-d71c-4e1d-8716-7543f514a9bd"
+         ], 
+         "text" : "#Vavere_Teammate.f4e9d9f3-ca66-46c2-8e71-1f8ed329c75b"
+      }, 
+      "f6567764-d71c-4e1d-8716-7543f514a9bd" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99191", 
+            "y" : "-99181", 
+            "comment" : "(A6) "
+         }, 
+         "child" : [ 
+            "d7ab5171-c742-42c9-b223-14854d07dc7d"
+         ], 
+         "text" : "In t-that case... <She covers her face, hiding fresh tears from your sight> I'll be camping out where we first met. If you still care enough to remember that place..."
+      }, 
+      "d7ab5171-c742-42c9-b223-14854d07dc7d" : { 
+         "class" : "DialogEndNode", 
+         "desc" : { 
+            "x" : "-99204", 
+            "y" : "-98992"
+         }, 
+         "child" : [ 
+            "a25c6bda-f1ae-4eb2-951e-b893602528a2"
+         ], 
+         "skipButtonEnd" : "false", 
+         "dontMarkInHistory" : "false"
+      }, 
+      "a25c6bda-f1ae-4eb2-951e-b893602528a2" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-99197", 
+            "y" : "-98877"
+         }, 
+         "child" : [ 
+            "d7a2b027-9511-45b1-b3af-491f8e3649b6"
+         ], 
+         "key" : "EXIT_TEAM"
+      }, 
+      "d7a2b027-9511-45b1-b3af-491f8e3649b6" : { 
+         "class" : "RestartBehaviorRequestNode", 
+         "desc" : { 
+            "x" : "-99196", 
+            "y" : "-98771"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$"
+      }, 
+      "89d2bfe4-029b-4933-85b8-96a1dae34f46" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98957", 
+            "y" : "-99234", 
+            "comment" : "GOTO A7"
+         }, 
+         "child" : [ 
+            "11f4e98e-b083-470e-86d8-d27dfaa19112"
+         ], 
+         "text" : "#Vavere_Teammate.89d2bfe4-029b-4933-85b8-96a1dae34f46"
+      }, 
+      "11f4e98e-b083-470e-86d8-d27dfaa19112" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-98927", 
+            "y" : "-99165", 
+            "comment" : "(A7) "
+         }, 
+         "child" : [ 
+            "777c2b1d-50bc-496f-a127-49c3955f7cd3", 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "e467de31-5f5b-4c6e-8175-2b44e49a9493", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "What a rotten trick to pull. I nearly believed you were through with me, too."
+      }, 
+      "e467de31-5f5b-4c6e-8175-2b44e49a9493" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98909", 
+            "y" : "-98992", 
+            "comment" : "GOTO A4"
+         }, 
+         "child" : [ 
+            "5f6818a0-3c82-41a7-9b26-59812fc9eb1f"
+         ], 
+         "text" : "#Vavere_Teammate.e467de31-5f5b-4c6e-8175-2b44e49a9493"
+      }, 
+      "dd4e0565-31ef-41ac-940d-674c30ff1958" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98728", 
+            "y" : "-99458", 
+            "comment" : "GOTO A5"
+         }, 
+         "child" : [ 
+            "20daeef5-730c-4f77-aae6-34a9e577f920"
+         ], 
+         "text" : "#Vavere_Teammate.dd4e0565-31ef-41ac-940d-674c30ff1958"
+      }, 
+      "20daeef5-730c-4f77-aae6-34a9e577f920" : { 
+         "class" : "MathCompareValuesNode", 
+         "desc" : { 
+            "x" : "-98555", 
+            "y" : "-99320"
+         }, 
+         "child" : [ 
+            "7889ca6e-9cba-4618-b3b7-4b5af2d6d6bb", 
+            "ee60dd1e-d68e-4436-b0b6-2c728fdb42ac"
+         ], 
+         "value1" : "$LOVE$", 
+         "value2" : "3", 
+         "opp" : "LessEqual", 
+         "dataformat" : "Int"
+      }, 
+      "7889ca6e-9cba-4618-b3b7-4b5af2d6d6bb" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-98542", 
+            "y" : "-99132", 
+            "comment" : "(A5) "
+         }, 
+         "child" : [ 
+            "195dcdbd-61c5-464c-9790-3be276ca4b53"
+         ], 
+         "text" : "Smell you later, as they say. <The girl giggles>"
+      }, 
+      "195dcdbd-61c5-464c-9790-3be276ca4b53" : { 
+         "class" : "DialogEndNode", 
+         "desc" : { 
+            "x" : "-98540", 
+            "y" : "-98841"
+         }, 
+         "child" : [ 
+         ], 
+         "skipButtonEnd" : "false", 
+         "dontMarkInHistory" : "false"
+      }, 
+      "ee60dd1e-d68e-4436-b0b6-2c728fdb42ac" : { 
+         "class" : "MathCompareValuesNode", 
+         "desc" : { 
+            "x" : "-98241", 
+            "y" : "-99318"
+         }, 
+         "child" : [ 
+            "4aa0df5d-3b16-4f75-8e32-95ce6b5fa1fe", 
+            "e2e50072-74fb-4e0b-8bed-0888ab788335"
+         ], 
+         "value1" : "$LOVE$", 
+         "value2" : "7", 
+         "opp" : "LessEqual", 
+         "dataformat" : "Int"
+      }, 
+      "4aa0df5d-3b16-4f75-8e32-95ce6b5fa1fe" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-98253", 
+            "y" : "-99138", 
+            "comment" : "(A5) "
+         }, 
+         "child" : [ 
+            "195dcdbd-61c5-464c-9790-3be276ca4b53"
+         ], 
+         "text" : "Our chats always boost my mood. So talk to me again soon, okay?"
+      }, 
+      "e2e50072-74fb-4e0b-8bed-0888ab788335" : { 
+         "class" : "MathCompareValuesNode", 
+         "desc" : { 
+            "x" : "-97944", 
+            "y" : "-99323"
+         }, 
+         "child" : [ 
+            "aaca4063-8756-4755-a578-9e951eec4da1", 
+            "115b6a22-b3d8-4b39-bfde-14773b227afd"
+         ], 
+         "value1" : "$LOVE$", 
+         "value2" : "10", 
+         "opp" : "Less", 
+         "dataformat" : "Int"
+      }, 
+      "aaca4063-8756-4755-a578-9e951eec4da1" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-97968", 
+            "y" : "-99119", 
+            "comment" : "(A5) "
+         }, 
+         "child" : [ 
+            "195dcdbd-61c5-464c-9790-3be276ca4b53"
+         ], 
+         "text" : "<With a coy little wink, Liris returns to business as usual—but the warmth of her loving gaze lingers on you a moment longer>"
+      }, 
+      "115b6a22-b3d8-4b39-bfde-14773b227afd" : { 
+         "class" : "MathCompareValuesNode", 
+         "desc" : { 
+            "x" : "-97673", 
+            "y" : "-99320"
+         }, 
+         "child" : [ 
+            "a96613fd-423b-4f0a-b8c2-99496c61bc3d"
+         ], 
+         "value1" : "$LOVE$", 
+         "value2" : "10", 
+         "opp" : "Equal", 
+         "dataformat" : "Int"
+      }, 
+      "a96613fd-423b-4f0a-b8c2-99496c61bc3d" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-97682", 
+            "y" : "-99126", 
+            "comment" : "(A5) "
+         }, 
+         "child" : [ 
+            "195dcdbd-61c5-464c-9790-3be276ca4b53"
+         ], 
+         "text" : "Love ya... <Liris softly whispers, as you part ways>"
+      }, 
+      "bc89c5d8-0cb5-42a2-8817-73e34b5293a9" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99065", 
+            "y" : "-98578", 
+            "comment" : "(A2) "
+         }, 
+         "child" : [ 
+            "777c2b1d-50bc-496f-a127-49c3955f7cd3", 
+            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
+            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
+            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
+            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+         ], 
+         "text" : "And it was just getting good... <The girl pretends to pout>"
       }, 
       "e9819c29-1a85-43c8-8aa0-2ba045de88e7" : { 
          "class" : "DialogPhraseNode", 
@@ -334,24 +764,39 @@
          ], 
          "text" : "$PLAYER.NAME$, you're... Something else!"
       }, 
-      "24015e12-7edb-4465-aa76-a422b2e0592f" : { 
+      "46e1f340-1448-4703-a812-a1a0f6b0af0a" : { 
+         "class" : "MathCompareValuesNode", 
+         "desc" : { 
+            "x" : "-100260", 
+            "y" : "-98709"
+         }, 
+         "child" : [ 
+            "c6b14ead-6771-4b54-ad8a-96b0ae984c4e", 
+            "24015e12-7edb-4465-aa76-a422b2e0592f"
+         ], 
+         "value1" : "$LOVE$", 
+         "value2" : "10", 
+         "opp" : "GreaterEqual", 
+         "dataformat" : "Int"
+      }, 
+      "c6b14ead-6771-4b54-ad8a-96b0ae984c4e" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100371", 
-            "y" : "-98475", 
+            "x" : "-100468", 
+            "y" : "-98474", 
             "comment" : "(A2) "
          }, 
          "child" : [ 
             "b3514656-ec3b-4e18-9160-1b695084fc6d", 
             "80357aba-f637-4cf5-bf12-e5212a31ead4"
          ], 
-         "text" : "Aww, $PLAYER.NAME$, that’s so sweet of you—but you literally just gave me one! Not that I’m complaining—I love the attention. But if you keep pampering me so often, moments like this will stop feeling special..."
+         "text" : "You don't need to do that, $PLAYER.NAME$. You've already given me everything... <Liris gently embraces you and slowly, softly kisses you on the lips> You are the best gift a girl could want. Thank you for being here for me."
       }, 
       "b3514656-ec3b-4e18-9160-1b695084fc6d" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-100074", 
-            "y" : "-98176"
+            "x" : "-100091", 
+            "y" : "-98184"
          }, 
          "child" : [ 
             "f0ae1258-3ed6-48a1-8728-ba7aa252ff82"
@@ -607,311 +1052,18 @@
          ], 
          "text" : ""
       }, 
-      "80357aba-f637-4cf5-bf12-e5212a31ead4" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-99731", 
-            "y" : "-98908"
-         }, 
-         "child" : [ 
-            "bc89c5d8-0cb5-42a2-8817-73e34b5293a9"
-         ], 
-         "text" : "{Back} On the other hand, let's talk about something else."
-      }, 
-      "bc89c5d8-0cb5-42a2-8817-73e34b5293a9" : { 
+      "24015e12-7edb-4465-aa76-a422b2e0592f" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99476", 
-            "y" : "-98751", 
+            "x" : "-100174", 
+            "y" : "-98559", 
             "comment" : "(A2) "
          }, 
          "child" : [ 
-            "777c2b1d-50bc-496f-a127-49c3955f7cd3", 
-            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
-            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
-            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
-            "dd4e0565-31ef-41ac-940d-674c30ff1958"
+            "b3514656-ec3b-4e18-9160-1b695084fc6d", 
+            "80357aba-f637-4cf5-bf12-e5212a31ead4"
          ], 
-         "text" : "And it was just getting good... <The girl pretends to pout>"
-      }, 
-      "84cf3a75-6a06-4354-aaa9-921d050fad7f" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-99076", 
-            "y" : "-99484", 
-            "comment" : "GOTO A4"
-         }, 
-         "child" : [ 
-            "5f6818a0-3c82-41a7-9b26-59812fc9eb1f"
-         ], 
-         "text" : "#Vavere_Teammate.84cf3a75-6a06-4354-aaa9-921d050fad7f"
-      }, 
-      "5f6818a0-3c82-41a7-9b26-59812fc9eb1f" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-99082", 
-            "y" : "-99406", 
-            "comment" : "(A4) "
-         }, 
-         "child" : [ 
-            "f4e9d9f3-ca66-46c2-8e71-1f8ed329c75b", 
-            "89d2bfe4-029b-4933-85b8-96a1dae34f46"
-         ], 
-         "text" : "After... after everything? <Liris backs away, dumbstruck, but quickly recovers> S-sure thing. I get it. If that's what you want..."
-      }, 
-      "f4e9d9f3-ca66-46c2-8e71-1f8ed329c75b" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-99182", 
-            "y" : "-99234", 
-            "comment" : "GOTO A6"
-         }, 
-         "child" : [ 
-            "f6567764-d71c-4e1d-8716-7543f514a9bd"
-         ], 
-         "text" : "#Vavere_Teammate.f4e9d9f3-ca66-46c2-8e71-1f8ed329c75b"
-      }, 
-      "f6567764-d71c-4e1d-8716-7543f514a9bd" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-99191", 
-            "y" : "-99181", 
-            "comment" : "(A6) "
-         }, 
-         "child" : [ 
-            "d7ab5171-c742-42c9-b223-14854d07dc7d"
-         ], 
-         "text" : "In t-that case... <She covers her face, hiding fresh tears from your sight> I'll be camping out where we first met. If you still care enough to remember that place..."
-      }, 
-      "d7ab5171-c742-42c9-b223-14854d07dc7d" : { 
-         "class" : "DialogEndNode", 
-         "desc" : { 
-            "x" : "-99204", 
-            "y" : "-98992"
-         }, 
-         "child" : [ 
-            "a25c6bda-f1ae-4eb2-951e-b893602528a2"
-         ], 
-         "skipButtonEnd" : "false", 
-         "dontMarkInHistory" : "false"
-      }, 
-      "a25c6bda-f1ae-4eb2-951e-b893602528a2" : { 
-         "class" : "AddKeywordNode", 
-         "desc" : { 
-            "x" : "-99197", 
-            "y" : "-98877"
-         }, 
-         "child" : [ 
-            "d7a2b027-9511-45b1-b3af-491f8e3649b6"
-         ], 
-         "key" : "EXIT_TEAM"
-      }, 
-      "d7a2b027-9511-45b1-b3af-491f8e3649b6" : { 
-         "class" : "RestartBehaviorRequestNode", 
-         "desc" : { 
-            "x" : "-99196", 
-            "y" : "-98771"
-         }, 
-         "child" : [ 
-         ], 
-         "objectName" : "$SELF$"
-      }, 
-      "89d2bfe4-029b-4933-85b8-96a1dae34f46" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-98957", 
-            "y" : "-99234", 
-            "comment" : "GOTO A7"
-         }, 
-         "child" : [ 
-            "11f4e98e-b083-470e-86d8-d27dfaa19112"
-         ], 
-         "text" : "#Vavere_Teammate.89d2bfe4-029b-4933-85b8-96a1dae34f46"
-      }, 
-      "11f4e98e-b083-470e-86d8-d27dfaa19112" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-98927", 
-            "y" : "-99165", 
-            "comment" : "(A7) "
-         }, 
-         "child" : [ 
-            "777c2b1d-50bc-496f-a127-49c3955f7cd3", 
-            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
-            "b852d3ea-9721-4a64-8b81-cc3b7f9722aa", 
-            "e467de31-5f5b-4c6e-8175-2b44e49a9493", 
-            "dd4e0565-31ef-41ac-940d-674c30ff1958"
-         ], 
-         "text" : "What a rotten trick to pull. I nearly believed you were through with me, too."
-      }, 
-      "b852d3ea-9721-4a64-8b81-cc3b7f9722aa" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-99370", 
-            "y" : "-99592", 
-            "comment" : "GOTO A3"
-         }, 
-         "child" : [ 
-            "1cff2d6f-3dc6-4abf-b6a5-99b6ffabdd56"
-         ], 
-         "text" : "#Vavere_Teammate.b852d3ea-9721-4a64-8b81-cc3b7f9722aa"
-      }, 
-      "1cff2d6f-3dc6-4abf-b6a5-99b6ffabdd56" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-99369", 
-            "y" : "-99508", 
-            "comment" : "(A3) "
-         }, 
-         "child" : [ 
-            "777c2b1d-50bc-496f-a127-49c3955f7cd3", 
-            "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
-            "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
-            "dd4e0565-31ef-41ac-940d-674c30ff1958"
-         ], 
-         "text" : "You seem to know where you're going, and I'm happy to follow. Why stop and ask me for directions all of a sudden?"
-      }, 
-      "dd4e0565-31ef-41ac-940d-674c30ff1958" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-98728", 
-            "y" : "-99458", 
-            "comment" : "GOTO A5"
-         }, 
-         "child" : [ 
-            "20daeef5-730c-4f77-aae6-34a9e577f920"
-         ], 
-         "text" : "#Vavere_Teammate.dd4e0565-31ef-41ac-940d-674c30ff1958"
-      }, 
-      "20daeef5-730c-4f77-aae6-34a9e577f920" : { 
-         "class" : "MathCompareValuesNode", 
-         "desc" : { 
-            "x" : "-98555", 
-            "y" : "-99320"
-         }, 
-         "child" : [ 
-            "7889ca6e-9cba-4618-b3b7-4b5af2d6d6bb", 
-            "ee60dd1e-d68e-4436-b0b6-2c728fdb42ac"
-         ], 
-         "value1" : "$LOVE$", 
-         "value2" : "3", 
-         "opp" : "LessEqual", 
-         "dataformat" : "Int"
-      }, 
-      "7889ca6e-9cba-4618-b3b7-4b5af2d6d6bb" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-98542", 
-            "y" : "-99132", 
-            "comment" : "(A5) "
-         }, 
-         "child" : [ 
-            "195dcdbd-61c5-464c-9790-3be276ca4b53"
-         ], 
-         "text" : "Smell you later, as they say. <The girl giggles>"
-      }, 
-      "195dcdbd-61c5-464c-9790-3be276ca4b53" : { 
-         "class" : "DialogEndNode", 
-         "desc" : { 
-            "x" : "-98540", 
-            "y" : "-98841"
-         }, 
-         "child" : [ 
-         ], 
-         "skipButtonEnd" : "false", 
-         "dontMarkInHistory" : "false"
-      }, 
-      "ee60dd1e-d68e-4436-b0b6-2c728fdb42ac" : { 
-         "class" : "MathCompareValuesNode", 
-         "desc" : { 
-            "x" : "-98241", 
-            "y" : "-99318"
-         }, 
-         "child" : [ 
-            "4aa0df5d-3b16-4f75-8e32-95ce6b5fa1fe", 
-            "e2e50072-74fb-4e0b-8bed-0888ab788335"
-         ], 
-         "value1" : "$LOVE$", 
-         "value2" : "7", 
-         "opp" : "LessEqual", 
-         "dataformat" : "Int"
-      }, 
-      "4aa0df5d-3b16-4f75-8e32-95ce6b5fa1fe" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-98253", 
-            "y" : "-99138", 
-            "comment" : "(A5) "
-         }, 
-         "child" : [ 
-            "195dcdbd-61c5-464c-9790-3be276ca4b53"
-         ], 
-         "text" : "Our chats always boost my mood. So talk to me again soon, okay?"
-      }, 
-      "e2e50072-74fb-4e0b-8bed-0888ab788335" : { 
-         "class" : "MathCompareValuesNode", 
-         "desc" : { 
-            "x" : "-97944", 
-            "y" : "-99323"
-         }, 
-         "child" : [ 
-            "aaca4063-8756-4755-a578-9e951eec4da1", 
-            "115b6a22-b3d8-4b39-bfde-14773b227afd"
-         ], 
-         "value1" : "$LOVE$", 
-         "value2" : "10", 
-         "opp" : "Less", 
-         "dataformat" : "Int"
-      }, 
-      "aaca4063-8756-4755-a578-9e951eec4da1" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-97968", 
-            "y" : "-99119", 
-            "comment" : "(A5) "
-         }, 
-         "child" : [ 
-            "195dcdbd-61c5-464c-9790-3be276ca4b53"
-         ], 
-         "text" : "<With a coy little wink, Liris returns to business as usual—but the warmth of her loving gaze lingers on you a moment longer>"
-      }, 
-      "115b6a22-b3d8-4b39-bfde-14773b227afd" : { 
-         "class" : "MathCompareValuesNode", 
-         "desc" : { 
-            "x" : "-97673", 
-            "y" : "-99320"
-         }, 
-         "child" : [ 
-            "a96613fd-423b-4f0a-b8c2-99496c61bc3d"
-         ], 
-         "value1" : "$LOVE$", 
-         "value2" : "10", 
-         "opp" : "Equal", 
-         "dataformat" : "Int"
-      }, 
-      "a96613fd-423b-4f0a-b8c2-99496c61bc3d" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-97682", 
-            "y" : "-99126", 
-            "comment" : "(A5) "
-         }, 
-         "child" : [ 
-            "195dcdbd-61c5-464c-9790-3be276ca4b53"
-         ], 
-         "text" : "Love ya... <Liris softly whispers, as you part ways>"
-      }, 
-      "e467de31-5f5b-4c6e-8175-2b44e49a9493" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-98909", 
-            "y" : "-98992", 
-            "comment" : "GOTO A4"
-         }, 
-         "child" : [ 
-            "5f6818a0-3c82-41a7-9b26-59812fc9eb1f"
-         ], 
-         "text" : "#Vavere_Teammate.e467de31-5f5b-4c6e-8175-2b44e49a9493"
+         "text" : "Aww, $PLAYER.NAME$, that’s so sweet of you—but you literally just gave me one! Not that I’m complaining—I love the attention. But if you keep pampering me so often, moments like this will stop feeling special..."
       }, 
       "fee7be47-4ba5-43ef-b020-7378150bd417" : { 
          "class" : "DummyNode", 
