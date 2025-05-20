@@ -89,7 +89,7 @@
             "6cb8395c-7742-41d0-b756-7a836d6198ff"
          ], 
          "value1" : "$LOVE$", 
-         "value2" : "3", 
+         "value2" : "5", 
          "opp" : "LessEqual", 
          "dataformat" : "Int"
       }, 
@@ -158,8 +158,8 @@
       "57191a08-521e-4908-9511-652f2e828cad" : { 
          "class" : "StringsCompareNode", 
          "desc" : { 
-            "x" : "-98417", 
-            "y" : "-100318", 
+            "x" : "-98438", 
+            "y" : "-100369", 
             "comment" : " на Лесной Случайке. Включая обычные зедки и карту с лагерем"
          }, 
          "child" : [ 
@@ -1100,7 +1100,7 @@
             "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
             "dd4e0565-31ef-41ac-940d-674c30ff1958"
          ], 
-         "text" : "It's dank, it stinks, but you have to agree, swamps are majestic, sort of. I wonder if we'll meet a kindly turtle! But that's just my stomach talking…"
+         "text" : "It's dank, it stinks, but you have to agree, swamps are majestic, sort of. I wonder if we'll meet a kindly turtle! But that's just my empty stomach talking…"
       }, 
       "bd0b3523-bb68-4b07-be78-f12b60a63768" : { 
          "class" : "StringsCompareNode", 
@@ -1569,7 +1569,7 @@
             "0f589405-0878-42e8-a2e0-bdc82729d4d6"
          ], 
          "value1" : "$LOVE$", 
-         "value2" : "5", 
+         "value2" : "7", 
          "opp" : "LessEqual", 
          "dataformat" : "Int"
       }, 
@@ -1596,7 +1596,7 @@
             "376c597b-7b99-4234-8b60-94cc464bbd28"
          ], 
          "value1" : "$LOVE$", 
-         "value2" : "7", 
+         "value2" : "9", 
          "opp" : "LessEqual", 
          "dataformat" : "Int"
       }, 
@@ -1629,14 +1629,14 @@
       "89d57d9b-7b51-406b-90a8-c101f4f8a41f" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-98077", 
-            "y" : "-100623", 
+            "x" : "-98057", 
+            "y" : "-100625", 
             "comment" : "(A0) \nRND"
          }, 
          "child" : [ 
             "d40882e4-3ce2-4c9e-9242-590abd2a2f9d"
          ], 
-         "text" : "Yes, hun?"
+         "text" : "<Liris meets your eyes with a soft, lingering gaze—quiet, hopeful, and shimmering with something unspoken> $PLAYER.NAME$?"
       }, 
       "a2035d8a-7c9e-4924-beea-79de066b4934" : { 
          "class" : "RemoveKeywordNode", 
