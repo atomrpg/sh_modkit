@@ -474,7 +474,7 @@
          "child" : [ 
             "6673e84f-d446-4150-aa5f-ba057eddf6f2"
          ], 
-         "text" : "Uh-huh. I recently returned to this land to find something—a family heirloom, hidden in the old hearth. Long story—it's all I've got left from my father."
+         "text" : "Uh-huh. I recently returned to this land to find a family heirloom, a kind of sparkly rock hidden in the old hearth. Long story—it's all I've got left from my father."
       }, 
       "6673e84f-d446-4150-aa5f-ba057eddf6f2" : { 
          "class" : "DialogContinueNode", 

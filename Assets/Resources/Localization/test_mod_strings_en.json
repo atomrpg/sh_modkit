@@ -81,10 +81,10 @@
     }
   }, 
   "quests.lines" : { 
-      "mod_to_remember" : "A Mod to Remember, A Mod to Forget"
+      "mod_to_remember" : "A Rocky Start"
   }, 
   "quests" : { 
-      "quest_mod_bandits_killed" : "<Burnt-down Cabin> I agreed to get rid of a gang and return a family heirloom to a young woman I met."
+      "quest_mod_bandits_killed" : "<Burnt-down Cabin> I agreed to get rid of a gang and return a family heirloom to a young woman I met. She described the thing as a 'sparkly rock'."
   },
   "voice" : {
 	 "liris": {

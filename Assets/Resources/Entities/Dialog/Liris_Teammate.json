@@ -3,18 +3,30 @@
       "a4ded33d-38cc-4476-9fb0-b8ad188a1c23" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-99299", 
-            "y" : "-100927"
+            "x" : "-99334", 
+            "y" : "-101512"
          }, 
          "child" : [ 
-            "f4401a50-708c-43a7-a5a6-dac25d8754c7"
+            "3fd382fe-a8fd-4893-a18a-1b76196bb6ea"
          ]
+      }, 
+      "3fd382fe-a8fd-4893-a18a-1b76196bb6ea" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-99867", 
+            "y" : "-101402"
+         }, 
+         "child" : [ 
+            "f4401a50-708c-43a7-a5a6-dac25d8754c7", 
+            "8ac436b2-36af-4f93-85c9-5efec045eda9"
+         ], 
+         "key" : "ROMANCE_INIT"
       }, 
       "f4401a50-708c-43a7-a5a6-dac25d8754c7" : { 
          "class" : "DialogBeginNode", 
          "desc" : { 
-            "x" : "-99354", 
-            "y" : "-100888"
+            "x" : "-99379", 
+            "y" : "-101266"
          }, 
          "child" : [ 
             "519dab10-e862-41f3-9e7c-be17704ccefc"
@@ -24,8 +36,8 @@
       "519dab10-e862-41f3-9e7c-be17704ccefc" : { 
          "class" : "CharacterGetCurrentLocationName", 
          "desc" : { 
-            "x" : "-99362", 
-            "y" : "-100790"
+            "x" : "-99387", 
+            "y" : "-101168"
          }, 
          "child" : [ 
             "2093fca5-f7ac-4760-a61a-d15b036eec89"
@@ -36,8 +48,8 @@
       "2093fca5-f7ac-4760-a61a-d15b036eec89" : { 
          "class" : "ObjectCheckNode", 
          "desc" : { 
-            "x" : "-99354", 
-            "y" : "-100695"
+            "x" : "-99379", 
+            "y" : "-101073"
          }, 
          "child" : [ 
             "7b777d11-5390-4817-9c82-126ded26093b", 
@@ -48,19 +60,43 @@
       "7b777d11-5390-4817-9c82-126ded26093b" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-99465", 
-            "y" : "-100605"
+            "x" : "-99490", 
+            "y" : "-100983"
+         }, 
+         "child" : [ 
+            "8fe394aa-eda8-4a9e-855a-135bf2fa7b7c"
+         ], 
+         "key" : "IS_ENCOUNTER"
+      }, 
+      "8fe394aa-eda8-4a9e-855a-135bf2fa7b7c" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-99329", 
+            "y" : "-100879"
+         }, 
+         "child" : [ 
+            "c6ddd9de-40cd-49ab-9c14-e08d95076f17"
+         ]
+      }, 
+      "c6ddd9de-40cd-49ab-9c14-e08d95076f17" : { 
+         "class" : "MathCompareValuesNode", 
+         "desc" : { 
+            "x" : "-99412", 
+            "y" : "-100779"
          }, 
          "child" : [ 
             "d7d0320c-b51b-4d92-987e-41d80a672930"
          ], 
-         "key" : "IS_ENCOUNTER"
+         "value1" : "$LOVE$", 
+         "value2" : "1", 
+         "opp" : "Equal", 
+         "dataformat" : "Int"
       }, 
       "d7d0320c-b51b-4d92-987e-41d80a672930" : { 
          "class" : "RandomNode", 
          "desc" : { 
-            "x" : "-99299", 
-            "y" : "-100524"
+            "x" : "-99326", 
+            "y" : "-100605"
          }, 
          "child" : [ 
             "6e3ecbaa-29a5-4ba3-9e32-5a560770ea80", 
@@ -71,8 +107,8 @@
       "6e3ecbaa-29a5-4ba3-9e32-5a560770ea80" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99578", 
-            "y" : "-100415", 
+            "x" : "-99672", 
+            "y" : "-100468", 
             "comment" : "(A0) \nRND"
          }, 
          "child" : [ 
@@ -82,13 +118,13 @@
             "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
             "dd4e0565-31ef-41ac-940d-674c30ff1958"
          ], 
-         "text" : "#Vavere_Teammate.6e3ecbaa-29a5-4ba3-9e32-5a560770ea80"
+         "text" : "What is it, my brave leader?"
       }, 
       "777c2b1d-50bc-496f-a127-49c3955f7cd3" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-99968", 
-            "y" : "-99592", 
+            "x" : "-100283", 
+            "y" : "-99286", 
             "comment" : "GOTO A1"
          }, 
          "child" : [ 
@@ -111,8 +147,8 @@
       "57191a08-521e-4908-9511-652f2e828cad" : { 
          "class" : "StringsCompareNode", 
          "desc" : { 
-            "x" : "-98382", 
-            "y" : "-100258", 
+            "x" : "-98417", 
+            "y" : "-100318", 
             "comment" : " на Лесной Случайке. Включая обычные зедки и карту с лагерем"
          }, 
          "child" : [ 
@@ -141,8 +177,8 @@
       "326be21a-64a9-4e49-8a86-f3f5b0394e75" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-99670", 
-            "y" : "-99592", 
+            "x" : "-99747", 
+            "y" : "-99533", 
             "comment" : "GOTO A2"
          }, 
          "child" : [ 
@@ -153,8 +189,8 @@
       "16da15a2-8ee5-4347-a0c4-c1d9eae23a8d" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99670", 
-            "y" : "-99506", 
+            "x" : "-99954", 
+            "y" : "-99239", 
             "comment" : "(A2) "
          }, 
          "child" : [ 
@@ -256,8 +292,8 @@
       "a25c6bda-f1ae-4eb2-951e-b893602528a2" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-99180", 
-            "y" : "-98946"
+            "x" : "-99197", 
+            "y" : "-98877"
          }, 
          "child" : [ 
             "d7a2b027-9511-45b1-b3af-491f8e3649b6"
@@ -267,8 +303,8 @@
       "d7a2b027-9511-45b1-b3af-491f8e3649b6" : { 
          "class" : "RestartBehaviorRequestNode", 
          "desc" : { 
-            "x" : "-99179", 
-            "y" : "-98888"
+            "x" : "-99196", 
+            "y" : "-98771"
          }, 
          "child" : [ 
          ], 
@@ -562,8 +598,8 @@
       "b671424c-b63a-484c-a2da-fef3fc9f6036" : { 
          "class" : "StringsCompareNode", 
          "desc" : { 
-            "x" : "-100966", 
-            "y" : "-100091", 
+            "x" : "-101390", 
+            "y" : "-100092", 
             "comment" : "в Смелтер Роу"
          }, 
          "child" : [ 
@@ -577,8 +613,8 @@
       "3f081497-304d-4163-8eb8-b46673a5a008" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-101001", 
-            "y" : "-99888", 
+            "x" : "-101404", 
+            "y" : "-99797", 
             "comment" : "(A1) \n(в Смелтер Роу)"
          }, 
          "child" : [ 
@@ -592,8 +628,8 @@
       "500c4c48-cce9-48d3-852d-d199fdb62405" : { 
          "class" : "StringsCompareNode", 
          "desc" : { 
-            "x" : "-100727", 
-            "y" : "-100089", 
+            "x" : "-101096", 
+            "y" : "-100086", 
             "comment" : "в пригороде СХ"
          }, 
          "child" : [ 
@@ -607,8 +643,8 @@
       "bf2d930d-9068-498e-ae46-eb525b7a92ba" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100762", 
-            "y" : "-99877", 
+            "x" : "-101083", 
+            "y" : "-99858", 
             "comment" : "(A1) \n(в пригороде СХ)"
          }, 
          "child" : [ 
@@ -636,7 +672,7 @@
       "3e69f252-c8dd-410e-a5dd-8cd6dddac0e9" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100525", 
+            "x" : "-100526", 
             "y" : "-99891", 
             "comment" : "(A1) \n(на Стартовом пляже)"
          }, 
@@ -941,9 +977,8 @@
       "5ba5e67c-c1bb-4746-b7d2-eab55ec95ba8" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99353", 
-            "y" : "-100453", 
-            "comment" : "(A0) \nRND"
+            "x" : "-99414", 
+            "y" : "-100473"
          }, 
          "child" : [ 
             "777c2b1d-50bc-496f-a127-49c3955f7cd3", 
@@ -952,13 +987,13 @@
             "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
             "dd4e0565-31ef-41ac-940d-674c30ff1958"
          ], 
-         "text" : "#Vavere_Teammate.5ba5e67c-c1bb-4746-b7d2-eab55ec95ba8"
+         "text" : "<You startle Liris, as she is staring off into the distance> Oh! Yes, $PLAYER.NAME$?"
       }, 
       "dacd7343-91d2-49f8-8644-117df0fd993d" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99126", 
-            "y" : "-100440", 
+            "x" : "-99098", 
+            "y" : "-100452", 
             "comment" : "(A0) \nRND"
          }, 
          "child" : [ 
@@ -968,18 +1003,55 @@
             "84cf3a75-6a06-4354-aaa9-921d050fad7f", 
             "dd4e0565-31ef-41ac-940d-674c30ff1958"
          ], 
-         "text" : "#Vavere_Teammate.dacd7343-91d2-49f8-8644-117df0fd993d"
+         "text" : "Oh, dad... What were you thinking? <Liris notices your stare> I'm sorry. I was just... No matter. Did you want anything?"
       }, 
       "a2035d8a-7c9e-4924-beea-79de066b4934" : { 
          "class" : "RemoveKeywordNode", 
          "desc" : { 
-            "x" : "-99242", 
-            "y" : "-100605"
+            "x" : "-99267", 
+            "y" : "-100983"
          }, 
          "child" : [ 
-            "d7d0320c-b51b-4d92-987e-41d80a672930"
+            "8fe394aa-eda8-4a9e-855a-135bf2fa7b7c"
          ], 
          "key" : "IS_ENCOUNTER"
+      }, 
+      "8ac436b2-36af-4f93-85c9-5efec045eda9" : { 
+         "class" : "AddKeywordValueNode", 
+         "desc" : { 
+            "x" : "-99088", 
+            "y" : "-101580"
+         }, 
+         "child" : [ 
+            "e17f9c36-981a-4f97-a70d-0ca5ac2f181e"
+         ], 
+         "objectName" : "$SELF$", 
+         "key" : "LOVE", 
+         "value" : "1"
+      }, 
+      "e17f9c36-981a-4f97-a70d-0ca5ac2f181e" : { 
+         "class" : "AddKeywordValueNode", 
+         "desc" : { 
+            "x" : "-99078", 
+            "y" : "-101462"
+         }, 
+         "child" : [ 
+            "125f9ed2-2d2d-4d0e-8a43-b361da90ec90"
+         ], 
+         "objectName" : "$SELF$", 
+         "key" : "GIFT", 
+         "value" : "1"
+      }, 
+      "125f9ed2-2d2d-4d0e-8a43-b361da90ec90" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-99075", 
+            "y" : "-101346"
+         }, 
+         "child" : [ 
+            "f4401a50-708c-43a7-a5a6-dac25d8754c7"
+         ], 
+         "key" : "ROMANCE_INIT"
       }
    }, 
    "entry" : "a4ded33d-38cc-4476-9fb0-b8ad188a1c23"
