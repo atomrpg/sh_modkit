@@ -281,14 +281,778 @@
       "fc70fac0-47ac-45d3-82a4-d98090a3e2ec" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-101266", 
-            "y" : "-97958"
+            "x" : "-104211", 
+            "y" : "-98171"
          }, 
          "child" : [ 
+            "e391e706-7f9f-4546-ab09-e6db4594da95", 
+            "9517af39-ab59-4c92-8ea6-bd8201dffcfb", 
+            "08e41c70-d3c2-4985-98e5-736275f6a204", 
+            "f37deffa-d91a-497a-a633-0beb87593866", 
+            "f0c5e356-186d-4c36-96c9-e7d110f95048", 
+            "4e6db4d9-b56b-4f1e-97bc-0c2142e0ca0c", 
+            "586f57d5-4efc-4689-ac2f-4d8385278ac5", 
+            "038d6230-89cd-4a40-bca5-847f6920d4d1", 
             "98a7c62d-9101-4acd-9529-738b0338c16a", 
             "ab0fa6df-691c-4018-bbec-90367c08c554", 
             "80357aba-f637-4cf5-bf12-e5212a31ead4"
          ]
+      }, 
+      "e391e706-7f9f-4546-ab09-e6db4594da95" : { 
+         "class" : "InventoryHasItemNode", 
+         "desc" : { 
+            "x" : "-102514", 
+            "y" : "-97930"
+         }, 
+         "child" : [ 
+            "ffd3abd8-2dff-4d4f-aae0-07a85ecd2eaf", 
+            "703afd37-263e-4ef4-b317-be5957457fe2"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Item", 
+            "count" : "1", 
+            "proto" : "Tr3_Emerald"
+         }
+      }, 
+      "ffd3abd8-2dff-4d4f-aae0-07a85ecd2eaf" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-102498", 
+            "y" : "-97720"
+         }, 
+         "child" : [ 
+            "703afd37-263e-4ef4-b317-be5957457fe2", 
+            "f019fec2-b20a-425a-a1ed-09aefb077f2b"
+         ], 
+         "key" : "EMERALD"
+      }, 
+      "703afd37-263e-4ef4-b317-be5957457fe2" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-102640", 
+            "y" : "-97628"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "f019fec2-b20a-425a-a1ed-09aefb077f2b" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-102474", 
+            "y" : "-97595"
+         }, 
+         "child" : [ 
+            "6b3086f4-3689-4795-9b94-f5ec856d5c7b"
+         ], 
+         "text" : "{Pay} Check it out, it's an emerald. Almost as pretty as those eyes, Liris. I want you to have it, girl."
+      }, 
+      "6b3086f4-3689-4795-9b94-f5ec856d5c7b" : { 
+         "class" : "InventoryRemoveItemNode", 
+         "desc" : { 
+            "x" : "-102486", 
+            "y" : "-97494"
+         }, 
+         "child" : [ 
+            "08dde3dc-2f0b-4c34-9e06-c42a28d7a5de"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Item", 
+            "count" : "1", 
+            "proto" : "Tr3_Emerald"
+         }, 
+         "showLogMessage" : "true", 
+         "overrideCount" : ""
+      }, 
+      "08dde3dc-2f0b-4c34-9e06-c42a28d7a5de" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-102486", 
+            "y" : "-97342", 
+            "comment" : "(A2) "
+         }, 
+         "child" : [ 
+            "06c24f8c-a277-453f-8c89-188e3fdce5d9"
+         ], 
+         "text" : ""
+      }, 
+      "06c24f8c-a277-453f-8c89-188e3fdce5d9" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-102496", 
+            "y" : "-97196"
+         }, 
+         "child" : [ 
+            "a4f090d6-876b-4b63-89be-281053af4e55"
+         ], 
+         "key" : "EMERALD"
+      }, 
+      "a4f090d6-876b-4b63-89be-281053af4e55" : { 
+         "class" : "MathKeyValueNode", 
+         "desc" : { 
+            "x" : "-104310", 
+            "y" : "-96899"
+         }, 
+         "child" : [ 
+            "6a0f3dcd-68a7-4575-916a-3716d4bec27c"
+         ], 
+         "key" : "GIFT", 
+         "value" : "1", 
+         "opp" : "Add"
+      }, 
+      "6a0f3dcd-68a7-4575-916a-3716d4bec27c" : { 
+         "class" : "AddExpNode", 
+         "desc" : { 
+            "x" : "-104290", 
+            "y" : "-96742"
+         }, 
+         "child" : [ 
+            "6b1df620-e268-4d0b-baa3-37de1c5314c2"
+         ], 
+         "objectName" : "Player", 
+         "exp" : "69", 
+         "ignoreIntellect" : "true"
+      }, 
+      "6b1df620-e268-4d0b-baa3-37de1c5314c2" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-103932", 
+            "y" : "-96650"
+         }, 
+         "child" : [ 
+            "d40882e4-3ce2-4c9e-9242-590abd2a2f9d"
+         ]
+      }, 
+      "9517af39-ab59-4c92-8ea6-bd8201dffcfb" : { 
+         "class" : "InventoryHasItemNode", 
+         "desc" : { 
+            "x" : "-105126", 
+            "y" : "-97928"
+         }, 
+         "child" : [ 
+            "d5fc5c64-44b7-4596-9bde-df1b70ba8075", 
+            "36c4b610-7fc8-485c-be1b-741215aff439"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Item", 
+            "count" : "1", 
+            "proto" : "Tr3_GoldRing"
+         }
+      }, 
+      "d5fc5c64-44b7-4596-9bde-df1b70ba8075" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-105110", 
+            "y" : "-97718"
+         }, 
+         "child" : [ 
+            "36c4b610-7fc8-485c-be1b-741215aff439", 
+            "24bfdb2d-f558-4fa2-b66e-18bfb1ecca71"
+         ], 
+         "key" : "RING"
+      }, 
+      "36c4b610-7fc8-485c-be1b-741215aff439" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-105252", 
+            "y" : "-97626"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "24bfdb2d-f558-4fa2-b66e-18bfb1ecca71" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-105086", 
+            "y" : "-97594"
+         }, 
+         "child" : [ 
+            "74a06b66-a249-4183-93c5-927b75fdfee7"
+         ], 
+         "text" : "{Pay} I found this gold ring. You should have it."
+      }, 
+      "74a06b66-a249-4183-93c5-927b75fdfee7" : { 
+         "class" : "InventoryRemoveItemNode", 
+         "desc" : { 
+            "x" : "-105098", 
+            "y" : "-97492"
+         }, 
+         "child" : [ 
+            "e1d826e7-527c-4d04-acb0-f199b80a2825"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Item", 
+            "count" : "1", 
+            "proto" : "Tr3_GoldRing"
+         }, 
+         "showLogMessage" : "true", 
+         "overrideCount" : ""
+      }, 
+      "e1d826e7-527c-4d04-acb0-f199b80a2825" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-105098", 
+            "y" : "-97340", 
+            "comment" : "(A2) "
+         }, 
+         "child" : [ 
+            "5e3d5860-83e8-40a1-95de-6c56b5b61b7c"
+         ], 
+         "text" : ""
+      }, 
+      "5e3d5860-83e8-40a1-95de-6c56b5b61b7c" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-105106", 
+            "y" : "-97196"
+         }, 
+         "child" : [ 
+            "a4f090d6-876b-4b63-89be-281053af4e55"
+         ], 
+         "key" : "RING"
+      }, 
+      "08e41c70-d3c2-4985-98e5-736275f6a204" : { 
+         "class" : "InventoryHasItemNode", 
+         "desc" : { 
+            "x" : "-103849", 
+            "y" : "-97953"
+         }, 
+         "child" : [ 
+            "1e4caf82-e31e-4bfa-b859-3adb27c33a51", 
+            "6fa1e933-48ab-47c5-927b-f071236caee3"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Item", 
+            "count" : "1", 
+            "proto" : "Comb"
+         }
+      }, 
+      "1e4caf82-e31e-4bfa-b859-3adb27c33a51" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-103833", 
+            "y" : "-97743"
+         }, 
+         "child" : [ 
+            "6fa1e933-48ab-47c5-927b-f071236caee3", 
+            "a47dfee0-58a0-4c69-9d90-d065878c75f2"
+         ], 
+         "key" : "COMB"
+      }, 
+      "6fa1e933-48ab-47c5-927b-f071236caee3" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-103975", 
+            "y" : "-97651"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "a47dfee0-58a0-4c69-9d90-d065878c75f2" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-103809", 
+            "y" : "-97619"
+         }, 
+         "child" : [ 
+            "c6481dd4-8fc7-43b0-849d-6fec56d2946f"
+         ], 
+         "text" : "{Pay} Keeping your hair so beautiful is probably a hard task. Maybe this comb will help?"
+      }, 
+      "c6481dd4-8fc7-43b0-849d-6fec56d2946f" : { 
+         "class" : "InventoryRemoveItemNode", 
+         "desc" : { 
+            "x" : "-103821", 
+            "y" : "-97517"
+         }, 
+         "child" : [ 
+            "a741e51b-a8de-4a80-b635-e195bfa1b1be"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Item", 
+            "count" : "1", 
+            "proto" : "Comb"
+         }, 
+         "showLogMessage" : "true", 
+         "overrideCount" : ""
+      }, 
+      "a741e51b-a8de-4a80-b635-e195bfa1b1be" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-103821", 
+            "y" : "-97365", 
+            "comment" : "(A2) "
+         }, 
+         "child" : [ 
+            "bb3b3596-99fa-4df1-a946-163ca8e15ca4"
+         ], 
+         "text" : ""
+      }, 
+      "bb3b3596-99fa-4df1-a946-163ca8e15ca4" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-103829", 
+            "y" : "-97221"
+         }, 
+         "child" : [ 
+            "a4f090d6-876b-4b63-89be-281053af4e55"
+         ], 
+         "key" : "COMB"
+      }, 
+      "f37deffa-d91a-497a-a633-0beb87593866" : { 
+         "class" : "InventoryHasItemNode", 
+         "desc" : { 
+            "x" : "-104715", 
+            "y" : "-97962"
+         }, 
+         "child" : [ 
+            "0acb92da-f6cd-4bbf-80b0-a383c0ea2c2d", 
+            "9ec8a6d3-6f82-4f81-bef6-f7bb5b252a6d"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Cap", 
+            "count" : "1", 
+            "proto" : "Funnel_Cap"
+         }
+      }, 
+      "0acb92da-f6cd-4bbf-80b0-a383c0ea2c2d" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-104699", 
+            "y" : "-97752"
+         }, 
+         "child" : [ 
+            "9ec8a6d3-6f82-4f81-bef6-f7bb5b252a6d", 
+            "eeff6f4b-49eb-4ee3-b58d-a616323b0173"
+         ], 
+         "key" : "FUNNEL"
+      }, 
+      "9ec8a6d3-6f82-4f81-bef6-f7bb5b252a6d" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-104841", 
+            "y" : "-97660"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "eeff6f4b-49eb-4ee3-b58d-a616323b0173" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-104675", 
+            "y" : "-97628"
+         }, 
+         "child" : [ 
+            "be96bdad-9c97-488a-9d0c-3bb3babb6886"
+         ], 
+         "text" : "{Pay} What do you think of this funnel cap? Pretty silly, right? Maybe I should just toss it..."
+      }, 
+      "be96bdad-9c97-488a-9d0c-3bb3babb6886" : { 
+         "class" : "InventoryRemoveItemNode", 
+         "desc" : { 
+            "x" : "-104687", 
+            "y" : "-97526"
+         }, 
+         "child" : [ 
+            "aa30b577-2cd6-4bbf-a8c8-1d01ccfd8caa"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Cap", 
+            "count" : "1", 
+            "proto" : "Funnel_Cap"
+         }, 
+         "showLogMessage" : "true", 
+         "overrideCount" : ""
+      }, 
+      "aa30b577-2cd6-4bbf-a8c8-1d01ccfd8caa" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-104687", 
+            "y" : "-97374", 
+            "comment" : "(A2) "
+         }, 
+         "child" : [ 
+            "05299723-c3a6-43a9-95be-b4e881b8e47f"
+         ], 
+         "text" : ""
+      }, 
+      "05299723-c3a6-43a9-95be-b4e881b8e47f" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-104695", 
+            "y" : "-97230"
+         }, 
+         "child" : [ 
+            "a4f090d6-876b-4b63-89be-281053af4e55"
+         ], 
+         "key" : "FUNNEL"
+      }, 
+      "f0c5e356-186d-4c36-96c9-e7d110f95048" : { 
+         "class" : "InventoryHasItemNode", 
+         "desc" : { 
+            "x" : "-103393", 
+            "y" : "-97922"
+         }, 
+         "child" : [ 
+            "b733c5df-d3ee-4d91-8c49-1857e99091fa", 
+            "056a1f60-29d3-4177-8688-18faf929709d"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Consumable", 
+            "count" : "1", 
+            "proto" : "SpacateyaSeeds"
+         }
+      }, 
+      "b733c5df-d3ee-4d91-8c49-1857e99091fa" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-103377", 
+            "y" : "-97712"
+         }, 
+         "child" : [ 
+            "056a1f60-29d3-4177-8688-18faf929709d", 
+            "1e99a62b-c359-4c8c-9dd6-1d2bae822262"
+         ], 
+         "key" : "SPEKA"
+      }, 
+      "056a1f60-29d3-4177-8688-18faf929709d" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-103519", 
+            "y" : "-97620"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "1e99a62b-c359-4c8c-9dd6-1d2bae822262" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-103354", 
+            "y" : "-97588"
+         }, 
+         "child" : [ 
+            "6bf3db32-933e-4d40-8c65-9b4540a5f5cd"
+         ], 
+         "text" : "{Pay} I, uh... Found some strange seeds... You want them?"
+      }, 
+      "6bf3db32-933e-4d40-8c65-9b4540a5f5cd" : { 
+         "class" : "InventoryRemoveItemNode", 
+         "desc" : { 
+            "x" : "-103365", 
+            "y" : "-97486"
+         }, 
+         "child" : [ 
+            "9593ab1f-c714-4531-ad11-a251629942a9"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Consumable", 
+            "count" : "1", 
+            "proto" : "SpacateyaSeeds"
+         }, 
+         "showLogMessage" : "true", 
+         "overrideCount" : ""
+      }, 
+      "9593ab1f-c714-4531-ad11-a251629942a9" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-103365", 
+            "y" : "-97334", 
+            "comment" : "(A2) "
+         }, 
+         "child" : [ 
+            "c0ecb371-688a-430c-9f57-7115768c5042"
+         ], 
+         "text" : ""
+      }, 
+      "c0ecb371-688a-430c-9f57-7115768c5042" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-103373", 
+            "y" : "-97190"
+         }, 
+         "child" : [ 
+            "a4f090d6-876b-4b63-89be-281053af4e55"
+         ], 
+         "key" : "SPEKA"
+      }, 
+      "4e6db4d9-b56b-4f1e-97bc-0c2142e0ca0c" : { 
+         "class" : "InventoryHasItemNode", 
+         "desc" : { 
+            "x" : "-104289", 
+            "y" : "-97953"
+         }, 
+         "child" : [ 
+            "47aef859-4177-422b-bf3e-b51a4691fbe7", 
+            "a009b8f4-50f4-4a04-b8af-ba612f589956"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Item", 
+            "count" : "1", 
+            "proto" : "Tr3_PearlEarring"
+         }
+      }, 
+      "47aef859-4177-422b-bf3e-b51a4691fbe7" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-104273", 
+            "y" : "-97743"
+         }, 
+         "child" : [ 
+            "a009b8f4-50f4-4a04-b8af-ba612f589956", 
+            "e7b85fcf-6ca6-4a3b-95bd-fcba956135ab"
+         ], 
+         "key" : "EARRING"
+      }, 
+      "a009b8f4-50f4-4a04-b8af-ba612f589956" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-104415", 
+            "y" : "-97651"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "e7b85fcf-6ca6-4a3b-95bd-fcba956135ab" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-104249", 
+            "y" : "-97619"
+         }, 
+         "child" : [ 
+            "5349195e-b36b-4312-a49c-740df47570eb"
+         ], 
+         "text" : "{Pay} I noticed your ears are pierced. How about this earring I found?"
+      }, 
+      "5349195e-b36b-4312-a49c-740df47570eb" : { 
+         "class" : "InventoryRemoveItemNode", 
+         "desc" : { 
+            "x" : "-104261", 
+            "y" : "-97517"
+         }, 
+         "child" : [ 
+            "f0ae8323-dee1-4f44-9596-f9e2c40754c6"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Item", 
+            "count" : "1", 
+            "proto" : "Tr3_PearlEarring"
+         }, 
+         "showLogMessage" : "true", 
+         "overrideCount" : ""
+      }, 
+      "f0ae8323-dee1-4f44-9596-f9e2c40754c6" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-104261", 
+            "y" : "-97365", 
+            "comment" : "(A2) "
+         }, 
+         "child" : [ 
+            "070ca9e5-4d81-46e1-82fd-9645f4502506"
+         ], 
+         "text" : ""
+      }, 
+      "070ca9e5-4d81-46e1-82fd-9645f4502506" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-104269", 
+            "y" : "-97221"
+         }, 
+         "child" : [ 
+            "a4f090d6-876b-4b63-89be-281053af4e55"
+         ], 
+         "key" : "EARRING"
+      }, 
+      "586f57d5-4efc-4689-ac2f-4d8385278ac5" : { 
+         "class" : "InventoryHasItemNode", 
+         "desc" : { 
+            "x" : "-102952", 
+            "y" : "-97919"
+         }, 
+         "child" : [ 
+            "6d1ab215-98a6-4e30-b6e0-eb9e7eb146e9", 
+            "27ac9ef1-89e9-4353-af48-4f2711db9775"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Boots", 
+            "count" : "1", 
+            "proto" : "Well_Oiled_Boots"
+         }
+      }, 
+      "6d1ab215-98a6-4e30-b6e0-eb9e7eb146e9" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-102936", 
+            "y" : "-97709"
+         }, 
+         "child" : [ 
+            "27ac9ef1-89e9-4353-af48-4f2711db9775", 
+            "2394ed13-966d-4b86-9c35-54682c21c337"
+         ], 
+         "key" : "BOOTS"
+      }, 
+      "27ac9ef1-89e9-4353-af48-4f2711db9775" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-103078", 
+            "y" : "-97617"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "2394ed13-966d-4b86-9c35-54682c21c337" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-102912", 
+            "y" : "-97585"
+         }, 
+         "child" : [ 
+            "39417aab-09be-4a13-9598-5c921bb0b6f0"
+         ], 
+         "text" : "{Pay} Since we hike a lot, I thought I'd give you a pair of well-oiled boots."
+      }, 
+      "39417aab-09be-4a13-9598-5c921bb0b6f0" : { 
+         "class" : "InventoryRemoveItemNode", 
+         "desc" : { 
+            "x" : "-102924", 
+            "y" : "-97483"
+         }, 
+         "child" : [ 
+            "9c403e5d-25f1-4588-b919-455b1a41ebe7"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Boots", 
+            "count" : "1", 
+            "proto" : "Well_Oiled_Boots"
+         }, 
+         "showLogMessage" : "true", 
+         "overrideCount" : ""
+      }, 
+      "9c403e5d-25f1-4588-b919-455b1a41ebe7" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-102924", 
+            "y" : "-97331", 
+            "comment" : "(A2) "
+         }, 
+         "child" : [ 
+            "15206fe3-54f8-4c2b-b870-868b56e2f716"
+         ], 
+         "text" : ""
+      }, 
+      "15206fe3-54f8-4c2b-b870-868b56e2f716" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-102936", 
+            "y" : "-97185"
+         }, 
+         "child" : [ 
+            "a4f090d6-876b-4b63-89be-281053af4e55"
+         ], 
+         "key" : "BOOTS"
+      }, 
+      "038d6230-89cd-4a40-bca5-847f6920d4d1" : { 
+         "class" : "InventoryHasItemNode", 
+         "desc" : { 
+            "x" : "-102120", 
+            "y" : "-97942"
+         }, 
+         "child" : [ 
+            "b5a7c04a-39ef-4fb9-8227-c85ebb3931d9", 
+            "a527b8f4-9aaf-46b9-8ae4-d82aa1af6f66"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Ingredient", 
+            "count" : "1", 
+            "proto" : "Tr2_RadiantShell"
+         }
+      }, 
+      "b5a7c04a-39ef-4fb9-8227-c85ebb3931d9" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-102104", 
+            "y" : "-97732"
+         }, 
+         "child" : [ 
+            "a527b8f4-9aaf-46b9-8ae4-d82aa1af6f66", 
+            "3029d0ff-0c47-4b95-b8bd-a8a35886560c"
+         ], 
+         "key" : "SHELL"
+      }, 
+      "a527b8f4-9aaf-46b9-8ae4-d82aa1af6f66" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-102246", 
+            "y" : "-97640"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "3029d0ff-0c47-4b95-b8bd-a8a35886560c" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-102080", 
+            "y" : "-97608"
+         }, 
+         "child" : [ 
+            "b950ec66-5303-4623-8731-8ddf9316970a"
+         ], 
+         "text" : "{Pay} Whoa, would you look at that turtle shell. Coarse on one side, smooth on the other. Sort of like us adventuring folks, eh? Take it."
+      }, 
+      "b950ec66-5303-4623-8731-8ddf9316970a" : { 
+         "class" : "InventoryRemoveItemNode", 
+         "desc" : { 
+            "x" : "-102092", 
+            "y" : "-97505"
+         }, 
+         "child" : [ 
+            "9792bd7f-c7e8-488d-8e59-662ebd15d9b7"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Ingredient", 
+            "count" : "1", 
+            "proto" : "Tr2_RadiantShell"
+         }, 
+         "showLogMessage" : "true", 
+         "overrideCount" : ""
+      }, 
+      "9792bd7f-c7e8-488d-8e59-662ebd15d9b7" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-102092", 
+            "y" : "-97353", 
+            "comment" : "(A2) "
+         }, 
+         "child" : [ 
+            "75fe3ed9-74b1-4322-b1d9-07f4f5fa579b"
+         ], 
+         "text" : ""
+      }, 
+      "75fe3ed9-74b1-4322-b1d9-07f4f5fa579b" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-102101", 
+            "y" : "-97209"
+         }, 
+         "child" : [ 
+            "a4f090d6-876b-4b63-89be-281053af4e55"
+         ], 
+         "key" : "SHELL"
       }, 
       "98a7c62d-9101-4acd-9529-738b0338c16a" : { 
          "class" : "InventoryHasItemNode", 
@@ -337,7 +1101,7 @@
          "child" : [ 
             "a9a5530c-6051-4c7d-ba6f-cfb0b0a608e4"
          ], 
-         "text" : "{Pay} Here's a Pork Lad for you."
+         "text" : "{Pay} Here's a cute lil' Pork Lad for you."
       }, 
       "a9a5530c-6051-4c7d-ba6f-cfb0b0a608e4" : { 
          "class" : "InventoryRemoveItemNode", 
@@ -366,7 +1130,7 @@
          "child" : [ 
             "df1defff-7058-4650-ab12-96d2721ece9d"
          ], 
-         "text" : "Oh, $PLAYER.NAME$, is that a Pork Lad statue? I had one just like this as a girl! Thank you so much, I love it!"
+         "text" : "Oh, $PLAYER.NAME$, is that a Pork Lad statue? I had one just like this as a girl! Thank you so much, I love it! I'm cuddling with it every night from now on, splinters be damned!"
       }, 
       "df1defff-7058-4650-ab12-96d2721ece9d" : { 
          "class" : "AddKeywordNode", 
@@ -378,29 +1142,6 @@
             "a4f090d6-876b-4b63-89be-281053af4e55"
          ], 
          "key" : "PORK"
-      }, 
-      "a4f090d6-876b-4b63-89be-281053af4e55" : { 
-         "class" : "MathKeyValueNode", 
-         "desc" : { 
-            "x" : "-101446", 
-            "y" : "-96971"
-         }, 
-         "child" : [ 
-            "6b1df620-e268-4d0b-baa3-37de1c5314c2"
-         ], 
-         "key" : "GIFT", 
-         "value" : "1", 
-         "opp" : "Add"
-      }, 
-      "6b1df620-e268-4d0b-baa3-37de1c5314c2" : { 
-         "class" : "DummyNode", 
-         "desc" : { 
-            "x" : "-101369", 
-            "y" : "-96780"
-         }, 
-         "child" : [ 
-            "d40882e4-3ce2-4c9e-9242-590abd2a2f9d"
-         ]
       }, 
       "ab0fa6df-691c-4018-bbec-90367c08c554" : { 
          "class" : "InventoryHasItemNode", 
@@ -473,13 +1214,13 @@
          "class" : "DialogPhraseNode", 
          "desc" : { 
             "x" : "-101255", 
-            "y" : "-97382", 
+            "y" : "-97381", 
             "comment" : "(A2) "
          }, 
          "child" : [ 
             "d75f9d3f-efa9-4807-b6d8-1a1de176fb29"
          ], 
-         "text" : "Wow! A red flower? My favourite! Thank you so much, $PLAYER.NAME$! I'm gonna cherish it forever."
+         "text" : "Wow! A Dragonleaf? My favourite! Thank you so much, $PLAYER.NAME$! It will keep my diary extra fragrant, pressed between the pages. I'm gonna cherish it forever."
       }, 
       "d75f9d3f-efa9-4807-b6d8-1a1de176fb29" : { 
          "class" : "AddKeywordNode", 
@@ -983,8 +1724,8 @@
       "4eff4eb0-4c60-4f30-833d-40b6bdf32235" : { 
          "class" : "MathKeyValueNode", 
          "desc" : { 
-            "x" : "-99763", 
-            "y" : "-97184"
+            "x" : "-98862", 
+            "y" : "-97315"
          }, 
          "child" : [ 
             "cc8763fd-23fc-4de6-8d23-7c462544b21f"
@@ -1095,8 +1836,9 @@
             "y" : "-97894"
          }, 
          "child" : [ 
+            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
          ], 
-         "text" : ""
+         "text" : "3"
       }, 
       "26f9ecd0-e265-4b36-adff-4c000d3a726a" : { 
          "class" : "MathCompareValuesNode", 
@@ -1116,12 +1858,13 @@
       "ed8e97bf-928a-49ff-a5fa-c45ab76441c0" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99365", 
+            "x" : "-99368", 
             "y" : "-97898"
          }, 
          "child" : [ 
+            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
          ], 
-         "text" : ""
+         "text" : "4"
       }, 
       "8b514c58-f90e-4cee-a532-d263a26997f7" : { 
          "class" : "MathCompareValuesNode", 
@@ -1145,8 +1888,9 @@
             "y" : "-97896"
          }, 
          "child" : [ 
+            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
          ], 
-         "text" : ""
+         "text" : "5"
       }, 
       "dbc58e30-79c6-48d3-beed-ccbf3ba1f1d6" : { 
          "class" : "MathCompareValuesNode", 
@@ -1166,12 +1910,13 @@
       "41b95b15-c147-40c7-8cde-7c8b3cd3c731" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-98872", 
-            "y" : "-97899"
+            "x" : "-98877", 
+            "y" : "-97894"
          }, 
          "child" : [ 
+            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
          ], 
-         "text" : ""
+         "text" : "6"
       }, 
       "88ec8f59-258d-4a29-8495-81ee15dc03ff" : { 
          "class" : "MathCompareValuesNode", 
@@ -1195,8 +1940,9 @@
             "y" : "-97900"
          }, 
          "child" : [ 
+            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
          ], 
-         "text" : ""
+         "text" : "7"
       }, 
       "e59b3336-a8c1-4455-96c7-df2cb27d64d7" : { 
          "class" : "MathCompareValuesNode", 
@@ -1216,12 +1962,13 @@
       "cb8d24ef-b799-4fb1-bd5f-50578523974c" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-98358", 
-            "y" : "-97911"
+            "x" : "-98356", 
+            "y" : "-97912"
          }, 
          "child" : [ 
+            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
          ], 
-         "text" : ""
+         "text" : "8"
       }, 
       "c06f3f87-a4c3-45e9-b004-5fe9ee5c7327" : { 
          "class" : "MathCompareValuesNode", 
@@ -1241,12 +1988,13 @@
       "64da3e30-7aff-4a90-baed-41dd9ccbdd2d" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-98100", 
-            "y" : "-97913"
+            "x" : "-98105", 
+            "y" : "-97905"
          }, 
          "child" : [ 
+            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
          ], 
-         "text" : ""
+         "text" : "9"
       }, 
       "efeafe12-6a1a-4f66-bfeb-c707d73ebb76" : { 
          "class" : "MathCompareValuesNode", 
@@ -1265,12 +2013,13 @@
       "a46b6725-d1c2-46e1-8664-9b859aaa29f8" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-97844", 
-            "y" : "-97919"
+            "x" : "-97846", 
+            "y" : "-97916"
          }, 
          "child" : [ 
+            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
          ], 
-         "text" : ""
+         "text" : "10"
       }, 
       "59ede191-5bc1-46b8-9259-19bdb7da0c57" : { 
          "class" : "DialogPhraseNode", 
@@ -2068,83 +2817,6 @@
             "f4401a50-708c-43a7-a5a6-dac25d8754c7"
          ], 
          "key" : "ROMANCE_INIT"
-      }, 
-      "038d6230-89cd-4a40-bca5-847f6920d4d1" : { 
-         "class" : "InventoryHasItemNode", 
-         "desc" : { 
-            "x" : "-102120", 
-            "y" : "-97942"
-         }, 
-         "child" : [ 
-            "b5a7c04a-39ef-4fb9-8227-c85ebb3931d9", 
-            "a527b8f4-9aaf-46b9-8ae4-d82aa1af6f66"
-         ], 
-         "objectName" : "$TEAM$"
-      }, 
-      "b5a7c04a-39ef-4fb9-8227-c85ebb3931d9" : { 
-         "class" : "HasKeywordNode", 
-         "desc" : { 
-            "x" : "-102104", 
-            "y" : "-97732"
-         }, 
-         "child" : [ 
-            "a527b8f4-9aaf-46b9-8ae4-d82aa1af6f66", 
-            "3029d0ff-0c47-4b95-b8bd-a8a35886560c"
-         ]
-      }, 
-      "a527b8f4-9aaf-46b9-8ae4-d82aa1af6f66" : { 
-         "class" : "DummyNode", 
-         "desc" : { 
-            "x" : "-102246", 
-            "y" : "-97640"
-         }, 
-         "child" : [ 
-         ]
-      }, 
-      "3029d0ff-0c47-4b95-b8bd-a8a35886560c" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-102080", 
-            "y" : "-97608"
-         }, 
-         "child" : [ 
-            "b950ec66-5303-4623-8731-8ddf9316970a"
-         ], 
-         "text" : "{Pay} Here's a Pork Lad for you."
-      }, 
-      "b950ec66-5303-4623-8731-8ddf9316970a" : { 
-         "class" : "InventoryRemoveItemNode", 
-         "desc" : { 
-            "x" : "-102092", 
-            "y" : "-97505"
-         }, 
-         "child" : [ 
-            "9792bd7f-c7e8-488d-8e59-662ebd15d9b7"
-         ], 
-         "objectName" : "$TEAM$", 
-         "showLogMessage" : "true", 
-         "overrideCount" : ""
-      }, 
-      "9792bd7f-c7e8-488d-8e59-662ebd15d9b7" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-102092", 
-            "y" : "-97353", 
-            "comment" : "(A2) "
-         }, 
-         "child" : [ 
-            "75fe3ed9-74b1-4322-b1d9-07f4f5fa579b"
-         ], 
-         "text" : ""
-      }, 
-      "75fe3ed9-74b1-4322-b1d9-07f4f5fa579b" : { 
-         "class" : "AddKeywordNode", 
-         "desc" : { 
-            "x" : "-102101", 
-            "y" : "-97209"
-         }, 
-         "child" : [ 
-         ]
       }
    }, 
    "entry" : "a4ded33d-38cc-4476-9fb0-b8ad188a1c23"
