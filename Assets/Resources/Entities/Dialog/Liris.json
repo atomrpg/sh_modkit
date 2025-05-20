@@ -60,8 +60,8 @@
       "c6a460ca-ae66-4e89-b746-c5578f334347" : { 
          "class" : "HasGlobalKeyNode", 
          "desc" : { 
-            "x" : "-100195", 
-            "y" : "-101640"
+            "x" : "-100175", 
+            "y" : "-101755"
          }, 
          "child" : [ 
             "90d894e6-acdd-4e7a-bf7b-86390901218c", 
@@ -72,12 +72,12 @@
       "90d894e6-acdd-4e7a-bf7b-86390901218c" : { 
          "class" : "HasKeywordNode", 
          "desc" : { 
-            "x" : "-100575", 
-            "y" : "-101489"
+            "x" : "-100583", 
+            "y" : "-101651"
          }, 
          "child" : [ 
             "8035b7cc-dd0c-48b8-974c-536c29dadc9a", 
-            "eeff5444-81e7-4617-a134-3d471b50ee7c"
+            "9d802e8f-ef5d-4698-91b8-387280330065"
          ], 
          "key" : "LIRIS_QUEST_DONE"
       }, 
@@ -222,6 +222,23 @@
          "skipButtonEnd" : "true", 
          "dontMarkInHistory" : "false"
       }, 
+      "9d802e8f-ef5d-4698-91b8-387280330065" : { 
+         "class" : "InventoryHasItemNode", 
+         "desc" : { 
+            "x" : "-100626", 
+            "y" : "-101443"
+         }, 
+         "child" : [ 
+            "eeff5444-81e7-4617-a134-3d471b50ee7c", 
+            "42d27dd6-4b14-4f40-ad51-02635ce5fc77"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Item", 
+            "count" : "1", 
+            "proto" : "mod_stone_of_arkham"
+         }
+      }, 
       "eeff5444-81e7-4617-a134-3d471b50ee7c" : { 
          "class" : "HasKeywordNode", 
          "desc" : { 
@@ -237,8 +254,8 @@
       "75ef80a3-44a7-494f-8e9e-85936be77029" : { 
          "class" : "QuestDoneNode", 
          "desc" : { 
-            "x" : "-100900", 
-            "y" : "-101162"
+            "x" : "-100970", 
+            "y" : "-101234"
          }, 
          "child" : [ 
             "66441bd0-70d0-46c5-aaa3-e33353fa59b1"
@@ -248,21 +265,39 @@
       "66441bd0-70d0-46c5-aaa3-e33353fa59b1" : { 
          "class" : "AddExpNode", 
          "desc" : { 
-            "x" : "-100876", 
-            "y" : "-101049"
+            "x" : "-100870", 
+            "y" : "-101141"
          }, 
          "child" : [ 
-            "cc5d8e7a-5c55-43c4-a44d-649b24793c19"
+            "440a9ec1-da2a-4066-bb61-eae957f130da"
          ], 
          "objectName" : "Player", 
          "exp" : "222", 
          "ignoreIntellect" : "false"
       }, 
+      "440a9ec1-da2a-4066-bb61-eae957f130da" : { 
+         "class" : "InventoryRemoveItemNode", 
+         "desc" : { 
+            "x" : "-100870", 
+            "y" : "-101029"
+         }, 
+         "child" : [ 
+            "cc5d8e7a-5c55-43c4-a44d-649b24793c19"
+         ], 
+         "objectName" : "$TEAM$", 
+         "item" : { 
+            "class" : "Item", 
+            "count" : "1", 
+            "proto" : "mod_stone_of_arkham"
+         }, 
+         "showLogMessage" : "true", 
+         "overrideCount" : ""
+      }, 
       "cc5d8e7a-5c55-43c4-a44d-649b24793c19" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-100883", 
-            "y" : "-100912"
+            "x" : "-100864", 
+            "y" : "-100890"
          }, 
          "child" : [ 
             "466f751d-02db-449b-a92a-7503ac0c0141"
@@ -418,7 +453,43 @@
          "child" : [ 
             "6878bea8-9688-4170-85eb-76afc266d619"
          ], 
-         "text" : "{..} <Keep quite>"
+         "text" : "{..} <Keep quiet>"
+      }, 
+      "42d27dd6-4b14-4f40-ad51-02635ce5fc77" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100480", 
+            "y" : "-101205", 
+            "comment" : "(A12)", 
+            "historytag" : "A12"
+         }, 
+         "child" : [ 
+            "2e0a15da-7c4c-49d8-a8ca-3058c75b9bc9"
+         ], 
+         "text" : "Hey, I saw you beat them up... But where's the stone? That's all I asked for... <She pouts>"
+      }, 
+      "2e0a15da-7c4c-49d8-a8ca-3058c75b9bc9" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-100446", 
+            "y" : "-100946", 
+            "comment" : "GOTO A11"
+         }, 
+         "child" : [ 
+            "7e931a16-9478-4516-b0cf-38403e6dd8d6"
+         ], 
+         "text" : "{End} Right... I'll go look for it in that burnt up shack then. <Leave>"
+      }, 
+      "7e931a16-9478-4516-b0cf-38403e6dd8d6" : { 
+         "class" : "DialogEndNode", 
+         "desc" : { 
+            "x" : "-100464", 
+            "y" : "-100804"
+         }, 
+         "child" : [ 
+         ], 
+         "skipButtonEnd" : "true", 
+         "dontMarkInHistory" : "false"
       }, 
       "7379fac9-bb5d-4e20-9859-d1d84db94589" : { 
          "class" : "DialogPhraseNode", 
