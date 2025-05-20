@@ -38,7 +38,7 @@ MonoBehaviour:
   UniformMaterialProto:
     path: Entities/Sound/Uniform/Metal
   PartsPathes:
-  - Shody_Iron_Breastplate
+  - Armor_Cuirass
   AnimationOverrideList:
     path: 
   HideMask: 0
