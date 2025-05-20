@@ -105,8 +105,163 @@
             "comment" : "GOTO A16"
          }, 
          "child" : [ 
+            "255ca03e-c074-4740-b75b-09fcce598982"
          ], 
          "text" : "{Pers} My actions were inexcusable, and I know I can't heal the pain I caused by a mere apology. Just give me another chance, Liris."
+      }, 
+      "255ca03e-c074-4740-b75b-09fcce598982" : { 
+         "class" : "CharacterSkillNode", 
+         "desc" : { 
+            "x" : "-102370", 
+            "y" : "-100939"
+         }, 
+         "child" : [ 
+            "3c792235-8acb-4ad4-a6cb-bdb0a55b93da", 
+            "894894ea-5251-4ac1-817f-cf2dc4a3328b"
+         ], 
+         "value" : "50", 
+         "skill" : "Persuasion", 
+         "characterName" : "Player"
+      }, 
+      "3c792235-8acb-4ad4-a6cb-bdb0a55b93da" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-102487", 
+            "y" : "-100758"
+         }, 
+         "child" : [ 
+            "aa30d53b-1178-4c1d-ac46-2b16cf80eb63"
+         ], 
+         "text" : "<Success> I want to believe you, $PLAYER.NAME$. Just don't betray my trust again. Please?"
+      }, 
+      "aa30d53b-1178-4c1d-ac46-2b16cf80eb63" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-102139", 
+            "y" : "-100403", 
+            "comment" : "GOTO A16"
+         }, 
+         "child" : [ 
+            "03a88883-6391-4701-a2eb-be4a7bdf5cf1"
+         ], 
+         "text" : "{End} Won't happen again, I swear. Let's get a move on."
+      }, 
+      "03a88883-6391-4701-a2eb-be4a7bdf5cf1" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-100775", 
+            "y" : "-99160", 
+            "comment" : "(A16) ", 
+            "historytag" : "A16"
+         }, 
+         "child" : [ 
+            "10778171-ee67-4cc3-bc8f-b92b1035d466"
+         ], 
+         "text" : "Lead the way!"
+      }, 
+      "10778171-ee67-4cc3-bc8f-b92b1035d466" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-100776", 
+            "y" : "-99022"
+         }, 
+         "child" : [ 
+            "cd4b54fb-7cd8-4f47-a3ca-baee2fd199ea"
+         ], 
+         "key" : "TEAMMATE"
+      }, 
+      "cd4b54fb-7cd8-4f47-a3ca-baee2fd199ea" : { 
+         "class" : "CharacterSetCapsNode", 
+         "desc" : { 
+            "x" : "-100777", 
+            "y" : "-98943"
+         }, 
+         "child" : [ 
+            "12454123-f47d-4ad8-9f11-1d2f7c11be70"
+         ], 
+         "objectName" : "$SELF$", 
+         "caps" : "TeamMate"
+      }, 
+      "12454123-f47d-4ad8-9f11-1d2f7c11be70" : { 
+         "class" : "SetRelationShipBetweenFractionsNode", 
+         "desc" : { 
+            "x" : "-100784", 
+            "y" : "-98848"
+         }, 
+         "child" : [ 
+            "33cc673e-0b4e-4fdb-bb9f-bea972085d60"
+         ], 
+         "fraction1" : "player", 
+         "fraction2" : "liris", 
+         "value" : "100"
+      }, 
+      "33cc673e-0b4e-4fdb-bb9f-bea972085d60" : { 
+         "class" : "RestartBehaviorRequestNode", 
+         "desc" : { 
+            "x" : "-100778", 
+            "y" : "-98728"
+         }, 
+         "child" : [ 
+            "184b8a0a-5bfe-4f9b-8e67-43b7a9d65751"
+         ], 
+         "objectName" : "LogicLevel"
+      }, 
+      "184b8a0a-5bfe-4f9b-8e67-43b7a9d65751" : { 
+         "class" : "RestartBehaviorRequestNode", 
+         "desc" : { 
+            "x" : "-100779", 
+            "y" : "-98653"
+         }, 
+         "child" : [ 
+            "648e56c2-aa55-45a0-aa50-eb0535a3351f"
+         ], 
+         "objectName" : "Player"
+      }, 
+      "648e56c2-aa55-45a0-aa50-eb0535a3351f" : { 
+         "class" : "RestartBehaviorRequestNode", 
+         "desc" : { 
+            "x" : "-100778", 
+            "y" : "-98579"
+         }, 
+         "child" : [ 
+            "aeb4997f-f682-4843-b474-330fe3ff944b"
+         ], 
+         "objectName" : "$SELF$"
+      }, 
+      "aeb4997f-f682-4843-b474-330fe3ff944b" : { 
+         "class" : "DialogEndNode", 
+         "desc" : { 
+            "x" : "-100783", 
+            "y" : "-98496"
+         }, 
+         "child" : [ 
+         ], 
+         "skipButtonEnd" : "false", 
+         "dontMarkInHistory" : "false"
+      }, 
+      "894894ea-5251-4ac1-817f-cf2dc4a3328b" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-102257", 
+            "y" : "-100764"
+         }, 
+         "child" : [ 
+            "087e8940-0983-44e8-920d-b8ba6a1d6254"
+         ], 
+         "text" : "<Failure> I wanna fall for those puppy dog eyes, $PLAYER.NAME$, I really do... But I can't. I'm scared to get hurt like this again. Just... Go. Alright? Go."
+      }, 
+      "087e8940-0983-44e8-920d-b8ba6a1d6254" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-102345", 
+            "y" : "-101207"
+         }, 
+         "child" : [ 
+            "deaea92c-ad98-452b-a515-3a67231d9558", 
+            "d067906a-00cf-4d8e-bfa9-54738562df58", 
+            "4158056d-9367-4715-8f0a-003f8cd0fc18", 
+            "6a5e1f86-bb7d-4a3f-abe9-e7dc93e9080b"
+         ]
       }, 
       "d067906a-00cf-4d8e-bfa9-54738562df58" : { 
          "class" : "DialogAnswerNode", 
@@ -116,19 +271,93 @@
             "comment" : "GOTO A16"
          }, 
          "child" : [ 
+            "a1caf8b6-3198-464f-9378-8ab383e091a8"
          ], 
          "text" : "{Bluff} Liris, look, I can't explain my actions at the moment, but know that it was all for the greater good."
+      }, 
+      "a1caf8b6-3198-464f-9378-8ab383e091a8" : { 
+         "class" : "CharacterSkillNode", 
+         "desc" : { 
+            "x" : "-101918", 
+            "y" : "-100921"
+         }, 
+         "child" : [ 
+            "34677088-fe51-443f-8458-2a5eefa792e3", 
+            "675f2bf4-b950-40a0-871d-7efc5078d303"
+         ], 
+         "value" : "50", 
+         "skill" : "Bluff", 
+         "characterName" : "Player"
+      }, 
+      "34677088-fe51-443f-8458-2a5eefa792e3" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-102031", 
+            "y" : "-100753"
+         }, 
+         "child" : [ 
+            "aa30d53b-1178-4c1d-ac46-2b16cf80eb63"
+         ], 
+         "text" : "<Success> <After a long pause, Liris sighs> Fine... I suppose I must trust the good in you. Everyone has reasons to act strangely from time to time. Just don't do it again, alright? Please?"
+      }, 
+      "675f2bf4-b950-40a0-871d-7efc5078d303" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-101800", 
+            "y" : "-100740"
+         }, 
+         "child" : [ 
+            "087e8940-0983-44e8-920d-b8ba6a1d6254"
+         ], 
+         "text" : "<Failure> You are lying through your teeth, aren't you? No. <Liris looks away, still feeling betrayed> I can't fall for this. Not again. I won't be hurt by you again."
       }, 
       "4158056d-9367-4715-8f0a-003f8cd0fc18" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-101577", 
-            "y" : "-101100", 
+            "x" : "-101579", 
+            "y" : "-101098", 
             "comment" : "GOTO A16"
          }, 
          "child" : [ 
+            "315bb957-0aaf-4c91-9a51-df633352540d"
          ], 
          "text" : "{Intimidation} I WILL GO TO BED SLEEPING EVERY NIGHT KNOWING I DID THE RIGHT THING FOR THIS PARTY! I DID THE RIGHT THING FOR YOUR OWN SAFETY, I DID THE RIGHT THING FOR ME!"
+      }, 
+      "315bb957-0aaf-4c91-9a51-df633352540d" : { 
+         "class" : "CharacterSkillNode", 
+         "desc" : { 
+            "x" : "-101445", 
+            "y" : "-100900"
+         }, 
+         "child" : [ 
+            "592e779b-5922-4f58-814c-a2fb6fd55c33", 
+            "457a5597-daad-4a97-ab61-db2882aa3b85"
+         ], 
+         "value" : "50", 
+         "skill" : "Intimidation", 
+         "characterName" : "Player"
+      }, 
+      "592e779b-5922-4f58-814c-a2fb6fd55c33" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-101556", 
+            "y" : "-100744"
+         }, 
+         "child" : [ 
+            "aa30d53b-1178-4c1d-ac46-2b16cf80eb63"
+         ], 
+         "text" : "<Success> <Your emotional outburst scares Liris, but also changes her desposition for the better> Y-you really mean it, don't you? You really believe that. In that case... How can I blame ya for what you did? Fine. I suppose we can travel together again."
+      }, 
+      "457a5597-daad-4a97-ab61-db2882aa3b85" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-101331", 
+            "y" : "-100750"
+         }, 
+         "child" : [ 
+            "087e8940-0983-44e8-920d-b8ba6a1d6254"
+         ], 
+         "text" : "<Failure> <Liris backs off, horrified by your rageaholism> Never raise your voice at me! J-just leave me alone! Go away!"
       }, 
       "6a5e1f86-bb7d-4a3f-abe9-e7dc93e9080b" : { 
          "class" : "DialogAnswerNode", 
@@ -371,99 +600,6 @@
             "03a88883-6391-4701-a2eb-be4a7bdf5cf1"
          ], 
          "text" : "{End} Let's go."
-      }, 
-      "03a88883-6391-4701-a2eb-be4a7bdf5cf1" : { 
-         "class" : "DialogPhraseNode", 
-         "desc" : { 
-            "x" : "-100775", 
-            "y" : "-99160", 
-            "comment" : "(A16) ", 
-            "historytag" : "A16"
-         }, 
-         "child" : [ 
-            "10778171-ee67-4cc3-bc8f-b92b1035d466"
-         ], 
-         "text" : "Lead the way!"
-      }, 
-      "10778171-ee67-4cc3-bc8f-b92b1035d466" : { 
-         "class" : "AddKeywordNode", 
-         "desc" : { 
-            "x" : "-100776", 
-            "y" : "-99022"
-         }, 
-         "child" : [ 
-            "cd4b54fb-7cd8-4f47-a3ca-baee2fd199ea"
-         ], 
-         "key" : "TEAMMATE"
-      }, 
-      "cd4b54fb-7cd8-4f47-a3ca-baee2fd199ea" : { 
-         "class" : "CharacterSetCapsNode", 
-         "desc" : { 
-            "x" : "-100777", 
-            "y" : "-98943"
-         }, 
-         "child" : [ 
-            "12454123-f47d-4ad8-9f11-1d2f7c11be70"
-         ], 
-         "objectName" : "$SELF$", 
-         "caps" : "TeamMate"
-      }, 
-      "12454123-f47d-4ad8-9f11-1d2f7c11be70" : { 
-         "class" : "SetRelationShipBetweenFractionsNode", 
-         "desc" : { 
-            "x" : "-100784", 
-            "y" : "-98848"
-         }, 
-         "child" : [ 
-            "33cc673e-0b4e-4fdb-bb9f-bea972085d60"
-         ], 
-         "fraction1" : "player", 
-         "fraction2" : "liris", 
-         "value" : "100"
-      }, 
-      "33cc673e-0b4e-4fdb-bb9f-bea972085d60" : { 
-         "class" : "RestartBehaviorRequestNode", 
-         "desc" : { 
-            "x" : "-100778", 
-            "y" : "-98728"
-         }, 
-         "child" : [ 
-            "184b8a0a-5bfe-4f9b-8e67-43b7a9d65751"
-         ], 
-         "objectName" : "LogicLevel"
-      }, 
-      "184b8a0a-5bfe-4f9b-8e67-43b7a9d65751" : { 
-         "class" : "RestartBehaviorRequestNode", 
-         "desc" : { 
-            "x" : "-100779", 
-            "y" : "-98653"
-         }, 
-         "child" : [ 
-            "648e56c2-aa55-45a0-aa50-eb0535a3351f"
-         ], 
-         "objectName" : "Player"
-      }, 
-      "648e56c2-aa55-45a0-aa50-eb0535a3351f" : { 
-         "class" : "RestartBehaviorRequestNode", 
-         "desc" : { 
-            "x" : "-100778", 
-            "y" : "-98579"
-         }, 
-         "child" : [ 
-            "aeb4997f-f682-4843-b474-330fe3ff944b"
-         ], 
-         "objectName" : "$SELF$"
-      }, 
-      "aeb4997f-f682-4843-b474-330fe3ff944b" : { 
-         "class" : "DialogEndNode", 
-         "desc" : { 
-            "x" : "-100783", 
-            "y" : "-98496"
-         }, 
-         "child" : [ 
-         ], 
-         "skipButtonEnd" : "false", 
-         "dontMarkInHistory" : "false"
       }, 
       "3a13a314-8976-48d5-9f50-0faa100588b6" : { 
          "class" : "DialogAnswerNode", 
@@ -1125,18 +1261,6 @@
             "ed2fc0d7-61e0-4ae7-adeb-858a49b129ca"
          ], 
          "text" : "I, uh... <Scratches her head> Look, I wouldn't ask, but I kinda need someone's help."
-      }, 
-      "aa30d53b-1178-4c1d-ac46-2b16cf80eb63" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-101907", 
-            "y" : "-100770", 
-            "comment" : "GOTO A16"
-         }, 
-         "child" : [ 
-            "03a88883-6391-4701-a2eb-be4a7bdf5cf1"
-         ], 
-         "text" : "{End} Relax... Let's go."
       }
    }, 
    "entry" : "b245d076-b02a-4749-be17-85c54727b6cd"
