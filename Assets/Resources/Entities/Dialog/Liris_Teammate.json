@@ -375,7 +375,7 @@
          "child" : [ 
             "06c24f8c-a277-453f-8c89-188e3fdce5d9"
          ], 
-         "text" : ""
+         "text" : "Y-you really think my eyes are as pretty as this gem? That’s… that’s so sweet. My dad used to say nice little fibs like that… but this one feels real. It means a lot, $PLAYER.NAME$. You’re the best buddy a girl could wish for."
       }, 
       "06c24f8c-a277-453f-8c89-188e3fdce5d9" : { 
          "class" : "AddKeywordNode", 
@@ -501,7 +501,7 @@
          "child" : [ 
             "5e3d5860-83e8-40a1-95de-6c56b5b61b7c"
          ], 
-         "text" : ""
+         "text" : "Oh. My. Gods. You *really* didn't have to do that. Yet you did. <Liris tries the ring on, hardly breathing from the pleasant shock> And it fits too! Thank you so much... Nobody ever treated me like this."
       }, 
       "5e3d5860-83e8-40a1-95de-6c56b5b61b7c" : { 
          "class" : "AddKeywordNode", 
@@ -584,14 +584,14 @@
       "a741e51b-a8de-4a80-b635-e195bfa1b1be" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-103821", 
-            "y" : "-97365", 
+            "x" : "-103813", 
+            "y" : "-97408", 
             "comment" : "(A2) "
          }, 
          "child" : [ 
             "bb3b3596-99fa-4df1-a946-163ca8e15ca4"
          ], 
-         "text" : ""
+         "text" : "Aww, you really think my hair is beautiful? Thank you, thank you! <She runs the comb through her hair with a dreamy sigh> Mmm… cow bone. So fancy. You think of everything, don’t you, $PLAYER.NAME$?"
       }, 
       "bb3b3596-99fa-4df1-a946-163ca8e15ca4" : { 
          "class" : "AddKeywordNode", 
@@ -675,19 +675,41 @@
          "class" : "DialogPhraseNode", 
          "desc" : { 
             "x" : "-104687", 
-            "y" : "-97374", 
+            "y" : "-97387", 
+            "comment" : "(A2) "
+         }, 
+         "child" : [ 
+            "3b484094-a2fc-47b0-ac83-527ad2a2e66b"
+         ], 
+         "text" : "Are you kidding me? This thing is amazing! <Liris snatches the funnel cap> I've only seen these things in paintings, and here's one someone actually made! "
+      }, 
+      "3b484094-a2fc-47b0-ac83-527ad2a2e66b" : { 
+         "class" : "DialogContinueNode", 
+         "desc" : { 
+            "x" : "-104639", 
+            "y" : "-97147"
+         }, 
+         "child" : [ 
+            "bec3d74f-20a2-49b2-a4ca-c4ef8743990e"
+         ]
+      }, 
+      "bec3d74f-20a2-49b2-a4ca-c4ef8743990e" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-104702", 
+            "y" : "-97061", 
             "comment" : "(A2) "
          }, 
          "child" : [ 
             "05299723-c3a6-43a9-95be-b4e881b8e47f"
          ], 
-         "text" : ""
+         "text" : "Check this out. <She quickly puts the funnel cap on> Hurr-durr, I'm an alchemist, but truthfully I am but a quack and a fool, with my brain leaking out on account of me reading ancient lore all the time. Bwah-hah-hah! Hilarious. Thank you so much."
       }, 
       "05299723-c3a6-43a9-95be-b4e881b8e47f" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-104695", 
-            "y" : "-97230"
+            "x" : "-104714", 
+            "y" : "-96782"
          }, 
          "child" : [ 
             "a4f090d6-876b-4b63-89be-281053af4e55"
@@ -764,25 +786,116 @@
       "9593ab1f-c714-4531-ad11-a251629942a9" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-103365", 
-            "y" : "-97334", 
+            "x" : "-103385", 
+            "y" : "-97355", 
+            "comment" : "(A2) "
+         }, 
+         "child" : [ 
+            "974ef49d-1ad0-420f-9f84-a7f0c5395b22"
+         ], 
+         "text" : "<Seeing the seeds in your hand, Liris breathes a sigh of relief> Oh gods, I'm so happy you're open-minded about Spekateya. So many people think we seed-chewers are losers and fiends… In fact, I only use this stuff recreationally, and I can quit at any time... Yeah, really."
+      }, 
+      "974ef49d-1ad0-420f-9f84-a7f0c5395b22" : { 
+         "class" : "DialogContinueNode", 
+         "desc" : { 
+            "x" : "-103310", 
+            "y" : "-97105"
+         }, 
+         "child" : [ 
+            "d87a0b8f-13dd-45a2-91c2-0b7681cb0866"
+         ]
+      }, 
+      "d87a0b8f-13dd-45a2-91c2-0b7681cb0866" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-103356", 
+            "y" : "-97042", 
+            "comment" : "(A2) "
+         }, 
+         "child" : [ 
+            "18e19695-df47-4ae2-afde-43fe45050db0"
+         ], 
+         "text" : "In fact, the health risks, mental damage, and risk of addiction are incomparable with those of booze consumption, and yet the law says booze is great, while Spekateja chewing is an offense in some counties. Can you believe this bull-shite, $PLAYER.NAME$?"
+      }, 
+      "18e19695-df47-4ae2-afde-43fe45050db0" : { 
+         "class" : "DialogContinueNode", 
+         "desc" : { 
+            "x" : "-103325", 
+            "y" : "-96764"
+         }, 
+         "child" : [ 
+            "97dc715b-67db-4081-ba7f-295c6a60451f"
+         ]
+      }, 
+      "97dc715b-67db-4081-ba7f-295c6a60451f" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-103385", 
+            "y" : "-96715", 
+            "comment" : "(A2) "
+         }, 
+         "child" : [ 
+            "db071e6f-692d-4ce2-8c64-30b221cbb16e", 
+            "2f0ca312-eeec-41f6-a0be-f99a3ffdec6c", 
+            "9fc0b308-5fd5-4f6c-8f9a-4c3623a1ecac"
+         ], 
+         "text" : "Outlawing a natural herb while encouraging the drinking of stuff that makes you violent, sick, and dumb? Disgusting. Chewing helps me relax, encourages spirituality, makes everything look funny, lets me unwind, while keeping or even heightening my reflexes."
+      }, 
+      "db071e6f-692d-4ce2-8c64-30b221cbb16e" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-103642", 
+            "y" : "-96468"
+         }, 
+         "child" : [ 
+            "e027038e-1102-457c-bb53-f5c64f614e0c"
+         ], 
+         "text" : "{!} Preach, sister!"
+      }, 
+      "e027038e-1102-457c-bb53-f5c64f614e0c" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-103396", 
+            "y" : "-96344", 
             "comment" : "(A2) "
          }, 
          "child" : [ 
             "c0ecb371-688a-430c-9f57-7115768c5042"
          ], 
-         "text" : ""
+         "text" : "<She greedily throws a few seeds into her mouth, and keeps yammering while chewing> You know phwhat, $PLAYER.NAME$? We phshould campaign for phcomplete legalization of this stuff in Nova Drakonia when we have the time. Phfex phyeah, pffbaby! Ha... Haa-haa... Whee..."
       }, 
       "c0ecb371-688a-430c-9f57-7115768c5042" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-103373", 
-            "y" : "-97190"
+            "x" : "-103381", 
+            "y" : "-96049"
          }, 
          "child" : [ 
             "a4f090d6-876b-4b63-89be-281053af4e55"
          ], 
          "key" : "SPEKA"
+      }, 
+      "2f0ca312-eeec-41f6-a0be-f99a3ffdec6c" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-103382", 
+            "y" : "-96451"
+         }, 
+         "child" : [ 
+            "e027038e-1102-457c-bb53-f5c64f614e0c"
+         ], 
+         "text" : "{!} Uhh, sure thing, little buddy..."
+      }, 
+      "9fc0b308-5fd5-4f6c-8f9a-4c3623a1ecac" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-103142", 
+            "y" : "-96461"
+         }, 
+         "child" : [ 
+            "e027038e-1102-457c-bb53-f5c64f614e0c"
+         ], 
+         "text" : "{!} Whoa, Liris, I ain't touching this issue with a ten foot pole."
       }, 
       "4e6db4d9-b56b-4f1e-97bc-0c2142e0ca0c" : { 
          "class" : "InventoryHasItemNode", 
@@ -854,14 +967,14 @@
       "f0ae8323-dee1-4f44-9596-f9e2c40754c6" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-104261", 
-            "y" : "-97365", 
+            "x" : "-104332", 
+            "y" : "-97435", 
             "comment" : "(A2) "
          }, 
          "child" : [ 
             "070ca9e5-4d81-46e1-82fd-9645f4502506"
          ], 
-         "text" : ""
+         "text" : "<With a bashful smile, Liris quickly puts on the earring you gave her and spins in place, showing it off like a little twirling top, giggling all the while> I hope it looks cute on me, 'cause I’m never taking it off! Unless I get an infection, of course."
       }, 
       "070ca9e5-4d81-46e1-82fd-9645f4502506" : { 
          "class" : "AddKeywordNode", 
@@ -951,7 +1064,7 @@
          "child" : [ 
             "15206fe3-54f8-4c2b-b870-868b56e2f716"
          ], 
-         "text" : ""
+         "text" : "Ooooh, so sparkly and new! Don’t go staring at my feet now, you big ol’ sneak. <She pokes you in the chest in mock scolding, then quickly changes> Wow. I’ll wear them whenever I’m not off fighting beasties or tromping through the wilds. Thanks a whole bunch!"
       }, 
       "15206fe3-54f8-4c2b-b870-868b56e2f716" : { 
          "class" : "AddKeywordNode", 
@@ -1034,14 +1147,14 @@
       "9792bd7f-c7e8-488d-8e59-662ebd15d9b7" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-102092", 
+            "x" : "-102093", 
             "y" : "-97353", 
             "comment" : "(A2) "
          }, 
          "child" : [ 
             "75fe3ed9-74b1-4322-b1d9-07f4f5fa579b"
          ], 
-         "text" : ""
+         "text" : "Oh my gosh, that’s just the sweetest thing ever! <Liris gives you a warm hug, pressing her petite frame against you> How did you know I love turtles? Now I get to keep a tiny bit of one with me forever and ever and ever… Tee-hee~!"
       }, 
       "75fe3ed9-74b1-4322-b1d9-07f4f5fa579b" : { 
          "class" : "AddKeywordNode", 
@@ -1130,7 +1243,7 @@
          "child" : [ 
             "df1defff-7058-4650-ab12-96d2721ece9d"
          ], 
-         "text" : "Oh, $PLAYER.NAME$, is that a Pork Lad statue? I had one just like this as a girl! Thank you so much, I love it! I'm cuddling with it every night from now on, splinters be damned!"
+         "text" : "Oh, $PLAYER.NAME$, is that a Pork Lad statue? <She smooches the crude wooden effigy on the snout> I had one just like this as a girl! Thank you so much, I love it! I'm cuddling with it every night from now on, splinters be damned!"
       }, 
       "df1defff-7058-4650-ab12-96d2721ece9d" : { 
          "class" : "AddKeywordNode", 
