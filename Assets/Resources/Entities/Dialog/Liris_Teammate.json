@@ -108,14 +108,27 @@
       "6e3ecbaa-29a5-4ba3-9e32-5a560770ea80" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99672", 
-            "y" : "-100468", 
+            "x" : "-99690", 
+            "y" : "-100519", 
             "comment" : "(A0) \nRND"
          }, 
          "child" : [ 
+            "cdc6b2b1-3c8d-4813-ba43-70339307f423", 
             "d40882e4-3ce2-4c9e-9242-590abd2a2f9d"
          ], 
          "text" : "What is it, my brave leader?"
+      }, 
+      "cdc6b2b1-3c8d-4813-ba43-70339307f423" : { 
+         "class" : "PlaySoundNode", 
+         "desc" : { 
+            "x" : "-99894", 
+            "y" : "-100361"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "sound" : "Sounds/Voice/Liris/Liris_AT0", 
+         "mode" : "PlayOnCharacterVoice"
       }, 
       "d40882e4-3ce2-4c9e-9242-590abd2a2f9d" : { 
          "class" : "DummyNode", 
@@ -3776,9 +3789,22 @@
             "y" : "-100497"
          }, 
          "child" : [ 
+            "faf06071-598c-40dc-86ee-275bb58292c7", 
             "d40882e4-3ce2-4c9e-9242-590abd2a2f9d"
          ], 
          "text" : "<You startle Liris, as she is staring off into the distance> Oh! Yes, $PLAYER.NAME$?"
+      }, 
+      "faf06071-598c-40dc-86ee-275bb58292c7" : { 
+         "class" : "PlaySoundNode", 
+         "desc" : { 
+            "x" : "-99605", 
+            "y" : "-100309"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "sound" : "Sounds/Voice/Liris/Liris_AT1", 
+         "mode" : "PlayOnCharacterVoice"
       }, 
       "dacd7343-91d2-49f8-8644-117df0fd993d" : { 
          "class" : "DialogPhraseNode", 
@@ -3788,9 +3814,22 @@
             "comment" : "(A0) \nRND"
          }, 
          "child" : [ 
+            "09b7fc91-076f-48ef-8d57-e298234a88aa", 
             "d40882e4-3ce2-4c9e-9242-590abd2a2f9d"
          ], 
          "text" : "Oh, dad... What were you thinking? <Liris notices your stare> I'm sorry. I was just... No matter. Did you want something?"
+      }, 
+      "09b7fc91-076f-48ef-8d57-e298234a88aa" : { 
+         "class" : "PlaySoundNode", 
+         "desc" : { 
+            "x" : "-99151", 
+            "y" : "-100363"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "sound" : "Sounds/Voice/Liris/Liris_AT2", 
+         "mode" : "PlayOnCharacterVoice"
       }, 
       "6cb8395c-7742-41d0-b756-7a836d6198ff" : { 
          "class" : "MathCompareValuesNode", 
@@ -3815,9 +3854,22 @@
             "comment" : "(A0) \nRND"
          }, 
          "child" : [ 
+            "b4b31d25-f206-41c3-8af5-2b65a0d107c1", 
             "d40882e4-3ce2-4c9e-9242-590abd2a2f9d"
          ], 
          "text" : "Oh, hey! What's on your mind, $PLAYER.NAME$?"
+      }, 
+      "b4b31d25-f206-41c3-8af5-2b65a0d107c1" : { 
+         "class" : "PlaySoundNode", 
+         "desc" : { 
+            "x" : "-98812", 
+            "y" : "-100450"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "sound" : "Sounds/Voice/Liris/Liris_AT5", 
+         "mode" : "PlayOnCharacterVoice"
       }, 
       "0f589405-0878-42e8-a2e0-bdc82729d4d6" : { 
          "class" : "MathCompareValuesNode", 
@@ -3842,9 +3894,22 @@
             "comment" : "(A0) \nRND"
          }, 
          "child" : [ 
+            "735aab81-f8c9-4cbc-a084-bf5c45a6c873", 
             "d40882e4-3ce2-4c9e-9242-590abd2a2f9d"
          ], 
          "text" : "<Sensing you are about to talk to her, Liris smiles shyly> Yeah?"
+      }, 
+      "735aab81-f8c9-4cbc-a084-bf5c45a6c873" : { 
+         "class" : "PlaySoundNode", 
+         "desc" : { 
+            "x" : "-98487", 
+            "y" : "-100486"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "sound" : "Sounds/Voice/Liris/Liris_AT6", 
+         "mode" : "PlayOnCharacterVoice"
       }, 
       "376c597b-7b99-4234-8b60-94cc464bbd28" : { 
          "class" : "MathCompareValuesNode", 
@@ -3868,9 +3933,22 @@
             "comment" : "(A0) \nRND"
          }, 
          "child" : [ 
+            "1943cb83-9cd2-4c7a-a0a5-671cc33f19f1", 
             "d40882e4-3ce2-4c9e-9242-590abd2a2f9d"
          ], 
          "text" : "<Liris meets your eyes with a soft, lingering gaze—quiet, hopeful, and shimmering with something unspoken> $PLAYER.NAME$?"
+      }, 
+      "1943cb83-9cd2-4c7a-a0a5-671cc33f19f1" : { 
+         "class" : "PlaySoundNode", 
+         "desc" : { 
+            "x" : "-98176", 
+            "y" : "-100436"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "sound" : "Sounds/Voice/Liris/Liris_AT7", 
+         "mode" : "PlayOnCharacterVoice"
       }, 
       "a2035d8a-7c9e-4924-beea-79de066b4934" : { 
          "class" : "RemoveKeywordNode", 

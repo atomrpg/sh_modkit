@@ -90,12 +90,25 @@
             "historytag" : "A12"
          }, 
          "child" : [ 
+            "806ca3b3-810b-4077-910b-875189fdf19f", 
             "deaea92c-ad98-452b-a515-3a67231d9558", 
             "d067906a-00cf-4d8e-bfa9-54738562df58", 
             "4158056d-9367-4715-8f0a-003f8cd0fc18", 
             "6a5e1f86-bb7d-4a3f-abe9-e7dc93e9080b"
          ], 
          "text" : "<Liris looks at you, hurt plain beneath her disdain> Honestly? I don’t even know if I want to talk to you."
+      }, 
+      "806ca3b3-810b-4077-910b-875189fdf19f" : { 
+         "class" : "PlaySoundNode", 
+         "desc" : { 
+            "x" : "-101589", 
+            "y" : "-101325"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "sound" : "Sounds/Voice/Liris/Liris_A12_3", 
+         "mode" : "PlayOnCharacterVoice"
       }, 
       "deaea92c-ad98-452b-a515-3a67231d9558" : { 
          "class" : "DialogAnswerNode", 
@@ -472,11 +485,24 @@
             "historytag" : "A12"
          }, 
          "child" : [ 
+            "640fad7a-f385-4cff-a61f-3cd934c90a1a", 
             "0350d821-6489-41e4-a14a-5242cc054dc0", 
             "3a13a314-8976-48d5-9f50-0faa100588b6", 
             "224f1f98-873e-4814-a8e9-e840cc534d8e"
          ], 
          "text" : "<The young woman almost hugs you> You did it! I thought... well, never mind what I thought. Thank you."
+      }, 
+      "640fad7a-f385-4cff-a61f-3cd934c90a1a" : { 
+         "class" : "PlaySoundNode", 
+         "desc" : { 
+            "x" : "-101051", 
+            "y" : "-100757"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "sound" : "Sounds/Voice/Liris/Liris_A12_2", 
+         "mode" : "PlayOnCharacterVoice"
       }, 
       "0350d821-6489-41e4-a14a-5242cc054dc0" : { 
          "class" : "DialogAnswerNode", 
@@ -634,9 +660,22 @@
             "historytag" : "A12"
          }, 
          "child" : [ 
+            "f46c14ea-9ca2-4522-9d45-11de397d854e", 
             "2e0a15da-7c4c-49d8-a8ca-3058c75b9bc9"
          ], 
          "text" : "Hey, I saw you beat them up... But where's the stone? That's all I asked for... <She pouts>"
+      }, 
+      "f46c14ea-9ca2-4522-9d45-11de397d854e" : { 
+         "class" : "PlaySoundNode", 
+         "desc" : { 
+            "x" : "-100614", 
+            "y" : "-101055"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "sound" : "Sounds/Voice/Liris/Liris_A12_1", 
+         "mode" : "PlayOnCharacterVoice"
       }, 
       "2e0a15da-7c4c-49d8-a8ca-3058c75b9bc9" : { 
          "class" : "DialogAnswerNode", 
@@ -664,15 +703,28 @@
       "7379fac9-bb5d-4e20-9859-d1d84db94589" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99983", 
-            "y" : "-101170", 
+            "x" : "-100006", 
+            "y" : "-101274", 
             "comment" : "(A12) ", 
             "historytag" : "A12"
          }, 
          "child" : [ 
+            "f606d784-b0ca-4edd-b360-507c4b15d095", 
             "74b28968-0185-48be-8a31-f4a01725d8f0"
          ], 
          "text" : "<The young woman looks at you with hope, her eyes naked with longing>"
+      }, 
+      "f606d784-b0ca-4edd-b360-507c4b15d095" : { 
+         "class" : "PlaySoundNode", 
+         "desc" : { 
+            "x" : "-100188", 
+            "y" : "-101105"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "sound" : "Sounds/Voice/Liris/Liris_A12_0", 
+         "mode" : "PlayOnCharacterVoice"
       }, 
       "74b28968-0185-48be-8a31-f4a01725d8f0" : { 
          "class" : "DialogAnswerNode", 
@@ -731,12 +783,25 @@
             "historytag" : "A0"
          }, 
          "child" : [ 
+            "03405f71-dc8d-495f-b865-182d87047916", 
             "061c78a6-70f8-446c-ab91-71541eb0caa1", 
             "68739158-8157-4280-bbb0-c798a4da4873", 
             "5d28480b-bafe-44b3-b2b5-a3a2d0c12637", 
             "9efc1e4d-1f0b-4c1b-8a14-a50955130ed2"
          ], 
          "text" : "<A young woman looks at you with a small, almost guilty smile> Heya. Don't mind the mess—it used to be home. Mine, actually."
+      }, 
+      "03405f71-dc8d-495f-b865-182d87047916" : { 
+         "class" : "PlaySoundNode", 
+         "desc" : { 
+            "x" : "-99144", 
+            "y" : "-101243"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "sound" : "Sounds/Voice/Liris/Liris_A0", 
+         "mode" : "PlayOnCharacterVoice"
       }, 
       "061c78a6-70f8-446c-ab91-71541eb0caa1" : { 
          "class" : "DialogAnswerNode", 
