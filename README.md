@@ -11,3 +11,6 @@
 
 ### Mod list:
 [Steam Workshop](https://steamcommunity.com/app/2108180/workshop)
+
+### Example Asset Source:
+[Spartan Warrior - Game Ready Character (Free on CGTrader)](https://www.cgtrader.com/free-3d-models/character/man/spartan-warrior-gameready-character)
