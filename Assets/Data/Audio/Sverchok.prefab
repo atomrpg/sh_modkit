@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4583812787370220242}
   - component: {fileID: 6924750999444586832}
   - component: {fileID: 1144527477989845065}
+  - component: {fileID: 8038085152109451679}
   m_Layer: 0
   m_Name: Sverchok
   m_TagString: Untagged
@@ -42,8 +43,7 @@ AudioSource:
   m_GameObject: {fileID: 709513354857946877}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 864751132553537173, guid: 71e249522b5d34b12af6de74c57421bd,
-    type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.07
@@ -140,3 +140,19 @@ AudioHighPassFilter:
   m_Enabled: 1
   m_CutoffFrequency: 837
   m_HighpassResonanceQ: 1
+--- !u!114 &8038085152109451679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709513354857946877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1136107827, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 6924750999444586832}
+  audioGroup: 5
+  audioClip:
+    path: Sounds/SFX/Terrain/sverchok

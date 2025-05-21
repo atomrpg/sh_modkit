@@ -475,6 +475,63 @@
       }
    }, 
    { 
+      "class" : "Interactive", 
+      "active" : "true", 
+      "proto" : "CampFire", 
+      "name" : "CampFire", 
+      "transform" : { 
+         "pos" : [ 
+            "90.74", 
+            "0.655", 
+            "68.28"
+         ], 
+         "rot" : [ 
+            "0", 
+            "117.8815", 
+            "0"
+         ], 
+         "scale" : [ 
+            "1", 
+            "1", 
+            "1"
+         ]
+      }, 
+      "origin" : { 
+         "levelId" : "test_scene", 
+         "modName" : "Test_Mod"
+      }
+   }, 
+   { 
+      "class" : "Interactive", 
+      "active" : "true", 
+      "proto" : "FishingSet_interactive2", 
+      "keywords" : { 
+         "LITE_VERSION" : "1"
+      }, 
+      "name" : "Fishing", 
+      "transform" : { 
+         "pos" : [ 
+            "66.43", 
+            "1.168", 
+            "47.737"
+         ], 
+         "rot" : [ 
+            "0", 
+            "117.8815", 
+            "0"
+         ], 
+         "scale" : [ 
+            "1", 
+            "1", 
+            "1"
+         ]
+      }, 
+      "origin" : { 
+         "levelId" : "test_scene", 
+         "modName" : "Test_Mod"
+      }
+   }, 
+   { 
       "class" : "Chest", 
       "active" : "true", 
       "proto" : "CrateWood_4", 

@@ -12,6 +12,8 @@
          "Bandit_PatrolWalker_2", 
          "Bandit_Boss", 
          "Bandit_Bossbodyguard", 
+         "CampFire", 
+         "Fishing", 
          "TestChest", 
          "Liris"
       ], 
