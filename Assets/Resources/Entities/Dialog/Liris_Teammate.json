@@ -2123,7 +2123,7 @@
          "child" : [ 
             "c359f34a-abb2-465d-a4e3-f9e6a6cf60cf"
          ], 
-         "text" : "You’re way too down-to-earth for all this stargazing fluff—I can totally tell. But you still brought me here. Thank you, $PLAYER.NAME… <Liris smiles warmly and gives your hand a gentle squeeze>", 
+         "text" : "You’re way too down-to-earth for all this stargazing fluff—I can totally tell. But you still brought me here. Thank you, $PLAYER.NAME$… <Liris smiles warmly and gives your hand a gentle squeeze>", 
          "randomAnswersOrderForThis" : "true"
       }, 
       "c359f34a-abb2-465d-a4e3-f9e6a6cf60cf" : { 
@@ -2673,7 +2673,7 @@
             "4585a5e5-3919-43e2-a004-cf6fe5518eef", 
             "dc6814d5-d006-42af-9c51-d290959506fb"
          ], 
-         "text" : "when my mom… got hurt in a deal gone bad… he quit trading. Said he’d use what he had to track down the rest—hide ‘em, break ‘em, whatever it took. Pulled me into it too. We worked together, until one day… he just didn’t show up at the meeting place. That’s my tale. I swear, that’s all."
+         "text" : "When my mom… got hurt in a deal gone bad… he quit trading. Said he’d use what he had to track down the rest—hide ‘em, break ‘em, whatever it took. Pulled me into it too. We worked together, until one day… he just didn’t show up at the meeting place. That’s my tale. I swear, that’s all."
       }, 
       "c7d03fa5-62c3-446d-bb60-34486ffabda1" : { 
          "class" : "DialogAnswerNode", 
