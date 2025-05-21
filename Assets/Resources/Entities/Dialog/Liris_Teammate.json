@@ -81,8 +81,8 @@
       "c6ddd9de-40cd-49ab-9c14-e08d95076f17" : { 
          "class" : "MathCompareValuesNode", 
          "desc" : { 
-            "x" : "-99404", 
-            "y" : "-100781"
+            "x" : "-99106", 
+            "y" : "-100763"
          }, 
          "child" : [ 
             "d7d0320c-b51b-4d92-987e-41d80a672930", 
@@ -395,24 +395,11 @@
             "y" : "-96899"
          }, 
          "child" : [ 
-            "6a0f3dcd-68a7-4575-916a-3716d4bec27c"
+            "6b1df620-e268-4d0b-baa3-37de1c5314c2"
          ], 
          "key" : "GIFT", 
          "value" : "1", 
          "opp" : "Add"
-      }, 
-      "6a0f3dcd-68a7-4575-916a-3716d4bec27c" : { 
-         "class" : "AddExpNode", 
-         "desc" : { 
-            "x" : "-104290", 
-            "y" : "-96742"
-         }, 
-         "child" : [ 
-            "6b1df620-e268-4d0b-baa3-37de1c5314c2"
-         ], 
-         "objectName" : "Player", 
-         "exp" : "69", 
-         "ignoreIntellect" : "true"
       }, 
       "6b1df620-e268-4d0b-baa3-37de1c5314c2" : { 
          "class" : "DummyNode", 
@@ -1837,25 +1824,26 @@
       "4eff4eb0-4c60-4f30-833d-40b6bdf32235" : { 
          "class" : "MathKeyValueNode", 
          "desc" : { 
-            "x" : "-98862", 
-            "y" : "-97315"
+            "x" : "-98373", 
+            "y" : "-96751"
          }, 
          "child" : [ 
-            "cc8763fd-23fc-4de6-8d23-7c462544b21f"
+            "805c1cc3-3490-45ed-9270-d6d2032300a8"
          ], 
          "key" : "LOVE", 
          "value" : "1", 
          "opp" : "Add"
       }, 
-      "cc8763fd-23fc-4de6-8d23-7c462544b21f" : { 
-         "class" : "DummyNode", 
+      "805c1cc3-3490-45ed-9270-d6d2032300a8" : { 
+         "class" : "DialogEndNode", 
          "desc" : { 
-            "x" : "-99709", 
-            "y" : "-97039"
+            "x" : "-98361", 
+            "y" : "-96499"
          }, 
          "child" : [ 
-            "6b1df620-e268-4d0b-baa3-37de1c5314c2"
-         ]
+         ], 
+         "skipButtonEnd" : "true", 
+         "dontMarkInHistory" : "false"
       }, 
       "e2c9f8d6-4ac7-4ebf-8850-d573ea95fba7" : { 
          "class" : "DialogAnswerNode", 
@@ -1893,8 +1881,8 @@
       "f05cafd6-3d9e-456a-9c10-d756c45f876e" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100236", 
-            "y" : "-97576"
+            "x" : "-100197", 
+            "y" : "-97547"
          }, 
          "child" : [ 
             "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
@@ -1919,13 +1907,57 @@
       "fbd0613a-c99e-469a-afdc-f59c788f6186" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99836", 
-            "y" : "-97854"
+            "x" : "-99953", 
+            "y" : "-97766"
+         }, 
+         "child" : [ 
+            "91a5fda3-e7fe-45bd-97cf-f15515dc0ec0"
+         ], 
+         "text" : "<Liris nods slowly, and the two of you spend the next hour chatting about her life before she met you. She’s not exactly guarded—in fact, you learn all sorts of little things, like how green and red are her favorite colors, and how much she adores chewing seeds—but somehow, the conversation never quite drifts toward the eldritch stone or her family>"
+      }, 
+      "91a5fda3-e7fe-45bd-97cf-f15515dc0ec0" : { 
+         "class" : "DialogContinueNode", 
+         "desc" : { 
+            "x" : "-99911", 
+            "y" : "-97490"
+         }, 
+         "child" : [ 
+            "e7f87d2b-c00f-4994-8d31-3034f9f02d3c"
+         ]
+      }, 
+      "e7f87d2b-c00f-4994-8d31-3034f9f02d3c" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99967", 
+            "y" : "-97444"
+         }, 
+         "child" : [ 
+            "e109ef7e-8c42-444d-a861-a40aac276fb5"
+         ], 
+         "text" : "<At first, the chat seems natural. But little by little, you begin to notice it: she’s gently guiding the flow, like a leaf floating down a stream, steering around anything she’d rather not share. Even so, it still feels like you’re growing closer—like you’ve been let a little deeper into her curious world>"
+      }, 
+      "e109ef7e-8c42-444d-a861-a40aac276fb5" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-100017", 
+            "y" : "-97144"
+         }, 
+         "child" : [ 
+            "ff2c5dde-7829-4791-bb05-9785ab6b943e"
+         ], 
+         "text" : "{End} <Get back to what you were doing>"
+      }, 
+      "ff2c5dde-7829-4791-bb05-9785ab6b943e" : { 
+         "class" : "ScrollTimeNode", 
+         "desc" : { 
+            "x" : "-100033", 
+            "y" : "-97032"
          }, 
          "child" : [ 
             "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
          ], 
-         "text" : "Our love is 2."
+         "time" : "3", 
+         "timeMode" : "Hour"
       }, 
       "1ec1c25c-4639-4d38-9f09-6b4b1ff01904" : { 
          "class" : "MathCompareValuesNode", 
@@ -1945,13 +1977,34 @@
       "13294d36-49e5-48f8-bdce-04a534674a36" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99615", 
-            "y" : "-97894"
+            "x" : "-99740", 
+            "y" : "-97801"
          }, 
          "child" : [ 
-            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
+            "96910e9c-dff4-47a4-aa1b-26838ca97b84"
          ], 
-         "text" : "3"
+         "text" : "<This time, Liris takes you on a little stroll to admire the local plant life. Flowers are sniffed, butterflies are chased, and pebbles are skipped across the water, all to the tune of her bright, bubbly giggles>"
+      }, 
+      "96910e9c-dff4-47a4-aa1b-26838ca97b84" : { 
+         "class" : "DialogContinueNode", 
+         "desc" : { 
+            "x" : "-99729", 
+            "y" : "-97574"
+         }, 
+         "child" : [ 
+            "5fd69fa7-6a1d-4f7e-a574-bb7bd7dc077e"
+         ]
+      }, 
+      "5fd69fa7-6a1d-4f7e-a574-bb7bd7dc077e" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99744", 
+            "y" : "-97478"
+         }, 
+         "child" : [ 
+            "e109ef7e-8c42-444d-a861-a40aac276fb5"
+         ], 
+         "text" : "Whew! That was so much fun, $PLAYER.NAME$. It's nice to have a teeny break from all that endless trudging. We should totally do this again sometime… <She winks with a grin, then cheerfully returns to her usual companion duties—lugging your loot and keeping a sharp eye out for trouble>"
       }, 
       "26f9ecd0-e265-4b36-adff-4c000d3a726a" : { 
          "class" : "MathCompareValuesNode", 
@@ -1971,13 +2024,219 @@
       "ed8e97bf-928a-49ff-a5fa-c45ab76441c0" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99368", 
-            "y" : "-97898"
+            "x" : "-99424", 
+            "y" : "-97906"
          }, 
          "child" : [ 
-            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
+            "c7aab110-b270-4d7f-b436-e360152d894f", 
+            "7e4a7cdd-ce3d-478f-a062-11b509b2db51"
          ], 
-         "text" : "4"
+         "text" : "Wanna sneak off again? <Liris winks, biting her lower lip> If that's the case, I wanna see the starry sky."
+      }, 
+      "c7aab110-b270-4d7f-b436-e360152d894f" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99512", 
+            "y" : "-97727"
+         }, 
+         "child" : [ 
+            "ad871015-dde6-4c31-a863-460e55c0572e"
+         ], 
+         "text" : "{!} Can't afford that right now, Liris. You know we can't."
+      }, 
+      "ad871015-dde6-4c31-a863-460e55c0572e" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99509", 
+            "y" : "-97616"
+         }, 
+         "child" : [ 
+            "805c1cc3-3490-45ed-9270-d6d2032300a8"
+         ], 
+         "text" : "Boooring! Alright... Maybe next time."
+      }, 
+      "7e4a7cdd-ce3d-478f-a062-11b509b2db51" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99279", 
+            "y" : "-97730"
+         }, 
+         "child" : [ 
+            "eff3ce94-7a27-4b65-b9bd-6c704d933ab8"
+         ], 
+         "text" : "{!} It's a date!"
+      }, 
+      "eff3ce94-7a27-4b65-b9bd-6c704d933ab8" : { 
+         "class" : "ScrollToMidnightTimeNode", 
+         "desc" : { 
+            "x" : "-99276", 
+            "y" : "-97616"
+         }, 
+         "child" : [ 
+            "616fedd5-a30b-4774-8c83-653dadddc3a4"
+         ]
+      }, 
+      "616fedd5-a30b-4774-8c83-653dadddc3a4" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99276", 
+            "y" : "-97532"
+         }, 
+         "child" : [ 
+            "7c2f490a-5b58-4037-8f39-18fffcbeacfe", 
+            "53fed61b-9cce-4ae6-be8f-740934924224", 
+            "10b6ef51-b076-4910-abb4-1ccb2733d61b", 
+            "f5bc1540-88fb-42ca-b5a6-86c3a020bd4d", 
+            "af9bf0d5-4aee-42ab-8647-8dccea7a563a"
+         ], 
+         "text" : "<You set aside your current quest and sneak off to watch the stars—a rare guilty pleasure in the life of a busy adventurer. As soon as Liris spreads her cloak over the grass and the two of you settle in, eyes turned skyward, she starts naming constellations one by one, like she's introducing old friends>", 
+         "randomAnswersOrderForThis" : "true"
+      }, 
+      "7c2f490a-5b58-4037-8f39-18fffcbeacfe" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99470", 
+            "y" : "-97263"
+         }, 
+         "child" : [ 
+            "cb1e8e44-c937-4cde-bf30-46151fa32b89"
+         ], 
+         "text" : "{..} <Yawn> It's getting late."
+      }, 
+      "cb1e8e44-c937-4cde-bf30-46151fa32b89" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99505", 
+            "y" : "-97132"
+         }, 
+         "child" : [ 
+            "c359f34a-abb2-465d-a4e3-f9e6a6cf60cf"
+         ], 
+         "text" : "You’re way too down-to-earth for all this stargazing fluff—I can totally tell. But you still brought me here. Thank you, $PLAYER.NAME… <Liris smiles warmly and gives your hand a gentle squeeze>", 
+         "randomAnswersOrderForThis" : "true"
+      }, 
+      "c359f34a-abb2-465d-a4e3-f9e6a6cf60cf" : { 
+         "class" : "DialogContinueNode", 
+         "desc" : { 
+            "x" : "-98502", 
+            "y" : "-96896"
+         }, 
+         "child" : [ 
+            "7de63807-a688-44eb-85cf-3cd4036596b6"
+         ]
+      }, 
+      "7de63807-a688-44eb-85cf-3cd4036596b6" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-98656", 
+            "y" : "-96799"
+         }, 
+         "child" : [ 
+            "e109ef7e-8c42-444d-a861-a40aac276fb5"
+         ], 
+         "text" : "But hey, enough of that nonsense. Let’s head back, $PLAYER.NAME$. <She stands, brushing off her cloak, looking for a moment like she’s just woken from a bittersweet dream>", 
+         "randomAnswersOrderForThis" : "true"
+      }, 
+      "53fed61b-9cce-4ae6-be8f-740934924224" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99232", 
+            "y" : "-97262"
+         }, 
+         "child" : [ 
+            "a619acc4-3e90-414e-970d-02c91f58a345"
+         ], 
+         "text" : "{?} What's the bull-shaped one?"
+      }, 
+      "a619acc4-3e90-414e-970d-02c91f58a345" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99238", 
+            "y" : "-97136"
+         }, 
+         "child" : [ 
+            "7c2f490a-5b58-4037-8f39-18fffcbeacfe", 
+            "10b6ef51-b076-4910-abb4-1ccb2733d61b", 
+            "f5bc1540-88fb-42ca-b5a6-86c3a020bd4d", 
+            "af9bf0d5-4aee-42ab-8647-8dccea7a563a"
+         ], 
+         "text" : "This one’s called Aurox. See that tiny yellow dot, right where its eye would be? <She pauses, then speaks the name like it carries weight> Carcossa. The Xantous Abyss. That’s where folks who mess up in the Court of the Dragon get tossed for a deep cleanse, before they get reborn—usually as crabs or worms. Ew, right?", 
+         "randomAnswersOrderForThis" : "true"
+      }, 
+      "10b6ef51-b076-4910-abb4-1ccb2733d61b" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99001", 
+            "y" : "-97262"
+         }, 
+         "child" : [ 
+            "e53041e7-03ed-4485-8655-ff1a6c8a3927"
+         ], 
+         "text" : "{?} What are these four bright ones that form like a rhombus?"
+      }, 
+      "e53041e7-03ed-4485-8655-ff1a6c8a3927" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-98999", 
+            "y" : "-97118"
+         }, 
+         "child" : [ 
+            "53fed61b-9cce-4ae6-be8f-740934924224", 
+            "7c2f490a-5b58-4037-8f39-18fffcbeacfe", 
+            "f5bc1540-88fb-42ca-b5a6-86c3a020bd4d", 
+            "af9bf0d5-4aee-42ab-8647-8dccea7a563a"
+         ], 
+         "text" : "Wait—you're telling me you don’t know about the Sister Stars? Cuz these are the Sister Stars, you big dummy! Witches and magi are always asking them for advice and secrets. Some folks say they’re not even stars at all… but let’s not go poking into that whole mess. Not tonight. Maybe not ever.", 
+         "randomAnswersOrderForThis" : "true"
+      }, 
+      "f5bc1540-88fb-42ca-b5a6-86c3a020bd4d" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98770", 
+            "y" : "-97262"
+         }, 
+         "child" : [ 
+            "f3518e88-d14b-49d5-b666-05bd46f734af"
+         ], 
+         "text" : "{?} What's the lonely red star over there?"
+      }, 
+      "f3518e88-d14b-49d5-b666-05bd46f734af" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-98769", 
+            "y" : "-97130"
+         }, 
+         "child" : [ 
+            "10b6ef51-b076-4910-abb4-1ccb2733d61b", 
+            "7c2f490a-5b58-4037-8f39-18fffcbeacfe", 
+            "53fed61b-9cce-4ae6-be8f-740934924224", 
+            "af9bf0d5-4aee-42ab-8647-8dccea7a563a"
+         ], 
+         "text" : "Oh, that’s not a star. It’s a flying ship from another world, packed with spooky people spying on us. Pfft—kidding! <Her sudden giggle startles you a little> It’s just a comet. A big ol’ rock zipping through space. Nothing to worry about. Unless it, y’know, crashes into us someday.", 
+         "randomAnswersOrderForThis" : "true"
+      }, 
+      "af9bf0d5-4aee-42ab-8647-8dccea7a563a" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98534", 
+            "y" : "-97266"
+         }, 
+         "child" : [ 
+            "b3e08a62-5143-4265-b29e-7525e7f1688d"
+         ], 
+         "text" : "{?} How do you know so much?"
+      }, 
+      "b3e08a62-5143-4265-b29e-7525e7f1688d" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-98540", 
+            "y" : "-97129"
+         }, 
+         "child" : [ 
+            "c359f34a-abb2-465d-a4e3-f9e6a6cf60cf"
+         ], 
+         "text" : "Mom taught me all this stuff. When I was little, we didn’t have much to call our own. No sparkly jewels, no gold or pearls. But we had the road beneath our feet and the stars overhead. <Liris smiles, a soft glimmer of nostalgia in her eyes as she gazes into the velvet abyss above>", 
+         "randomAnswersOrderForThis" : "true"
       }, 
       "8b514c58-f90e-4cee-a532-d263a26997f7" : { 
          "class" : "MathCompareValuesNode", 
@@ -2001,7 +2260,6 @@
             "y" : "-97896"
          }, 
          "child" : [ 
-            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
          ], 
          "text" : "5"
       }, 
@@ -2144,6 +2402,16 @@
             "cc8763fd-23fc-4de6-8d23-7c462544b21f"
          ], 
          "text" : "What's there to say, $PLAYER.NAME$? You already know everything I allowed myself to trust you with. $LOVE$ = love $GIFT$ = figft"
+      }, 
+      "cc8763fd-23fc-4de6-8d23-7c462544b21f" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-100544", 
+            "y" : "-97137"
+         }, 
+         "child" : [ 
+            "6b1df620-e268-4d0b-baa3-37de1c5314c2"
+         ]
       }, 
       "24015e12-7edb-4465-aa76-a422b2e0592f" : { 
          "class" : "DialogPhraseNode", 
@@ -2783,8 +3051,8 @@
       "5ba5e67c-c1bb-4746-b7d2-eab55ec95ba8" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99382", 
-            "y" : "-100508"
+            "x" : "-99421", 
+            "y" : "-100497"
          }, 
          "child" : [ 
             "d40882e4-3ce2-4c9e-9242-590abd2a2f9d"
