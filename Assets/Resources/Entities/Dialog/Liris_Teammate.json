@@ -128,7 +128,7 @@
          ], 
          "objectName" : "$SELF$", 
          "sound" : "Sounds/Voice/Liris/Liris_AT0", 
-         "mode" : "PlayOnCharacterVoice"
+         "mode" : "PlayOnCharacterVoiceWhoop"
       }, 
       "d40882e4-3ce2-4c9e-9242-590abd2a2f9d" : { 
          "class" : "DummyNode", 
@@ -3533,7 +3533,7 @@
             "63486488-2357-4c33-b3aa-e8f756007926"
          ], 
          "value1" : "$_OBJECT_LOCATION_NAME$", 
-         "value2" : "Coast_Village_", 
+         "value2" : "Coast_Village", 
          "opp" : "StartsWith"
       }, 
       "6d80f808-1574-45a9-9309-f13369ab7469" : { 
@@ -3804,7 +3804,7 @@
          ], 
          "objectName" : "$SELF$", 
          "sound" : "Sounds/Voice/Liris/Liris_AT1", 
-         "mode" : "PlayOnCharacterVoice"
+         "mode" : "PlayOnCharacterVoiceWhoop"
       }, 
       "dacd7343-91d2-49f8-8644-117df0fd993d" : { 
          "class" : "DialogPhraseNode", 
@@ -3829,7 +3829,7 @@
          ], 
          "objectName" : "$SELF$", 
          "sound" : "Sounds/Voice/Liris/Liris_AT2", 
-         "mode" : "PlayOnCharacterVoice"
+         "mode" : "PlayOnCharacterVoiceWhoop"
       }, 
       "6cb8395c-7742-41d0-b756-7a836d6198ff" : { 
          "class" : "MathCompareValuesNode", 
@@ -3869,7 +3869,7 @@
          ], 
          "objectName" : "$SELF$", 
          "sound" : "Sounds/Voice/Liris/Liris_AT5", 
-         "mode" : "PlayOnCharacterVoice"
+         "mode" : "PlayOnCharacterVoiceWhoop"
       }, 
       "0f589405-0878-42e8-a2e0-bdc82729d4d6" : { 
          "class" : "MathCompareValuesNode", 
@@ -3909,7 +3909,7 @@
          ], 
          "objectName" : "$SELF$", 
          "sound" : "Sounds/Voice/Liris/Liris_AT6", 
-         "mode" : "PlayOnCharacterVoice"
+         "mode" : "PlayOnCharacterVoiceWhoop"
       }, 
       "376c597b-7b99-4234-8b60-94cc464bbd28" : { 
          "class" : "MathCompareValuesNode", 
@@ -3948,7 +3948,7 @@
          ], 
          "objectName" : "$SELF$", 
          "sound" : "Sounds/Voice/Liris/Liris_AT7", 
-         "mode" : "PlayOnCharacterVoice"
+         "mode" : "PlayOnCharacterVoiceWhoop"
       }, 
       "a2035d8a-7c9e-4924-beea-79de066b4934" : { 
          "class" : "RemoveKeywordNode", 

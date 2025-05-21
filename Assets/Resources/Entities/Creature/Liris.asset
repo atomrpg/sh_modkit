@@ -55,7 +55,8 @@ MonoBehaviour:
     path: Prefabs/VFX/Blood_Splash_1
   BloodBlobScale: 1
   bloodType: 0
-  RagdollSetup: {fileID: 4900000, guid: 5816a220fe8f0ba4ca9506fe2979119d, type: 3}
+  RagdollSetup:
+    path: Models/Characters/Male/Ragdoll/Male8
   Unarmed:
     path: Entities/Weapon/Punch
   Potion:
@@ -80,7 +81,7 @@ MonoBehaviour:
     path: Models/Characters/Male/MaleAnimTree_Ranged
   Mutables:
     Armored:
-      path: Entities/Creature/BaseMale11_3_2
+      path: 
     Unarmored:
       path: 
   Abilities: 2

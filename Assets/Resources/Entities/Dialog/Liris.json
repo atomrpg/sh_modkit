@@ -108,7 +108,7 @@
          ], 
          "objectName" : "$SELF$", 
          "sound" : "Sounds/Voice/Liris/Liris_A12_3", 
-         "mode" : "PlayOnCharacterVoice"
+         "mode" : "PlayOnCharacterVoiceWhoop"
       }, 
       "deaea92c-ad98-452b-a515-3a67231d9558" : { 
          "class" : "DialogAnswerNode", 
@@ -502,7 +502,7 @@
          ], 
          "objectName" : "$SELF$", 
          "sound" : "Sounds/Voice/Liris/Liris_A12_2", 
-         "mode" : "PlayOnCharacterVoice"
+         "mode" : "PlayOnCharacterVoiceWhoop"
       }, 
       "0350d821-6489-41e4-a14a-5242cc054dc0" : { 
          "class" : "DialogAnswerNode", 
@@ -675,7 +675,7 @@
          ], 
          "objectName" : "$SELF$", 
          "sound" : "Sounds/Voice/Liris/Liris_A12_1", 
-         "mode" : "PlayOnCharacterVoice"
+         "mode" : "PlayOnCharacterVoiceWhoop"
       }, 
       "2e0a15da-7c4c-49d8-a8ca-3058c75b9bc9" : { 
          "class" : "DialogAnswerNode", 
@@ -724,7 +724,7 @@
          ], 
          "objectName" : "$SELF$", 
          "sound" : "Sounds/Voice/Liris/Liris_A12_0", 
-         "mode" : "PlayOnCharacterVoice"
+         "mode" : "PlayOnCharacterVoiceWhoop"
       }, 
       "74b28968-0185-48be-8a31-f4a01725d8f0" : { 
          "class" : "DialogAnswerNode", 
@@ -801,7 +801,7 @@
          ], 
          "objectName" : "$SELF$", 
          "sound" : "Sounds/Voice/Liris/Liris_A0", 
-         "mode" : "PlayOnCharacterVoice"
+         "mode" : "PlayOnCharacterVoiceWhoop"
       }, 
       "061c78a6-70f8-446c-ab91-71541eb0caa1" : { 
          "class" : "DialogAnswerNode", 
