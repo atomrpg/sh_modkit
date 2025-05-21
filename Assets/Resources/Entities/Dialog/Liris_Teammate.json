@@ -1454,8 +1454,8 @@
       "d7ab5171-c742-42c9-b223-14854d07dc7d" : { 
          "class" : "DialogEndNode", 
          "desc" : { 
-            "x" : "-99204", 
-            "y" : "-98992"
+            "x" : "-97373", 
+            "y" : "-96253"
          }, 
          "child" : [ 
             "a25c6bda-f1ae-4eb2-951e-b893602528a2"
@@ -1466,8 +1466,8 @@
       "a25c6bda-f1ae-4eb2-951e-b893602528a2" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-99197", 
-            "y" : "-98877"
+            "x" : "-97347", 
+            "y" : "-96132"
          }, 
          "child" : [ 
             "d7a2b027-9511-45b1-b3af-491f8e3649b6"
@@ -1477,8 +1477,8 @@
       "d7a2b027-9511-45b1-b3af-491f8e3649b6" : { 
          "class" : "RestartBehaviorRequestNode", 
          "desc" : { 
-            "x" : "-99196", 
-            "y" : "-98771"
+            "x" : "-97347", 
+            "y" : "-96026"
          }, 
          "child" : [ 
          ], 
@@ -1813,19 +1813,42 @@
       "753a7026-bad9-42e6-b036-8a627e49a269" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100752", 
-            "y" : "-97567"
+            "x" : "-100904", 
+            "y" : "-97314"
+         }, 
+         "child" : [ 
+            "e109ef7e-8c42-444d-a861-a40aac276fb5"
+         ], 
+         "text" : "That's good. I don't wanna be dead weight, you know?"
+      }, 
+      "e109ef7e-8c42-444d-a861-a40aac276fb5" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-100039", 
+            "y" : "-97135"
+         }, 
+         "child" : [ 
+            "ff2c5dde-7829-4791-bb05-9785ab6b943e"
+         ], 
+         "text" : "{End} <Get back to what you were doing>"
+      }, 
+      "ff2c5dde-7829-4791-bb05-9785ab6b943e" : { 
+         "class" : "ScrollTimeNode", 
+         "desc" : { 
+            "x" : "-100033", 
+            "y" : "-97032"
          }, 
          "child" : [ 
             "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
          ], 
-         "text" : "That's good. I don't wanna be dead weight, you know?"
+         "time" : "3", 
+         "timeMode" : "Hour"
       }, 
       "4eff4eb0-4c60-4f30-833d-40b6bdf32235" : { 
          "class" : "MathKeyValueNode", 
          "desc" : { 
-            "x" : "-98373", 
-            "y" : "-96751"
+            "x" : "-98400", 
+            "y" : "-96767"
          }, 
          "child" : [ 
             "805c1cc3-3490-45ed-9270-d6d2032300a8"
@@ -1837,8 +1860,8 @@
       "805c1cc3-3490-45ed-9270-d6d2032300a8" : { 
          "class" : "DialogEndNode", 
          "desc" : { 
-            "x" : "-98361", 
-            "y" : "-96499"
+            "x" : "-98529", 
+            "y" : "-96417"
          }, 
          "child" : [ 
          ], 
@@ -1859,11 +1882,11 @@
       "b601c185-71b1-49bb-aa81-98f3ca060496" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100491", 
-            "y" : "-97571"
+            "x" : "-100679", 
+            "y" : "-97327"
          }, 
          "child" : [ 
-            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
+            "e109ef7e-8c42-444d-a861-a40aac276fb5"
          ], 
          "text" : "You're just saying that! <Liris giggles, but still appreciates your kind words>"
       }, 
@@ -1881,11 +1904,11 @@
       "f05cafd6-3d9e-456a-9c10-d756c45f876e" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100197", 
-            "y" : "-97547"
+            "x" : "-100449", 
+            "y" : "-97362"
          }, 
          "child" : [ 
-            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
+            "e109ef7e-8c42-444d-a861-a40aac276fb5"
          ], 
          "text" : "Well maybe you should get to know my talents before yap... No, you're right. <Liris stops, mid-confrontation, and hangs her head in shame> I will try to do better, I promise. Thank you for tolerating me the way I am."
       }, 
@@ -1935,29 +1958,6 @@
             "e109ef7e-8c42-444d-a861-a40aac276fb5"
          ], 
          "text" : "<At first, the chat seems natural. But little by little, you begin to notice it: she’s gently guiding the flow, like a leaf floating down a stream, steering around anything she’d rather not share. Even so, it still feels like you’re growing closer—like you’ve been let a little deeper into her curious world>"
-      }, 
-      "e109ef7e-8c42-444d-a861-a40aac276fb5" : { 
-         "class" : "DialogAnswerNode", 
-         "desc" : { 
-            "x" : "-100017", 
-            "y" : "-97144"
-         }, 
-         "child" : [ 
-            "ff2c5dde-7829-4791-bb05-9785ab6b943e"
-         ], 
-         "text" : "{End} <Get back to what you were doing>"
-      }, 
-      "ff2c5dde-7829-4791-bb05-9785ab6b943e" : { 
-         "class" : "ScrollTimeNode", 
-         "desc" : { 
-            "x" : "-100033", 
-            "y" : "-97032"
-         }, 
-         "child" : [ 
-            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
-         ], 
-         "time" : "3", 
-         "timeMode" : "Hour"
       }, 
       "1ec1c25c-4639-4d38-9f09-6b4b1ff01904" : { 
          "class" : "MathCompareValuesNode", 
@@ -2047,13 +2047,24 @@
       "ad871015-dde6-4c31-a863-460e55c0572e" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99509", 
-            "y" : "-97616"
+            "x" : "-99508", 
+            "y" : "-97559"
+         }, 
+         "child" : [ 
+            "cf88acbb-cc66-4fd9-a4b8-b025b321f633"
+         ], 
+         "text" : "Boooring! Alright... Maybe next time."
+      }, 
+      "cf88acbb-cc66-4fd9-a4b8-b025b321f633" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99505", 
+            "y" : "-97348"
          }, 
          "child" : [ 
             "805c1cc3-3490-45ed-9270-d6d2032300a8"
          ], 
-         "text" : "Boooring! Alright... Maybe next time."
+         "text" : "{End} Yeah. Next time, Liris. Next time."
       }, 
       "7e4a7cdd-ce3d-478f-a062-11b509b2db51" : { 
          "class" : "DialogAnswerNode", 
@@ -2256,12 +2267,313 @@
       "fee71acb-c1be-4dc8-ad23-a14d1b4adb92" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99128", 
-            "y" : "-97896"
+            "x" : "-99090", 
+            "y" : "-97891"
          }, 
          "child" : [ 
+            "03ae44cd-b6e0-42df-834b-2e1182d818d8", 
+            "65de83b0-db9a-4d8f-8a58-f2fd94fbf76d"
          ], 
-         "text" : "5"
+         "text" : "Hey… I'm usually not that kind of girl… buuut… <With a naughty little grin, Liris shows you a cloth baggie filled with pipeweed> I picked some on the road. Wanna sneak off and smoke it? They say if you do it properly, you can see colors from beyond space, hear pixies sing, and eat twice your own weight in sweetrolls."
+      }, 
+      "03ae44cd-b6e0-42df-834b-2e1182d818d8" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99050", 
+            "y" : "-97621"
+         }, 
+         "child" : [ 
+            "52aa6ba3-228a-400f-99a1-8db5def2ea5f"
+         ], 
+         "text" : "{!} Absolutely not. I need my faculties right now, Liris."
+      }, 
+      "52aa6ba3-228a-400f-99a1-8db5def2ea5f" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99043", 
+            "y" : "-97524"
+         }, 
+         "child" : [ 
+            "cf88acbb-cc66-4fd9-a4b8-b025b321f633"
+         ], 
+         "text" : "Do you have to be so proper all the time? Eh, guess you have to. Leader stuff… <The girl winks, her disappointment already gone> But if you ever change your mind… you know who to call, yeah?\r"
+      }, 
+      "65de83b0-db9a-4d8f-8a58-f2fd94fbf76d" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99271", 
+            "y" : "-96826"
+         }, 
+         "child" : [ 
+            "a63aec9c-445b-44f1-87e1-e8cc0839383e"
+         ], 
+         "text" : "{Ok} Fex yeah! Let's gooo!"
+      }, 
+      "a63aec9c-445b-44f1-87e1-e8cc0839383e" : { 
+         "class" : "ScrollTimeNode", 
+         "desc" : { 
+            "x" : "-99271", 
+            "y" : "-96743"
+         }, 
+         "child" : [ 
+            "4d5ddbef-8ece-44ec-829a-94217d615a38"
+         ], 
+         "time" : "7", 
+         "timeMode" : "Hour"
+      }, 
+      "4d5ddbef-8ece-44ec-829a-94217d615a38" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99268", 
+            "y" : "-96617"
+         }, 
+         "child" : [ 
+            "a1740b0a-5f4a-4737-b02d-07085539fee1", 
+            "e4008936-e8f6-4ee8-b035-59eed8a41229"
+         ], 
+         "text" : "<The two of you make your way to a clearing just after sundown. There, Liris starts setting up for a cozy little smoke session… when suddenly, a mangy, disfigured feather-beast bursts from the nearby bushes, lunging at you with a horrible screech! Its claws gleam wickedly, ready to rend you limb from limb!>", 
+         "randomAnswersOrderForThis" : "true"
+      }, 
+      "a1740b0a-5f4a-4737-b02d-07085539fee1" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99466", 
+            "y" : "-96319"
+         }, 
+         "child" : [ 
+            "49afec70-f830-4a0c-a7ed-ecc641f22cff"
+         ], 
+         "text" : "{Action} <Duck and cover>"
+      }, 
+      "49afec70-f830-4a0c-a7ed-ecc641f22cff" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99470", 
+            "y" : "-96228"
+         }, 
+         "child" : [ 
+            "d0f64ac6-48bc-4d4d-8c64-f45ea9430f82"
+         ], 
+         "text" : "<You prepare for a mauling of a lifetime, but the creature drops mid-leap, crumpling to the ground dead before it even touched you. At that exact moment, Liris gasps—one of the tiny charms around her neck shatters in a puff of shimmering green smoke>", 
+         "randomAnswersOrderForThis" : "true"
+      }, 
+      "d0f64ac6-48bc-4d4d-8c64-f45ea9430f82" : { 
+         "class" : "DialogContinueNode", 
+         "desc" : { 
+            "x" : "-99209", 
+            "y" : "-95928"
+         }, 
+         "child" : [ 
+            "a992838e-3c58-4fa1-b34d-36e31556fbbf"
+         ]
+      }, 
+      "a992838e-3c58-4fa1-b34d-36e31556fbbf" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99272", 
+            "y" : "-95865"
+         }, 
+         "child" : [ 
+            "41f74d35-60d9-4b06-aa26-1db2a9c699fd", 
+            "c713f34c-00ae-4d79-ade3-11fbed77cc82"
+         ], 
+         "text" : "Well, there goes another heirloom… Sorry, Dad. <The pale, trembling girl mutters, just as stunned as you are>", 
+         "randomAnswersOrderForThis" : "true"
+      }, 
+      "41f74d35-60d9-4b06-aa26-1db2a9c699fd" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99454", 
+            "y" : "-95564"
+         }, 
+         "child" : [ 
+            "5ea196d7-8776-4f5f-9bfd-7ddbc3085214"
+         ], 
+         "text" : "{Action} <Stare at Liris in horror> W-w-w-wiiiiitch!"
+      }, 
+      "5ea196d7-8776-4f5f-9bfd-7ddbc3085214" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99451", 
+            "y" : "-95433"
+         }, 
+         "child" : [ 
+            "530b7de7-e3f1-4c9a-beb0-b7047fd9e3d9"
+         ], 
+         "text" : "Oh, calm your milk-makers, $PLAYER.NAME$. <Liris hisses, catching her breath> No witches or fae here. Just one of the many olden artifacts my dad smuggled back in the day—and the only one he bothered to pass on before vanishing. It was a relic… a tool, I guess. And now it’s gone.", 
+         "randomAnswersOrderForThis" : "true"
+      }, 
+      "530b7de7-e3f1-4c9a-beb0-b7047fd9e3d9" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-99237", 
+            "y" : "-95096"
+         }, 
+         "child" : [ 
+            "a00bb31c-6cc7-4f9d-814a-d01cf3bf3f69", 
+            "72f81199-2fda-490b-b9a1-581b75841063"
+         ]
+      }, 
+      "a00bb31c-6cc7-4f9d-814a-d01cf3bf3f69" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99498", 
+            "y" : "-94932"
+         }, 
+         "child" : [ 
+            "be2541ee-356a-412c-bb73-ff810be08a40"
+         ], 
+         "text" : "{?} A tool, eh? Nifty. Can you tell me more?"
+      }, 
+      "be2541ee-356a-412c-bb73-ff810be08a40" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99501", 
+            "y" : "-94785"
+         }, 
+         "child" : [ 
+            "3fec5662-da29-4571-a59d-0e2ccd67de10"
+         ], 
+         "text" : "Just a single-use protective thingy. Probably the most basic, boring, everyday trinket to the goobers who made it. Only problem is—they lived here long before us humans figured out how to stand upright. So we can’t exactly ask 'em how or why it worked like it did.", 
+         "randomAnswersOrderForThis" : "true"
+      }, 
+      "3fec5662-da29-4571-a59d-0e2ccd67de10" : { 
+         "class" : "DialogContinueNode", 
+         "desc" : { 
+            "x" : "-99445", 
+            "y" : "-94480"
+         }, 
+         "child" : [ 
+            "9a3d4d3c-5c8e-4f89-848a-bf8c4c4a1475"
+         ]
+      }, 
+      "9a3d4d3c-5c8e-4f89-848a-bf8c4c4a1475" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-98962", 
+            "y" : "-94826"
+         }, 
+         "child" : [ 
+            "95a98251-1c68-4238-98d6-dd55fb04b99c"
+         ], 
+         "text" : "Gods, that was scary. <You see her shiver and pull her cloak a little tighter> Can we go back to camp, please? No more talk. Not now.", 
+         "randomAnswersOrderForThis" : "true"
+      }, 
+      "95a98251-1c68-4238-98d6-dd55fb04b99c" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98590", 
+            "y" : "-96129"
+         }, 
+         "child" : [ 
+            "9f84ad00-61cd-4c6b-9275-1c9c07900378"
+         ], 
+         "text" : "{End} Yeah. Let's get back."
+      }, 
+      "9f84ad00-61cd-4c6b-9275-1c9c07900378" : { 
+         "class" : "MathKeyValueNode", 
+         "desc" : { 
+            "x" : "-98336", 
+            "y" : "-96178"
+         }, 
+         "child" : [ 
+            "805c1cc3-3490-45ed-9270-d6d2032300a8"
+         ], 
+         "key" : "LOVE", 
+         "value" : "2", 
+         "opp" : "Add"
+      }, 
+      "72f81199-2fda-490b-b9a1-581b75841063" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98490", 
+            "y" : "-98584"
+         }, 
+         "child" : [ 
+            "d7d1f334-9ef1-47ca-bc25-f53c2f589e1a"
+         ], 
+         "text" : "{?} Tool? Tool!? I don't need this shite! You get away from me. NOW!"
+      }, 
+      "d7d1f334-9ef1-47ca-bc25-f53c2f589e1a" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-98490", 
+            "y" : "-98467", 
+            "comment" : "(A4) "
+         }, 
+         "child" : [ 
+            "705e484f-4e2a-4e86-be16-129616a3319d", 
+            "9c7253d5-fb1a-47eb-804a-11f59369e383"
+         ], 
+         "text" : "After... after everything? <Liris backs away, dumbstruck, but quickly recovers> S-sure thing. I get it. If that's what you want..."
+      }, 
+      "705e484f-4e2a-4e86-be16-129616a3319d" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98553", 
+            "y" : "-98263"
+         }, 
+         "child" : [ 
+            "f6567764-d71c-4e1d-8716-7543f514a9bd"
+         ], 
+         "text" : "{Ok} Of course that's what I want! Begone! Away with ye! "
+      }, 
+      "9c7253d5-fb1a-47eb-804a-11f59369e383" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98923", 
+            "y" : "-95025"
+         }, 
+         "child" : [ 
+            "9a3d4d3c-5c8e-4f89-848a-bf8c4c4a1475"
+         ], 
+         "text" : "{No} Sorry... Sorry... I was just scared, that's all. "
+      }, 
+      "c713f34c-00ae-4d79-ade3-11fbed77cc82" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99108", 
+            "y" : "-95553"
+         }, 
+         "child" : [ 
+            "2f9447b3-cf42-42ba-baf4-1f813c03d261"
+         ], 
+         "text" : "{?} What was that, Liris?"
+      }, 
+      "2f9447b3-cf42-42ba-baf4-1f813c03d261" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99128", 
+            "y" : "-95452"
+         }, 
+         "child" : [ 
+            "530b7de7-e3f1-4c9a-beb0-b7047fd9e3d9"
+         ], 
+         "text" : "Just one of the many olden artifacts my dad smuggled back in the day—and the only one he bothered to pass on before vanishing. It was a relic… a tool, I guess. And now it’s gone.", 
+         "randomAnswersOrderForThis" : "true"
+      }, 
+      "e4008936-e8f6-4ee8-b035-59eed8a41229" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-99074", 
+            "y" : "-96322"
+         }, 
+         "child" : [ 
+            "2b4fedf8-50bd-45e3-8dfc-101bbe8ef145"
+         ], 
+         "text" : "{Action} <Stand and fight!>"
+      }, 
+      "2b4fedf8-50bd-45e3-8dfc-101bbe8ef145" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-99065", 
+            "y" : "-96241"
+         }, 
+         "child" : [ 
+            "d0f64ac6-48bc-4d4d-8c64-f45ea9430f82"
+         ], 
+         "text" : "<You meet the beast’s snarling maw with a well-aimed crane kick—but it feels like kicking a wet sack of sand. The creature drops mid-leap, crumpling to the ground dead before it even touched you. At that exact moment, Liris gasps—one of the tiny charms on a string around her neck shatters in a puff of shimmering smoke>", 
+         "randomAnswersOrderForThis" : "true"
       }, 
       "dbc58e30-79c6-48d3-beed-ccbf3ba1f1d6" : { 
          "class" : "MathCompareValuesNode", 
@@ -2307,13 +2619,197 @@
       "d1ffd871-357a-4612-b602-df05277e40c8" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-98618", 
-            "y" : "-97900"
+            "x" : "-98594", 
+            "y" : "-97882"
          }, 
          "child" : [ 
-            "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
+            "1b5fefff-0c9f-4081-a100-278dfedcee6c", 
+            "ece57c16-8d60-4fc9-9820-6f82d1098f3a"
          ], 
-         "text" : "7"
+         "text" : "Right. I suppose you wanna know about my dad now, don’t you? <Liris asks, reluctantly but resolutely. She’s ready to share her burden—this time, the full truth> My father… was a relic smuggler. The most professional one in all of Nova Drakonia."
+      }, 
+      "1b5fefff-0c9f-4081-a100-278dfedcee6c" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98719", 
+            "y" : "-97643"
+         }, 
+         "child" : [ 
+            "c582399b-a4a3-4453-96a7-c59545a7cbb8"
+         ], 
+         "text" : "{?} No smuggler I've ever met had stuff that did what your charm did, Liris."
+      }, 
+      "c582399b-a4a3-4453-96a7-c59545a7cbb8" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-98569", 
+            "y" : "-97627"
+         }, 
+         "child" : [ 
+            "1313d2c0-78c4-4c1d-a348-263ace0688c0", 
+            "58127cef-a155-474d-8082-2bc69e4b92bb"
+         ], 
+         "text" : "Most of those doofooses just move shiny crystals around without a clue what they actually do. Not him though. He was… is... an educated fella. Knew how to use the stuff he looted from old temples and hidden vaults. Knew the words… That made them tick."
+      }, 
+      "1313d2c0-78c4-4c1d-a348-263ace0688c0" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98576", 
+            "y" : "-97404"
+         }, 
+         "child" : [ 
+            "54ed1146-26bb-401a-a5af-2e9a1b8fe4ef"
+         ], 
+         "text" : "{?} He still at it?"
+      }, 
+      "54ed1146-26bb-401a-a5af-2e9a1b8fe4ef" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-98295", 
+            "y" : "-97289"
+         }, 
+         "child" : [ 
+            "c7d03fa5-62c3-446d-bb60-34486ffabda1", 
+            "4585a5e5-3919-43e2-a004-cf6fe5518eef", 
+            "dc6814d5-d006-42af-9c51-d290959506fb"
+         ], 
+         "text" : "when my mom… got hurt in a deal gone bad… he quit trading. Said he’d use what he had to track down the rest—hide ‘em, break ‘em, whatever it took. Pulled me into it too. We worked together, until one day… he just didn’t show up at the meeting place. That’s my tale. I swear, that’s all."
+      }, 
+      "c7d03fa5-62c3-446d-bb60-34486ffabda1" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98276", 
+            "y" : "-97028"
+         }, 
+         "child" : [ 
+            "a1ca1bc2-21c2-453d-9c23-3ec86eeb9433"
+         ], 
+         "text" : "{!} Don't you worry, Liris. We're gonna find him yet. Together."
+      }, 
+      "a1ca1bc2-21c2-453d-9c23-3ec86eeb9433" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-98229", 
+            "y" : "-96641"
+         }, 
+         "child" : [ 
+            "b0292a57-53af-436a-9004-09582ac8c566"
+         ], 
+         "text" : "Thank you, $PLAYER.NAME$. Thank you for understanding. <Liris wraps her slender arms around you and buries her face into your neck. You don’t need to see her dainty face to know—she’s crying>"
+      }, 
+      "b0292a57-53af-436a-9004-09582ac8c566" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98222", 
+            "y" : "-96371"
+         }, 
+         "child" : [ 
+            "9f84ad00-61cd-4c6b-9275-1c9c07900378"
+         ], 
+         "text" : "{End} There-there, shorty... <Pat her on the back, gently>"
+      }, 
+      "4585a5e5-3919-43e2-a004-cf6fe5518eef" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98037", 
+            "y" : "-97025"
+         }, 
+         "child" : [ 
+            "031a890f-8c38-45a7-947e-9d86f820ba29"
+         ], 
+         "text" : "{?} And what does this Stone of Arkham has to do with the whole sordid affair?"
+      }, 
+      "031a890f-8c38-45a7-947e-9d86f820ba29" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-98030", 
+            "y" : "-96889"
+         }, 
+         "child" : [ 
+            "c7d03fa5-62c3-446d-bb60-34486ffabda1", 
+            "dc6814d5-d006-42af-9c51-d290959506fb"
+         ], 
+         "text" : "<Liris looks away, nibbling on her lower lip nervously> $PLAYER.NAME$... It took me so much to tell you what I did. I can't handle anymore. Not now, my dear friend."
+      }, 
+      "dc6814d5-d006-42af-9c51-d290959506fb" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-97785", 
+            "y" : "-97033"
+         }, 
+         "child" : [ 
+            "2637fd43-17de-4f28-a227-d708e93d6105"
+         ], 
+         "text" : "{!} This is *WAY* too much trouble for my liking. Smuggling, artifact hunting, weird magics... We should split, Liris. For both of our sakes."
+      }, 
+      "2637fd43-17de-4f28-a227-d708e93d6105" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-97703", 
+            "y" : "-96853", 
+            "comment" : "(A4) "
+         }, 
+         "child" : [ 
+            "6da95680-495d-4d63-b244-5b79c8f012b3", 
+            "b3f418b5-4722-490e-b687-d8703cb2e144"
+         ], 
+         "text" : "After... after everything? <Liris backs away, dumbstruck, but quickly recovers> Sure. I understand. Thank you... For what you did... I... We won't see each other again."
+      }, 
+      "6da95680-495d-4d63-b244-5b79c8f012b3" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-97742", 
+            "y" : "-96632"
+         }, 
+         "child" : [ 
+            "d7ab5171-c742-42c9-b223-14854d07dc7d"
+         ], 
+         "text" : "{!} Yeah, bye-bye! See ya in the Abyss! Bye-e-e-e!"
+      }, 
+      "b3f418b5-4722-490e-b687-d8703cb2e144" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-97497", 
+            "y" : "-96634"
+         }, 
+         "child" : [ 
+            "9086a5b7-dd2d-4fc6-8ec2-a0088a38b350"
+         ], 
+         "text" : "{!} Wait..."
+      }, 
+      "9086a5b7-dd2d-4fc6-8ec2-a0088a38b350" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-97487", 
+            "y" : "-96536", 
+            "comment" : "(A4) "
+         }, 
+         "child" : [ 
+            "d7ab5171-c742-42c9-b223-14854d07dc7d"
+         ], 
+         "text" : "<...But she is already gone...>"
+      }, 
+      "58127cef-a155-474d-8082-2bc69e4b92bb" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98352", 
+            "y" : "-97434"
+         }, 
+         "child" : [ 
+            "54ed1146-26bb-401a-a5af-2e9a1b8fe4ef"
+         ], 
+         "text" : "{..} <Let her continue>"
+      }, 
+      "ece57c16-8d60-4fc9-9820-6f82d1098f3a" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98374", 
+            "y" : "-97669"
+         }, 
+         "child" : [ 
+            "c582399b-a4a3-4453-96a7-c59545a7cbb8"
+         ], 
+         "text" : "{..} <Nod>"
       }, 
       "e59b3336-a8c1-4455-96c7-df2cb27d64d7" : { 
          "class" : "MathCompareValuesNode", 
@@ -2359,13 +2855,238 @@
       "64da3e30-7aff-4a90-baed-41dd9ccbdd2d" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-98105", 
-            "y" : "-97905"
+            "x" : "-98100", 
+            "y" : "-97883"
+         }, 
+         "child" : [ 
+            "f5e4d472-697b-4259-b610-766cf4be659b", 
+            "b91d9c51-4b50-48d5-9d64-345bdcfd7853", 
+            "700b785d-7048-40a3-bdce-d2955c3c3a33"
+         ], 
+         "text" : "Yeah. We really do need to talk, $PLAYER.NAME$. About this. <Liris produces the Stone of Arkham—the very object that started your journey together> I don’t think I’ll need it anymore. Just like I won’t need you to help me chase ghosts around Swordhaven again and again."
+      }, 
+      "f5e4d472-697b-4259-b610-766cf4be659b" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98135", 
+            "y" : "-97627"
+         }, 
+         "child" : [ 
+            "c256b681-8781-4852-8f9a-3d7d7cf24c7d"
+         ], 
+         "text" : "{?} Huh? Why?"
+      }, 
+      "c256b681-8781-4852-8f9a-3d7d7cf24c7d" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-97863", 
+            "y" : "-97483"
+         }, 
+         "child" : [ 
+            "b94f5537-2203-4d12-8465-f95a9acdfc75", 
+            "ffecefc2-216a-4ddd-83ef-8aec365b8b0f"
+         ], 
+         "text" : "Among all the relics my dad left me, this one was actually the simplest. It’s one half of what’s called a Twinstone. Its only use is to let its holder feel if the other half is nearby. The other half of this stone was… embedded into my dad, through a kind of rite he did to himself."
+      }, 
+      "b94f5537-2203-4d12-8465-f95a9acdfc75" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-98006", 
+            "y" : "-97202"
+         }, 
+         "child" : [ 
+            "ebc2f651-12f3-4b79-b608-69305d7d7458"
+         ], 
+         "text" : "{!} That's awesome! Let's go find your old man."
+      }, 
+      "ebc2f651-12f3-4b79-b608-69305d7d7458" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-97334", 
+            "y" : "-97263"
+         }, 
+         "child" : [ 
+            "a08c7d6a-d803-42f8-8624-1446cac7887f", 
+            "4e65056b-5eca-4735-8b20-14d6709a7eea"
+         ], 
+         "text" : "Well… <The girl lowers her gaze, and a soft sob escapes her lips> The only thing this stone has been letting me feel for a while now… is sorrow. Which means the other half is gone. Which means… I’ll never see Dad again. Which means… I don’t need to be escorted anymore."
+      }, 
+      "a08c7d6a-d803-42f8-8624-1446cac7887f" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-97443", 
+            "y" : "-97000"
+         }, 
+         "child" : [ 
+            "2637fd43-17de-4f28-a227-d708e93d6105"
+         ], 
+         "text" : "{!} Then this is goodbye."
+      }, 
+      "4e65056b-5eca-4735-8b20-14d6709a7eea" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-97140", 
+            "y" : "-97004"
+         }, 
+         "child" : [ 
+            "4b3ac7b9-9831-4c99-837e-f5795831b489"
+         ], 
+         "text" : "{!} I don't care about that at all, Liris. I need you here, by my side."
+      }, 
+      "4b3ac7b9-9831-4c99-837e-f5795831b489" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-97124", 
+            "y" : "-96897"
+         }, 
+         "child" : [ 
+            "8729ccc4-30ca-45d7-8b41-c9e65d51f4b1", 
+            "a0b80ef7-e8e7-4a75-9302-09562a2f518d"
+         ], 
+         "text" : "Really? And why is that? <Liris asks, smiling with genuine curiosity, even as tears glisten in her eyes>\r\n"
+      }, 
+      "8729ccc4-30ca-45d7-8b41-c9e65d51f4b1" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-97204", 
+            "y" : "-96612"
+         }, 
+         "child" : [ 
+            "0cdfec11-9322-4376-b6a8-db8925e19403"
+         ], 
+         "text" : "{!} Because I love you, baby girl."
+      }, 
+      "0cdfec11-9322-4376-b6a8-db8925e19403" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-97198", 
+            "y" : "-96509"
+         }, 
+         "child" : [ 
+            "b7d2c96c-6897-42e1-aed6-04a60ed2b582"
+         ], 
+         "text" : "$PLAYER.NAME$… <Your words freeze her. Her lips tremble> I love you t-t— "
+      }, 
+      "b7d2c96c-6897-42e1-aed6-04a60ed2b582" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-97126", 
+            "y" : "-96262"
+         }, 
+         "child" : [ 
+            "ee68ff27-970b-4b0d-b276-322e8554d7fa"
+         ], 
+         "text" : "{!} Say it, shorty. Say it like you mean it."
+      }, 
+      "ee68ff27-970b-4b0d-b276-322e8554d7fa" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-97084", 
+            "y" : "-96133"
+         }, 
+         "child" : [ 
+            "1336b4d8-34f5-456f-8466-5bdbaf234746"
+         ], 
+         "text" : "<But instead of struggling to finish the phrase, she throws herself into your arms, clutching you like she’ll never let go, covering your face in passionate, searing kisses. Her tears flow freely now—no longer tears of sorrow and grief, but of joy. Pure, overwhelming joy>"
+      }, 
+      "1336b4d8-34f5-456f-8466-5bdbaf234746" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-97077", 
+            "y" : "-95873"
+         }, 
+         "child" : [ 
+            "d9f33774-046a-4e8e-b690-ceb7c017ed95"
+         ], 
+         "text" : "{Action} <Kiss back> I will always be here for you, Liris. I will never let you go."
+      }, 
+      "d9f33774-046a-4e8e-b690-ceb7c017ed95" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-97883", 
+            "y" : "-96295"
+         }, 
+         "child" : [ 
+            "aac205fb-e658-44c0-b560-0ee6fc8f1268"
+         ], 
+         "text" : "<You don’t even know how much time has passed—only that the tears have all been shed, and every soft, tender word has finally been spoken. Still, the moment comes when Liris is ready to let you go. As she does, your eyes meet her sweet, loving smile> But that’s enough of that, eh? Come on then, $PLAYER.NAME$. Adventure awaits!"
+      }, 
+      "aac205fb-e658-44c0-b560-0ee6fc8f1268" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-97897", 
+            "y" : "-96016"
          }, 
          "child" : [ 
             "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
          ], 
-         "text" : "9"
+         "text" : "{!} Fex yeah, Liris! FEX YEAH!"
+      }, 
+      "a0b80ef7-e8e7-4a75-9302-09562a2f518d" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-96920", 
+            "y" : "-96614"
+         }, 
+         "child" : [ 
+            "c7179b13-9459-4ae4-b611-0346c6d7e267"
+         ], 
+         "text" : "{!} Because you are a true friend."
+      }, 
+      "c7179b13-9459-4ae4-b611-0346c6d7e267" : { 
+         "class" : "DialogPhraseNode", 
+         "desc" : { 
+            "x" : "-96901", 
+            "y" : "-96512"
+         }, 
+         "child" : [ 
+            "371a76a2-beff-41f4-a143-0661a9f068b9"
+         ], 
+         "text" : "$PLAYER.NAME$… you have no idea how much that means to me. I… I… <But instead of finishing the thought, she just holds you close, like she never wants the moment to end>"
+      }, 
+      "371a76a2-beff-41f4-a143-0661a9f068b9" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-96843", 
+            "y" : "-96259"
+         }, 
+         "child" : [ 
+            "d9f33774-046a-4e8e-b690-ceb7c017ed95"
+         ], 
+         "text" : "{Action} <Pat her on the back> I will always be here for you, Liris. I will never let you go."
+      }, 
+      "ffecefc2-216a-4ddd-83ef-8aec365b8b0f" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-97706", 
+            "y" : "-97210"
+         }, 
+         "child" : [ 
+            "ebc2f651-12f3-4b79-b608-69305d7d7458"
+         ], 
+         "text" : "{?} Well? What is it saying to you?"
+      }, 
+      "b91d9c51-4b50-48d5-9d64-345bdcfd7853" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-97888", 
+            "y" : "-97629"
+         }, 
+         "child" : [ 
+            "c256b681-8781-4852-8f9a-3d7d7cf24c7d"
+         ], 
+         "text" : "{?} What is this thing anyway, Liris?"
+      }, 
+      "700b785d-7048-40a3-bdce-d2955c3c3a33" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-97626", 
+            "y" : "-97642"
+         }, 
+         "child" : [ 
+            "c256b681-8781-4852-8f9a-3d7d7cf24c7d"
+         ], 
+         "text" : "{..} <Wait for her explanation>"
       }, 
       "efeafe12-6a1a-4f66-bfeb-c707d73ebb76" : { 
          "class" : "MathCompareValuesNode", 
