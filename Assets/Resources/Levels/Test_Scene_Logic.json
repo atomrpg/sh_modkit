@@ -333,6 +333,11 @@
          "count" : "1", 
          "proto" : "mod_banditsword"
       }, 
+      "shield" : { 
+         "class" : "Shield", 
+         "count" : "1", 
+         "proto" : "mod_shield"
+      }, 
       "cap" : { 
          "class" : "Cap", 
          "count" : "1", 
