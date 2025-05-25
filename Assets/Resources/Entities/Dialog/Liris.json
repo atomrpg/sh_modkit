@@ -1404,6 +1404,17 @@
             "ed2fc0d7-61e0-4ae7-adeb-858a49b129ca"
          ], 
          "text" : "I, uh... <Scratches her head> Look, I wouldn't ask, but I kinda need someone's help."
+      }, 
+      "38f99bc2-1e2b-43c4-9b72-b163e199d15c" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-99387", 
+            "y" : "-101973", 
+            "comment" : "test: to team"
+         }, 
+         "child" : [ 
+            "09cf0ad9-a098-462d-8d96-410ca1c6ea81"
+         ]
       }
    }, 
    "entry" : "b245d076-b02a-4749-be17-85c54727b6cd"

@@ -3,8 +3,8 @@
       "a4ded33d-38cc-4476-9fb0-b8ad188a1c23" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-99334", 
-            "y" : "-101512"
+            "x" : "-99290", 
+            "y" : "-101804"
          }, 
          "child" : [ 
             "3fd382fe-a8fd-4893-a18a-1b76196bb6ea"
@@ -13,8 +13,8 @@
       "3fd382fe-a8fd-4893-a18a-1b76196bb6ea" : { 
          "class" : "HasKeywordNode", 
          "desc" : { 
-            "x" : "-99867", 
-            "y" : "-101402"
+            "x" : "-99345", 
+            "y" : "-101761"
          }, 
          "child" : [ 
             "f4401a50-708c-43a7-a5a6-dac25d8754c7", 
@@ -25,8 +25,8 @@
       "f4401a50-708c-43a7-a5a6-dac25d8754c7" : { 
          "class" : "DialogBeginNode", 
          "desc" : { 
-            "x" : "-99379", 
-            "y" : "-101266"
+            "x" : "-99380", 
+            "y" : "-101364"
          }, 
          "child" : [ 
             "519dab10-e862-41f3-9e7c-be17704ccefc"
@@ -36,8 +36,8 @@
       "519dab10-e862-41f3-9e7c-be17704ccefc" : { 
          "class" : "CharacterGetCurrentLocationName", 
          "desc" : { 
-            "x" : "-99387", 
-            "y" : "-101168"
+            "x" : "-99388", 
+            "y" : "-101266"
          }, 
          "child" : [ 
             "2093fca5-f7ac-4760-a61a-d15b036eec89"
@@ -48,8 +48,8 @@
       "2093fca5-f7ac-4760-a61a-d15b036eec89" : { 
          "class" : "ObjectCheckNode", 
          "desc" : { 
-            "x" : "-99379", 
-            "y" : "-101073"
+            "x" : "-99380", 
+            "y" : "-101169"
          }, 
          "child" : [ 
             "7b777d11-5390-4817-9c82-126ded26093b", 
@@ -61,7 +61,7 @@
          "class" : "AddKeywordNode", 
          "desc" : { 
             "x" : "-99490", 
-            "y" : "-100983"
+            "y" : "-101045"
          }, 
          "child" : [ 
             "8fe394aa-eda8-4a9e-855a-135bf2fa7b7c"
@@ -72,7 +72,7 @@
          "class" : "DummyNode", 
          "desc" : { 
             "x" : "-99329", 
-            "y" : "-100879"
+            "y" : "-100950"
          }, 
          "child" : [ 
             "c6ddd9de-40cd-49ab-9c14-e08d95076f17"
@@ -81,8 +81,8 @@
       "c6ddd9de-40cd-49ab-9c14-e08d95076f17" : { 
          "class" : "MathCompareValuesNode", 
          "desc" : { 
-            "x" : "-99106", 
-            "y" : "-100763"
+            "x" : "-99043", 
+            "y" : "-100798"
          }, 
          "child" : [ 
             "d7d0320c-b51b-4d92-987e-41d80a672930", 
@@ -159,8 +159,8 @@
       "5b22c85e-6ddb-48bb-bf03-aad39c222839" : { 
          "class" : "HasKeywordNode", 
          "desc" : { 
-            "x" : "-100998", 
-            "y" : "-100222"
+            "x" : "-101224", 
+            "y" : "-100234"
          }, 
          "child" : [ 
             "57191a08-521e-4908-9511-652f2e828cad", 
@@ -172,8 +172,7 @@
          "class" : "StringsCompareNode", 
          "desc" : { 
             "x" : "-98438", 
-            "y" : "-100369", 
-            "comment" : " на Лесной Случайке. Включая обычные зедки и карту с лагерем"
+            "y" : "-100369"
          }, 
          "child" : [ 
             "f0088013-476b-46fe-93f1-53e03a6af766", 
@@ -268,8 +267,8 @@
       "f31259dd-c829-4dcd-97c3-883539324d19" : { 
          "class" : "RandomNode", 
          "desc" : { 
-            "x" : "-100845", 
-            "y" : "-98436"
+            "x" : "-103886", 
+            "y" : "-98520"
          }, 
          "child" : [ 
             "17a8a93d-c24d-4aba-add3-c53a36436bac", 
@@ -282,8 +281,8 @@
       "17a8a93d-c24d-4aba-add3-c53a36436bac" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-101728", 
-            "y" : "-98288", 
+            "x" : "-104769", 
+            "y" : "-98372", 
             "comment" : "(A2) "
          }, 
          "child" : [ 
@@ -393,8 +392,8 @@
       "06c24f8c-a277-453f-8c89-188e3fdce5d9" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-102496", 
-            "y" : "-97196"
+            "x" : "-102483", 
+            "y" : "-97137"
          }, 
          "child" : [ 
             "a4f090d6-876b-4b63-89be-281053af4e55"
@@ -404,8 +403,8 @@
       "a4f090d6-876b-4b63-89be-281053af4e55" : { 
          "class" : "MathKeyValueNode", 
          "desc" : { 
-            "x" : "-104310", 
-            "y" : "-96899"
+            "x" : "-104509", 
+            "y" : "-96724"
          }, 
          "child" : [ 
             "6b1df620-e268-4d0b-baa3-37de1c5314c2"
@@ -417,8 +416,8 @@
       "6b1df620-e268-4d0b-baa3-37de1c5314c2" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-103932", 
-            "y" : "-96650"
+            "x" : "-104321", 
+            "y" : "-96519"
          }, 
          "child" : [ 
             "d40882e4-3ce2-4c9e-9242-590abd2a2f9d"
@@ -506,8 +505,8 @@
       "5e3d5860-83e8-40a1-95de-6c56b5b61b7c" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-105106", 
-            "y" : "-97196"
+            "x" : "-105098", 
+            "y" : "-97133"
          }, 
          "child" : [ 
             "a4f090d6-876b-4b63-89be-281053af4e55"
@@ -674,20 +673,20 @@
       "aa30b577-2cd6-4bbf-a8c8-1d01ccfd8caa" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-104687", 
-            "y" : "-97387", 
+            "x" : "-104685", 
+            "y" : "-97388", 
             "comment" : "(A2) "
          }, 
          "child" : [ 
             "3b484094-a2fc-47b0-ac83-527ad2a2e66b"
          ], 
-         "text" : "Are you kidding me? This thing is amazing! <Liris snatches the funnel cap> I've only seen these things in paintings, and here's one someone actually made! "
+         "text" : "Are you kidding me? This thing is amazing! <Liris snatches the funnel cap> I've only seen these things in paintings, and here's one someone actually made!"
       }, 
       "3b484094-a2fc-47b0-ac83-527ad2a2e66b" : { 
          "class" : "DialogContinueNode", 
          "desc" : { 
-            "x" : "-104639", 
-            "y" : "-97147"
+            "x" : "-104643", 
+            "y" : "-97194"
          }, 
          "child" : [ 
             "bec3d74f-20a2-49b2-a4ca-c4ef8743990e"
@@ -696,8 +695,8 @@
       "bec3d74f-20a2-49b2-a4ca-c4ef8743990e" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-104702", 
-            "y" : "-97061", 
+            "x" : "-104687", 
+            "y" : "-97155", 
             "comment" : "(A2) "
          }, 
          "child" : [ 
@@ -708,8 +707,8 @@
       "05299723-c3a6-43a9-95be-b4e881b8e47f" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-104714", 
-            "y" : "-96782"
+            "x" : "-104685", 
+            "y" : "-96932"
          }, 
          "child" : [ 
             "a4f090d6-876b-4b63-89be-281053af4e55"
@@ -1069,8 +1068,8 @@
       "15206fe3-54f8-4c2b-b870-868b56e2f716" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-102936", 
-            "y" : "-97185"
+            "x" : "-102926", 
+            "y" : "-97106"
          }, 
          "child" : [ 
             "a4f090d6-876b-4b63-89be-281053af4e55"
@@ -1467,8 +1466,8 @@
       "d7ab5171-c742-42c9-b223-14854d07dc7d" : { 
          "class" : "DialogEndNode", 
          "desc" : { 
-            "x" : "-97373", 
-            "y" : "-96253"
+            "x" : "-97642", 
+            "y" : "-96296"
          }, 
          "child" : [ 
             "a25c6bda-f1ae-4eb2-951e-b893602528a2"
@@ -1479,8 +1478,8 @@
       "a25c6bda-f1ae-4eb2-951e-b893602528a2" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-97347", 
-            "y" : "-96132"
+            "x" : "-97761", 
+            "y" : "-96182"
          }, 
          "child" : [ 
             "d7a2b027-9511-45b1-b3af-491f8e3649b6"
@@ -1490,8 +1489,8 @@
       "d7a2b027-9511-45b1-b3af-491f8e3649b6" : { 
          "class" : "RestartBehaviorRequestNode", 
          "desc" : { 
-            "x" : "-97347", 
-            "y" : "-96026"
+            "x" : "-97762", 
+            "y" : "-96113"
          }, 
          "child" : [ 
          ], 
@@ -1540,8 +1539,8 @@
       "dd4e0565-31ef-41ac-940d-674c30ff1958" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-98728", 
-            "y" : "-99458", 
+            "x" : "-98498", 
+            "y" : "-99409", 
             "comment" : "GOTO A5"
          }, 
          "child" : [ 
@@ -1552,8 +1551,8 @@
       "20daeef5-730c-4f77-aae6-34a9e577f920" : { 
          "class" : "MathCompareValuesNode", 
          "desc" : { 
-            "x" : "-98555", 
-            "y" : "-99320"
+            "x" : "-98498", 
+            "y" : "-99324"
          }, 
          "child" : [ 
             "7889ca6e-9cba-4618-b3b7-4b5af2d6d6bb", 
@@ -1567,8 +1566,8 @@
       "7889ca6e-9cba-4618-b3b7-4b5af2d6d6bb" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-98542", 
-            "y" : "-99132", 
+            "x" : "-98535", 
+            "y" : "-99175", 
             "comment" : "(A5) "
          }, 
          "child" : [ 
@@ -1579,8 +1578,8 @@
       "195dcdbd-61c5-464c-9790-3be276ca4b53" : { 
          "class" : "DialogEndNode", 
          "desc" : { 
-            "x" : "-98540", 
-            "y" : "-98841"
+            "x" : "-98122", 
+            "y" : "-98925"
          }, 
          "child" : [ 
          ], 
@@ -1590,8 +1589,8 @@
       "ee60dd1e-d68e-4436-b0b6-2c728fdb42ac" : { 
          "class" : "MathCompareValuesNode", 
          "desc" : { 
-            "x" : "-98241", 
-            "y" : "-99318"
+            "x" : "-98223", 
+            "y" : "-99320"
          }, 
          "child" : [ 
             "4aa0df5d-3b16-4f75-8e32-95ce6b5fa1fe", 
@@ -1605,8 +1604,8 @@
       "4aa0df5d-3b16-4f75-8e32-95ce6b5fa1fe" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-98253", 
-            "y" : "-99138", 
+            "x" : "-98259", 
+            "y" : "-99179", 
             "comment" : "(A5) "
          }, 
          "child" : [ 
@@ -1617,8 +1616,8 @@
       "e2e50072-74fb-4e0b-8bed-0888ab788335" : { 
          "class" : "MathCompareValuesNode", 
          "desc" : { 
-            "x" : "-97944", 
-            "y" : "-99323"
+            "x" : "-97937", 
+            "y" : "-99324"
          }, 
          "child" : [ 
             "aaca4063-8756-4755-a578-9e951eec4da1", 
@@ -1632,8 +1631,8 @@
       "aaca4063-8756-4755-a578-9e951eec4da1" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-97968", 
-            "y" : "-99119", 
+            "x" : "-97972", 
+            "y" : "-99178", 
             "comment" : "(A5) "
          }, 
          "child" : [ 
@@ -1644,28 +1643,38 @@
       "115b6a22-b3d8-4b39-bfde-14773b227afd" : { 
          "class" : "MathCompareValuesNode", 
          "desc" : { 
-            "x" : "-97673", 
+            "x" : "-97665", 
             "y" : "-99320"
          }, 
          "child" : [ 
-            "a96613fd-423b-4f0a-b8c2-99496c61bc3d"
+            "a96613fd-423b-4f0a-b8c2-99496c61bc3d", 
+            "5c87ccff-c9d6-42f3-99ba-bb9c81ba1517"
          ], 
          "value1" : "$LOVE$", 
          "value2" : "10", 
-         "opp" : "Equal", 
+         "opp" : "GreaterEqual", 
          "dataformat" : "Int"
       }, 
       "a96613fd-423b-4f0a-b8c2-99496c61bc3d" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-97682", 
-            "y" : "-99126", 
+            "x" : "-97700", 
+            "y" : "-99169", 
             "comment" : "(A5) "
          }, 
          "child" : [ 
             "195dcdbd-61c5-464c-9790-3be276ca4b53"
          ], 
          "text" : "Love ya... <Liris softly whispers, as you part ways>"
+      }, 
+      "5c87ccff-c9d6-42f3-99ba-bb9c81ba1517" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-97579", 
+            "y" : "-99200"
+         }, 
+         "child" : [ 
+         ]
       }, 
       "bc89c5d8-0cb5-42a2-8817-73e34b5293a9" : { 
          "class" : "DialogPhraseNode", 
@@ -1686,8 +1695,8 @@
       "e9819c29-1a85-43c8-8aa0-2ba045de88e7" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-101476", 
-            "y" : "-98288", 
+            "x" : "-104517", 
+            "y" : "-98372", 
             "comment" : "(A2) "
          }, 
          "child" : [ 
@@ -1698,8 +1707,8 @@
       "d08e1a6e-7153-4535-8174-41122769594f" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-101224", 
-            "y" : "-98282", 
+            "x" : "-104265", 
+            "y" : "-98366", 
             "comment" : "(A2) "
          }, 
          "child" : [ 
@@ -1710,8 +1719,8 @@
       "762008ba-508d-4f85-be84-1df31110606f" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100997", 
-            "y" : "-98281", 
+            "x" : "-104038", 
+            "y" : "-98365", 
             "comment" : "(A2) "
          }, 
          "child" : [ 
@@ -1722,8 +1731,8 @@
       "a5b220f3-f54e-42ca-8c22-39ca07ba210f" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100756", 
-            "y" : "-98289"
+            "x" : "-103797", 
+            "y" : "-98373"
          }, 
          "child" : [ 
             "fc70fac0-47ac-45d3-82a4-d98090a3e2ec"
@@ -1761,8 +1770,8 @@
       "b3514656-ec3b-4e18-9160-1b695084fc6d" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-99893", 
-            "y" : "-98345"
+            "x" : "-99880", 
+            "y" : "-98367"
          }, 
          "child" : [ 
             "deba763f-738c-4113-bce3-a36bfa9673dd"
@@ -1772,8 +1781,8 @@
       "deba763f-738c-4113-bce3-a36bfa9673dd" : { 
          "class" : "MathCompareValuesNode", 
          "desc" : { 
-            "x" : "-99900", 
-            "y" : "-98252"
+            "x" : "-99880", 
+            "y" : "-98301"
          }, 
          "child" : [ 
             "f0ae1258-3ed6-48a1-8728-ba7aa252ff82", 
@@ -1802,8 +1811,8 @@
       "08965ee1-9952-4679-8508-59aa817e9abd" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100394", 
-            "y" : "-97860"
+            "x" : "-100673", 
+            "y" : "-97890"
          }, 
          "child" : [ 
             "0aeb0080-dca1-45fe-b6a8-2dd0511a4dbd", 
@@ -1815,8 +1824,8 @@
       "0aeb0080-dca1-45fe-b6a8-2dd0511a4dbd" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-100606", 
-            "y" : "-97648"
+            "x" : "-100897", 
+            "y" : "-97666"
          }, 
          "child" : [ 
             "753a7026-bad9-42e6-b036-8a627e49a269"
@@ -1837,8 +1846,8 @@
       "e109ef7e-8c42-444d-a861-a40aac276fb5" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-100039", 
-            "y" : "-97135"
+            "x" : "-100397", 
+            "y" : "-96985"
          }, 
          "child" : [ 
             "ff2c5dde-7829-4791-bb05-9785ab6b943e"
@@ -1848,8 +1857,8 @@
       "ff2c5dde-7829-4791-bb05-9785ab6b943e" : { 
          "class" : "ScrollTimeNode", 
          "desc" : { 
-            "x" : "-100033", 
-            "y" : "-97032"
+            "x" : "-100398", 
+            "y" : "-96902"
          }, 
          "child" : [ 
             "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
@@ -1860,8 +1869,8 @@
       "4eff4eb0-4c60-4f30-833d-40b6bdf32235" : { 
          "class" : "MathKeyValueNode", 
          "desc" : { 
-            "x" : "-98400", 
-            "y" : "-96767"
+            "x" : "-98730", 
+            "y" : "-96376"
          }, 
          "child" : [ 
             "805c1cc3-3490-45ed-9270-d6d2032300a8"
@@ -1873,8 +1882,8 @@
       "805c1cc3-3490-45ed-9270-d6d2032300a8" : { 
          "class" : "DialogEndNode", 
          "desc" : { 
-            "x" : "-98529", 
-            "y" : "-96417"
+            "x" : "-98526", 
+            "y" : "-96078"
          }, 
          "child" : [ 
          ], 
@@ -1884,8 +1893,8 @@
       "e2c9f8d6-4ac7-4ebf-8850-d573ea95fba7" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-100355", 
-            "y" : "-97659"
+            "x" : "-100673", 
+            "y" : "-97679"
          }, 
          "child" : [ 
             "b601c185-71b1-49bb-aa81-98f3ca060496"
@@ -1906,8 +1915,8 @@
       "da240d4b-5ed1-41b3-aeb9-8adcd2fdc26d" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-100120", 
-            "y" : "-97685"
+            "x" : "-100451", 
+            "y" : "-97701"
          }, 
          "child" : [ 
             "f05cafd6-3d9e-456a-9c10-d756c45f876e"
@@ -2142,8 +2151,8 @@
       "c359f34a-abb2-465d-a4e3-f9e6a6cf60cf" : { 
          "class" : "DialogContinueNode", 
          "desc" : { 
-            "x" : "-98502", 
-            "y" : "-96896"
+            "x" : "-98599", 
+            "y" : "-96860"
          }, 
          "child" : [ 
             "7de63807-a688-44eb-85cf-3cd4036596b6"
@@ -2309,7 +2318,7 @@
          "child" : [ 
             "cf88acbb-cc66-4fd9-a4b8-b025b321f633"
          ], 
-         "text" : "Do you have to be so proper all the time? Eh, guess you have to. Leader stuff… <The girl winks, her disappointment already gone> But if you ever change your mind… you know who to call, yeah?\r"
+         "text" : "Do you have to be so proper all the time? Eh, guess you have to. Leader stuff… <The girl winks, her disappointment already gone> But if you ever change your mind… you know who to call, yeah?"
       }, 
       "65de83b0-db9a-4d8f-8a58-f2fd94fbf76d" : { 
          "class" : "DialogAnswerNode", 
@@ -2373,8 +2382,8 @@
       "d0f64ac6-48bc-4d4d-8c64-f45ea9430f82" : { 
          "class" : "DialogContinueNode", 
          "desc" : { 
-            "x" : "-99209", 
-            "y" : "-95928"
+            "x" : "-99224", 
+            "y" : "-95945"
          }, 
          "child" : [ 
             "a992838e-3c58-4fa1-b34d-36e31556fbbf"
@@ -2383,8 +2392,8 @@
       "a992838e-3c58-4fa1-b34d-36e31556fbbf" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99272", 
-            "y" : "-95865"
+            "x" : "-99271", 
+            "y" : "-95895"
          }, 
          "child" : [ 
             "41f74d35-60d9-4b06-aa26-1db2a9c699fd", 
@@ -2396,8 +2405,8 @@
       "41f74d35-60d9-4b06-aa26-1db2a9c699fd" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-99454", 
-            "y" : "-95564"
+            "x" : "-99448", 
+            "y" : "-95677"
          }, 
          "child" : [ 
             "5ea196d7-8776-4f5f-9bfd-7ddbc3085214"
@@ -2407,8 +2416,8 @@
       "5ea196d7-8776-4f5f-9bfd-7ddbc3085214" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99451", 
-            "y" : "-95433"
+            "x" : "-99445", 
+            "y" : "-95546"
          }, 
          "child" : [ 
             "530b7de7-e3f1-4c9a-beb0-b7047fd9e3d9"
@@ -2430,8 +2439,8 @@
       "a00bb31c-6cc7-4f9d-814a-d01cf3bf3f69" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-99498", 
-            "y" : "-94932"
+            "x" : "-99423", 
+            "y" : "-95025"
          }, 
          "child" : [ 
             "be2541ee-356a-412c-bb73-ff810be08a40"
@@ -2441,8 +2450,8 @@
       "be2541ee-356a-412c-bb73-ff810be08a40" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99501", 
-            "y" : "-94785"
+            "x" : "-99424", 
+            "y" : "-94945"
          }, 
          "child" : [ 
             "3fec5662-da29-4571-a59d-0e2ccd67de10"
@@ -2453,8 +2462,8 @@
       "3fec5662-da29-4571-a59d-0e2ccd67de10" : { 
          "class" : "DialogContinueNode", 
          "desc" : { 
-            "x" : "-99445", 
-            "y" : "-94480"
+            "x" : "-99385", 
+            "y" : "-94707"
          }, 
          "child" : [ 
             "9a3d4d3c-5c8e-4f89-848a-bf8c4c4a1475"
@@ -2463,8 +2472,8 @@
       "9a3d4d3c-5c8e-4f89-848a-bf8c4c4a1475" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-98962", 
-            "y" : "-94826"
+            "x" : "-99325", 
+            "y" : "-94622"
          }, 
          "child" : [ 
             "95a98251-1c68-4238-98d6-dd55fb04b99c"
@@ -2475,8 +2484,8 @@
       "95a98251-1c68-4238-98d6-dd55fb04b99c" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-98590", 
-            "y" : "-96129"
+            "x" : "-98464", 
+            "y" : "-96362"
          }, 
          "child" : [ 
             "9f84ad00-61cd-4c6b-9275-1c9c07900378"
@@ -2486,8 +2495,8 @@
       "9f84ad00-61cd-4c6b-9275-1c9c07900378" : { 
          "class" : "MathKeyValueNode", 
          "desc" : { 
-            "x" : "-98336", 
-            "y" : "-96178"
+            "x" : "-98359", 
+            "y" : "-96241"
          }, 
          "child" : [ 
             "805c1cc3-3490-45ed-9270-d6d2032300a8"
@@ -2529,24 +2538,24 @@
          "child" : [ 
             "f6567764-d71c-4e1d-8716-7543f514a9bd"
          ], 
-         "text" : "{Ok} Of course that's what I want! Begone! Away with ye! "
+         "text" : "{Ok} Of course that's what I want! Begone! Away with ye!"
       }, 
       "9c7253d5-fb1a-47eb-804a-11f59369e383" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-98923", 
-            "y" : "-95025"
+            "x" : "-98315", 
+            "y" : "-98261"
          }, 
          "child" : [ 
             "9a3d4d3c-5c8e-4f89-848a-bf8c4c4a1475"
          ], 
-         "text" : "{No} Sorry... Sorry... I was just scared, that's all. "
+         "text" : "{No} Sorry... Sorry... I was just scared, that's all."
       }, 
       "c713f34c-00ae-4d79-ade3-11fbed77cc82" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-99108", 
-            "y" : "-95553"
+            "x" : "-99102", 
+            "y" : "-95666"
          }, 
          "child" : [ 
             "2f9447b3-cf42-42ba-baf4-1f813c03d261"
@@ -2556,8 +2565,8 @@
       "2f9447b3-cf42-42ba-baf4-1f813c03d261" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99128", 
-            "y" : "-95452"
+            "x" : "-99122", 
+            "y" : "-95565"
          }, 
          "child" : [ 
             "530b7de7-e3f1-4c9a-beb0-b7047fd9e3d9"
@@ -2606,13 +2615,24 @@
       "41b95b15-c147-40c7-8cde-7c8b3cd3c731" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-98877", 
-            "y" : "-97894"
+            "x" : "-97403", 
+            "y" : "-98162"
+         }, 
+         "child" : [ 
+            "d62004ba-8960-447c-bf7c-a3661faea09d"
+         ], 
+         "text" : "6"
+      }, 
+      "d62004ba-8960-447c-bf7c-a3661faea09d" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-97406", 
+            "y" : "-97957"
          }, 
          "child" : [ 
             "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
          ], 
-         "text" : "6"
+         "text" : "6..."
       }, 
       "88ec8f59-258d-4a29-8495-81ee15dc03ff" : { 
          "class" : "MathCompareValuesNode", 
@@ -2632,8 +2652,8 @@
       "d1ffd871-357a-4612-b602-df05277e40c8" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-98594", 
-            "y" : "-97882"
+            "x" : "-98653", 
+            "y" : "-97914"
          }, 
          "child" : [ 
             "1b5fefff-0c9f-4081-a100-278dfedcee6c", 
@@ -2644,8 +2664,8 @@
       "1b5fefff-0c9f-4081-a100-278dfedcee6c" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-98719", 
-            "y" : "-97643"
+            "x" : "-98811", 
+            "y" : "-97624"
          }, 
          "child" : [ 
             "c582399b-a4a3-4453-96a7-c59545a7cbb8"
@@ -2713,8 +2733,8 @@
       "b0292a57-53af-436a-9004-09582ac8c566" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-98222", 
-            "y" : "-96371"
+            "x" : "-98226", 
+            "y" : "-96373"
          }, 
          "child" : [ 
             "9f84ad00-61cd-4c6b-9275-1c9c07900378"
@@ -2735,8 +2755,8 @@
       "031a890f-8c38-45a7-947e-9d86f820ba29" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-98030", 
-            "y" : "-96889"
+            "x" : "-98037", 
+            "y" : "-96925"
          }, 
          "child" : [ 
             "c7d03fa5-62c3-446d-bb60-34486ffabda1", 
@@ -2747,8 +2767,8 @@
       "dc6814d5-d006-42af-9c51-d290959506fb" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-97785", 
-            "y" : "-97033"
+            "x" : "-97885", 
+            "y" : "-96734"
          }, 
          "child" : [ 
             "2637fd43-17de-4f28-a227-d708e93d6105"
@@ -2758,8 +2778,8 @@
       "2637fd43-17de-4f28-a227-d708e93d6105" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-97703", 
-            "y" : "-96853", 
+            "x" : "-97590", 
+            "y" : "-96867", 
             "comment" : "(A4) "
          }, 
          "child" : [ 
@@ -2771,19 +2791,31 @@
       "6da95680-495d-4d63-b244-5b79c8f012b3" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-97742", 
-            "y" : "-96632"
+            "x" : "-97878", 
+            "y" : "-96516"
          }, 
          "child" : [ 
-            "d7ab5171-c742-42c9-b223-14854d07dc7d"
+            "71d1bf15-f74a-41ee-84f5-a23b501a5f42"
          ], 
          "text" : "{!} Yeah, bye-bye! See ya in the Abyss! Bye-e-e-e!"
+      }, 
+      "71d1bf15-f74a-41ee-84f5-a23b501a5f42" : { 
+         "class" : "DialogEndNode", 
+         "desc" : { 
+            "x" : "-97876", 
+            "y" : "-96297"
+         }, 
+         "child" : [ 
+            "a25c6bda-f1ae-4eb2-951e-b893602528a2"
+         ], 
+         "skipButtonEnd" : "true", 
+         "dontMarkInHistory" : "false"
       }, 
       "b3f418b5-4722-490e-b687-d8703cb2e144" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-97497", 
-            "y" : "-96634"
+            "x" : "-97494", 
+            "y" : "-96598"
          }, 
          "child" : [ 
             "9086a5b7-dd2d-4fc6-8ec2-a0088a38b350"
@@ -2793,8 +2825,8 @@
       "9086a5b7-dd2d-4fc6-8ec2-a0088a38b350" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-97487", 
-            "y" : "-96536", 
+            "x" : "-97494", 
+            "y" : "-96531", 
             "comment" : "(A4) "
          }, 
          "child" : [ 
@@ -2816,8 +2848,8 @@
       "ece57c16-8d60-4fc9-9820-6f82d1098f3a" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-98374", 
-            "y" : "-97669"
+            "x" : "-98401", 
+            "y" : "-97707"
          }, 
          "child" : [ 
             "c582399b-a4a3-4453-96a7-c59545a7cbb8"
@@ -2842,13 +2874,24 @@
       "cb8d24ef-b799-4fb1-bd5f-50578523974c" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-98356", 
-            "y" : "-97912"
+            "x" : "-97167", 
+            "y" : "-98155"
+         }, 
+         "child" : [ 
+            "cffaf563-b0d3-43aa-8898-1bd59430fde5"
+         ], 
+         "text" : "8"
+      }, 
+      "cffaf563-b0d3-43aa-8898-1bd59430fde5" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-97167", 
+            "y" : "-97953"
          }, 
          "child" : [ 
             "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
          ], 
-         "text" : "8"
+         "text" : "8..."
       }, 
       "c06f3f87-a4c3-45e9-b004-5fe9ee5c7327" : { 
          "class" : "MathCompareValuesNode", 
@@ -2881,8 +2924,8 @@
       "f5e4d472-697b-4259-b610-766cf4be659b" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-98135", 
-            "y" : "-97627"
+            "x" : "-98223", 
+            "y" : "-97605"
          }, 
          "child" : [ 
             "c256b681-8781-4852-8f9a-3d7d7cf24c7d"
@@ -2892,8 +2935,8 @@
       "c256b681-8781-4852-8f9a-3d7d7cf24c7d" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-97863", 
-            "y" : "-97483"
+            "x" : "-97969", 
+            "y" : "-97478"
          }, 
          "child" : [ 
             "b94f5537-2203-4d12-8465-f95a9acdfc75", 
@@ -2956,13 +2999,13 @@
             "8729ccc4-30ca-45d7-8b41-c9e65d51f4b1", 
             "a0b80ef7-e8e7-4a75-9302-09562a2f518d"
          ], 
-         "text" : "Really? And why is that? <Liris asks, smiling with genuine curiosity, even as tears glisten in her eyes>\r\n"
+         "text" : "Really? And why is that? <Liris asks, smiling with genuine curiosity, even as tears glisten in her eyes>"
       }, 
       "8729ccc4-30ca-45d7-8b41-c9e65d51f4b1" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-97204", 
-            "y" : "-96612"
+            "x" : "-97187", 
+            "y" : "-96598"
          }, 
          "child" : [ 
             "0cdfec11-9322-4376-b6a8-db8925e19403"
@@ -2972,19 +3015,19 @@
       "0cdfec11-9322-4376-b6a8-db8925e19403" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-97198", 
-            "y" : "-96509"
+            "x" : "-97186", 
+            "y" : "-96519"
          }, 
          "child" : [ 
             "b7d2c96c-6897-42e1-aed6-04a60ed2b582"
          ], 
-         "text" : "$PLAYER.NAME$… <Your words freeze her. Her lips tremble> I love you t-t— "
+         "text" : "$PLAYER.NAME$… <Your words freeze her. Her lips tremble> I love you t-t—"
       }, 
       "b7d2c96c-6897-42e1-aed6-04a60ed2b582" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-97126", 
-            "y" : "-96262"
+            "x" : "-97188", 
+            "y" : "-96347"
          }, 
          "child" : [ 
             "ee68ff27-970b-4b0d-b276-322e8554d7fa"
@@ -3016,8 +3059,8 @@
       "d9f33774-046a-4e8e-b690-ceb7c017ed95" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-97883", 
-            "y" : "-96295"
+            "x" : "-97255", 
+            "y" : "-95719"
          }, 
          "child" : [ 
             "aac205fb-e658-44c0-b560-0ee6fc8f1268"
@@ -3027,8 +3070,8 @@
       "aac205fb-e658-44c0-b560-0ee6fc8f1268" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-97897", 
-            "y" : "-96016"
+            "x" : "-97255", 
+            "y" : "-95434"
          }, 
          "child" : [ 
             "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
@@ -3038,8 +3081,8 @@
       "a0b80ef7-e8e7-4a75-9302-09562a2f518d" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-96920", 
-            "y" : "-96614"
+            "x" : "-96903", 
+            "y" : "-96600"
          }, 
          "child" : [ 
             "c7179b13-9459-4ae4-b611-0346c6d7e267"
@@ -3049,8 +3092,8 @@
       "c7179b13-9459-4ae4-b611-0346c6d7e267" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-96901", 
-            "y" : "-96512"
+            "x" : "-96903", 
+            "y" : "-96525"
          }, 
          "child" : [ 
             "371a76a2-beff-41f4-a143-0661a9f068b9"
@@ -3060,8 +3103,8 @@
       "371a76a2-beff-41f4-a143-0661a9f068b9" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-96843", 
-            "y" : "-96259"
+            "x" : "-96902", 
+            "y" : "-96322"
          }, 
          "child" : [ 
             "d9f33774-046a-4e8e-b690-ceb7c017ed95"
@@ -3071,8 +3114,8 @@
       "ffecefc2-216a-4ddd-83ef-8aec365b8b0f" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-97706", 
-            "y" : "-97210"
+            "x" : "-97768", 
+            "y" : "-97200"
          }, 
          "child" : [ 
             "ebc2f651-12f3-4b79-b608-69305d7d7458"
@@ -3082,8 +3125,8 @@
       "b91d9c51-4b50-48d5-9d64-345bdcfd7853" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-97888", 
-            "y" : "-97629"
+            "x" : "-97976", 
+            "y" : "-97607"
          }, 
          "child" : [ 
             "c256b681-8781-4852-8f9a-3d7d7cf24c7d"
@@ -3093,8 +3136,8 @@
       "700b785d-7048-40a3-bdce-d2955c3c3a33" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-97626", 
-            "y" : "-97642"
+            "x" : "-97714", 
+            "y" : "-97620"
          }, 
          "child" : [ 
             "c256b681-8781-4852-8f9a-3d7d7cf24c7d"
@@ -3104,33 +3147,54 @@
       "efeafe12-6a1a-4f66-bfeb-c707d73ebb76" : { 
          "class" : "MathCompareValuesNode", 
          "desc" : { 
-            "x" : "-97840", 
-            "y" : "-98062"
+            "x" : "-97810", 
+            "y" : "-98048"
          }, 
          "child" : [ 
-            "a46b6725-d1c2-46e1-8664-9b859aaa29f8"
+            "a46b6725-d1c2-46e1-8664-9b859aaa29f8", 
+            "0f12d029-d592-4fc2-9617-226bf2490d7f"
          ], 
          "value1" : "$LOVE$", 
          "value2" : "10", 
-         "opp" : "Equal", 
+         "opp" : "GreaterEqual", 
          "dataformat" : "Int"
       }, 
       "a46b6725-d1c2-46e1-8664-9b859aaa29f8" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-97846", 
-            "y" : "-97916"
+            "x" : "-96933", 
+            "y" : "-98167"
+         }, 
+         "child" : [ 
+            "7aa09869-e89d-4547-b338-572c306719e8"
+         ], 
+         "text" : "10"
+      }, 
+      "7aa09869-e89d-4547-b338-572c306719e8" : { 
+         "class" : "DialogAnswerNode", 
+         "desc" : { 
+            "x" : "-96952", 
+            "y" : "-97959"
          }, 
          "child" : [ 
             "4eff4eb0-4c60-4f30-833d-40b6bdf32235"
          ], 
-         "text" : "10"
+         "text" : "10..."
+      }, 
+      "0f12d029-d592-4fc2-9617-226bf2490d7f" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-97721", 
+            "y" : "-97931"
+         }, 
+         "child" : [ 
+         ]
       }, 
       "59ede191-5bc1-46b8-9259-19bdb7da0c57" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-99507", 
-            "y" : "-98223"
+            "x" : "-99520", 
+            "y" : "-98268"
          }, 
          "child" : [ 
             "cc8763fd-23fc-4de6-8d23-7c462544b21f"
@@ -3173,8 +3237,7 @@
          "class" : "StringsCompareNode", 
          "desc" : { 
             "x" : "-98347", 
-            "y" : "-100144", 
-            "comment" : " на Лесной Случайке. Включая обычные зедки и карту с лагерем"
+            "y" : "-100144"
          }, 
          "child" : [ 
             "f0088013-476b-46fe-93f1-53e03a6af766", 
@@ -3188,8 +3251,7 @@
          "class" : "StringsCompareNode", 
          "desc" : { 
             "x" : "-98145", 
-            "y" : "-100258", 
-            "comment" : " на Горно-лесной Случайке. Включая обычные зедки и карту с лагерем"
+            "y" : "-100258"
          }, 
          "child" : [ 
             "c93591e6-8434-4bf9-ab92-9662db10e7b3", 
@@ -3204,7 +3266,7 @@
          "desc" : { 
             "x" : "-98169", 
             "y" : "-99856", 
-            "comment" : "(A1) \n(на Горно-лесной Случайке. Включая обычные зедки и карту с лагерем)"
+            "comment" : "(A1) "
          }, 
          "child" : [ 
             "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
@@ -3218,8 +3280,7 @@
          "class" : "StringsCompareNode", 
          "desc" : { 
             "x" : "-98111", 
-            "y" : "-100146", 
-            "comment" : " на Горно-лесной Случайке. Включая обычные зедки и карту с лагерем"
+            "y" : "-100146"
          }, 
          "child" : [ 
             "c93591e6-8434-4bf9-ab92-9662db10e7b3", 
@@ -3233,8 +3294,7 @@
          "class" : "StringsCompareNode", 
          "desc" : { 
             "x" : "-97901", 
-            "y" : "-100262", 
-            "comment" : " на Равнинной Случайке. Включая обычные зедки и карту с лагерем"
+            "y" : "-100262"
          }, 
          "child" : [ 
             "84f22cdf-b8e3-47ec-be23-b5e1422fd384", 
@@ -3249,7 +3309,7 @@
          "desc" : { 
             "x" : "-97931", 
             "y" : "-99860", 
-            "comment" : "(A1) \n(на Равнинной Случайке. Включая обычные зедки и карту с лагерем)"
+            "comment" : "(A1) "
          }, 
          "child" : [ 
             "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
@@ -3263,8 +3323,7 @@
          "class" : "StringsCompareNode", 
          "desc" : { 
             "x" : "-97866", 
-            "y" : "-100148", 
-            "comment" : " на Равнинной Случайке. Включая обычные зедки и карту с лагерем"
+            "y" : "-100148"
          }, 
          "child" : [ 
             "84f22cdf-b8e3-47ec-be23-b5e1422fd384", 
@@ -3278,8 +3337,7 @@
          "class" : "StringsCompareNode", 
          "desc" : { 
             "x" : "-97662", 
-            "y" : "-100269", 
-            "comment" : " на Равнинной Случайке. Включая обычные зедки и карту с лагерем"
+            "y" : "-100269"
          }, 
          "child" : [ 
             "481c787d-953d-4c94-97ca-dce789fd39ac", 
@@ -3294,7 +3352,7 @@
          "desc" : { 
             "x" : "-97696", 
             "y" : "-99869", 
-            "comment" : "(A1) \n(на Полевой (фермы)"
+            "comment" : "(A1) "
          }, 
          "child" : [ 
             "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
@@ -3308,8 +3366,7 @@
          "class" : "StringsCompareNode", 
          "desc" : { 
             "x" : "-97628", 
-            "y" : "-100147", 
-            "comment" : " на Равнинной Случайке. Включая обычные зедки и карту с лагерем"
+            "y" : "-100147"
          }, 
          "child" : [ 
             "481c787d-953d-4c94-97ca-dce789fd39ac", 
@@ -3323,8 +3380,7 @@
          "class" : "StringsCompareNode", 
          "desc" : { 
             "x" : "-97423", 
-            "y" : "-100267", 
-            "comment" : " на Болотной Случайке. Включая обычные зедки и карту с лагерем"
+            "y" : "-100267"
          }, 
          "child" : [ 
             "992f81df-81f3-4fd6-8f0c-e3f2382e013d", 
@@ -3339,7 +3395,7 @@
          "desc" : { 
             "x" : "-97456", 
             "y" : "-99850", 
-            "comment" : "(A1) \n(на Болотной Случайке. Включая обычные зедки и карту с лагерем)"
+            "comment" : "(A1) "
          }, 
          "child" : [ 
             "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
@@ -3353,8 +3409,7 @@
          "class" : "StringsCompareNode", 
          "desc" : { 
             "x" : "-97389", 
-            "y" : "-100153", 
-            "comment" : " на Болотной Случайке. Включая обычные зедки и карту с лагерем"
+            "y" : "-100153"
          }, 
          "child" : [ 
             "992f81df-81f3-4fd6-8f0c-e3f2382e013d", 
@@ -3369,7 +3424,7 @@
          "desc" : { 
             "x" : "-97194", 
             "y" : "-99833", 
-            "comment" : "(A1) \n(на любой локации, которая не указана выше)"
+            "comment" : "(A1) "
          }, 
          "child" : [ 
             "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
@@ -3382,9 +3437,8 @@
       "b671424c-b63a-484c-a2da-fef3fc9f6036" : { 
          "class" : "StringsCompareNode", 
          "desc" : { 
-            "x" : "-101355", 
-            "y" : "-100088", 
-            "comment" : "в Смелтер Роу"
+            "x" : "-101188", 
+            "y" : "-100064"
          }, 
          "child" : [ 
             "3f081497-304d-4163-8eb8-b46673a5a008", 
@@ -3397,9 +3451,9 @@
       "3f081497-304d-4163-8eb8-b46673a5a008" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-101374", 
-            "y" : "-99894", 
-            "comment" : "(A1) \n(в Смелтер Роу)"
+            "x" : "-101207", 
+            "y" : "-99870", 
+            "comment" : "(A1) "
          }, 
          "child" : [ 
             "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
@@ -3412,9 +3466,8 @@
       "500c4c48-cce9-48d3-852d-d199fdb62405" : { 
          "class" : "StringsCompareNode", 
          "desc" : { 
-            "x" : "-101013", 
-            "y" : "-100095", 
-            "comment" : "в пригороде СХ"
+            "x" : "-100846", 
+            "y" : "-100071"
          }, 
          "child" : [ 
             "bf2d930d-9068-498e-ae46-eb525b7a92ba", 
@@ -3427,9 +3480,9 @@
       "bf2d930d-9068-498e-ae46-eb525b7a92ba" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-101083", 
-            "y" : "-99858", 
-            "comment" : "(A1) \n(в пригороде СХ)"
+            "x" : "-100916", 
+            "y" : "-99834", 
+            "comment" : "(A1) "
          }, 
          "child" : [ 
             "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
@@ -3443,8 +3496,7 @@
          "class" : "HasKeywordValueNode", 
          "desc" : { 
             "x" : "-100490", 
-            "y" : "-100045", 
-            "comment" : " на Стартовом пляже"
+            "y" : "-100045"
          }, 
          "child" : [ 
             "5913faf6-bf22-45d7-a28a-a64c34a98bd3", 
@@ -3456,8 +3508,8 @@
       "5913faf6-bf22-45d7-a28a-a64c34a98bd3" : { 
          "class" : "RandomNode", 
          "desc" : { 
-            "x" : "-100694", 
-            "y" : "-99735"
+            "x" : "-100704", 
+            "y" : "-99581"
          }, 
          "child" : [ 
             "54c2cf8f-c955-466e-b503-f43ef437afeb", 
@@ -3467,8 +3519,8 @@
       "54c2cf8f-c955-466e-b503-f43ef437afeb" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100904", 
-            "y" : "-99463"
+            "x" : "-100874", 
+            "y" : "-99503"
          }, 
          "child" : [ 
             "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
@@ -3481,8 +3533,8 @@
       "3e69f252-c8dd-410e-a5dd-8cd6dddac0e9" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-100589", 
-            "y" : "-99466"
+            "x" : "-100651", 
+            "y" : "-99501"
          }, 
          "child" : [ 
             "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
@@ -3496,8 +3548,7 @@
          "class" : "HasKeywordValueNode", 
          "desc" : { 
             "x" : "-100252", 
-            "y" : "-100043", 
-            "comment" : " в Пещере с варанами"
+            "y" : "-100043"
          }, 
          "child" : [ 
             "f1941f66-5695-4927-907e-e286623fed00", 
@@ -3511,7 +3562,7 @@
          "desc" : { 
             "x" : "-100304", 
             "y" : "-99875", 
-            "comment" : "(A1) \n(в Пещере с варанами)"
+            "comment" : "(A1) "
          }, 
          "child" : [ 
             "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
@@ -3525,8 +3576,7 @@
          "class" : "StringsCompareNode", 
          "desc" : { 
             "x" : "-100022", 
-            "y" : "-100048", 
-            "comment" : " в Кламриче"
+            "y" : "-100048"
          }, 
          "child" : [ 
             "6d80f808-1574-45a9-9309-f13369ab7469", 
@@ -3541,7 +3591,7 @@
          "desc" : { 
             "x" : "-100053", 
             "y" : "-99867", 
-            "comment" : "(A1) \n(в Кламриче)"
+            "comment" : "(A1) "
          }, 
          "child" : [ 
             "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
@@ -3554,9 +3604,8 @@
       "63486488-2357-4c33-b3aa-e8f756007926" : { 
          "class" : "HasKeywordValueNode", 
          "desc" : { 
-            "x" : "-99825", 
-            "y" : "-100129", 
-            "comment" : " в Лагере работорговцев"
+            "x" : "-99824", 
+            "y" : "-100160"
          }, 
          "child" : [ 
             "06703b8d-e7fa-4a25-a7c8-92c2757347af", 
@@ -3570,7 +3619,7 @@
          "desc" : { 
             "x" : "-99833", 
             "y" : "-99909", 
-            "comment" : "(A1) \n(в Лагере работорговцев)"
+            "comment" : "(A1) "
          }, 
          "child" : [ 
             "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
@@ -3613,7 +3662,7 @@
          "desc" : { 
             "x" : "-99604", 
             "y" : "-99882", 
-            "comment" : "(A1) \n(в Грейнхолде)"
+            "comment" : "(A1) "
          }, 
          "child" : [ 
             "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
@@ -3627,8 +3676,7 @@
          "class" : "StringsCompareNode", 
          "desc" : { 
             "x" : "-99344", 
-            "y" : "-100074", 
-            "comment" : "в Спайдер Кейве. Снаружи и в Подземке"
+            "y" : "-100074"
          }, 
          "child" : [ 
             "58d3fd53-0b59-4b8f-90b9-48815a66dd81", 
@@ -3643,7 +3691,7 @@
          "desc" : { 
             "x" : "-99366", 
             "y" : "-99861", 
-            "comment" : "(A1) \n(в Спайдер Кейве. Снаружи и в Подземке)"
+            "comment" : "(A1) "
          }, 
          "child" : [ 
             "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
@@ -3657,8 +3705,7 @@
          "class" : "HasKeywordValueNode", 
          "desc" : { 
             "x" : "-99136", 
-            "y" : "-100204", 
-            "comment" : " в Вайпер Шоале. Снаружи и в Подземке"
+            "y" : "-100204"
          }, 
          "child" : [ 
             "b8ecbc1c-ecb6-4366-ac7e-0abcd78a7f23", 
@@ -3672,7 +3719,7 @@
          "desc" : { 
             "x" : "-99105", 
             "y" : "-99875", 
-            "comment" : "(A1) \n(в Вайпер Шоале. Снаружи и в Подземке)"
+            "comment" : "(A1) "
          }, 
          "child" : [ 
             "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
@@ -3686,8 +3733,7 @@
          "class" : "HasKeywordValueNode", 
          "desc" : { 
             "x" : "-99102", 
-            "y" : "-100112", 
-            "comment" : " в Вайпер Шоале. Снаружи и в Подземке"
+            "y" : "-100112"
          }, 
          "child" : [ 
             "b8ecbc1c-ecb6-4366-ac7e-0abcd78a7f23", 
@@ -3700,8 +3746,7 @@
          "class" : "HasKeywordValueNode", 
          "desc" : { 
             "x" : "-98898", 
-            "y" : "-100196", 
-            "comment" : " в Логове Снатчера. Снаружи и в Подземке"
+            "y" : "-100196"
          }, 
          "child" : [ 
             "433525d8-cbd6-42a9-95bd-56429887fb19", 
@@ -3715,7 +3760,7 @@
          "desc" : { 
             "x" : "-98869", 
             "y" : "-99881", 
-            "comment" : "(A1) \n(в Логове Снатчера. Снаружи и в Подземке)"
+            "comment" : "(A1) "
          }, 
          "child" : [ 
             "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
@@ -3729,8 +3774,7 @@
          "class" : "HasKeywordValueNode", 
          "desc" : { 
             "x" : "-98863", 
-            "y" : "-100115", 
-            "comment" : " в Логове Снатчера. Снаружи и в Подземке"
+            "y" : "-100115"
          }, 
          "child" : [ 
             "433525d8-cbd6-42a9-95bd-56429887fb19", 
@@ -3743,8 +3787,7 @@
          "class" : "HasKeywordValueNode", 
          "desc" : { 
             "x" : "-98653", 
-            "y" : "-100223", 
-            "comment" : " в Руинах Крессетвола. Снаружи и в Подземке"
+            "y" : "-100223"
          }, 
          "child" : [ 
             "eaf8b106-0938-4243-8188-b27d11fc901e", 
@@ -3758,7 +3801,7 @@
          "desc" : { 
             "x" : "-98631", 
             "y" : "-99853", 
-            "comment" : "(A1) \n(в Руинах Крессетвола. Снаружи и в Подземке)"
+            "comment" : "(A1) "
          }, 
          "child" : [ 
             "326be21a-64a9-4e49-8a86-f3f5b0394e75", 
@@ -3772,8 +3815,7 @@
          "class" : "HasKeywordValueNode", 
          "desc" : { 
             "x" : "-98617", 
-            "y" : "-100129", 
-            "comment" : " в Руинах Крессетвола. Снаружи и в Подземке"
+            "y" : "-100129"
          }, 
          "child" : [ 
             "eaf8b106-0938-4243-8188-b27d11fc901e", 
@@ -3874,7 +3916,7 @@
       "0f589405-0878-42e8-a2e0-bdc82729d4d6" : { 
          "class" : "MathCompareValuesNode", 
          "desc" : { 
-            "x" : "-98380", 
+            "x" : "-98346", 
             "y" : "-100802"
          }, 
          "child" : [ 
@@ -3914,11 +3956,12 @@
       "376c597b-7b99-4234-8b60-94cc464bbd28" : { 
          "class" : "MathCompareValuesNode", 
          "desc" : { 
-            "x" : "-98067", 
-            "y" : "-100789"
+            "x" : "-98023", 
+            "y" : "-100797"
          }, 
          "child" : [ 
-            "89d57d9b-7b51-406b-90a8-c101f4f8a41f"
+            "89d57d9b-7b51-406b-90a8-c101f4f8a41f", 
+            "768a6fbe-4178-487e-aea5-7a9fd2905ebe"
          ], 
          "value1" : "$LOVE$", 
          "value2" : "10", 
@@ -3950,11 +3993,20 @@
          "sound" : "Sounds/Voice/Liris/Liris_AT7", 
          "mode" : "PlayOnCharacterVoiceWhoop"
       }, 
+      "768a6fbe-4178-487e-aea5-7a9fd2905ebe" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-97934", 
+            "y" : "-100673"
+         }, 
+         "child" : [ 
+         ]
+      }, 
       "a2035d8a-7c9e-4924-beea-79de066b4934" : { 
          "class" : "RemoveKeywordNode", 
          "desc" : { 
             "x" : "-99267", 
-            "y" : "-100983"
+            "y" : "-101045"
          }, 
          "child" : [ 
             "8fe394aa-eda8-4a9e-855a-135bf2fa7b7c"
@@ -3964,8 +4016,8 @@
       "8ac436b2-36af-4f93-85c9-5efec045eda9" : { 
          "class" : "AddKeywordValueNode", 
          "desc" : { 
-            "x" : "-99088", 
-            "y" : "-101580"
+            "x" : "-99256", 
+            "y" : "-101650"
          }, 
          "child" : [ 
             "e17f9c36-981a-4f97-a70d-0ca5ac2f181e"
@@ -3977,8 +4029,8 @@
       "e17f9c36-981a-4f97-a70d-0ca5ac2f181e" : { 
          "class" : "AddKeywordValueNode", 
          "desc" : { 
-            "x" : "-99078", 
-            "y" : "-101462"
+            "x" : "-99257", 
+            "y" : "-101550"
          }, 
          "child" : [ 
             "125f9ed2-2d2d-4d0e-8a43-b361da90ec90"
@@ -3990,8 +4042,8 @@
       "125f9ed2-2d2d-4d0e-8a43-b361da90ec90" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-99075", 
-            "y" : "-101346"
+            "x" : "-99257", 
+            "y" : "-101450"
          }, 
          "child" : [ 
             "f4401a50-708c-43a7-a5a6-dac25d8754c7"

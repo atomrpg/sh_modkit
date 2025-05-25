@@ -3,8 +3,8 @@
       "a40b57d8-3d25-4ea1-9267-ee3e1faf278f" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-99866", 
-            "y" : "-97574"
+            "x" : "-99927", 
+            "y" : "-97535"
          }, 
          "child" : [ 
             "f8e8c8d0-a381-4c15-ad19-5febb65e6698"
@@ -13,8 +13,8 @@
       "f8e8c8d0-a381-4c15-ad19-5febb65e6698" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-99866", 
-            "y" : "-97509"
+            "x" : "-99927", 
+            "y" : "-97496"
          }, 
          "child" : [ 
             "5b60ce66-f191-45f0-93e0-c7d677ce7680", 
@@ -40,50 +40,142 @@
             "y" : "-97237"
          }, 
          "child" : [ 
-            "84f14bab-1cac-4267-be20-3347ccbdad65", 
+            "9174ef4c-e533-451a-bc9f-3b11a37ab4ab", 
             "ba8eb358-2d5b-46ce-886b-f5012420ab19"
          ], 
          "key" : "EXIT_TEAM"
       }, 
-      "84f14bab-1cac-4267-be20-3347ccbdad65" : { 
-         "class" : "RemoveKeywordNode", 
+      "9174ef4c-e533-451a-bc9f-3b11a37ab4ab" : { 
+         "class" : "CharacterGetCurrentLocationName", 
          "desc" : { 
-            "x" : "-100483", 
-            "y" : "-97115"
+            "x" : "-100569", 
+            "y" : "-97100"
          }, 
          "child" : [ 
-            "828e4dd5-9f32-41dd-affd-8964b40425f6"
+            "5b4397b9-4979-4fda-b0b1-b70222a50e7f"
+         ], 
+         "objectName" : "$SELF$", 
+         "resultVariable" : "_OBJECT_LOCATION_NAME"
+      }, 
+      "5b4397b9-4979-4fda-b0b1-b70222a50e7f" : { 
+         "class" : "HasKeywordValueNode", 
+         "desc" : { 
+            "x" : "-100564", 
+            "y" : "-97005"
+         }, 
+         "child" : [ 
+            "5b87176b-6596-4b9c-86ba-1a65e7637b80", 
+            "446bd7d8-e3d1-4500-a2e8-45014099a87a"
+         ], 
+         "key" : "_OBJECT_LOCATION_NAME", 
+         "value" : "Test_Scene"
+      }, 
+      "5b87176b-6596-4b9c-86ba-1a65e7637b80" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-100628", 
+            "y" : "-96840"
+         }, 
+         "child" : [ 
+            "fc3c0650-c971-41e7-b453-1885d46b20ac", 
+            "ef0b0fa8-268e-427a-905e-5bcf6fbe67d6"
+         ]
+      }, 
+      "fc3c0650-c971-41e7-b453-1885d46b20ac" : { 
+         "class" : "RemoveKeywordNode", 
+         "desc" : { 
+            "x" : "-100907", 
+            "y" : "-96748"
+         }, 
+         "child" : [ 
+            "54650c90-9667-497c-a203-d87e7654eb01"
          ], 
          "key" : "TEAMMATE"
       }, 
-      "828e4dd5-9f32-41dd-affd-8964b40425f6" : { 
+      "54650c90-9667-497c-a203-d87e7654eb01" : { 
          "class" : "RemoveKeywordNode", 
          "desc" : { 
-            "x" : "-100483", 
-            "y" : "-97033"
+            "x" : "-100906", 
+            "y" : "-96685"
          }, 
          "child" : [ 
-            "01a301df-1e48-42b2-92c4-694c514b9f27"
+            "70aa5e71-b8cf-485c-9a7c-c5a85afad0dc"
          ], 
          "key" : "EXIT_TEAM"
       }, 
-      "01a301df-1e48-42b2-92c4-694c514b9f27" : { 
+      "70aa5e71-b8cf-485c-9a7c-c5a85afad0dc" : { 
          "class" : "CharacterSetCapsNode", 
          "desc" : { 
-            "x" : "-100483", 
-            "y" : "-96950"
+            "x" : "-100906", 
+            "y" : "-96622"
          }, 
          "child" : [ 
-            "ef0b0fa8-268e-427a-905e-5bcf6fbe67d6"
+            "9c6af649-8f83-487d-bccc-da9f3369d4a3"
          ], 
          "objectName" : "$SELF$", 
          "caps" : "None"
       }, 
+      "9c6af649-8f83-487d-bccc-da9f3369d4a3" : { 
+         "class" : "RemoveKeywordsNode", 
+         "desc" : { 
+            "x" : "-100907", 
+            "y" : "-96542"
+         }, 
+         "child" : [ 
+            "4d639847-b5ae-4824-b72d-0f917fc1e210"
+         ], 
+         "keys" : [ 
+            "_CAN_SPEAK", 
+            "_MOVETO_POINT_TIME", 
+            "_INTERRUPTION_DELAY_MIN_SS", 
+            "_INTERRUPTION_DELAY_MAX_SS", 
+            "_STATE_CYCLE_MIN_SS", 
+            "_STATE_CYCLE_MAX_SS", 
+            "_SUBSTATE_BEGIN_NAME", 
+            "_SUBSTATE_NAME", 
+            "_SCRIPT_PATH", 
+            "_NO_INTERRUPT_ON_DIALOG", 
+            "_CONDITION_ITEM", 
+            "_WAYPOINT_NAME", 
+            "_CONDITION_NOITEM", 
+            "_ANIMATION_TYPE", 
+            "_ANIMATION_POOL_COUNT", 
+            "_RUN_RANDOM", 
+            "_NEW_WAYPOINTS_FILTER", 
+            "_SKIP_IF_UNREACHABLE", 
+            "_STATE_TIME"
+         ]
+      }, 
+      "4d639847-b5ae-4824-b72d-0f917fc1e210" : { 
+         "class" : "AddKeywordValueNode", 
+         "desc" : { 
+            "x" : "-100907", 
+            "y" : "-96436"
+         }, 
+         "child" : [ 
+            "37ec200a-1cd0-4293-8830-f6cd8164c321"
+         ], 
+         "objectName" : "$SELF$", 
+         "key" : "_STATE_TIME", 
+         "value" : "$TIME$"
+      }, 
+      "37ec200a-1cd0-4293-8830-f6cd8164c321" : { 
+         "class" : "AddKeywordValueNode", 
+         "desc" : { 
+            "x" : "-100906", 
+            "y" : "-96334"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "key" : "_WANT_TO_MAKE_DECISION", 
+         "value" : "1"
+      }, 
       "ef0b0fa8-268e-427a-905e-5bcf6fbe67d6" : { 
          "class" : "RestartBehaviorRequestNode", 
          "desc" : { 
-            "x" : "-100482", 
-            "y" : "-96844"
+            "x" : "-100666", 
+            "y" : "-96748"
          }, 
          "child" : [ 
             "564f8a38-6e08-4c74-a03e-357e34cd852d"
@@ -93,12 +185,92 @@
       "564f8a38-6e08-4c74-a03e-357e34cd852d" : { 
          "class" : "RestartBehaviorRequestNode", 
          "desc" : { 
-            "x" : "-100482", 
-            "y" : "-96761"
+            "x" : "-100667", 
+            "y" : "-96685"
          }, 
          "child" : [ 
          ], 
          "objectName" : "$SELF$"
+      }, 
+      "446bd7d8-e3d1-4500-a2e8-45014099a87a" : { 
+         "class" : "SafeSectionEndNode", 
+         "desc" : { 
+            "x" : "-100393", 
+            "y" : "-96869"
+         }, 
+         "child" : [ 
+            "6b8e979b-ac52-4259-9cee-2ca6ea69525f"
+         ]
+      }, 
+      "6b8e979b-ac52-4259-9cee-2ca6ea69525f" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-100389", 
+            "y" : "-96828"
+         }, 
+         "child" : [ 
+            "fc3c0650-c971-41e7-b453-1885d46b20ac", 
+            "12789cf1-400e-475f-8cc9-47ebade86e03"
+         ]
+      }, 
+      "12789cf1-400e-475f-8cc9-47ebade86e03" : { 
+         "class" : "FlashSplashNode", 
+         "desc" : { 
+            "x" : "-100426", 
+            "y" : "-96757"
+         }, 
+         "child" : [ 
+            "259291f7-eed7-40ce-98a5-c67256186ab6"
+         ], 
+         "waitEnd" : "false", 
+         "waitTime" : "2"
+      }, 
+      "259291f7-eed7-40ce-98a5-c67256186ab6" : { 
+         "class" : "TeleportEntityToLevelNode", 
+         "desc" : { 
+            "x" : "-100427", 
+            "y" : "-96656"
+         }, 
+         "child" : [ 
+            "24039c1d-aef5-439b-8a62-bf7616200349", 
+            "6b031a12-4e6a-46ef-bbf4-7e18352a990c"
+         ], 
+         "objectName" : "$SELF$", 
+         "fromlevelName" : "$_OBJECT_LOCATION_NAME$", 
+         "tolevelName" : "Test_Scene", 
+         "resultToVariable" : "_LIRIS_TELEPORT_RESULT", 
+         "spawnPoint" : "Liris.way", 
+         "scrollTimeMM" : "0", 
+         "autoSave" : "false"
+      }, 
+      "24039c1d-aef5-439b-8a62-bf7616200349" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-100409", 
+            "y" : "-96431"
+         }, 
+         "child" : [ 
+            "5515c092-e549-4daf-907d-3048aa16218a"
+         ]
+      }, 
+      "5515c092-e549-4daf-907d-3048aa16218a" : { 
+         "class" : "SafeSectionEndNode", 
+         "desc" : { 
+            "x" : "-100370", 
+            "y" : "-96344"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "6b031a12-4e6a-46ef-bbf4-7e18352a990c" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-100338", 
+            "y" : "-96399"
+         }, 
+         "child" : [ 
+            "5515c092-e549-4daf-907d-3048aa16218a"
+         ]
       }, 
       "ba8eb358-2d5b-46ce-886b-f5012420ab19" : { 
          "class" : "OnDialogEventNode", 
@@ -160,8 +332,8 @@
       "7585beb7-69bb-4952-b8f9-6b86aaa67fad" : { 
          "class" : "HasKeywordNode", 
          "desc" : { 
-            "x" : "-99647", 
-            "y" : "-97385"
+            "x" : "-99756", 
+            "y" : "-97382"
          }, 
          "child" : [ 
             "97b5c5fc-c4a9-4ecf-ba08-dc377082e5cc", 
@@ -172,8 +344,8 @@
       "97b5c5fc-c4a9-4ecf-ba08-dc377082e5cc" : { 
          "class" : "RemoveKeywordNode", 
          "desc" : { 
-            "x" : "-99681", 
-            "y" : "-97261"
+            "x" : "-99790", 
+            "y" : "-97270"
          }, 
          "child" : [ 
             "7a7e405b-7a50-4537-8f5f-27bd7885c644"
@@ -183,8 +355,8 @@
       "7a7e405b-7a50-4537-8f5f-27bd7885c644" : { 
          "class" : "PlayScriptNode", 
          "desc" : { 
-            "x" : "-99681", 
-            "y" : "-97180"
+            "x" : "-99790", 
+            "y" : "-97207"
          }, 
          "child" : [ 
          ], 
@@ -194,8 +366,8 @@
       "68b2de27-cd29-41ed-91e1-3d89a8ecfb1a" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-99558", 
-            "y" : "-97298"
+            "x" : "-99667", 
+            "y" : "-97302"
          }, 
          "child" : [ 
          ]
