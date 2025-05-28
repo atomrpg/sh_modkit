@@ -32,7 +32,7 @@ public class PlayInEditor : MonoBehaviour
 
         override public UnityEngine.Object LoadAsset(string name, System.Type type)
         {
-            return Resources.Load(name, type);
+            return Resources.Load(System.IO.Path.ChangeExtension(name, null), type);
         }
 
         public override ResourceManager.IResourceManagerAsyncOperationHandle LoadAssetAsync(string name, System.Type type)
@@ -84,7 +84,8 @@ public class PlayInEditor : MonoBehaviour
 
             for (int i = 0, end = guids.Length; i!=end; ++i)
             {
-                allAssets[i] = AssetDatabase.GUIDToAssetPath(guids[i]).ToLower();
+                var path = AssetDatabase.GUIDToAssetPath(guids[i]).ToLower().Replace(RefUtils.PATH_TO_RES, "");
+                allAssets[i] = path;
             }
 
             return allAssets;
