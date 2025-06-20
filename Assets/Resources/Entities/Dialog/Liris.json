@@ -161,8 +161,8 @@
       "aa30d53b-1178-4c1d-ac46-2b16cf80eb63" : { 
          "class" : "DialogAnswerNode", 
          "desc" : { 
-            "x" : "-102034", 
-            "y" : "-100255", 
+            "x" : "-102032", 
+            "y" : "-100271", 
             "comment" : "GOTO A16"
          }, 
          "child" : [ 
@@ -173,23 +173,23 @@
       "e2aa3373-d746-4529-a8a2-ff5b4e314366" : { 
          "class" : "CompareKeyValueNode", 
          "desc" : { 
-            "x" : "-102039", 
-            "y" : "-100174"
+            "x" : "-102033", 
+            "y" : "-100190"
          }, 
          "child" : [ 
             "75343392-da6c-4fe6-9072-c6297b13e642", 
             "03a88883-6391-4701-a2eb-be4a7bdf5cf1"
          ], 
          "objectName" : "$SELF$", 
-         "key" : "TEAM_COUNT", 
+         "key" : "TM_COUNT", 
          "value" : "4", 
          "opp" : "GreaterEqual"
       }, 
       "75343392-da6c-4fe6-9072-c6297b13e642" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-102198", 
-            "y" : "-99977", 
+            "x" : "-102068", 
+            "y" : "-100034", 
             "comment" : "(A15) ", 
             "historytag" : "A15"
          }, 
@@ -249,8 +249,8 @@
       "03a88883-6391-4701-a2eb-be4a7bdf5cf1" : { 
          "class" : "DialogPhraseNode", 
          "desc" : { 
-            "x" : "-101121", 
-            "y" : "-98750", 
+            "x" : "-101042", 
+            "y" : "-98871", 
             "comment" : "(A16) ", 
             "historytag" : "A16"
          }, 
@@ -262,8 +262,8 @@
       "10778171-ee67-4cc3-bc8f-b92b1035d466" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-101120", 
-            "y" : "-98636"
+            "x" : "-101041", 
+            "y" : "-98757"
          }, 
          "child" : [ 
             "cd4b54fb-7cd8-4f47-a3ca-baee2fd199ea"
@@ -273,8 +273,8 @@
       "cd4b54fb-7cd8-4f47-a3ca-baee2fd199ea" : { 
          "class" : "CharacterSetCapsNode", 
          "desc" : { 
-            "x" : "-101121", 
-            "y" : "-98573"
+            "x" : "-101042", 
+            "y" : "-98694"
          }, 
          "child" : [ 
             "12454123-f47d-4ad8-9f11-1d2f7c11be70"
@@ -285,8 +285,8 @@
       "12454123-f47d-4ad8-9f11-1d2f7c11be70" : { 
          "class" : "SetRelationShipBetweenFractionsNode", 
          "desc" : { 
-            "x" : "-101137", 
-            "y" : "-98494"
+            "x" : "-101047", 
+            "y" : "-98614"
          }, 
          "child" : [ 
             "33cc673e-0b4e-4fdb-bb9f-bea972085d60"
@@ -298,8 +298,8 @@
       "33cc673e-0b4e-4fdb-bb9f-bea972085d60" : { 
          "class" : "RestartBehaviorRequestNode", 
          "desc" : { 
-            "x" : "-101121", 
-            "y" : "-98391"
+            "x" : "-101042", 
+            "y" : "-98512"
          }, 
          "child" : [ 
             "184b8a0a-5bfe-4f9b-8e67-43b7a9d65751"
@@ -309,8 +309,8 @@
       "184b8a0a-5bfe-4f9b-8e67-43b7a9d65751" : { 
          "class" : "RestartBehaviorRequestNode", 
          "desc" : { 
-            "x" : "-101121", 
-            "y" : "-98328"
+            "x" : "-101042", 
+            "y" : "-98449"
          }, 
          "child" : [ 
             "648e56c2-aa55-45a0-aa50-eb0535a3351f"
@@ -320,8 +320,8 @@
       "648e56c2-aa55-45a0-aa50-eb0535a3351f" : { 
          "class" : "RestartBehaviorRequestNode", 
          "desc" : { 
-            "x" : "-101121", 
-            "y" : "-98267"
+            "x" : "-101042", 
+            "y" : "-98388"
          }, 
          "child" : [ 
             "aeb4997f-f682-4843-b474-330fe3ff944b"
@@ -331,8 +331,8 @@
       "aeb4997f-f682-4843-b474-330fe3ff944b" : { 
          "class" : "DialogEndNode", 
          "desc" : { 
-            "x" : "-101121", 
-            "y" : "-98204"
+            "x" : "-101042", 
+            "y" : "-98325"
          }, 
          "child" : [ 
          ], 
@@ -713,15 +713,15 @@
             "97d84827-1431-4d65-bcf1-5605b9543338"
          ], 
          "objectName" : "$SELF$", 
-         "key" : "TEAM_COUNT", 
+         "key" : "TM_COUNT", 
          "value" : "4", 
          "opp" : "GreaterEqual"
       }, 
       "1de1d54f-5527-4e09-89f2-91b5752b22ed" : { 
          "class" : "DialogContinueNode", 
          "desc" : { 
-            "x" : "-100831", 
-            "y" : "-99210", 
+            "x" : "-100826", 
+            "y" : "-99212", 
             "comment" : "(A13) "
          }, 
          "child" : [ 
