@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Reflection;
+using Steamworks;
 
 //[assembly: AssemblyTitle("My Mod")] // Optional: Set your mod's title for display in metadata
 public class ModEntryPoint : MonoBehaviour // This class is the reserved entry point for the mod
@@ -58,10 +59,22 @@ public class ModEntryPoint : MonoBehaviour // This class is the reserved entry p
         // Called when a new game starts or a save is loaded
     }
 
+
+    const float newMinAngle = 5;
+    void PatchCamera()
+    {
+        Debug.LogWarning("PP");
+        var type = typeof(CameraControl);
+        FieldInfo minField = type.GetField("mouseYMin", BindingFlags.NonPublic | BindingFlags.Instance);
+        var cameraControl = Game.World.cameraControl;
+        if (minField != null) minField.SetValue(cameraControl, newMinAngle);
+    }
+
     void LevelLoaded(GlobalEvents.LevelLoaded evnt)
     {
         // Called when a new level is loaded
         // Debug.Log(evnt.levelName); // Uncomment for debug output
+        PatchCamera();
     }
 
     void Update()
