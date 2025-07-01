@@ -31,8 +31,8 @@ public class ModEntryPoint : MonoBehaviour // This class is the reserved entry p
     void LoadModBundle()
     {
 #if UNITY_EDITOR
-        // In Editor: skip loading bundles during Play In Editor mode
-#else
+// In Editor: skip loading bundles during Play In Editor mode
+#elif !SCRIPT_ONLY_MOD
         // Load resources and scenes from AssetBundles (must be built beforehand)
         ResourceManager.AddBundle(_modName + "_resources", AssetBundle.LoadFromFile(_dir + "/" + _modName + "_resources"));
         ResourceManager.AddSceneBundle(_modName + "_scenes", AssetBundle.LoadFromFile(_dir + "/" + _modName + "_scenes"));
@@ -41,11 +41,13 @@ public class ModEntryPoint : MonoBehaviour // This class is the reserved entry p
 
     void ApplyLocalization()
     {
+#if !SCRIPT_ONLY_MOD
         // Load English strings by default
         Localization.LoadStrings(_modName + "_strings_", "en");
 
         // Optional: load strings based on current language
         // Localization.LoadStrings(_modName + "_strings_", Localization.Language);
+#endif
     }
 
     void LanguageChanged(GlobalEvents.LanguageChanged evnt)
