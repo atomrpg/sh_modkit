@@ -214,8 +214,6 @@ public class ModBuilder : EditorWindow
 
                 Directory.CreateDirectory(PATH_BUILD_BUNDLE);
 
-                string[] levelBundleList = null;
-
                 {
                     foreach (var assetBundleName in AssetDatabase.GetAllAssetBundleNames())
                     {
@@ -249,6 +247,16 @@ public class ModBuilder : EditorWindow
                 AssetImporter.GetAtPath("Assets/Resources").SetAssetBundleNameAndVariant(modName + "_resources", "");
 
                 AssetDatabase.Refresh();
+
+                BuildTargetGroup buildTargetGroup = BuildPipeline.GetBuildTargetGroup(buildTarget);
+                string baseDefines = PlayerSettings.GetScriptingDefineSymbolsForGroup(buildTargetGroup);
+                string newDefines = baseDefines;
+
+                if (!buildAssetBundle)
+                {
+                    newDefines = AddCompilerDefines(baseDefines, new string[] { "SCRIPT_ONLY_MOD" });
+                    PlayerSettings.SetScriptingDefineSymbolsForGroup(buildTargetGroup, newDefines);
+                }
 
                 if (buildAssetBundle)
                 {
@@ -314,6 +322,11 @@ public class ModBuilder : EditorWindow
                 Copy("Temp/ModBuild_dll/" + modName + ".pdb", "Temp/ModBuild/" + modName + ".pdb");
 
                 EditorUtility.RevealInFinder(modsFolder + "/" + modName + ".dll");
+
+                if (newDefines != baseDefines)
+                {
+                    PlayerSettings.SetScriptingDefineSymbolsForGroup(buildTargetGroup, baseDefines);
+                }
 
                 AssetViewerDB.Load();
             }
