@@ -13,7 +13,7 @@ public class ModEntryPoint : MonoBehaviour // This class is the reserved entry p
         var assembly = GetType().Assembly;
         _modName = assembly.GetName().Name;
         _dir = System.IO.Path.GetDirectoryName(assembly.Location);
-        Debug.Log("Mod Init: " + _modName + " (" + _dir + ")");
+        Debug.Log("Attribute Pills Init: " + _modName + " (" + _dir + ")");
 
         // Register callbacks for game events
         GlobalEvents.AddListener<GlobalEvents.GameStart>(GameLoaded);
@@ -24,7 +24,7 @@ public class ModEntryPoint : MonoBehaviour // This class is the reserved entry p
         LoadModBundle();
 
         // Load localization strings (if available)
-        ApplyLocalization();
+        //ApplyLocalization();
     }
 
     void LoadModBundle()
@@ -42,7 +42,7 @@ public class ModEntryPoint : MonoBehaviour // This class is the reserved entry p
     {
 #if !SCRIPT_ONLY_MOD
         // Load English strings by default
-        Localization.LoadStrings(_modName + "_strings_", "en");
+        //Localization.LoadStrings(_modName + "_strings_", "en");
 
         // Optional: load strings based on current language
         // Localization.LoadStrings(_modName + "_strings_", Localization.Language);
@@ -52,7 +52,7 @@ public class ModEntryPoint : MonoBehaviour // This class is the reserved entry p
     void LanguageChanged(GlobalEvents.LanguageChanged evnt)
     {
         // Reapply localization on language change
-        ApplyLocalization();
+        //ApplyLocalization();
     }
 
     void GameLoaded(GlobalEvents.GameStart evnt)
@@ -62,12 +62,6 @@ public class ModEntryPoint : MonoBehaviour // This class is the reserved entry p
 
     void LevelLoaded(GlobalEvents.LevelLoaded evnt)
     {
-        // Called when a new level is loaded
-        // Debug.Log(evnt.levelName); // Uncomment for debug output
-    }
-
-    void Update()
-    {
-        // Called every frame — usually not needed for simple mods
+        Game.World.gameLogic.PlayScript("Entities/Behavior/AttributePillsModBehavior", Game.World.Player.CharacterComponent.gameObject);
     }
 }

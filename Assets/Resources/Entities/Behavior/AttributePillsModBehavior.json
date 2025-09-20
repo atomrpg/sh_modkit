@@ -1,0 +1,98 @@
+{ 
+   "states" : { 
+      "9efe6383-088d-41d7-aab1-af04d6b569e6" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-100918", 
+            "y" : "-100741"
+         }, 
+         "child" : [ 
+            "3385f90c-45cb-458a-be37-3b42fe865711"
+         ]
+      }, 
+      "3385f90c-45cb-458a-be37-3b42fe865711" : { 
+         "class" : "CharacterGetCurrentLocationName", 
+         "desc" : { 
+            "x" : "-100982", 
+            "y" : "-100700"
+         }, 
+         "child" : [ 
+            "3cc5a490-085b-4eec-bb3c-7a818c28144d"
+         ], 
+         "objectName" : "$SELF$", 
+         "resultVariable" : "_PILLS_MOD_LOCATION"
+      }, 
+      "3cc5a490-085b-4eec-bb3c-7a818c28144d" : { 
+         "class" : "HasKeywordValueNode", 
+         "desc" : { 
+            "x" : "-100973", 
+            "y" : "-100603"
+         }, 
+         "child" : [ 
+            "f19cfdc5-ca7e-4c42-a06a-7277712e8e7b", 
+            "32d7423f-8529-40a4-8c47-87967ea11e73"
+         ], 
+         "key" : "_PILLS_MOD_LOCATION", 
+         "value" : "Coast"
+      }, 
+      "f19cfdc5-ca7e-4c42-a06a-7277712e8e7b" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-101008", 
+            "y" : "-100475"
+         }, 
+         "child" : [ 
+            "c5557b9b-b336-4687-aef9-cb9c1e956bea", 
+            "4095cad8-d401-45b3-88a2-e1dd013b9ead"
+         ], 
+         "key" : "_PILLS_MOD_INIT"
+      }, 
+      "c5557b9b-b336-4687-aef9-cb9c1e956bea" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-100988", 
+            "y" : "-100395"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "4095cad8-d401-45b3-88a2-e1dd013b9ead" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-100973", 
+            "y" : "-100365"
+         }, 
+         "child" : [ 
+            "d03607b9-8120-41c7-b7d5-43ee81b2f9d8"
+         ], 
+         "key" : "_PILLS_MOD_INIT"
+      }, 
+      "d03607b9-8120-41c7-b7d5-43ee81b2f9d8" : { 
+         "class" : "InventoryAddItemNode", 
+         "desc" : { 
+            "x" : "-100973", 
+            "y" : "-100290"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "CrateWood_1", 
+         "item" : { 
+            "class" : "Consumable", 
+            "count" : "5", 
+            "proto" : "al_p_mysteriouspill"
+         }, 
+         "showLogMessage" : "false", 
+         "markAsStolen" : "false"
+      }, 
+      "32d7423f-8529-40a4-8c47-87967ea11e73" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-100884", 
+            "y" : "-100505"
+         }, 
+         "child" : [ 
+         ]
+      }
+   }, 
+   "entry" : "9efe6383-088d-41d7-aab1-af04d6b569e6"
+}
