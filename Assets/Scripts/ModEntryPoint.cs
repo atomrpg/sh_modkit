@@ -24,7 +24,7 @@ public class ModEntryPoint : MonoBehaviour // This class is the reserved entry p
         LoadModBundle();
 
         // Load localization strings (if available)
-        ApplyLocalization();
+        //ApplyLocalization();
     }
 
     void LoadModBundle()
@@ -42,7 +42,7 @@ public class ModEntryPoint : MonoBehaviour // This class is the reserved entry p
     {
 #if !SCRIPT_ONLY_MOD
         // Load English strings by default
-        Localization.LoadStrings(_modName + "_strings_", "en");
+        //Localization.LoadStrings(_modName + "_strings_", "en");
 
         // Optional: load strings based on current language
         // Localization.LoadStrings(_modName + "_strings_", Localization.Language);
@@ -52,22 +52,37 @@ public class ModEntryPoint : MonoBehaviour // This class is the reserved entry p
     void LanguageChanged(GlobalEvents.LanguageChanged evnt)
     {
         // Reapply localization on language change
-        ApplyLocalization();
+        //ApplyLocalization();
     }
 
     void GameLoaded(GlobalEvents.GameStart evnt)
     {
         // Called when a new game starts or a save is loaded
+        
     }
+
+    void PatchCarryWeight()
+    {
+        if(Game.World != null && Game.World.Player != null)
+        {
+            var team = Game.World.GetAllTeam();
+            foreach (var member in team)
+            {
+                member.Character.AddPerk(new PerkProtoRef() { path = "Entities/Perks/ModCarryWeight" });
+            }
+        }
+    }
+
 
     void LevelLoaded(GlobalEvents.LevelLoaded evnt)
     {
         // Called when a new level is loaded
         // Debug.Log(evnt.levelName); // Uncomment for debug output
+        PatchCarryWeight();
     }
 
     void Update()
     {
-        // Called every frame — usually not needed for simple mods
+
     }
 }
