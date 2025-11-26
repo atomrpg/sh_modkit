@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5193117700055735669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1038894993028528959}
+  - component: {fileID: 3420790212300587069}
+  - component: {fileID: 3951646598167848962}
+  m_Layer: 0
+  m_Name: SHIELD_PORK_AEGIS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1038894993028528959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5193117700055735669}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6039679169430974340}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3420790212300587069
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5193117700055735669}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6, y: 0.74910355, z: 1.6}
+  m_Center: {x: -0.36, y: 0.08201021, z: 0.04653603}
+--- !u!114 &3951646598167848962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5193117700055735669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -186394338, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mEntityData: '{"class":"Shield", "skin":"NoSkin", "count":"1", "proto":"shield_pork_aegis"}'
+  AdditionalInteractRadius: 1
+--- !u!1001 &6078726214095145071
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1038894993028528959}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.364
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.085
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.072
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6994008
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7119215
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0630942
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.005055232
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 94.81201
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 75.062
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 80.591
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_Name
+      value: PorkShield
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ccf046995eda7b244ac8360ccc696bea, type: 3}
+--- !u!4 &6039679169430974340 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+    type: 3}
+  m_PrefabInstance: {fileID: 6078726214095145071}
+  m_PrefabAsset: {fileID: 0}
