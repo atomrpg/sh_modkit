@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: -674004112, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
   m_Name: EXTRA_MEGABACKPACK
   m_EditorClassIdentifier: 
-  prefab: {fileID: 919132149155446097, guid: d46448b41cf1d7c48ac3cd2f41607f8d, type: 3}
+  prefab: {fileID: 2918007061440450739, guid: 7d1b3774b5d8b4645a2da1769731c23b, type: 3}
   BoneRoot:
-  - mixamorig:CloakL2
-  - mixamorig:CloakR2
+  - mixamorig:Rucksack
   BoneSettings:
     path: Physics/Cloth/DefaultBoneSettings
