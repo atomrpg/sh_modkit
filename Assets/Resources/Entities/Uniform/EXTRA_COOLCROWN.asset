@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 800294487, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: EXTRA_COOLCROWN
+  m_EditorClassIdentifier: 
+  Icon:
+    path: Entities/Uniform/EXTRA_COOLCROWN
+  m_Localization: uniform.extra_coolcrown
+  Takeable: 1
+  UISounds:
+    path: Entities/Sound/Items/DefaultClothes
+  Cost: 1800
+  Weight: 2000
+  ItemPerks: 0
+  LegalTrade: 1
+  Collectable: 1
+  TradeMode: 0
+  TradeModeNames: []
+  Modifiers:
+  - _type: 15
+    _value: 10
+  - _type: 13
+    _value: 10
+  - _type: 14
+    _value: 10
+  - _type: 24
+    _value: 1
+  uniformQuality: 5
+  UniformMaterialProto:
+    path: Entities/Sound/Uniform/Cloth
+  PartsPathes: []
+  AnimationOverrideList:
+    path: 
+  HideMask: 1
+  rules: []
+  rulesEx: 0
+  Perks: 0
+  EquipIcon:
+    path: 
+  soundFit:
+    path: 
