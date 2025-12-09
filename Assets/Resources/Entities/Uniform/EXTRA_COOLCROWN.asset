@@ -34,7 +34,7 @@ MonoBehaviour:
     _value: 10
   - _type: 24
     _value: 1
-  uniformQuality: 5
+  uniformQuality: 10
   UniformMaterialProto:
     path: Entities/Sound/Uniform/Cloth
   PartsPathes: []
