@@ -771,6 +771,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 709702344163786071}
+    - targetCorrespondingSourceObject: {fileID: 1892146064971564313, guid: 39318bc8834a720448aef95b1998fddb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3603178349500869689}
     - targetCorrespondingSourceObject: {fileID: 1082271958561512970, guid: 39318bc8834a720448aef95b1998fddb,
         type: 3}
       insertIndex: -1
@@ -784,6 +788,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 3018654483361336352}
   m_SourcePrefab: {fileID: 100100000, guid: 39318bc8834a720448aef95b1998fddb, type: 3}
+--- !u!137 &247900056450442864 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 9161945803722732881, guid: 39318bc8834a720448aef95b1998fddb,
+    type: 3}
+  m_PrefabInstance: {fileID: 8959193353791017761}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &354120053381292711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8700783698680967558, guid: 39318bc8834a720448aef95b1998fddb,
@@ -874,6 +884,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8959193353791017761}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7356403702888502840 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1892146064971564313, guid: 39318bc8834a720448aef95b1998fddb,
+    type: 3}
+  m_PrefabInstance: {fileID: 8959193353791017761}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3603178349500869689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7356403702888502840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1225809204, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - path: Models/Skins/Female_1_Body
+  rendererProxy: {fileID: 247900056450442864}
 --- !u!1 &8112138733765799536 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 39318bc8834a720448aef95b1998fddb,

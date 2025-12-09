@@ -784,6 +784,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8014575231581441914}
   m_PrefabAsset: {fileID: 0}
+--- !u!137 &5526582528371355370 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2561176214382977424, guid: 283b0f0710ec79c468339ebefae476fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 8014575231581441914}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5529599403860062585 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2559285840627121667, guid: 283b0f0710ec79c468339ebefae476fb,
@@ -980,7 +986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   materials:
   - path: Models/Skins/Male_1_Body
-  rendererProxy: {fileID: 0}
+  rendererProxy: {fileID: 5526582528371355370}
 --- !u!4 &7650938286376099605 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 366175167995203695, guid: 283b0f0710ec79c468339ebefae476fb,
