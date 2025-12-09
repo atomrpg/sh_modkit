@@ -64,6 +64,9 @@ public class ModBuilder : EditorWindow
     private int _modIndex = -1;
 
     StoreSteamService steam = new StoreSteamService();
+
+    BuildTarget buildTarget = BuildTarget.StandaloneWindows64;
+
     // string _modName = typeof(ModEntryPoint).Assembly.GetName().Name;
     [MenuItem("Game/Build Mod")]
     static public void BuildMod()
@@ -144,8 +147,6 @@ public class ModBuilder : EditorWindow
     //bool stripShaders = false;
     bool clearLogs = true;
 
-    BuildTarget buildTarget = BuildTarget.StandaloneWindows64;
-
     public static void ClearLogConsole()
     {
         var logEntries = System.Type.GetType("UnityEditor.LogEntries, UnityEditor.dll");
@@ -170,6 +171,12 @@ public class ModBuilder : EditorWindow
     {
         string modName = typeof(ModEntryPoint).Assembly.GetName().Name;
         GUILayout.Label("Build Settings", EditorStyles.boldLabel);
+
+        EditorGUILayout.BeginHorizontal();
+        EditorGUILayout.LabelField("Build Target:");
+        buildTarget = (BuildTarget)EditorGUILayout.EnumPopup(buildTarget);
+        EditorGUILayout.EndHorizontal();
+
         EditorGUILayout.BeginHorizontal();
         EditorGUILayout.LabelField("Mod Name", modName);
         if (GUILayout.Button("Change"))
@@ -282,7 +289,7 @@ public class ModBuilder : EditorWindow
                         }
                     }
 
-                    BuildPipeline.BuildAssetBundles(PATH_BUILD_BUNDLE, builds, BuildAssetBundleOptions.ChunkBasedCompression, BuildTarget.StandaloneWindows);
+                    BuildPipeline.BuildAssetBundles(PATH_BUILD_BUNDLE, builds, BuildAssetBundleOptions.ChunkBasedCompression, buildTarget);
                     //BuildPipeline.BuildAssetBundles(PATH_BUILD_BUNDLE, BuildAssetBundleOptions.ChunkBasedCompression/*BuildAssetBundleOptions.DisableWriteTypeTree*/, buildTarget);
                 }
 
@@ -300,7 +307,7 @@ public class ModBuilder : EditorWindow
                 }
 
                 var scs = new UnityEditor.Build.Player.ScriptCompilationSettings();
-                scs.group = BuildTargetGroup.Standalone;
+                scs.group = BuildPipeline.GetBuildTargetGroup(buildTarget);
                 scs.options = UnityEditor.Build.Player.ScriptCompilationOptions.None;
                 scs.target = buildTarget;
                 UnityEditor.Build.Player.PlayerBuildInterface.CompilePlayerScripts(scs, "Temp/ModBuild_dll");
