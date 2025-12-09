@@ -31,8 +31,8 @@ MonoBehaviour:
   - _type: 24
     _value: 1
   - _type: 26
-    _value: 30000
-  uniformQuality: 4
+    _value: 20000
+  uniformQuality: 10
   UniformMaterialProto:
     path: Entities/Sound/Uniform/Leather
   PartsPathes:

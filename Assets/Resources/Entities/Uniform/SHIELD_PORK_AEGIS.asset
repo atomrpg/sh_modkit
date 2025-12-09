@@ -27,7 +27,7 @@ MonoBehaviour:
   TradeModeNames: []
   Modifiers:
   - _type: 38
-    _value: 30
+    _value: 35
   - _type: 39
     _value: 3
   - _type: 23
