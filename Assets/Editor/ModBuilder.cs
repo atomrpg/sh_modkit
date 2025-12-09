@@ -193,6 +193,19 @@ public class ModBuilder : EditorWindow
 
         if (GUILayout.Button("BUILD"))
         {
+            BuildTargetGroup buildTargetGroup = BuildPipeline.GetBuildTargetGroup(buildTarget);
+
+            bool moduleInstalled = BuildPipeline.IsBuildTargetSupported(buildTargetGroup, buildTarget);
+
+            if (!moduleInstalled)
+            {
+                EditorUtility.DisplayDialog(
+                      "Build Module Missing",
+                      $"Build module for {buildTarget} is not installed.\n\nPlease install it via Unity Hub.",
+                      "OK");
+                return;
+            }
+
             if (modName.Length > 0)
             {
                 //ShaderBuildProcessor.SetEnabled(stripShaders);
@@ -255,7 +268,6 @@ public class ModBuilder : EditorWindow
 
                 AssetDatabase.Refresh();
 
-                BuildTargetGroup buildTargetGroup = BuildPipeline.GetBuildTargetGroup(buildTarget);
                 string baseDefines = PlayerSettings.GetScriptingDefineSymbolsForGroup(buildTargetGroup);
                 string newDefines = baseDefines;
 
