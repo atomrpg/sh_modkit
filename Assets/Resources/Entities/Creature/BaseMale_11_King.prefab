@@ -723,6 +723,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 8215751046585918033}
   m_SourcePrefab: {fileID: 100100000, guid: 283b0f0710ec79c468339ebefae476fb, type: 3}
+--- !u!1 &45454722759052224 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8041178653266314426, guid: 283b0f0710ec79c468339ebefae476fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 8014575231581441914}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &866906853769931175 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2072040086291044643, guid: 283b0f0710ec79c468339ebefae476fb,
@@ -923,7 +929,8 @@ MonoBehaviour:
   ShoesList:
   - {fileID: 1288869971700781564}
   ShowSocksByDefault: 1
-  SocksList: []
+  SocksList:
+  - {fileID: 45454722759052224}
   Circle: {fileID: 6419671968715884695}
   _customLinks: []
 --- !u!95 &4637165282737009263
