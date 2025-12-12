@@ -32,6 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6039679169430974340}
+  - {fileID: 4505638210900537624}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &3420790212300587069
@@ -69,6 +70,108 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEntityData: '{"class":"Shield", "skin":"NoSkin", "count":"1", "proto":"shield_pork_aegis"}'
   AdditionalInteractRadius: 1
+--- !u!1001 &4111090923282781939
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1038894993028528959}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.393
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.135
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.071
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70460784
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.70810044
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0027107736
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.045981284
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 93.518005
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -87.35901
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -83.41101
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_Name
+      value: PorkShield_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6399218072838306661}
+  m_SourcePrefab: {fileID: 100100000, guid: ccf046995eda7b244ac8360ccc696bea, type: 3}
+--- !u!1 &3876735854065445794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ccf046995eda7b244ac8360ccc696bea,
+    type: 3}
+  m_PrefabInstance: {fileID: 4111090923282781939}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6399218072838306661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3876735854065445794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -775546215, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gender: 1
+--- !u!4 &4505638210900537624 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ccf046995eda7b244ac8360ccc696bea,
+    type: 3}
+  m_PrefabInstance: {fileID: 4111090923282781939}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6078726214095145071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130,12 +233,16 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ccf046995eda7b244ac8360ccc696bea,
         type: 3}
       propertyPath: m_Name
-      value: PorkShield
+      value: PorkShield_M
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ccf046995eda7b244ac8360ccc696bea,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6107991584846850264}
   m_SourcePrefab: {fileID: 100100000, guid: ccf046995eda7b244ac8360ccc696bea, type: 3}
 --- !u!4 &6039679169430974340 stripped
 Transform:
@@ -143,3 +250,22 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6078726214095145071}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6384574408051275070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ccf046995eda7b244ac8360ccc696bea,
+    type: 3}
+  m_PrefabInstance: {fileID: 6078726214095145071}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6107991584846850264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6384574408051275070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -775546215, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gender: 0
