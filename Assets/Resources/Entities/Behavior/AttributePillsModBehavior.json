@@ -29,17 +29,28 @@
             "y" : "-100603"
          }, 
          "child" : [ 
-            "f19cfdc5-ca7e-4c42-a06a-7277712e8e7b", 
+            "87f11649-94a6-4a21-8626-64f63a19d17b", 
             "32d7423f-8529-40a4-8c47-87967ea11e73"
          ], 
          "key" : "_PILLS_MOD_LOCATION", 
          "value" : "Coast"
       }, 
+      "87f11649-94a6-4a21-8626-64f63a19d17b" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-100955", 
+            "y" : "-100476"
+         }, 
+         "child" : [ 
+            "f19cfdc5-ca7e-4c42-a06a-7277712e8e7b", 
+            "671cc6cb-f713-44d0-bdfe-aab5c4e32a52"
+         ]
+      }, 
       "f19cfdc5-ca7e-4c42-a06a-7277712e8e7b" : { 
          "class" : "HasKeywordNode", 
          "desc" : { 
-            "x" : "-101008", 
-            "y" : "-100475"
+            "x" : "-101125", 
+            "y" : "-100417"
          }, 
          "child" : [ 
             "c5557b9b-b336-4687-aef9-cb9c1e956bea", 
@@ -50,8 +61,8 @@
       "c5557b9b-b336-4687-aef9-cb9c1e956bea" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-100988", 
-            "y" : "-100395"
+            "x" : "-101105", 
+            "y" : "-100337"
          }, 
          "child" : [ 
          ]
@@ -59,8 +70,8 @@
       "4095cad8-d401-45b3-88a2-e1dd013b9ead" : { 
          "class" : "AddKeywordNode", 
          "desc" : { 
-            "x" : "-100973", 
-            "y" : "-100365"
+            "x" : "-101090", 
+            "y" : "-100307"
          }, 
          "child" : [ 
             "d03607b9-8120-41c7-b7d5-43ee81b2f9d8"
@@ -70,8 +81,8 @@
       "d03607b9-8120-41c7-b7d5-43ee81b2f9d8" : { 
          "class" : "InventoryAddItemNode", 
          "desc" : { 
-            "x" : "-100973", 
-            "y" : "-100290"
+            "x" : "-101090", 
+            "y" : "-100232"
          }, 
          "child" : [ 
          ], 
@@ -79,7 +90,56 @@
          "item" : { 
             "class" : "Consumable", 
             "count" : "5", 
-            "proto" : "al_p_mysteriouspill"
+            "proto" : "AL_P_MysteriousPill"
+         }, 
+         "showLogMessage" : "false", 
+         "markAsStolen" : "false"
+      }, 
+      "671cc6cb-f713-44d0-bdfe-aab5c4e32a52" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-100890", 
+            "y" : "-100417"
+         }, 
+         "child" : [ 
+            "f296b7ba-e497-4cab-a079-6f97c82f9e98", 
+            "730c4d86-8ca3-4736-9e1a-ac3a6180bda0"
+         ], 
+         "key" : "_PILLS_MOD_INIT_2"
+      }, 
+      "f296b7ba-e497-4cab-a079-6f97c82f9e98" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-100870", 
+            "y" : "-100337"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "730c4d86-8ca3-4736-9e1a-ac3a6180bda0" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-100855", 
+            "y" : "-100307"
+         }, 
+         "child" : [ 
+            "715e278f-6284-4639-b197-cdf6a39e397b"
+         ], 
+         "key" : "_PILLS_MOD_INIT_2"
+      }, 
+      "715e278f-6284-4639-b197-cdf6a39e397b" : { 
+         "class" : "InventoryAddItemNode", 
+         "desc" : { 
+            "x" : "-100855", 
+            "y" : "-100233"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "CrateWood_1", 
+         "item" : { 
+            "class" : "Consumable", 
+            "count" : "5", 
+            "proto" : "AL_P_MysteriousPill"
          }, 
          "showLogMessage" : "false", 
          "markAsStolen" : "false"
