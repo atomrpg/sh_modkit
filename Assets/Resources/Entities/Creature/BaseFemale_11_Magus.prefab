@@ -754,9 +754,11 @@ MonoBehaviour:
   Spine2Link: {fileID: 4604149639085156383}
   NeckLink: {fileID: 6961903547848680546}
   HeadTopLink: {fileID: 4777958011394509302}
-  ShoesList: []
+  ShoesList:
+  - {fileID: 7763154840956008518}
   ShowSocksByDefault: 1
-  SocksList: []
+  SocksList:
+  - {fileID: 4795279716172641419}
   Circle: {fileID: 6419671968715884695}
   _customLinks: []
 --- !u!95 &3145041358301897596
