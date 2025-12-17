@@ -643,6 +643,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1770609807450006181}
+    - targetCorrespondingSourceObject: {fileID: -3658636641313985879, guid: 0f5229ef323b3f942892d0a5020f2434,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6295708685760149220}
+    - targetCorrespondingSourceObject: {fileID: 2425214543390509956, guid: 0f5229ef323b3f942892d0a5020f2434,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1268714637709732480}
   m_SourcePrefab: {fileID: 100100000, guid: 0f5229ef323b3f942892d0a5020f2434, type: 3}
 --- !u!4 &63275547360764362 stripped
 Transform:
@@ -662,12 +670,45 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7196310490290095895}
   m_PrefabAsset: {fileID: 0}
+--- !u!137 &3105542633793850893 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5244288732918810906, guid: 0f5229ef323b3f942892d0a5020f2434,
+    type: 3}
+  m_PrefabInstance: {fileID: 7196310490290095895}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3201069936727421947 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3480699329000672020, guid: 0f5229ef323b3f942892d0a5020f2434,
     type: 3}
   m_PrefabInstance: {fileID: 7196310490290095895}
   m_PrefabAsset: {fileID: 0}
+--- !u!137 &3209342597674818469 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5717194751380774066, guid: 0f5229ef323b3f942892d0a5020f2434,
+    type: 3}
+  m_PrefabInstance: {fileID: 7196310490290095895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3379818584852721086 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3658636641313985879, guid: 0f5229ef323b3f942892d0a5020f2434,
+    type: 3}
+  m_PrefabInstance: {fileID: 7196310490290095895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6295708685760149220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3379818584852721086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1225809204, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - path: Models/Skins/PuritansPantsMan_mat
+  rendererProxy: {fileID: 3209342597674818469}
 --- !u!4 &3448831014192712141 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3746190272939815206, guid: 0f5229ef323b3f942892d0a5020f2434,
@@ -716,6 +757,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7196310490290095895}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4789148862701866131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2425214543390509956, guid: 0f5229ef323b3f942892d0a5020f2434,
+    type: 3}
+  m_PrefabInstance: {fileID: 7196310490290095895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1268714637709732480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4789148862701866131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1225809204, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - path: Models/Skins/PuritansPantsMan_mat
+  rendererProxy: {fileID: 3105542633793850893}
 --- !u!4 &4847843516928678182 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6874584590210671055, guid: 0f5229ef323b3f942892d0a5020f2434,

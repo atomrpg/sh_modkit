@@ -602,6 +602,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1113205214780132487}
+    - targetCorrespondingSourceObject: {fileID: -3364866351401484234, guid: 731a7bc9fccfd9d4980906ab0500aa23,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 945479015607245710}
+    - targetCorrespondingSourceObject: {fileID: 8682256929149324539, guid: 731a7bc9fccfd9d4980906ab0500aa23,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6438421062390623227}
   m_SourcePrefab: {fileID: 100100000, guid: 731a7bc9fccfd9d4980906ab0500aa23, type: 3}
 --- !u!4 &1834578282864019059 stripped
 Transform:
@@ -802,9 +810,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4247408831065602160}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4795279716172641419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8682256929149324539, guid: 731a7bc9fccfd9d4980906ab0500aa23,
+    type: 3}
+  m_PrefabInstance: {fileID: 4247408831065602160}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6438421062390623227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4795279716172641419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1225809204, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - path: Models/Skins/PuritansPantsWoman_mat
+  rendererProxy: {fileID: 7438566518736712416}
 --- !u!4 &6398910340034626029 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7078722787440015773, guid: 731a7bc9fccfd9d4980906ab0500aa23,
+    type: 3}
+  m_PrefabInstance: {fileID: 4247408831065602160}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &6421012550476160037 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7200648010306511957, guid: 731a7bc9fccfd9d4980906ab0500aa23,
     type: 3}
   m_PrefabInstance: {fileID: 4247408831065602160}
   m_PrefabAsset: {fileID: 0}
@@ -847,6 +882,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4247408831065602160}
   m_PrefabAsset: {fileID: 0}
+--- !u!137 &7438566518736712416 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6758437415656868496, guid: 731a7bc9fccfd9d4980906ab0500aa23,
+    type: 3}
+  m_PrefabInstance: {fileID: 4247408831065602160}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7616828440346650485 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6000407479487422213, guid: 731a7bc9fccfd9d4980906ab0500aa23,
@@ -865,6 +906,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4247408831065602160}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7763154840956008518 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3364866351401484234, guid: 731a7bc9fccfd9d4980906ab0500aa23,
+    type: 3}
+  m_PrefabInstance: {fileID: 4247408831065602160}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &945479015607245710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7763154840956008518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1225809204, guid: ba80931603c2dbc40ab113c533efa2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - path: Models/Skins/PuritansPantsWoman_mat
+  rendererProxy: {fileID: 6421012550476160037}
 --- !u!4 &8154673544831614735 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5465940246521907071, guid: 731a7bc9fccfd9d4980906ab0500aa23,
