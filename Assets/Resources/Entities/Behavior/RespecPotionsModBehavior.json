@@ -1,0 +1,64 @@
+{ 
+   "states" : { 
+      "9efe6383-088d-41d7-aab1-af04d6b569e6" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-101071", 
+            "y" : "-100454"
+         }, 
+         "child" : [ 
+            "f19cfdc5-ca7e-4c42-a06a-7277712e8e7b"
+         ]
+      }, 
+      "f19cfdc5-ca7e-4c42-a06a-7277712e8e7b" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-101125", 
+            "y" : "-100417"
+         }, 
+         "child" : [ 
+            "c5557b9b-b336-4687-aef9-cb9c1e956bea", 
+            "4095cad8-d401-45b3-88a2-e1dd013b9ead"
+         ], 
+         "key" : "_RESPEC_MOD_INIT"
+      }, 
+      "c5557b9b-b336-4687-aef9-cb9c1e956bea" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-101105", 
+            "y" : "-100337"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "4095cad8-d401-45b3-88a2-e1dd013b9ead" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-101091", 
+            "y" : "-100307"
+         }, 
+         "child" : [ 
+            "d03607b9-8120-41c7-b7d5-43ee81b2f9d8"
+         ], 
+         "key" : "_RESPEC_MOD_INIT"
+      }, 
+      "d03607b9-8120-41c7-b7d5-43ee81b2f9d8" : { 
+         "class" : "InventoryAddItemNode", 
+         "desc" : { 
+            "x" : "-101091", 
+            "y" : "-100248"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "item" : { 
+            "class" : "Consumable", 
+            "count" : "10", 
+            "proto" : "OblivionWater"
+         }, 
+         "showLogMessage" : "true", 
+         "markAsStolen" : "false"
+      }
+   }, 
+   "entry" : "9efe6383-088d-41d7-aab1-af04d6b569e6"
+}

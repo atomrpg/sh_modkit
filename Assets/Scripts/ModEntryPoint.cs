@@ -13,7 +13,7 @@ public class ModEntryPoint : MonoBehaviour // This class is the reserved entry p
         var assembly = GetType().Assembly;
         _modName = assembly.GetName().Name;
         _dir = System.IO.Path.GetDirectoryName(assembly.Location);
-        Debug.Log("Attribute Pills Init: " + _modName + " (" + _dir + ")");
+        Debug.Log("Respec Potions Init: " + _modName + " (" + _dir + ")");
 
         // Register callbacks for game events
         GlobalEvents.AddListener<GlobalEvents.GameStart>(GameLoaded);
@@ -62,6 +62,6 @@ public class ModEntryPoint : MonoBehaviour // This class is the reserved entry p
 
     void LevelLoaded(GlobalEvents.LevelLoaded evnt)
     {
-        Game.World.gameLogic.PlayScript("Entities/Behavior/AttributePillsModBehavior", Game.World.Player.CharacterComponent.gameObject);
+        Game.World.gameLogic.PlayScript("Entities/Behavior/RespecPotionsModBehavior", Game.World.Player.CharacterComponent.gameObject);
     }
 }
