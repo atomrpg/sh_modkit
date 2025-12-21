@@ -115,7 +115,7 @@ public class PlayInEditor : MonoBehaviour
             return;
         }
 
-        foreach (string f in Directory.GetFiles(path, "*.bundle", SearchOption.AllDirectories))
+        foreach (string f in Directory.GetFiles(path, "*.bundle", SearchOption.TopDirectoryOnly))
         {
             if (Path.GetExtension(f) == ".bundle" /*&& !Path.GetFileName(f).StartsWith("scene_", System.StringComparison.OrdinalIgnoreCase)*/)
             {
@@ -161,6 +161,7 @@ public class PlayInEditor : MonoBehaviour
 
             var gdir = PlayerPrefs.GetString("GAME_CONTENT_DIR", "");
             LoadBundles(gdir);
+            LoadBundles(gdir + "/Content");
 
             GameObject game = ResourceManager.Load<GameObject>("Game", ResourceManager.EXT_PREFAB);
 
