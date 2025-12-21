@@ -64,6 +64,9 @@ public class ModBuilder : EditorWindow
     private int _modIndex = -1;
 
     StoreSteamService steam = new StoreSteamService();
+
+    BuildTarget buildTarget = BuildTarget.StandaloneWindows64;
+
     // string _modName = typeof(ModEntryPoint).Assembly.GetName().Name;
     [MenuItem("Game/Build Mod")]
     static public void BuildMod()
@@ -144,8 +147,6 @@ public class ModBuilder : EditorWindow
     //bool stripShaders = false;
     bool clearLogs = true;
 
-    BuildTarget buildTarget = BuildTarget.StandaloneWindows64;
-
     public static void ClearLogConsole()
     {
         var logEntries = System.Type.GetType("UnityEditor.LogEntries, UnityEditor.dll");
@@ -170,6 +171,12 @@ public class ModBuilder : EditorWindow
     {
         string modName = typeof(ModEntryPoint).Assembly.GetName().Name;
         GUILayout.Label("Build Settings", EditorStyles.boldLabel);
+
+        EditorGUILayout.BeginHorizontal();
+        EditorGUILayout.LabelField("Build Target:");
+        buildTarget = (BuildTarget)EditorGUILayout.EnumPopup(buildTarget);
+        EditorGUILayout.EndHorizontal();
+
         EditorGUILayout.BeginHorizontal();
         EditorGUILayout.LabelField("Mod Name", modName);
         if (GUILayout.Button("Change"))
@@ -186,6 +193,19 @@ public class ModBuilder : EditorWindow
 
         if (GUILayout.Button("BUILD"))
         {
+            BuildTargetGroup buildTargetGroup = BuildPipeline.GetBuildTargetGroup(buildTarget);
+
+            bool moduleInstalled = BuildPipeline.IsBuildTargetSupported(buildTargetGroup, buildTarget);
+
+            if (!moduleInstalled)
+            {
+                EditorUtility.DisplayDialog(
+                      "Build Module Missing",
+                      $"Build module for {buildTarget} is not installed.\n\nPlease install it via Unity Hub.",
+                      "OK");
+                return;
+            }
+
             if (modName.Length > 0)
             {
                 //ShaderBuildProcessor.SetEnabled(stripShaders);
@@ -213,8 +233,6 @@ public class ModBuilder : EditorWindow
                 RenderSettings.fog = true; // force enable fog
 
                 Directory.CreateDirectory(PATH_BUILD_BUNDLE);
-
-                string[] levelBundleList = null;
 
                 {
                     foreach (var assetBundleName in AssetDatabase.GetAllAssetBundleNames())
@@ -250,6 +268,15 @@ public class ModBuilder : EditorWindow
 
                 AssetDatabase.Refresh();
 
+                string baseDefines = PlayerSettings.GetScriptingDefineSymbolsForGroup(buildTargetGroup);
+                string newDefines = baseDefines;
+
+                if (!buildAssetBundle)
+                {
+                    newDefines = AddCompilerDefines(baseDefines, new string[] { "SCRIPT_ONLY_MOD" });
+                    PlayerSettings.SetScriptingDefineSymbolsForGroup(buildTargetGroup, newDefines);
+                }
+
                 if (buildAssetBundle)
                 {
                     AssetBundleBuild[] builds = UnityEditor.Build.Content.ContentBuildInterface.GenerateAssetBundleBuilds();
@@ -274,7 +301,7 @@ public class ModBuilder : EditorWindow
                         }
                     }
 
-                    BuildPipeline.BuildAssetBundles(PATH_BUILD_BUNDLE, builds, BuildAssetBundleOptions.ChunkBasedCompression, BuildTarget.StandaloneWindows);
+                    BuildPipeline.BuildAssetBundles(PATH_BUILD_BUNDLE, builds, BuildAssetBundleOptions.ChunkBasedCompression, buildTarget);
                     //BuildPipeline.BuildAssetBundles(PATH_BUILD_BUNDLE, BuildAssetBundleOptions.ChunkBasedCompression/*BuildAssetBundleOptions.DisableWriteTypeTree*/, buildTarget);
                 }
 
@@ -292,7 +319,7 @@ public class ModBuilder : EditorWindow
                 }
 
                 var scs = new UnityEditor.Build.Player.ScriptCompilationSettings();
-                scs.group = BuildTargetGroup.Standalone;
+                scs.group = BuildPipeline.GetBuildTargetGroup(buildTarget);
                 scs.options = UnityEditor.Build.Player.ScriptCompilationOptions.None;
                 scs.target = buildTarget;
                 UnityEditor.Build.Player.PlayerBuildInterface.CompilePlayerScripts(scs, "Temp/ModBuild_dll");
@@ -314,6 +341,11 @@ public class ModBuilder : EditorWindow
                 Copy("Temp/ModBuild_dll/" + modName + ".pdb", "Temp/ModBuild/" + modName + ".pdb");
 
                 EditorUtility.RevealInFinder(modsFolder + "/" + modName + ".dll");
+
+                if (newDefines != baseDefines)
+                {
+                    PlayerSettings.SetScriptingDefineSymbolsForGroup(buildTargetGroup, baseDefines);
+                }
 
                 AssetViewerDB.Load();
             }
