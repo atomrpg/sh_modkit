@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/ExtraSPPerLevel.unity
+    guid: 1e8b6b2d8e79e844780e144cc07c7659
   m_configObjects: {}
