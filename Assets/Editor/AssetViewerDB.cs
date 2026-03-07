@@ -98,6 +98,17 @@ internal class AssetViewerDB
 
         var gdir = PlayerPrefs.GetString("GAME_CONTENT_DIR", "");
         LoadBundles(gdir, categoriesSet);
+        LoadBundles(gdir + "/Content", categoriesSet);
+        if (!Application.isPlaying)
+        {
+#if UNITY_STANDALONE_WIN
+            LoadBundles(gdir + "/DLC", categoriesSet);
+#elif UNITY_STANDALONE_OSX
+            LoadBundles(gdir + "/DLC_OSX", categoriesSet);
+#elif UNITY_STANDALONE_LINUX
+            LoadBundles(gdir + "/DLC_LINUX", categoriesSet);
+#endif
+        }
 
         assetCategories.AddRange(categoriesSet.OrderBy(x => x));
         EditorUtility.ClearProgressBar();
@@ -116,7 +127,7 @@ internal class AssetViewerDB
 
         int progress = 0;
 
-        var files = Directory.GetFiles(path, "*.bundle", SearchOption.AllDirectories);
+        var files = Directory.GetFiles(path, "*.bundle", SearchOption.TopDirectoryOnly);
         foreach (string f in files)
         {
             try
