@@ -13,8 +13,9 @@ public class ModEditorToolbarExtender
 {
     static ModEditorToolbarExtender()
     {
-        ToolbarExtender.OnToolbarGUILeft += OnToolbarLeftGUI;
-        ToolbarExtender.OnToolbarGUIRight += OnToolbarRightGUI;
+        //TODO: DOPIRA
+        //ToolbarExtender.OnToolbarGUILeft += OnToolbarLeftGUI;
+        //ToolbarExtender.OnToolbarGUIRight += OnToolbarRightGUI;
     }
 
     static GUIContent sceneListContent = new GUIContent("Scene List", EditorGUIUtility.IconContent("SceneAsset Icon").image, "Game/Scene List %l");
