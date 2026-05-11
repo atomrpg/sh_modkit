@@ -3,11 +3,12 @@
       "9efe6383-088d-41d7-aab1-af04d6b569e6" : { 
          "class" : "DummyNode", 
          "desc" : { 
-            "x" : "-101071", 
-            "y" : "-100454"
+            "x" : "-100945", 
+            "y" : "-100503"
          }, 
          "child" : [ 
-            "f19cfdc5-ca7e-4c42-a06a-7277712e8e7b"
+            "f19cfdc5-ca7e-4c42-a06a-7277712e8e7b", 
+            "d402f72c-3c85-4dfc-a4a5-51a4b3afacd0"
          ]
       }, 
       "f19cfdc5-ca7e-4c42-a06a-7277712e8e7b" : { 
@@ -54,6 +55,55 @@
          "item" : { 
             "class" : "Consumable", 
             "count" : "10", 
+            "proto" : "OblivionWater"
+         }, 
+         "showLogMessage" : "true", 
+         "markAsStolen" : "false"
+      }, 
+      "d402f72c-3c85-4dfc-a4a5-51a4b3afacd0" : { 
+         "class" : "HasKeywordNode", 
+         "desc" : { 
+            "x" : "-100886", 
+            "y" : "-100417"
+         }, 
+         "child" : [ 
+            "d1a63136-01c4-4357-9622-0ca8a9dcf425", 
+            "2362c4c8-7d12-45ea-9817-1fc6b3cafe72"
+         ], 
+         "key" : "_RESPEC_MOD_INIT_2"
+      }, 
+      "d1a63136-01c4-4357-9622-0ca8a9dcf425" : { 
+         "class" : "DummyNode", 
+         "desc" : { 
+            "x" : "-100865", 
+            "y" : "-100337"
+         }, 
+         "child" : [ 
+         ]
+      }, 
+      "2362c4c8-7d12-45ea-9817-1fc6b3cafe72" : { 
+         "class" : "AddKeywordNode", 
+         "desc" : { 
+            "x" : "-100851", 
+            "y" : "-100307"
+         }, 
+         "child" : [ 
+            "e347306f-7e5d-40fc-8c6e-7e8ab9d65d7f"
+         ], 
+         "key" : "_RESPEC_MOD_INIT_2"
+      }, 
+      "e347306f-7e5d-40fc-8c6e-7e8ab9d65d7f" : { 
+         "class" : "InventoryAddItemNode", 
+         "desc" : { 
+            "x" : "-100852", 
+            "y" : "-100246"
+         }, 
+         "child" : [ 
+         ], 
+         "objectName" : "$SELF$", 
+         "item" : { 
+            "class" : "Consumable", 
+            "count" : "500", 
             "proto" : "OblivionWater"
          }, 
          "showLogMessage" : "true", 
